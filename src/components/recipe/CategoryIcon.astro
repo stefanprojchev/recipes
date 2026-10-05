@@ -1,0 +1,40 @@
+---
+import EggFried from "@tabler/icons/outline/egg-fried.svg";
+import Soup from "@tabler/icons/outline/soup.svg";
+import Salad from "@tabler/icons/outline/salad.svg";
+import ToolsKitchen from "@tabler/icons/outline/tools-kitchen-2.svg";
+import Carrot from "@tabler/icons/outline/carrot.svg";
+import ChefHat from "@tabler/icons/outline/chef-hat.svg";
+import Bread from "@tabler/icons/outline/bread.svg";
+import Cake from "@tabler/icons/outline/cake.svg";
+import Cookie from "@tabler/icons/outline/cookie.svg";
+import BowlSpoon from "@tabler/icons/outline/bowl-spoon.svg";
+import Bottle from "@tabler/icons/outline/bottle.svg";
+import Cup from "@tabler/icons/outline/cup.svg";
+import type { Category } from "@/lib/recipe-taxonomy";
+
+interface Props {
+  category: Category;
+  class?: string;
+}
+
+const icons = {
+  breakfast: EggFried,
+  soup: Soup,
+  salad: Salad,
+  main: ToolsKitchen,
+  side: Carrot,
+  pastry: ChefHat,
+  bread: Bread,
+  dessert: Cake,
+  snack: Cookie,
+  spread: BowlSpoon,
+  preserves: Bottle,
+  drink: Cup,
+} satisfies Record<Category, typeof Soup>;
+
+const { category, class: className } = Astro.props;
+const Icon = icons[category];
+---
+
+<Icon class={className} aria-hidden="true" />

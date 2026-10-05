@@ -1,0 +1,29 @@
+---
+import AlertTriangle from "@tabler/icons/outline/alert-triangle.svg";
+import { householdWarnings } from "@/lib/household";
+import type { Locale } from "@/lib/locale";
+import type { Recipe } from "@/lib/recipes";
+
+interface Props {
+  recipe: Recipe;
+  variant?: Recipe["data"]["variants"][number];
+  locale: Locale;
+  class?: string;
+}
+
+const { recipe, variant, locale, class: className } = Astro.props;
+const warnings = await householdWarnings(recipe, variant, locale);
+---
+
+{
+  warnings.length > 0 && (
+    <span class:list={["flex flex-wrap gap-1.5", className]}>
+      {warnings.map((warning) => (
+        <span class="inline-flex items-center gap-1 rounded-full bg-warning px-3 py-1 text-base font-semibold text-warning-foreground">
+          <AlertTriangle class="size-4 shrink-0" aria-hidden="true" />
+          {warning}
+        </span>
+      ))}
+    </span>
+  )
+}

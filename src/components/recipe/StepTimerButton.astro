@@ -1,0 +1,32 @@
+---
+import Alarm from "@tabler/icons/outline/alarm.svg";
+import * as m from "@/paraglide/messages.js";
+import { formatDuration } from "@/lib/labels";
+import type { Locale } from "@/lib/locale";
+
+interface Props {
+  minutes: number;
+  /** Shown in the timer tray, e.g. "Тавче гравче · Чекор 2". */
+  label: string;
+  locale: Locale;
+  size?: "md" | "lg";
+  class?: string;
+}
+
+const { minutes, label, locale, size = "md", class: className } = Astro.props;
+---
+
+<button
+  type="button"
+  data-timer-start
+  data-minutes={minutes}
+  data-label={label}
+  class:list={[
+    "inline-flex items-center gap-2 rounded-full border border-primary bg-primary/10 font-semibold text-primary-accent transition-colors hover:bg-primary/15 active:bg-primary/25",
+    size === "lg" ? "h-16 px-7 text-2xl" : "h-12 px-5 text-lg",
+    className,
+  ]}
+>
+  <Alarm class={size === "lg" ? "size-6" : "size-5"} aria-hidden="true" />
+  {m.timer_start({ duration: formatDuration(minutes, locale) })}
+</button>

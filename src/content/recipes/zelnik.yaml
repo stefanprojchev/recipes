@@ -1,0 +1,75 @@
+title:
+  mk: Зелник со спанаќ
+  en: Zelnik (spinach pie)
+summary:
+  mk: Хрскава пита со кори, спанаќ и бело сирење — за појадок, ужина или ручек.
+  en: Crispy filo pie with spinach and white cheese — for breakfast, a snack or lunch.
+category: pastry
+meals: [breakfast, snack, lunch]
+servings: 8
+time: { prep: 30, cook: 40, rest: 10 }
+difficulty: medium
+tags: [kid-friendly]
+diet: [vegetarian]
+season: [spring]
+
+ingredients:
+  - title: { mk: Фил, en: Filling }
+    items:
+      - { ingredient: spinach, qty: 500, unit: g }
+      - { ingredient: feta-cheese, qty: 300, unit: g }
+      - { ingredient: egg, qty: 3, unit: pc }
+      - { ingredient: salt, qty: 1, unit: pinch }
+  - title: { mk: Кори и премачкување, en: Pastry and brushing }
+    items:
+      - { ingredient: filo-pastry, qty: 1, unit: pack, note: { mk: 500 г, en: 500 g } }
+      - { ingredient: sunflower-oil, qty: 100, unit: ml }
+      - { ingredient: yogurt, qty: 1, unit: glass }
+
+steps:
+  - text:
+      mk: Измиј го и исецкај го спанаќот, посоли го и остави 10 минути. Потоа добро исцеди го со раце.
+      en: Wash and chop the spinach, salt it and leave for 10 minutes. Then squeeze it well by hand.
+    timer: 10
+  - text:
+      mk: Измешај го спанаќот со изронетото сирење и јајцата.
+      en: Mix the spinach with the crumbled cheese and eggs.
+  - text:
+      mk: Измешај го маслото со киселото млеко за премачкување.
+      en: Whisk the oil and yogurt together for brushing.
+  - text:
+      mk: Во подмачкан плех нареди две кори, премачкај, па распореди дел од филот. Повторувај додека не се потрошат корите и филот. Последните две кори премачкај добро.
+      en: Lay two sheets in a greased tray, brush, then spread some filling. Repeat until the pastry and filling are used up. Brush the top two sheets well.
+  - text:
+      mk: Исечи на квадрати пред печење и печи на 200°C додека не порумени.
+      en: Cut into squares before baking and bake at 200°C until golden.
+    timer: 40
+  - text:
+      mk: Покриј со крпа 10 минути за корите да омекнат.
+      en: Cover with a tea towel for 10 minutes so the pastry softens.
+    timer: 10
+
+variants:
+  - id: leek
+    name: { mk: Со праз, en: With leek }
+    note:
+      mk: Исецкај го празот на тенки колутчиња и задинстај го 5 минути на малку масло пред да го измешаш со сирењето.
+      en: Slice the leek thinly and soften it in a little oil for 5 minutes before mixing with the cheese.
+    add:
+      - { ingredient: leek, qty: 3, unit: pc }
+    remove: [spinach]
+  - id: sauerkraut
+    name: { mk: Со кисела зелка, en: With sauerkraut }
+    note:
+      mk: Исецкај ја киселата зелка ситно и исцеди ја. Зимска варијанта — сирењето може да се изостави за посна пита.
+      en: Chop the sauerkraut finely and squeeze it out. A winter favourite — leave out the cheese for a fasting version.
+    add:
+      - { ingredient: sauerkraut, qty: 500, unit: g }
+    remove: [spinach]
+
+tips:
+  mk: Корите држи ги покриени со влажна крпа додека работиш за да не се исушат.
+  en: Keep the filo covered with a damp towel while you work so it doesn't dry out.
+storage:
+  mk: На собна температура 1 ден, во фрижидер 3 дена. Се замрзнува добро — непечен или печен.
+  en: 1 day at room temperature, 3 days in the fridge. Freezes well, baked or unbaked.

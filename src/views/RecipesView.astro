@@ -1,0 +1,110 @@
+---
+import Search from "@tabler/icons/outline/search.svg";
+import * as m from "@/paraglide/messages.js";
+import Layout from "@layouts/Layout.astro";
+import CategoryIcon from "@components/recipe/CategoryIcon.astro";
+import RecipeCard from "@components/recipe/RecipeCard.astro";
+import { asLocale } from "@/lib/i18n-content";
+import { categoryLabel, dietLabel, mealLabel, tagLabel } from "@/lib/labels";
+import { CATEGORIES, MEALS, type Diet } from "@/lib/recipe-taxonomy";
+import { getIngredients, getRecipes, searchText, sortByTitle } from "@/lib/recipes";
+
+const locale = asLocale(Astro.currentLocale);
+const ingredients = await getIngredients();
+const recipes = sortByTitle(await getRecipes(), locale);
+
+const categories = CATEGORIES.filter((c) => recipes.some((r) => r.data.category === c));
+const meals = MEALS.filter((meal) => recipes.some((r) => r.data.meals.includes(meal)));
+const diets: Diet[] = ["fasting", "vegetarian"];
+
+const chip =
+  "inline-flex h-11 shrink-0 items-center gap-2 rounded-full border border-input bg-card px-4 text-base font-semibold transition-colors hover:bg-muted aria-pressed:border-primary aria-pressed:bg-primary aria-pressed:text-primary-foreground";
+---
+
+<Layout title={`${m.recipes_title()} · ${m.site_name()}`} description={m.recipes_description()}>
+  <section id="catalogue" class="mx-auto max-w-6xl px-4 pt-8 pb-24 sm:px-6">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <h1 class="font-heading text-4xl font-semibold">{m.recipes_title()}</h1>
+      <p class="text-base text-muted-foreground" aria-live="polite">
+        <span data-count-template={m.recipes_count({ count: "{count}" })} data-result-count>
+          {m.recipes_count({ count: recipes.length })}
+        </span>
+      </p>
+    </div>
+
+    <label class="relative mt-6 block">
+      <span class="sr-only">{m.search_label()}</span>
+      <Search class="pointer-events-none absolute top-1/2 left-4 size-6 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
+      <input
+        type="search"
+        name="q"
+        data-filter-search
+        autocomplete="off"
+        enterkeyhint="search"
+        placeholder={m.search_placeholder()}
+        class="h-14 w-full rounded-2xl border-input bg-card pr-4 pl-13 text-lg shadow-xs focus:border-primary focus:ring-2 focus:ring-primary"
+      />
+    </label>
+
+    <!-- One labelled, single-line row per filter kind — scrolls sideways instead of wrapping into a wall of chips. -->
+    <div class="mt-4 flex flex-col gap-2">
+      {[
+        { label: m.filter_row_category(), id: "filter-category" },
+        { label: m.filter_row_meal(), id: "filter-meal" },
+        { label: m.filter_row_more(), id: "filter-more" },
+      ].map(({ label, id }) => (
+        <div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3">
+          <span id={id} class="shrink-0 text-sm font-bold tracking-wide text-muted-foreground uppercase sm:w-28">{label}</span>
+          <div
+            role="group"
+            aria-labelledby={id}
+            class="scrollbar-none -mx-4 flex min-w-0 flex-1 gap-2 overflow-x-auto px-4 py-1 [mask-image:linear-gradient(to_right,black_calc(100%-2.5rem),transparent)] sm:mx-0 sm:px-0"
+          >
+            {id === "filter-category" && (
+              <>
+                <button type="button" class={chip} data-filter-category="" aria-pressed="true">{m.recipes_filter_all()}</button>
+                {categories.map((category) => (
+                  <button type="button" class={chip} data-filter-category={category} aria-pressed="false">
+                    <CategoryIcon category={category} class="size-5" />{categoryLabel(category, locale)}
+                  </button>
+                ))}
+              </>
+            )}
+            {id === "filter-meal" &&
+              meals.map((meal) => (
+                <button type="button" class={chip} data-filter-meal={meal} aria-pressed="false">{mealLabel(meal, locale)}</button>
+              ))}
+            {id === "filter-more" && (
+              <>
+                <button type="button" class={chip} data-filter-quick aria-pressed="false">{m.recipes_filter_quick()}</button>
+                {diets.map((diet) => (
+                  <button type="button" class={chip} data-filter-diet={diet} aria-pressed="false">{dietLabel(diet, locale)}</button>
+                ))}
+                <button type="button" class={chip} data-filter-tag="kid-friendly" aria-pressed="false">{tagLabel("kid-friendly", locale)}</button>
+              </>
+            )}
+            <span class="w-6 shrink-0" aria-hidden="true"></span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="sr-only">{m.recipes_title()}</h2>
+    <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4" data-results>
+      {recipes.map((recipe) => (
+        <RecipeCard recipe={recipe} locale={locale} search={searchText(recipe, ingredients)} />
+      ))}
+    </div>
+
+    <div data-empty style="display: none" class="mt-16 flex flex-col items-center gap-4 text-center">
+      <p class="text-xl text-muted-foreground">{m.recipes_empty()}</p>
+      <button type="button" data-filter-clear class="h-12 rounded-full bg-secondary px-6 text-lg font-semibold text-secondary-foreground hover:bg-accent">
+        {m.recipes_clear_filters()}
+      </button>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import "@/scripts/catalogue";
+</script>

@@ -1,0 +1,108 @@
+---
+import ChevronLeft from "@tabler/icons/outline/chevron-left.svg";
+import ChevronRight from "@tabler/icons/outline/chevron-right.svg";
+import ShoppingCart from "@tabler/icons/outline/shopping-cart.svg";
+import Printer from "@tabler/icons/outline/printer.svg";
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+import Layout from "@layouts/Layout.astro";
+import DayMenu from "@components/plan/DayMenu.astro";
+import { asLocale, t } from "@/lib/i18n-content";
+import { formatDay, getPlanDays, type PlanDay } from "@/lib/mealplan";
+
+const locale = asLocale(Astro.currentLocale);
+const days = await getPlanDays();
+
+const weeks: Array<{ week: string; days: PlanDay[] }> = [];
+for (const day of days) {
+  const last = weeks.at(-1);
+  if (last?.week === day.week) last.days.push(day);
+  else weeks.push({ week: day.week, days: [day] });
+}
+
+const range = (from: string, to: string) =>
+  new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", timeZone: "UTC" }).formatRange(
+    new Date(`${from}T00:00:00Z`),
+    new Date(`${to}T00:00:00Z`),
+  );
+const navButton =
+  "inline-flex size-11 items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:bg-accent disabled:opacity-30";
+---
+
+<Layout title={`${m.plan_title()} · ${m.site_name()}`} description={m.plan_description()}>
+  <section class="mx-auto max-w-6xl px-4 pt-8 pb-24 sm:px-6">
+    <h1 class="font-heading text-4xl font-semibold">{m.plan_title()}</h1>
+
+    {weeks.length === 0 && <p class="mt-8 text-xl text-muted-foreground">{m.plan_empty()}</p>}
+
+    {
+      weeks.map(({ week, days: weekDays }, i) => {
+        const start = weekDays[0].date;
+        const end = weekDays.at(-1)?.date ?? start;
+        return (
+          <div data-week-section={week} data-start={start} data-end={end} style={i === weeks.length - 1 ? undefined : "display: none"}>
+            <div class="mt-6 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex items-center gap-2">
+                <button type="button" data-week-prev class={navButton} disabled={i === 0} aria-label={m.plan_prev_week()}>
+                  <ChevronLeft class="size-5" aria-hidden="true" />
+                </button>
+                <p class="min-w-48 text-center text-xl font-semibold" aria-live="polite">{range(start, end)}</p>
+                <button type="button" data-week-next class={navButton} disabled={i === weeks.length - 1} aria-label={m.plan_next_week()}>
+                  <ChevronRight class="size-5" aria-hidden="true" />
+                </button>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <a
+                  href={localizeHref(`/plan/print/${week}`)}
+                  class="inline-flex h-12 items-center gap-2 rounded-2xl bg-secondary px-5 text-lg font-semibold text-secondary-foreground hover:bg-accent"
+                >
+                  <Printer class="size-5" aria-hidden="true" />{m.shopping_print()}
+                </a>
+                <a
+                  href={localizeHref(`/plan/shopping/${week}`)}
+                  class="inline-flex h-12 items-center gap-2 rounded-2xl bg-primary px-5 text-lg font-semibold text-primary-foreground hover:bg-primary-accent"
+                >
+                  <ShoppingCart class="size-5" aria-hidden="true" />{m.plan_shopping()}
+                </a>
+              </div>
+            </div>
+
+            <!-- Landscape: one compact row per day (date · meals · sheet) so most of the week fits on screen. -->
+            <ol class="mt-6 flex flex-col gap-3">
+              {weekDays.map((day) => (
+                <li
+                  data-day-row={day.date}
+                  class="rounded-3xl border border-border bg-card p-5 data-today:border-primary data-today:ring-2 data-today:ring-primary/40 lg:grid lg:grid-cols-[10rem_minmax(0,1fr)_auto] lg:items-start lg:gap-6 lg:px-5 lg:py-4"
+                >
+                  <div class="mb-4 flex flex-wrap items-center justify-between gap-3 lg:contents">
+                    <div>
+                      <h2 class="font-heading text-2xl font-semibold first-letter:uppercase lg:text-xl">
+                        {formatDay(day.date, locale)}
+                      </h2>
+                      <span class="mt-1 hidden rounded-full bg-primary px-2.5 py-0.5 text-sm font-bold text-primary-foreground in-data-today:inline-block">
+                        {m.plan_today_badge()}
+                      </span>
+                      {day.note && <p class="mt-1 hidden text-sm text-muted-foreground lg:block">{t(day.note, locale)}</p>}
+                    </div>
+                    <a
+                      href={localizeHref(`/plan/day/${day.date}`)}
+                      class="inline-flex h-11 items-center gap-1 rounded-full bg-secondary px-4 text-base font-semibold whitespace-nowrap text-secondary-foreground hover:bg-accent lg:order-last"
+                    >
+                      {m.plan_open_day()}<ChevronRight class="size-5" aria-hidden="true" />
+                    </a>
+                  </div>
+                  {day.note && <p class="mb-3 text-base text-muted-foreground lg:hidden">{t(day.note, locale)}</p>}
+                  <DayMenu day={day} locale={locale} />
+                </li>
+              ))}
+            </ol>
+          </div>
+        );
+      })
+    }
+  </section>
+</Layout>
+
+<script>
+  import "@/scripts/plan";
+</script>

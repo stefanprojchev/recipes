@@ -1,0 +1,74 @@
+title:
+  mk: Тавче гравче
+  en: Tavče gravče (baked beans)
+summary:
+  mk: Печен грав во земјено тавче — македонската класика за недела и пост.
+  en: Beans baked in a clay dish — the Macedonian classic for Sundays and fasting days.
+category: main
+meals: [lunch, dinner]
+servings: 6
+time: { prep: 20, cook: 120 }
+difficulty: easy
+diet: [vegan, fasting]
+season: [autumn, winter]
+prepAhead:
+  mk: Потопи го гравот во ладна вода вечерта пред готвење.
+  en: Soak the beans in cold water the night before.
+
+ingredients:
+  - title: { mk: Грав, en: Beans }
+    items:
+      - { ingredient: white-beans, qty: 500, unit: g, note: { mk: потопен преку ноќ, en: soaked overnight } }
+      - { ingredient: onion, qty: 1, unit: pc }
+      - { ingredient: dried-red-pepper, qty: 3, unit: pc }
+      - { ingredient: bay-leaf, qty: 2, unit: pc }
+      - { ingredient: water, qty: 2, unit: l }
+  - title: { mk: Запршка, en: Roux }
+    items:
+      - { ingredient: sunflower-oil, qty: 100, unit: ml }
+      - { ingredient: onion, qty: 2, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tbsp }
+      - { ingredient: dried-mint, qty: 1, unit: tsp }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Исцеди го потопениот грав, прелиј го со свежа вода и вари го 10 минути. Фрли ја првата вода.
+      en: Drain the soaked beans, cover with fresh water and boil for 10 minutes. Discard this first water.
+    timer: 10
+  - text:
+      mk: Налеј 2 литри свежа вода, додај цел кромид, сушените пиперки и ловоровиот лист. Вари на тивок оган додека гравот не омекне.
+      en: Add 2 litres of fresh water, the whole onion, dried peppers and bay leaves. Simmer gently until the beans are tender.
+    timer: 60
+  - text:
+      mk: Во тава загреј го маслото и пропржи го ситно сецканиот кромид додека не стане стаклест. Тргни од оган, додај брашно и алева пиперка и брзо измешај.
+      en: Heat the oil in a pan and fry the chopped onion until translucent. Take off the heat, stir in the flour and paprika quickly.
+  - text:
+      mk: Истури го гравот заедно со течноста во земјено тавче. Додај ја запршката, нането, сол и пипер и измешај. Течноста треба да го покрива гравот.
+      en: Pour the beans with their liquid into a clay dish. Add the roux, mint, salt and pepper and stir. The liquid should just cover the beans.
+  - text:
+      mk: Печи во рерна на 200°C додека одозгора не се фати корка, а сосот не се згусне.
+      en: Bake at 200°C until a crust forms on top and the sauce thickens.
+    timer: 45
+  - text:
+      mk: Остави да отстои 10 минути пред сервирање.
+      en: Let it rest for 10 minutes before serving.
+    timer: 10
+
+variants:
+  - id: sausage
+    name: { mk: Со колбаси, en: With sausage }
+    note:
+      mk: Исечи ги колбасиците на тркалца и нареди ги одозгора во последните 20 минути печење. Оваа варијанта не е посна.
+      en: Slice the sausage and lay it on top for the last 20 minutes of baking. This variant is not suitable for fasting.
+    add:
+      - { ingredient: smoked-sausage, qty: 300, unit: g }
+
+tips:
+  mk: Ако немаш земјено тавче, користи длабок плех. Ако гравот се исуши во рерна, дополни со малку врела вода.
+  en: No clay dish? A deep baking tray works. If the beans dry out in the oven, top up with a little boiling water.
+storage:
+  mk: Во фрижидер до 3 дена. Подгревај во рерна со малку вода.
+  en: Keeps 3 days in the fridge. Reheat in the oven with a splash of water.

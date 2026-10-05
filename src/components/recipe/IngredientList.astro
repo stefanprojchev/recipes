@@ -1,0 +1,67 @@
+---
+import IngredientItem from "@components/recipe/IngredientItem.astro";
+import { t } from "@/lib/i18n-content";
+import type { Locale } from "@/lib/locale";
+import type { Ingredient, Recipe } from "@/lib/recipes";
+
+interface Props {
+  recipe: Recipe;
+  ingredients: Map<string, Ingredient>;
+  locale: Locale;
+  idPrefix: string;
+}
+
+const { recipe, ingredients, locale, idPrefix } = Astro.props;
+const { variants } = recipe.data;
+
+function lookup(id: string): Ingredient {
+  const ingredient = ingredients.get(id);
+  if (!ingredient) throw new Error(`Recipe "${recipe.id}" references unknown ingredient "${id}"`);
+  return ingredient;
+}
+
+/** Variant ids that remove a given base ingredient, space-separated for data attributes. */
+function removedBy(id: string): string | undefined {
+  const ids = variants.filter((v) => v.remove.some((ref) => ref.id === id)).map((v) => v.id);
+  return ids.length > 0 ? ids.join(" ") : undefined;
+}
+---
+
+<div class="flex flex-col gap-5">
+  {
+    recipe.data.ingredients.map((group, g) => (
+      <section>
+        {group.title && (
+          <h3 class="mb-1 px-2 text-sm font-bold tracking-wide text-muted-foreground uppercase">
+            {t(group.title, locale)}
+          </h3>
+        )}
+        <ul class="flex flex-col">
+          {group.items.map((line, i) => (
+            <IngredientItem
+              line={line}
+              ingredient={lookup(line.ingredient.id)}
+              locale={locale}
+              lineKey={`g${g}-${i}`}
+              idPrefix={idPrefix}
+              removedBy={removedBy(line.ingredient.id)}
+            />
+          ))}
+          {g === recipe.data.ingredients.length - 1 &&
+            variants.flatMap((variant) =>
+              variant.add.map((line, i) => (
+                <IngredientItem
+                  line={line}
+                  ingredient={lookup(line.ingredient.id)}
+                  locale={locale}
+                  lineKey={`v-${variant.id}-${i}`}
+                  idPrefix={idPrefix}
+                  addedBy={variant.id}
+                />
+              )),
+            )}
+        </ul>
+      </section>
+    ))
+  }
+</div>

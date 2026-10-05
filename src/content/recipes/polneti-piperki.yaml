@@ -1,0 +1,56 @@
+title:
+  mk: Полнети пиперки
+  en: Stuffed peppers
+summary:
+  mk: Бабури полнети со мелено месо и ориз, печени во сос од алева пиперка.
+  en: Bell peppers stuffed with minced meat and rice, baked in a paprika sauce.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 30, cook: 70 }
+difficulty: medium
+season: [summer, autumn]
+
+ingredients:
+  - title: { mk: Пиперки и фил, en: Peppers and filling }
+    items:
+      - { ingredient: bell-pepper, qty: 8, unit: pc }
+      - { ingredient: minced-meat, qty: 500, unit: g }
+      - { ingredient: rice, qty: 100, unit: g }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: tomato, qty: 1, unit: pc, note: { mk: за капачиња, en: for the lids } }
+  - title: { mk: Сос, en: Sauce }
+    items:
+      - { ingredient: water, qty: 500, unit: ml }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Измиј ги пиперките, исечи им ги капачињата и извади ги семките.
+      en: Wash the peppers, cut off the tops and remove the seeds.
+  - text:
+      mk: На масло задинстај го кромидот, додај го оризот и мешај 2 минути. Остави да се олади, па измешај со месото, алевата пиперка, сол и пипер.
+      en: Soften the onion in oil, add the rice and stir for 2 minutes. Let it cool, then mix with the meat, paprika, salt and pepper.
+  - text:
+      mk: Наполни ги пиперките до три четвртини — оризот ќе набабри. Затвори ги со тркалце домат.
+      en: Fill the peppers three-quarters full — the rice will swell. Close each with a slice of tomato.
+  - text:
+      mk: Нареди ги исправени во длабок сад. Измешај вода, брашно и алева пиперка и прелиј.
+      en: Stand them upright in a deep dish. Whisk the water, flour and paprika and pour around them.
+  - text:
+      mk: Покриј со капак или фолија и печи на 200°C.
+      en: Cover with a lid or foil and bake at 200°C.
+    timer: 50
+  - text:
+      mk: Откриј и печи до румено.
+      en: Uncover and bake until browned.
+    timer: 20
+
+tips:
+  mk: Служи со кисело млеко или павлака одозгора.
+  en: Serve with a spoonful of yogurt or sour cream.

@@ -30,3 +30,18 @@ export function onPageReady(
     void init(controller.signal);
   });
 }
+
+let pageLoads = 0;
+document.addEventListener("astro:page-load", () => {
+  pageLoads++;
+});
+
+/**
+ * True once the user has navigated inside the app (ClientRouter), so a
+ * "Back" control can use history.back() instead of a fixed link.
+ * Every page imports this module through the Layout scripts, so the count
+ * starts on the first page load.
+ */
+export function hasInAppHistory(): boolean {
+  return pageLoads > 1;
+}

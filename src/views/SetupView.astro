@@ -1,0 +1,70 @@
+---
+import Download from "@tabler/icons/outline/download.svg";
+import CircleCheck from "@tabler/icons/outline/circle-check.svg";
+import DeviceTablet from "@tabler/icons/outline/device-tablet.svg";
+import BrandAndroid from "@tabler/icons/outline/brand-android.svg";
+import Clock from "@tabler/icons/outline/clock.svg";
+import * as m from "@/paraglide/messages.js";
+import Layout from "@layouts/Layout.astro";
+import LogoMark from "@components/LogoMark.astro";
+
+const platforms = [
+  {
+    icon: DeviceTablet,
+    title: m.setup_ipad_title(),
+    steps: [m.setup_ipad_1(), m.setup_ipad_2(), m.setup_ipad_3(), m.setup_ipad_4(), m.setup_ipad_5()],
+  },
+  {
+    icon: BrandAndroid,
+    title: m.setup_android_title(),
+    steps: [m.setup_android_1(), m.setup_android_2(), m.setup_android_3(), m.setup_android_4(), m.setup_android_5()],
+  },
+];
+---
+
+<Layout title={`${m.setup_title()} · ${m.site_name()}`} description={m.setup_description()}>
+  <section class="mx-auto max-w-5xl px-4 pt-8 pb-24 sm:px-6">
+    <div id="install" class="flex flex-col items-center rounded-3xl border border-border bg-card px-6 py-10 text-center">
+      <LogoMark class="size-16 text-primary" />
+      <h1 class="mt-4 font-heading text-4xl font-semibold">{m.setup_title()}</h1>
+      <p class="mt-2 max-w-xl text-lg text-muted-foreground">{m.setup_description()}</p>
+
+      <button
+        type="button"
+        data-install-button
+        style="display: none"
+        class="mt-6 inline-flex h-14 items-center gap-2 rounded-2xl bg-primary px-6 text-lg font-semibold text-primary-foreground hover:bg-primary-accent"
+      >
+        <Download class="size-6" aria-hidden="true" />{m.setup_install()}
+      </button>
+      <p data-install-ios style="display: none" class="mt-4 max-w-md rounded-2xl bg-muted px-5 py-3 text-lg">
+        {m.setup_ios_hint()}
+      </p>
+      <p data-install-done style="display: none" class="mt-6 inline-flex items-center gap-2 text-lg font-semibold text-success-foreground">
+        <CircleCheck class="size-6" aria-hidden="true" />{m.setup_installed()}
+      </p>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      {platforms.map(({ icon: Icon, title, steps }) => (
+        <section class="rounded-3xl border border-border bg-card p-6">
+          <h2 class="flex items-center gap-3 font-heading text-2xl font-semibold">
+            <Icon class="size-7 text-primary" aria-hidden="true" />{title}
+          </h2>
+          <ol class="mt-5 flex flex-col gap-4">
+            {steps.map((step, i) => (
+              <li class="flex gap-3 text-lg leading-snug">
+                <span class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-base font-bold text-primary-foreground">{i + 1}</span>
+                <span class="pt-0.5">{step}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
+    </div>
+
+    <p class="mt-8 flex items-start gap-3 rounded-2xl bg-muted p-5 text-lg">
+      <Clock class="mt-0.5 size-6 shrink-0 text-primary" aria-hidden="true" />{m.setup_idle_hint()}
+    </p>
+  </section>
+</Layout>

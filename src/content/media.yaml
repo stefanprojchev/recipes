@@ -1,0 +1,5 @@
+# Photos and videos in the private R2 bucket (served at /media/… behind Access).
+# Written by `node scripts/media.mjs add <file> --id <id>` — don't edit by hand,
+# except to fix `alt` text. Reference entries from recipes by id:
+#   cover: zelnik-hero        gallery: [zelnik-cut]       steps[].media: zelnik-fold
+{}

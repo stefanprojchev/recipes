@@ -18,3 +18,6 @@ src/paraglide/
 # Claude Code personal overrides
 .claude/settings.local.json
 CLAUDE.local.md
+
+# Local mirror of R2 media (scripts/media.mjs) — served by `astro dev`
+.media/

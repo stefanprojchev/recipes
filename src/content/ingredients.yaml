@@ -1,0 +1,223 @@
+# Shared ingredient dictionary — recipes reference these ids.
+#
+# name:   per locale; `mk` is required. Use { one, other } for whole items
+#         counted with unit "pc" ("1 јајце" / "2 јајца"). For Macedonian
+#         count words, fold them into the name: "главица кромид".
+# aisle:  produce | meat | dairy | bakery | dry | spices | canned | frozen | other
+# staple: true = always in the pantry, left off shopping lists.
+
+# --- Produce ---------------------------------------------------------------
+onion:
+  name:
+    mk: { one: главица кромид, other: главици кромид }
+    en: { one: onion, other: onions }
+  aisle: produce
+garlic:
+  name: { mk: лук, en: garlic }
+  aisle: produce
+potato:
+  name:
+    mk: { one: компир, other: компири }
+    en: { one: potato, other: potatoes }
+  aisle: produce
+carrot:
+  name:
+    mk: { one: морков, other: моркови }
+    en: { one: carrot, other: carrots }
+  aisle: produce
+tomato:
+  name:
+    mk: { one: домат, other: домати }
+    en: { one: tomato, other: tomatoes }
+  aisle: produce
+  months: [6, 7, 8, 9, 10]
+cucumber:
+  name:
+    mk: { one: краставица, other: краставици }
+    en: { one: cucumber, other: cucumbers }
+  aisle: produce
+  months: [5, 6, 7, 8, 9]
+green-pepper:
+  name:
+    mk: { one: зелена пиперка, other: зелени пиперки }
+    en: { one: green pepper, other: green peppers }
+  aisle: produce
+  months: [6, 7, 8, 9, 10]
+red-pepper:
+  name:
+    mk: { one: црвена пиперка, other: црвени пиперки }
+    en: { one: red pepper, other: red peppers }
+  aisle: produce
+  months: [7, 8, 9, 10]
+bell-pepper:
+  name:
+    mk: { one: бабура, other: бабури }
+    en: { one: bell pepper, other: bell peppers }
+  aisle: produce
+  months: [6, 7, 8, 9, 10]
+eggplant:
+  name:
+    mk: { one: модар патлиџан, other: модри патлиџани }
+    en: { one: eggplant, other: eggplants }
+  aisle: produce
+  months: [7, 8, 9, 10]
+spinach:
+  name: { mk: спанаќ, en: spinach }
+  aisle: produce
+  months: [3, 4, 5, 9, 10, 11]
+leek:
+  name:
+    mk: { one: стебло праз, other: стебла праз }
+    en: { one: leek, other: leeks }
+  aisle: produce
+  months: [10, 11, 12, 1, 2, 3]
+celery-root:
+  name: { mk: целер (корен), en: celery root }
+  aisle: produce
+  months: [9, 10, 11, 12]
+parsley:
+  name: { mk: магдонос, en: parsley }
+  aisle: produce
+lemon:
+  name:
+    mk: { one: лимон, other: лимони }
+    en: { one: lemon, other: lemons }
+  aisle: produce
+banana:
+  name:
+    mk: { one: банана, other: банани }
+    en: { one: banana, other: bananas }
+  aisle: produce
+apple:
+  name:
+    mk: { one: јаболко, other: јаболка }
+    en: { one: apple, other: apples }
+  aisle: produce
+  months: [8, 9, 10, 11]
+
+# --- Meat ------------------------------------------------------------------
+minced-meat:
+  name: { mk: мелено месо, en: minced meat }
+  aisle: meat
+chicken-legs:
+  name: { mk: пилешки бутчиња, en: chicken legs }
+  aisle: meat
+smoked-sausage:
+  name: { mk: чадена колбасица, en: smoked sausage }
+  aisle: meat
+
+# --- Dairy & eggs ----------------------------------------------------------
+egg:
+  name:
+    mk: { one: јајце, other: јајца }
+    en: { one: egg, other: eggs }
+  aisle: dairy
+  store: market
+milk:
+  name: { mk: млеко, en: milk }
+  aisle: dairy
+yogurt:
+  name: { mk: кисело млеко, en: plain yogurt }
+  aisle: dairy
+feta-cheese:
+  name: { mk: бело сирење, en: white cheese (feta) }
+  aisle: dairy
+  store: market
+butter:
+  name: { mk: путер, en: butter }
+  aisle: dairy
+
+# --- Bakery ----------------------------------------------------------------
+stale-bread:
+  name: { mk: бајат леб, en: day-old bread }
+  aisle: bakery
+filo-pastry:
+  name: { mk: кори за пита, en: filo pastry sheets }
+  aisle: bakery
+
+# --- Dry goods -------------------------------------------------------------
+white-beans:
+  name: { mk: бел грав, en: white beans }
+  aisle: dry
+rice:
+  name: { mk: ориз, en: rice }
+  aisle: dry
+vermicelli:
+  name: { mk: фиде, en: vermicelli }
+  aisle: dry
+oats:
+  name: { mk: овесни снегулки, en: rolled oats }
+  aisle: dry
+flour:
+  name: { mk: брашно, en: flour }
+  aisle: dry
+sugar:
+  name: { mk: шеќер, en: sugar }
+  aisle: dry
+vanilla-sugar:
+  name: { mk: ванилин шеќер, en: vanilla sugar }
+  aisle: dry
+dry-yeast:
+  name: { mk: сув квасец, en: dry yeast }
+  aisle: dry
+baking-soda:
+  name: { mk: сода бикарбона, en: baking soda }
+  aisle: dry
+honey:
+  name: { mk: мед, en: honey }
+  aisle: dry
+  store: market
+walnuts:
+  name: { mk: ореви, en: walnuts }
+  aisle: dry
+  store: market
+dried-red-pepper:
+  name:
+    mk: { one: сушена црвена пиперка, other: сушени црвени пиперки }
+    en: { one: dried red pepper, other: dried red peppers }
+  aisle: dry
+  store: market
+sunflower-oil:
+  name: { mk: масло, en: sunflower oil }
+  aisle: dry
+  staple: true
+vinegar:
+  name: { mk: оцет, en: vinegar }
+  aisle: dry
+  staple: true
+
+# --- Spices ----------------------------------------------------------------
+salt:
+  name: { mk: сол, en: salt }
+  aisle: spices
+  staple: true
+black-pepper:
+  name: { mk: црн пипер, en: black pepper }
+  aisle: spices
+  staple: true
+ground-paprika:
+  name: { mk: црвен пипер (алев), en: ground paprika }
+  aisle: spices
+dried-mint:
+  name: { mk: сушена нане, en: dried mint }
+  aisle: spices
+bay-leaf:
+  name:
+    mk: { one: ловоров лист, other: ловорови листа }
+    en: { one: bay leaf, other: bay leaves }
+  aisle: spices
+cinnamon:
+  name: { mk: цимет, en: cinnamon }
+  aisle: spices
+
+# --- Canned & jarred -------------------------------------------------------
+sauerkraut:
+  name: { mk: кисела зелка, en: sauerkraut }
+  aisle: canned
+  months: [11, 12, 1, 2, 3]
+
+# --- Other -----------------------------------------------------------------
+water:
+  name: { mk: вода, en: water }
+  aisle: other
+  staple: true

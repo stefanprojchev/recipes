@@ -1,0 +1,61 @@
+title:
+  mk: Мекици
+  en: Mekici (fried dough)
+summary:
+  mk: Меки пржени тестенца со кисело млеко — со сирење, мармалад или шеќер в прав.
+  en: Soft fried dough made with yogurt — serve with cheese, jam or powdered sugar.
+category: breakfast
+meals: [breakfast, snack]
+servings: 4
+time: { prep: 20, cook: 20, rest: 60 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+
+ingredients:
+  - title: { mk: Тесто, en: Dough }
+    items:
+      - { ingredient: flour, qty: 500, unit: g }
+      - { ingredient: yogurt, qty: 250, unit: ml }
+      - { ingredient: egg, qty: 1, unit: pc }
+      - { ingredient: dry-yeast, qty: 1, unit: pack, note: { mk: 7 г, en: 7 g } }
+      - { ingredient: milk, qty: 100, unit: ml, note: { mk: млако, en: lukewarm } }
+      - { ingredient: sugar, qty: 1, unit: tsp }
+      - { ingredient: salt, qty: 1, unit: tsp }
+  - title: { mk: За пржење, en: For frying }
+    items:
+      - { ingredient: sunflower-oil, qty: 500, unit: ml }
+
+steps:
+  - text:
+      mk: Во млакото млеко растопи го шеќерот и квасецот и остави да се активира.
+      en: Dissolve the sugar and yeast in the lukewarm milk and leave it to activate.
+    timer: 10
+  - text:
+      mk: Во сад измешај брашно и сол, додај кисело млеко, јајце и квасецот. Замеси меко, лепливо тесто.
+      en: Mix the flour and salt, add the yogurt, egg and yeast. Knead into a soft, slightly sticky dough.
+  - text:
+      mk: Покриј и остави тестото да нарасне на топло место.
+      en: Cover and let the dough rise somewhere warm.
+    timer: 60
+  - text:
+      mk: Загреј го маслото во длабока тава. Со подмачкани раце кини парчиња тесто, развлечи ги и пржи ги од двете страни додека не порумената.
+      en: Heat the oil in a deep pan. With oiled hands, tear off pieces of dough, stretch them and fry on both sides until golden.
+    timer: 3
+  - text:
+      mk: Извади ги на хартија да се оцеди маслото. Служи топли.
+      en: Drain on kitchen paper. Serve warm.
+
+variants:
+  - id: no-yeast
+    name: { mk: Без квасец, en: Without yeast }
+    note:
+      mk: Наместо квасец додај сода бикарбона во киселото млеко и прескокни го чекањето — тестото се пржи веднаш.
+      en: Stir baking soda into the yogurt instead of yeast and skip the rising — fry straight away.
+    add:
+      - { ingredient: baking-soda, qty: 1, unit: tsp }
+    remove: [dry-yeast]
+
+tips:
+  mk: Маслото е доволно топло кога парче тесто веднаш испливува и зацврчи.
+  en: The oil is ready when a scrap of dough floats up and sizzles straight away.

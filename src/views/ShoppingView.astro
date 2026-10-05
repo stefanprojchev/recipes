@@ -1,0 +1,83 @@
+---
+import ArrowLeft from "@tabler/icons/outline/arrow-left.svg";
+import Share from "@tabler/icons/outline/share.svg";
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+import Layout from "@layouts/Layout.astro";
+import MergedIngredientList from "@components/plan/MergedIngredientList.astro";
+import { asLocale } from "@/lib/i18n-content";
+import { cookingOrder, getPlanDays, mergedIngredients } from "@/lib/mealplan";
+
+interface Props {
+  week: string;
+}
+
+const { week } = Astro.props;
+const locale = asLocale(Astro.currentLocale);
+const days = (await getPlanDays()).filter((day) => day.week === week);
+if (days.length === 0) throw new Error(`No plan days for ${week}`);
+
+// Everything the chef cooks during this week's mornings — including
+// cook-ahead tasks — bought in one weekly shop.
+const byAisle = await mergedIngredients(days.flatMap(cookingOrder));
+const hasStaples = [...byAisle.values()].some((lines) => lines.some((line) => line.ingredient.data.staple));
+
+const start = days[0].date;
+const end = days.at(-1)?.date ?? start;
+const range = new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", timeZone: "UTC" }).formatRange(
+  new Date(`${start}T00:00:00Z`),
+  new Date(`${end}T00:00:00Z`),
+);
+---
+
+<Layout title={`${m.shopping_title()} · ${m.site_name()}`} description={m.shopping_for({ range })}>
+  <section
+    id="shopping"
+    class="mx-auto max-w-3xl px-4 pt-6 pb-24 sm:px-6 lg:max-w-6xl"
+    data-checklist={`shopping:${week}`}
+    data-share-title={`${m.shopping_title()} — ${range}`}
+  >
+    <a href={localizeHref("/plan")} data-back class="inline-flex h-11 items-center gap-2 rounded-full pr-3 text-base font-semibold text-muted-foreground hover:text-foreground">
+      <ArrowLeft class="size-5" aria-hidden="true" />{m.shopping_back()}
+    </a>
+    <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <h1 class="font-heading text-4xl font-semibold">{m.shopping_title()}</h1>
+        <p class="mt-1 text-lg text-muted-foreground">{m.shopping_for({ range })}</p>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button type="button" data-checklist-reset class="h-12 rounded-2xl bg-secondary px-5 text-base font-semibold text-secondary-foreground hover:bg-accent">
+          {m.shopping_reset()}
+        </button>
+        <button type="button" data-share class="inline-flex h-12 items-center gap-2 rounded-2xl bg-primary px-5 text-base font-semibold text-primary-foreground hover:bg-primary-accent">
+          <Share class="size-5" aria-hidden="true" />{m.shopping_share()}
+        </button>
+      </div>
+    </div>
+
+    <p data-share-status role="status" style="display: none" class="mt-4 rounded-2xl bg-success px-4 py-3 text-base font-semibold text-success-foreground">{m.shopping_copied()}</p>
+    <div data-share-manual style="display: none" class="mt-4">
+      <p id="share-manual-label" class="mb-2 text-base text-muted-foreground">{m.shopping_copy_manual()}</p>
+      <textarea readonly aria-labelledby="share-manual-label" rows="10" class="w-full rounded-2xl border-input bg-card text-base"></textarea>
+    </div>
+    <p data-have-hint style="display: none" class="mt-4 text-sm text-muted-foreground">{m.shopping_have_hint()}</p>
+
+    <div class="mt-8">
+      <MergedIngredientList byAisle={byAisle} locale={locale} filter="groceries" idPrefix="shop" roundUpWhole groupBy="store" headingLevel={2} columns />
+    </div>
+
+    {hasStaples && (
+      <details class="mt-10 rounded-2xl border border-border bg-card p-4">
+        <summary class="flex min-h-11 cursor-pointer items-center text-xl font-semibold">{m.shopping_staples()}</summary>
+        <div class="mt-4">
+          <MergedIngredientList byAisle={byAisle} locale={locale} filter="staples" idPrefix="staple" columns />
+        </div>
+      </details>
+    )}
+  </section>
+</Layout>
+
+<script>
+  import "@/scripts/checklist";
+  import "@/scripts/shopping";
+</script>

@@ -1,0 +1,37 @@
+---
+import DishList from "@components/plan/DishList.astro";
+import { mealLabel } from "@/lib/labels";
+import type { Locale } from "@/lib/locale";
+import type { PlanDay } from "@/lib/mealplan";
+import { MEALS } from "@/lib/recipe-taxonomy";
+
+interface Props {
+  day: PlanDay;
+  locale: Locale;
+  size?: "md" | "lg";
+  class?: string;
+}
+
+const { day, locale, size = "md", class: className } = Astro.props;
+// Dinner is optional — only shown when the plan has one.
+const meals = MEALS.filter((meal) => meal !== "dinner" || day.meals.dinner.length > 0);
+---
+
+<dl
+  class:list={[
+    "grid gap-4",
+    meals.length === 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-3",
+    className,
+  ]}
+>
+  {
+    meals.map((meal) => (
+      <div class="min-w-0">
+        <dt class="mb-1 text-sm font-bold tracking-wide text-primary uppercase">{mealLabel(meal, locale)}</dt>
+        <dd>
+          {day.meals[meal].length > 0 ? <DishList dishes={day.meals[meal]} locale={locale} size={size} /> : <span class="text-muted-foreground">—</span>}
+        </dd>
+      </div>
+    ))
+  }
+</dl>

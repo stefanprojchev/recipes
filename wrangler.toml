@@ -13,6 +13,12 @@ not_found_handling = "404-page"
 [[send_email]]
 name = "EMAIL"
 
+# Private R2 bucket with recipe photos and videos, served at /media/* by the
+# Worker (behind Cloudflare Access). Upload with `node scripts/media.mjs add`.
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "tavce-media"
+
 # SINGLE SOURCE OF TRUTH for runtime Worker vars. Dashboard edits to these
 # are overwritten by every deploy (incl. Workers Builds) — change them here.
 [vars]

@@ -1,31 +1,47 @@
 ---
+import Home from "@tabler/icons/outline/home.svg";
+import Book from "@tabler/icons/outline/book-2.svg";
+import CalendarWeek from "@tabler/icons/outline/calendar-week.svg";
+import Basket from "@tabler/icons/outline/basket.svg";
 import * as m from "@/paraglide/messages.js";
 import { localizeHref } from "@/paraglide/runtime.js";
-import LanguagePicker from "@components/LanguagePicker.astro";
+import LogoMark from "@components/LogoMark.astro";
+import QuickTimers from "@components/QuickTimers.astro";
+import { stripLocalePrefix } from "@/lib/locale";
 
 const navItems = [
-  { label: m.nav_home(), href: localizeHref("/") },
-  { label: m.nav_blog(), href: localizeHref("/blog") },
-  { label: m.nav_contact(), href: localizeHref("/contact") },
+  { label: m.nav_home(), icon: Home, href: localizeHref("/"), match: (path: string) => path === "/" },
+  { label: m.nav_plan(), icon: CalendarWeek, href: localizeHref("/plan"), match: (path: string) => path.startsWith("/plan") },
+  { label: m.nav_recipes(), icon: Book, href: localizeHref("/recipes"), match: (path: string) => path.startsWith("/recipes") },
+  { label: m.nav_pantry(), icon: Basket, href: localizeHref("/pantry"), match: (path: string) => path.startsWith("/pantry") },
 ];
+
+const currentPath = stripLocalePrefix(Astro.url.pathname);
 ---
 
-<header class="border-b border-border">
-  <div class="mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
-    <a href={localizeHref("/")} class="text-lg font-semibold font-heading">
-      {m.site_name()}
+<header class="sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur print:hidden">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-2 px-3 py-3 sm:px-6">
+    <a href={localizeHref("/")} aria-label={m.nav_home()} class="flex shrink-0 items-center gap-3 rounded-full text-primary">
+      <LogoMark class="size-10" />
+      <span class="hidden flex-col leading-tight lg:flex">
+        <span class="font-heading text-2xl font-semibold text-foreground">{m.site_name()}</span>
+        <span class="text-xs text-muted-foreground">{m.site_tagline()}</span>
+      </span>
     </a>
 
-    <nav class="flex items-center gap-6">
-      {navItems.map(({ label, href }) => (
+    <nav aria-label={m.nav_main()} class="flex min-w-0 items-center gap-0.5 sm:gap-1">
+      {navItems.map(({ label, icon: Icon, href, match }) => (
         <a
           href={href}
-          class="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          aria-current={match(currentPath) ? "page" : undefined}
+          aria-label={label}
+          class="inline-flex h-11 items-center gap-2 rounded-full px-2.5 text-base font-semibold whitespace-nowrap sm:px-3 text-muted-foreground transition-colors hover:text-foreground aria-[current=page]:bg-secondary aria-[current=page]:text-foreground lg:px-4"
         >
-          {label}
+          <Icon class="size-5 shrink-0" aria-hidden="true" />
+          <span class="hidden sm:inline">{label}</span>
         </a>
       ))}
-      <LanguagePicker />
+      <QuickTimers />
     </nav>
   </div>
 </header>

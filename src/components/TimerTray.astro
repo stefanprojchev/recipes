@@ -1,0 +1,30 @@
+---
+/**
+ * Floating kitchen-timer tray, rendered by src/scripts/timers.ts. It is
+ * persisted across ClientRouter navigations (per locale, so labels switch
+ * with the language) — timers keep running while you browse recipes.
+ */
+import * as m from "@/paraglide/messages.js";
+import { DEFAULT_LOCALE } from "@/lib/locale";
+
+const locale = Astro.currentLocale ?? DEFAULT_LOCALE;
+---
+
+<div
+  id="timer-tray"
+  transition:persist={`timer-tray-${locale}`}
+  data-label-pause={m.timer_pause()}
+  data-label-resume={m.timer_resume()}
+  data-label-cancel={m.timer_cancel()}
+  data-label-add-minute={m.timer_add_minute()}
+  data-label-done={m.timer_done()}
+  data-label-dismiss={m.timer_dismiss()}
+  class="pointer-events-none print:hidden fixed right-0 bottom-0 z-60 in-data-cooking:bottom-24 flex w-full max-w-sm flex-col gap-2 p-4 pb-[max(1rem,env(safe-area-inset-bottom))]"
+>
+  <div data-timer-list class="flex flex-col gap-2"></div>
+  <p data-timer-announce role="alert" class="sr-only"></p>
+</div>
+
+<script>
+  import "@/scripts/timers";
+</script>

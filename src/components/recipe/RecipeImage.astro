@@ -1,0 +1,47 @@
+---
+import MediaItem from "@components/media/MediaItem.astro";
+import CategoryIcon from "@components/recipe/CategoryIcon.astro";
+import { CATEGORY_HUE } from "@/lib/category-hue";
+import { t } from "@/lib/i18n-content";
+import type { Locale } from "@/lib/locale";
+import type { Recipe } from "@/lib/recipes";
+
+interface Props {
+  recipe: Recipe;
+  locale: Locale;
+  /** "card" = grid item, "hero" = half-width on the recipe page. */
+  size: "card" | "hero";
+  class?: string;
+}
+
+const { recipe, locale, size, class: className } = Astro.props;
+const { cover, title, category } = recipe.data;
+---
+
+{
+  cover ? (
+    <MediaItem
+      id={cover.id}
+      locale={locale}
+      alt={size === "card" ? "" : t(title, locale)}
+      layout={size === "card" ? "grid" : "half"}
+      eager={size === "hero"}
+      class:list={["aspect-4/3 w-full", className]}
+    />
+  ) : (
+    <div
+      class:list={[
+        "flex aspect-4/3 w-full items-center justify-center",
+        "bg-[oklch(0.95_0.03_var(--hue))] text-[oklch(0.52_0.1_var(--hue))]",
+        "dark:bg-[oklch(0.27_0.025_var(--hue))] dark:text-[oklch(0.75_0.08_var(--hue))]",
+        className,
+      ]}
+      style={`--hue: ${CATEGORY_HUE[category]}`}
+    >
+      <CategoryIcon
+        category={category}
+        class={size === "card" ? "size-14 stroke-[1.25]" : "size-28 stroke-1"}
+      />
+    </div>
+  )
+}

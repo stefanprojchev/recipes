@@ -11,3 +11,33 @@
  * ignored. If a JS toggle must win unconditionally over project CSS,
  * set inline `style.display` instead of toggling `.hidden`.
  */
+
+@layer components {
+  /* Printing: recipes on A4 portrait; the weekly menu (/plan/print/<week>) opts into
+     the named landscape page via `[page:menu]` — one sheet for the fridge. */
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+  @page menu {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+}
+
+@layer components {
+  /*
+   * Reduced motion: users who ask for it get instant state changes.
+   * !important inside a layer still beats every (non-important) utility.
+   */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

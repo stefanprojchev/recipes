@@ -1,0 +1,12 @@
+---
+import PrintView from "@/views/PrintView.astro";
+import { weekStaticPaths } from "@/lib/mealplan";
+
+export const getStaticPaths = weekStaticPaths;
+
+interface Props {
+  week: string;
+}
+---
+
+<PrintView week={Astro.props.week} />

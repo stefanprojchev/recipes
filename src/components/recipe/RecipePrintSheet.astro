@@ -1,0 +1,162 @@
+---
+/**
+ * Print-only recipe sheet (A4 portrait). Hidden on screen; the interactive page
+ * is hidden in print. It lives inside #recipe, so the servings scaler and the
+ * variant switcher (src/scripts/recipe.ts) update it too — what you print is
+ * what you set on screen. Colors print as designed (print-color-adjust: exact).
+ */
+import Alarm from "@tabler/icons/outline/alarm.svg";
+import CalendarTime from "@tabler/icons/outline/calendar-time.svg";
+import * as m from "@/paraglide/messages.js";
+import LogoMark from "@components/LogoMark.astro";
+import MediaItem from "@components/media/MediaItem.astro";
+import CategoryIcon from "@components/recipe/CategoryIcon.astro";
+import IngredientList from "@components/recipe/IngredientList.astro";
+import VariantNotes from "@components/recipe/VariantNotes.astro";
+import { CATEGORY_HUE } from "@/lib/category-hue";
+import { t } from "@/lib/i18n-content";
+import { categoryLabel, dietLabel, difficultyLabel, formatDuration, tagLabel } from "@/lib/labels";
+import type { Locale } from "@/lib/locale";
+import { totalMinutes, type Ingredient, type Recipe } from "@/lib/recipes";
+
+interface Props {
+  recipe: Recipe;
+  ingredients: Map<string, Ingredient>;
+  locale: Locale;
+}
+
+const { recipe, ingredients, locale } = Astro.props;
+const { data } = recipe;
+const title = t(data.title, locale);
+
+const times = [
+  { label: m.recipe_time_total(), minutes: totalMinutes(recipe) },
+  { label: m.recipe_time_prep(), minutes: data.time.prep },
+  { label: m.recipe_time_cook(), minutes: data.time.cook },
+  { label: m.recipe_time_rest(), minutes: data.time.rest },
+].filter((entry, i) => i === 0 || entry.minutes > 0);
+
+const notes = [
+  { label: m.recipe_tips(), text: data.tips, tone: "tips" },
+  { label: m.recipe_storage(), text: data.storage, tone: "storage" },
+  { label: m.recipe_story(), text: data.story, tone: "story" },
+].filter((entry) => entry.text !== undefined);
+
+const noteTone: Record<string, string> = {
+  tips: "border-[oklch(0.75_0.1_140)] bg-[oklch(0.96_0.035_140)]",
+  storage: "border-[oklch(0.75_0.08_230)] bg-[oklch(0.96_0.025_230)]",
+  story: "border-[oklch(0.78_0.08_60)] bg-[oklch(0.97_0.03_75)] italic",
+};
+---
+
+<section
+  data-print-sheet
+  class="hidden text-[11pt] leading-snug text-foreground [print-color-adjust:exact] [-webkit-print-color-adjust:exact] print:block"
+  style={`--hue: ${CATEGORY_HUE[data.category]}`}
+>
+  <!-- Colorful header band in the category's hue -->
+  <header class="flex items-stretch gap-5 overflow-hidden rounded-[14pt] bg-[oklch(0.93_0.05_var(--hue))] p-[14pt] break-inside-avoid">
+    <div class="min-w-0 flex-1">
+      <div class="flex items-center justify-between gap-3">
+        <p class="flex items-center gap-2 text-[9pt] font-bold tracking-wider text-[oklch(0.45_0.12_var(--hue))] uppercase">
+          <CategoryIcon category={data.category} class="size-[11pt]" />{categoryLabel(data.category, locale)}
+        </p>
+        <p class="flex items-center gap-[4pt] text-[8.5pt] text-[oklch(0.45_0.05_45)]">
+          <LogoMark class="size-[11pt] text-primary" />{m.site_name()} · {m.site_tagline()}
+        </p>
+      </div>
+      <h1 class="mt-[4pt] font-heading text-[26pt] leading-tight font-semibold">{title}</h1>
+      <p class="mt-[4pt] text-[11pt] text-[oklch(0.35_0.03_45)]">{t(data.summary, locale)}</p>
+      {data.from && <p class="mt-[3pt] text-[9.5pt] text-[oklch(0.4_0.03_45)] italic">{m.recipe_from({ name: data.from })}</p>}
+      <p data-current-variant-wrap style="display: none" class="mt-[6pt] inline-flex rounded-full bg-primary px-[8pt] py-[2pt] text-[10pt] font-semibold text-primary-foreground">
+        {m.recipe_variants()}:&nbsp;<span data-current-variant></span>
+      </p>
+    </div>
+    {
+      data.cover ? (
+        <MediaItem id={data.cover.id} locale={locale} alt={title} layout="grid" class="h-[110pt] w-[150pt] shrink-0 rounded-[10pt]" />
+      ) : (
+        <div class="flex w-[90pt] shrink-0 items-center justify-center rounded-[10pt] bg-[oklch(0.97_0.025_var(--hue))] text-[oklch(0.5_0.12_var(--hue))]">
+          <CategoryIcon category={data.category} class="size-[48pt] stroke-1" />
+        </div>
+      )
+    }
+  </header>
+
+  <!-- Facts row -->
+  <dl class="mt-[10pt] flex flex-wrap gap-[6pt] break-inside-avoid">
+    {times.map((entry) => (
+      <div class="rounded-[8pt] border border-[oklch(0.88_0.03_60)] bg-[oklch(0.975_0.012_75)] px-[8pt] py-[4pt]">
+        <dt class="text-[8pt] font-semibold tracking-wide text-muted-foreground uppercase">{entry.label}</dt>
+        <dd class="text-[11pt] font-bold">{formatDuration(entry.minutes, locale)}</dd>
+      </div>
+    ))}
+    <div class="rounded-[8pt] border border-primary/40 bg-primary/10 px-[8pt] py-[4pt]">
+      <dt class="text-[8pt] font-semibold tracking-wide text-primary-accent uppercase">{m.recipe_servings()}</dt>
+      <dd class="text-[11pt] font-bold"><span data-servings-value>{data.servings}</span></dd>
+    </div>
+    <div class="rounded-[8pt] border border-[oklch(0.88_0.03_60)] bg-[oklch(0.975_0.012_75)] px-[8pt] py-[4pt]">
+      <dt class="text-[8pt] font-semibold tracking-wide text-muted-foreground uppercase">{m.recipe_difficulty()}</dt>
+      <dd class="text-[11pt] font-bold">{difficultyLabel(data.difficulty, locale)}</dd>
+    </div>
+    {[...data.diet.map((d) => dietLabel(d, locale)), ...data.tags.map((tag) => tagLabel(tag, locale))].map((label) => (
+      <span class="self-center rounded-full bg-success px-[8pt] py-[3pt] text-[9pt] font-semibold text-success-foreground">{label}</span>
+    ))}
+  </dl>
+
+  {
+    data.prepAhead && (
+      <p class="mt-[10pt] flex items-start gap-[6pt] rounded-[8pt] border border-[oklch(0.8_0.12_85)] bg-[oklch(0.96_0.06_95)] px-[10pt] py-[6pt] break-inside-avoid">
+        <CalendarTime class="mt-[1pt] size-[12pt] shrink-0" aria-hidden="true" />
+        <span><strong>{m.recipe_prep_ahead()}:</strong>{" "}{t(data.prepAhead, locale)}</span>
+      </p>
+    )
+  }
+
+  <div class="mt-[12pt] grid grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-[16pt]">
+    <!-- Ingredients: tinted card with tick boxes -->
+    <section class="self-start rounded-[12pt] bg-[oklch(0.965_0.02_70)] p-[12pt] break-inside-avoid">
+      <h2 class="font-heading text-[15pt] font-semibold text-primary-accent">{m.recipe_ingredients()}</h2>
+      <div class="mt-[6pt] [&_[data-removed]]:hidden [&_label]:gap-[6pt] [&_label]:px-0 [&_label]:py-[2pt] [&_li]:text-[10.5pt] [&_input]:mt-[2pt] [&_input]:size-[10pt] [&_input]:rounded-[2pt] [&_.text-lg]:text-[10.5pt]">
+        <IngredientList recipe={recipe} ingredients={ingredients} locale={locale} idPrefix="print" />
+      </div>
+    </section>
+
+    <!-- Method -->
+    <section>
+      <h2 class="font-heading text-[15pt] font-semibold text-primary-accent">{m.recipe_steps()}</h2>
+      <VariantNotes recipe={recipe} locale={locale} class="mt-[6pt] p-[8pt] text-[10pt]" />
+      <ol class="mt-[6pt] flex flex-col gap-[8pt]">
+        {data.steps.map((step, i) => (
+          <li class="flex gap-[8pt] break-inside-avoid">
+            <span class="flex size-[18pt] shrink-0 items-center justify-center rounded-full bg-primary text-[10pt] font-bold text-primary-foreground">
+              {i + 1}
+            </span>
+            <p class="flex-1 pt-[1pt]">
+              {t(step.text, locale)}
+              {step.timer && (
+                <span class="ml-[4pt] inline-flex items-center gap-[2pt] rounded-full bg-primary/10 px-[5pt] align-[1pt] text-[9pt] font-semibold whitespace-nowrap text-primary-accent">
+                  <Alarm class="size-[9pt]" aria-hidden="true" />{formatDuration(step.timer, locale)}
+                </span>
+              )}
+            </p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  </div>
+
+  {
+    notes.length > 0 && (
+      <div class="mt-[12pt] grid grid-cols-2 gap-[8pt]">
+        {notes.map((note) => (
+          <section class:list={["rounded-[10pt] border-l-[4pt] px-[10pt] py-[6pt] break-inside-avoid", noteTone[note.tone]]}>
+            <h3 class="text-[9pt] font-bold tracking-wide uppercase not-italic">{note.label}</h3>
+            <p class="mt-[2pt] text-[10pt] whitespace-pre-line">{note.text && t(note.text, locale)}</p>
+          </section>
+        ))}
+      </div>
+    )
+  }
+
+</section>

@@ -1,0 +1,44 @@
+title:
+  mk: Пинџур
+  en: Pindžur (roasted pepper spread)
+summary:
+  mk: Намаз од печени пиперки, патлиџан и домати — со леб и сирење.
+  en: A spread of roasted peppers, eggplant and tomatoes — with bread and cheese.
+category: spread
+meals: [breakfast, snack]
+servings: 6
+time: { prep: 25, cook: 30, rest: 10 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+season: [summer, autumn]
+
+ingredients:
+  - items:
+      - { ingredient: red-pepper, qty: 1, unit: kg }
+      - { ingredient: eggplant, qty: 1, unit: pc }
+      - { ingredient: tomato, qty: 4, unit: pc }
+      - { ingredient: garlic, qty: 3, qtyMax: 4, unit: clove }
+      - { ingredient: sunflower-oil, qty: 100, unit: ml }
+      - { ingredient: vinegar, qty: 1, unit: tbsp }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+
+steps:
+  - text:
+      mk: Печи ги пиперките, патлиџанот и доматите во рерна на 220°C, вртејќи ги повремено, додека кората не поцрни.
+      en: Roast the peppers, eggplant and tomatoes at 220°C, turning occasionally, until the skins blacken.
+    timer: 30
+  - text:
+      mk: Стави ги во сад, покриј и остави да се запарат за полесно лупење.
+      en: Put them in a bowl, cover and let them steam so they peel easily.
+    timer: 10
+  - text:
+      mk: Излупи ги, извади ги семките од пиперките и ситно исецкај сè (или измели грубо).
+      en: Peel, seed the peppers and chop everything finely (or pulse coarsely).
+  - text:
+      mk: Додај згмечен лук, масло, оцет, сол и сецкан магдонос и добро измешај.
+      en: Add crushed garlic, oil, vinegar, salt and chopped parsley and mix well.
+
+storage:
+  mk: Во затворена тегла во фрижидер до 5 дена.
+  en: Keeps 5 days in a closed jar in the fridge.

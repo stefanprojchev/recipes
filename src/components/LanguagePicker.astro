@@ -9,9 +9,11 @@
  */
 
 import { getRelativeLocaleUrl } from "astro:i18n";
+import * as m from "@/paraglide/messages.js";
 import { DEFAULT_LOCALE, stripLocalePrefix } from "@/lib/locale";
 
 const labels: Record<string, string> = {
+  mk: "МК",
   en: "EN",
 };
 
@@ -20,20 +22,22 @@ const basePath = stripLocalePrefix(Astro.url.pathname);
 ---
 
 {Object.keys(labels).length > 1 && (
-  <div class="flex items-center gap-2 text-sm">
+  <nav aria-label={m.language_label()} class="flex items-center gap-1">
     {Object.entries(labels).map(([locale, label]) => (
       <a
         href={getRelativeLocaleUrl(locale, basePath)}
+        hreflang={locale}
+        lang={locale}
         class:list={[
-          "transition-colors",
+          "inline-flex h-11 min-w-11 items-center justify-center rounded-full px-3 text-sm font-semibold transition-colors",
           locale === currentLocale
-            ? "text-foreground font-medium"
-            : "text-muted-foreground hover:text-foreground",
+            ? "bg-secondary text-foreground"
+            : "text-muted-foreground hover:bg-muted hover:text-foreground",
         ]}
         aria-current={locale === currentLocale ? "page" : undefined}
       >
         {label}
       </a>
     ))}
-  </div>
+  </nav>
 )}

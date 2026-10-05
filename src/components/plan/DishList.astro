@@ -1,0 +1,66 @@
+---
+import ArrowBackUp from "@tabler/icons/outline/arrow-back-up.svg";
+import Check from "@tabler/icons/outline/check.svg";
+import * as m from "@/paraglide/messages.js";
+import HouseholdWarnings from "@components/plan/HouseholdWarnings.astro";
+import { localizeHref } from "@/paraglide/runtime.js";
+import { t } from "@/lib/i18n-content";
+import { leftoversLabel } from "@/lib/labels";
+import type { Locale } from "@/lib/locale";
+import { dishQuery, formatDay, type Dish } from "@/lib/mealplan";
+
+interface Props {
+  dishes: Dish[];
+  locale: Locale;
+  /** Larger type on the home "Today" card and the chef sheet. */
+  size?: "md" | "lg";
+}
+
+const { dishes, locale, size = "md" } = Astro.props;
+const titleClass = size === "lg" ? "text-xl font-semibold" : "text-base font-semibold";
+// Whole row is the tap target (≥44px) — the chef taps with floury fingers.
+const rowLink = "-mx-2 flex min-h-11 items-center rounded-xl px-2 py-1 leading-snug transition-colors hover:bg-muted hover:text-primary";
+---
+
+<ul class="flex flex-col gap-0.5">
+  {
+    dishes.map((dish) => (
+      <li>
+        {dish.kind === "recipe" && (
+          <>
+            <a
+              href={`${localizeHref(`/recipes/${dish.recipe.id}`)}${dishQuery(dish)}`}
+              class:list={[titleClass, rowLink]}
+            >
+              <span>
+                <span class="underline decoration-input underline-offset-4">{t(dish.recipe.data.title, locale)}</span>
+                {dish.variant && <span class="font-normal text-muted-foreground">{` · ${t(dish.variant.name, locale)}`}</span>}
+              </span>
+            </a>
+            <HouseholdWarnings recipe={dish.recipe} variant={dish.variant} locale={locale} class="mt-1" />
+            {dish.preparedOn && (
+              <span class="mt-0.5 flex items-center gap-1 text-sm font-semibold text-success-foreground">
+                <Check class="size-4" aria-hidden="true" />
+                {m.dish_prepared_ahead({ day: formatDay(dish.preparedOn, locale, "short") })}
+              </span>
+            )}
+          </>
+        )}
+        {dish.kind === "leftovers" && (
+          <span class="inline-flex items-start gap-1.5 text-muted-foreground">
+            <ArrowBackUp class="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+            <span>
+              {leftoversLabel(dish.meal, locale)}
+              <span class="text-sm">{` (${dish.from.map((d) => t(d.recipe.data.title, locale)).join(", ")})`}</span>
+            </span>
+          </span>
+        )}
+        {dish.note && (
+          <span class:list={["block text-muted-foreground", dish.kind === "note" ? "" : "text-sm"]}>
+            {t(dish.note, locale)}
+          </span>
+        )}
+      </li>
+    ))
+  }
+</ul>

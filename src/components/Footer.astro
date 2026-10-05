@@ -1,19 +1,29 @@
 ---
+/**
+ * Footer — also home to the language and light/dark switches: set once per
+ * device, so they don't need header space on the kitchen tablet. Present on
+ * every page and viewport, which satisfies "every nav variant must include
+ * the LanguagePicker".
+ */
 import * as m from "@/paraglide/messages.js";
 import { localizeHref } from "@/paraglide/runtime.js";
+import LanguagePicker from "@components/LanguagePicker.astro";
+import LogoMark from "@components/LogoMark.astro";
+import { ThemeToggle } from "@components/starwind/theme-toggle";
 ---
 
-<footer class="border-t border-border">
-  <div class="mx-auto max-w-5xl px-6 py-8 text-center text-sm text-muted-foreground">
-    <div class="flex items-center justify-center gap-4 mb-3">
-      <a href={localizeHref("/privacy")} class="transition-colors hover:text-foreground">
-        {m.privacy_title()}
-      </a>
-      <span aria-hidden="true">&middot;</span>
-      <a href={localizeHref("/terms")} class="transition-colors hover:text-foreground">
-        {m.terms_title()}
-      </a>
+<footer class="border-t border-border print:hidden">
+  <div class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-sm text-muted-foreground sm:flex-row sm:justify-between sm:px-6">
+    <div class="flex flex-wrap items-center justify-center gap-2">
+      <LogoMark class="size-5 text-primary" />
+      <span>{m.site_name()} · {m.site_tagline()}</span>
+      <span aria-hidden="true">·</span>
+      <a href={localizeHref("/setup")} class="inline-flex min-h-11 items-center underline underline-offset-4 hover:text-foreground">{m.footer_setup()}</a>
     </div>
-    <p>&copy; {new Date().getFullYear()} {m.site_name()}. {m.footer_rights()}</p>
+    <div class="flex items-center gap-2">
+      <LanguagePicker />
+      <span class="h-6 w-px bg-border" aria-hidden="true"></span>
+      <ThemeToggle ariaLabel={m.theme_toggle()} variant="default" class="rounded-full" />
+    </div>
   </div>
 </footer>

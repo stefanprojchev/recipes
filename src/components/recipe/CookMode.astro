@@ -1,0 +1,156 @@
+---
+import X from "@tabler/icons/outline/x.svg";
+import ArrowLeft from "@tabler/icons/outline/arrow-left.svg";
+import ArrowRight from "@tabler/icons/outline/arrow-right.svg";
+import Sun from "@tabler/icons/outline/sun.svg";
+import ListCheck from "@tabler/icons/outline/list-check.svg";
+import ChevronDown from "@tabler/icons/outline/chevron-down.svg";
+import * as m from "@/paraglide/messages.js";
+import LogoMark from "@components/LogoMark.astro";
+import MediaItem from "@components/media/MediaItem.astro";
+import IngredientList from "@components/recipe/IngredientList.astro";
+import StepTimerButton from "@components/recipe/StepTimerButton.astro";
+import VariantNotes from "@components/recipe/VariantNotes.astro";
+import { t } from "@/lib/i18n-content";
+import type { Locale } from "@/lib/locale";
+import type { Ingredient, Recipe } from "@/lib/recipes";
+
+interface Props {
+  recipe: Recipe;
+  ingredients: Map<string, Ingredient>;
+  locale: Locale;
+}
+
+const { recipe, ingredients, locale } = Astro.props;
+const title = t(recipe.data.title, locale);
+const steps = recipe.data.steps;
+---
+
+<div
+  id="cook-mode"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cook-mode-title"
+  style="display: none"
+  class="fixed inset-0 z-50 flex flex-col overscroll-none bg-background print:hidden"
+>
+  <header class="flex items-center gap-3 border-b border-border px-4 py-3 sm:px-6">
+    <LogoMark class="size-8 shrink-0 text-primary" />
+    <h2 id="cook-mode-title" class="min-w-0 flex-1 truncate font-heading text-xl font-semibold sm:text-2xl">
+      {title}
+    </h2>
+    <span data-cook-wake style="display: none" class="hidden items-center gap-1 text-sm text-muted-foreground sm:inline-flex">
+      <Sun class="size-4" aria-hidden="true" />{m.cook_screen_on()}
+    </span>
+    <button
+      type="button"
+      data-cook-close
+      class="inline-flex size-12 items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:bg-accent"
+      aria-label={m.cook_exit()}
+    >
+      <X class="size-6" aria-hidden="true" />
+    </button>
+  </header>
+
+  <div class="h-1.5 bg-muted" aria-hidden="true">
+    <div data-cook-progress class="h-full bg-primary transition-[width] duration-300" style="width: 0%"></div>
+  </div>
+
+  <div class="flex min-h-0 flex-1">
+    <aside class="hidden w-[24rem] shrink-0 overflow-y-auto border-r border-border p-4 lg:block">
+      <h3 class="mb-3 px-2 font-heading text-xl font-semibold">{m.recipe_ingredients()}</h3>
+      <IngredientList recipe={recipe} ingredients={ingredients} locale={locale} idPrefix="cook-side" />
+    </aside>
+
+    <div class="flex min-h-0 flex-1 flex-col overflow-y-auto">
+      <details class="group border-b border-border px-4 py-2 lg:hidden">
+        <summary class="flex min-h-11 cursor-pointer list-none items-center gap-2 text-lg font-semibold">
+          <ListCheck class="size-5 text-primary" aria-hidden="true" />{m.recipe_ingredients()}
+          <ChevronDown class="ml-auto size-5 transition-transform group-open:rotate-180" aria-hidden="true" />
+        </summary>
+        <div class="pt-3">
+          <IngredientList recipe={recipe} ingredients={ingredients} locale={locale} idPrefix="cook-top" />
+        </div>
+      </details>
+
+      <VariantNotes recipe={recipe} locale={locale} class="mx-4 mt-4 sm:mx-10" />
+
+      <div data-cook-swipe aria-live="polite" class="flex flex-1 touch-pan-y items-center justify-center px-6 py-8 select-none sm:px-12">
+        {
+          steps.map((step, i) => (
+            <section
+              data-cook-step
+              style={i === 0 ? undefined : "display: none"}
+              class:list={["w-full", step.media ? "max-w-6xl lg:grid lg:grid-cols-2 lg:items-center lg:gap-12" : "max-w-4xl"]}
+            >
+              <div>
+                <p class="text-lg font-bold text-primary">
+                  {m.cook_step_of({ current: i + 1, total: steps.length })}
+                </p>
+                <p class="mt-4 max-w-[30ch] font-heading text-[clamp(2rem,3.4vw,3rem)] leading-snug text-balance">{t(step.text, locale)}</p>
+                {step.timer && (
+                  <StepTimerButton
+                    minutes={step.timer}
+                    label={`${title} · ${m.recipe_step_n({ n: i + 1 })}`}
+                    locale={locale}
+                    size="lg"
+                    class="mt-8"
+                  />
+                )}
+              </div>
+              {/* Landscape: photo/video beside the text instead of pushing it off screen. */}
+              {step.media && (
+                <MediaItem
+                  id={step.media.id}
+                  locale={locale}
+                  alt={`${title} · ${m.recipe_step_n({ n: i + 1 })}`}
+                  layout="half"
+                  class="mt-6 max-h-[40vh] w-auto max-w-full rounded-2xl lg:mt-0 lg:max-h-[55vh]"
+                />
+              )}
+            </section>
+          ))
+        }
+        <section data-cook-step data-cook-finish style="display: none" class="flex flex-col items-center text-center">
+          <LogoMark class="size-28 text-primary" />
+          <p class="mt-6 font-heading text-5xl font-semibold">{m.cook_finish_title()}</p>
+          <p class="mt-3 text-xl text-muted-foreground">{m.cook_finish_text()}</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phones/portrait: step dots above the buttons. Landscape: one row — Back · dots · Next — to give the step the height. -->
+  <footer class="grid grid-cols-2 gap-3 border-t border-border p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:gap-4 sm:p-4 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-center">
+    <button
+      type="button"
+      data-cook-prev
+      class="inline-flex h-20 items-center justify-center gap-2 rounded-2xl bg-secondary text-2xl font-semibold text-secondary-foreground hover:bg-accent aria-disabled:opacity-40"
+    >
+      <ArrowLeft class="size-6" aria-hidden="true" />{m.cook_prev()}
+    </button>
+    <nav class="scrollbar-none order-first col-span-2 flex justify-center gap-2 overflow-x-auto lg:order-none lg:col-span-1 lg:max-w-[50vw] lg:self-center" aria-label={m.recipe_steps()}>
+      {
+        steps.map((_, i) => (
+          <button
+            type="button"
+            data-cook-goto={i}
+            aria-label={m.recipe_step_n({ n: i + 1 })}
+            class="flex size-11 shrink-0 items-center justify-center rounded-full border border-border text-base font-semibold text-muted-foreground aria-[current=step]:border-primary aria-[current=step]:bg-primary aria-[current=step]:text-primary-foreground data-seen:text-foreground"
+          >
+            {i + 1}
+          </button>
+        ))
+      }
+    </nav>
+    <button
+      type="button"
+      data-cook-next
+      data-label-next={m.cook_next()}
+      data-label-done={m.cook_exit()}
+      class="inline-flex h-20 items-center justify-center gap-2 rounded-2xl bg-primary text-2xl font-semibold text-primary-foreground hover:bg-primary-accent"
+    >
+      <span data-cook-next-label>{m.cook_next()}</span><ArrowRight class="size-6" aria-hidden="true" />
+    </button>
+  </footer>
+</div>

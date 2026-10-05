@@ -1,0 +1,12 @@
+---
+import RecipeView from "@/views/RecipeView.astro";
+import { recipeStaticPaths, type Recipe } from "@/lib/recipes";
+
+export const getStaticPaths = recipeStaticPaths;
+
+interface Props {
+  recipe: Recipe;
+}
+---
+
+<RecipeView recipe={Astro.props.recipe} />

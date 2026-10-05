@@ -1,0 +1,91 @@
+---
+import Printer from "@tabler/icons/outline/printer.svg";
+import ArrowLeft from "@tabler/icons/outline/arrow-left.svg";
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+import Layout from "@layouts/Layout.astro";
+import LogoMark from "@components/LogoMark.astro";
+import { dishText } from "@/lib/dish-text";
+import { asLocale, t } from "@/lib/i18n-content";
+import { mealLabel } from "@/lib/labels";
+import { addDays, formatDay, getPlanDays, prepAheadFor } from "@/lib/mealplan";
+import { MEALS } from "@/lib/recipe-taxonomy";
+
+interface Props {
+  week: string;
+}
+
+const { week } = Astro.props;
+const locale = asLocale(Astro.currentLocale);
+const all = await getPlanDays();
+const days = all.filter((day) => day.week === week);
+if (days.length === 0) throw new Error(`No plan days for ${week}`);
+
+// Dinner column only when the week has any dinner.
+const meals = MEALS.filter((meal) => meal !== "dinner" || days.some((day) => day.meals.dinner.length > 0));
+const range = new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", timeZone: "UTC" }).formatRange(
+  new Date(`${days[0].date}T00:00:00Z`),
+  new Date(`${(days.at(-1) ?? days[0]).date}T00:00:00Z`),
+);
+const aheadFor = (date: string) => {
+  const day = days.find((d) => d.date === date);
+  const tomorrow = all.find((d) => d.date === addDays(date, 1));
+  return [
+    ...(day?.prep ?? []).map((task) => `${t(task.recipe.data.title, locale)} → ${formatDay(task.for, locale, "short")}`),
+    ...prepAheadFor(tomorrow).map(({ recipe, text }) => `${t(recipe.data.title, locale)}: ${t(text, locale)}`),
+  ];
+};
+---
+
+<Layout title={`${m.print_title()} · ${range}`} description={m.plan_description()}>
+  <section class="mx-auto max-w-6xl px-4 pt-6 pb-16 sm:px-6 print:max-w-none print:p-0 print:[page:menu]">
+    <div class="mb-6 flex flex-wrap items-center justify-between gap-3 print:hidden">
+      <a href={localizeHref("/plan")} data-back class="inline-flex h-11 items-center gap-2 text-base font-semibold text-muted-foreground hover:text-foreground">
+        <ArrowLeft class="size-5" aria-hidden="true" />{m.shopping_back()}
+      </a>
+      <button type="button" data-print class="inline-flex h-12 items-center gap-2 rounded-2xl bg-primary px-5 text-lg font-semibold text-primary-foreground hover:bg-primary-accent">
+        <Printer class="size-5" aria-hidden="true" />{m.print_button()}
+      </button>
+    </div>
+
+    <header class="flex items-center gap-3">
+      <LogoMark class="size-10 text-primary" />
+      <div>
+        <h1 class="font-heading text-3xl font-semibold">{m.print_title()}</h1>
+        <p class="text-base text-muted-foreground">{range}</p>
+      </div>
+    </header>
+
+    <table class="mt-6 w-full table-fixed border-collapse text-left text-sm print:text-[10pt]">
+      <thead>
+        <tr class="border-b-2 border-foreground">
+          <th class="w-32 py-2 pr-3 font-semibold">{m.print_day()}</th>
+          {meals.map((meal) => <th class="py-2 pr-3 font-semibold">{mealLabel(meal, locale)}</th>)}
+          <th class="py-2 font-semibold">{m.print_cook_ahead()}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {days.map((day) => (
+          <tr class="border-b border-border align-top break-inside-avoid">
+            <td class="py-2 pr-3 font-semibold first-letter:uppercase">
+              {formatDay(day.date, locale, "short")}
+              {day.note && <span class="block text-xs font-normal text-muted-foreground">{t(day.note, locale)}</span>}
+            </td>
+            {meals.map((meal) => (
+              <td class="py-2 pr-3">
+                {day.meals[meal].length > 0 ? day.meals[meal].map((dish) => <span class="block">{dishText(dish, locale)}</span>) : "—"}
+              </td>
+            ))}
+            <td class="py-2 text-xs text-muted-foreground">
+              {aheadFor(day.date).map((line) => <span class="block">{line}</span>)}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+</Layout>
+
+<script>
+  import "@/scripts/print";
+</script>

@@ -1,0 +1,8 @@
+# Who eats here and what they avoid. Menus and recipes show a warning when a
+# dish contains an avoided ingredient or carries an avoided flag.
+#
+# avoid:     ingredient ids from src/content/ingredients.yaml
+# avoidTags: recipe flags — kid-friendly | spicy
+child:
+  name: { mk: Детето, en: The child }
+  avoidTags: [spicy]

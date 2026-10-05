@@ -1,0 +1,65 @@
+---
+/**
+ * Renders a media entry from the R2 bucket: a responsive WebP image or an
+ * inline video (iPad-friendly: playsinline, poster, no autoplay with sound).
+ * Images use the standard widths/sizes presets from CLAUDE.md.
+ */
+import { t } from "@/lib/i18n-content";
+import type { Locale } from "@/lib/locale";
+import { imageSrc, imageSrcset, isImage, isVideo, posterSrc, resolveMedia, videoSrc } from "@/lib/media";
+
+interface Props {
+  id: string;
+  locale: Locale;
+  /** Fallback alt text when the media entry has none (e.g. the recipe title). */
+  alt: string;
+  /** "full" | "half" | "grid" — matches the responsive presets. */
+  layout: "full" | "half" | "grid";
+  class?: string;
+  /** Above-the-fold images load eagerly. */
+  eager?: boolean;
+}
+
+const { id, locale, alt, layout, class: className, eager = false } = Astro.props;
+const media = await resolveMedia({ id }, "MediaItem");
+const sizes = {
+  full: "100vw",
+  half: "(max-width: 1024px) 100vw, 50vw",
+  grid: "(max-width: 768px) 50vw, 25vw",
+}[layout];
+// alt="" from the caller means decorative (e.g. a card whose title follows) — keep it empty.
+const label = alt === "" ? "" : media.data.alt ? t(media.data.alt, locale) : alt;
+const image = isImage(media) ? media : undefined;
+const video = isVideo(media) ? media : undefined;
+---
+
+{
+  image && (
+    <img
+      src={imageSrc(image, layout === "grid" ? 480 : 960)}
+      srcset={imageSrcset(image)}
+      sizes={sizes}
+      width={image.data.width}
+      height={image.data.height}
+      alt={label}
+      loading={eager ? "eager" : "lazy"}
+      decoding="async"
+      class:list={["object-cover", className]}
+    />
+  )
+}
+{
+  video && (
+    <video
+      src={videoSrc(video)}
+      poster={posterSrc(video)}
+      width={video.data.width}
+      height={video.data.height}
+      controls
+      playsinline
+      preload="metadata"
+      aria-label={label}
+      class:list={["bg-black object-contain", className]}
+    />
+  )
+}

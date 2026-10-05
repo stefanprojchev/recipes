@@ -1,0 +1,155 @@
+---
+import Search from "@tabler/icons/outline/search.svg";
+import Check from "@tabler/icons/outline/check.svg";
+import ArrowDown from "@tabler/icons/outline/arrow-down.svg";
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+import Layout from "@layouts/Layout.astro";
+import RecipeCard from "@components/recipe/RecipeCard.astro";
+import { asLocale, t } from "@/lib/i18n-content";
+import { aisleLabel } from "@/lib/labels";
+import { LOCALES } from "@/lib/locale";
+import { AISLES } from "@/lib/recipe-taxonomy";
+import { getIngredients, getRecipes, ingredientName, sortByTitle, type Recipe } from "@/lib/recipes";
+import { normalizeForSearch } from "@/lib/search-normalize";
+
+const locale = asLocale(Astro.currentLocale);
+const ingredients = await getIngredients();
+const recipes = sortByTitle(await getRecipes(), locale);
+
+/** Ingredients a recipe (or one of its variants) cannot do without. */
+function required(recipe: Recipe, variant?: Recipe["data"]["variants"][number]): string[] {
+  const removed = new Set(variant?.remove.map((ref) => ref.id) ?? []);
+  const lines = [...recipe.data.ingredients.flatMap((group) => group.items), ...(variant?.add ?? [])];
+  return [...new Set(lines.filter((l) => !l.optional && !removed.has(l.ingredient.id)).map((l) => l.ingredient.id))];
+}
+
+const options = recipes.map((recipe) => ({
+  id: recipe.id,
+  options: [
+    { variant: "", name: "", needs: required(recipe) },
+    ...recipe.data.variants.map((v) => ({ variant: v.id, name: t(v.name, locale), needs: required(recipe, v) })),
+  ],
+}));
+
+const used = new Set(options.flatMap((r) => r.options.flatMap((o) => o.needs)));
+const chips = [...used].map((id) => {
+  const ingredient = ingredients.get(id);
+  if (!ingredient) throw new Error(`Unknown ingredient "${id}"`);
+  return {
+    id,
+    name: ingredientName(ingredient, locale, "other"),
+    aisle: ingredient.data.aisle,
+    staple: ingredient.data.staple,
+    search: normalizeForSearch(LOCALES.map((l) => ingredientName(ingredient, l, "other")).join(" ")),
+  };
+});
+const groups = AISLES.map((aisle) => ({
+  aisle,
+  chips: chips.filter((c) => c.aisle === aisle).sort((a, b) => a.name.localeCompare(b.name, locale)),
+})).filter((g) => g.chips.length > 0);
+
+const data = {
+  staples: chips.filter((c) => c.staple).map((c) => c.id),
+  names: Object.fromEntries(chips.map((c) => [c.id, c.name])),
+  recipes: options,
+};
+
+const chip =
+  "group inline-flex h-11 items-center gap-1.5 rounded-full border border-input bg-card px-4 text-base font-semibold transition-colors hover:bg-muted aria-pressed:border-primary aria-pressed:bg-primary aria-pressed:text-primary-foreground";
+---
+
+<Layout title={`${m.pantry_title()} · ${m.site_name()}`} description={m.pantry_description()}>
+  <section
+    id="pantry"
+    class="mx-auto max-w-6xl px-4 pt-8 pb-24 sm:px-6"
+    data-recipes-href={localizeHref("/recipes")}
+    data-label-missing={m.pantry_missing({ items: "{items}" })}
+    data-label-variant={m.pantry_as_variant({ variant: "{variant}" })}
+    data-label-selected={m.pantry_selected({ count: "{count}" })}
+    data-label-summary={m.pantry_summary({ ready: "{ready}", close: "{close}" })}
+  >
+    <script is:inline type="application/json" id="pantry-data" set:html={JSON.stringify(data).replace(/</g, "\\u003c")} />
+
+    <h1 class="font-heading text-4xl font-semibold">{m.pantry_title()}</h1>
+    <p class="mt-2 text-lg text-muted-foreground">{m.pantry_description()}</p>
+
+    <div class="mt-8 grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+      <div class="lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:self-start lg:overflow-y-auto lg:pr-2">
+        <div class="flex items-center justify-between gap-3">
+          <p class="text-base font-semibold" data-selected-count></p>
+          <button type="button" data-pantry-reset class="h-11 rounded-2xl bg-secondary px-4 text-base font-semibold text-secondary-foreground hover:bg-accent">
+            {m.pantry_reset()}
+          </button>
+        </div>
+        <p class="mt-1 text-sm text-muted-foreground">{m.pantry_staples_hint()}</p>
+
+        <label class="relative mt-4 block">
+          <span class="sr-only">{m.pantry_filter_placeholder()}</span>
+          <Search class="pointer-events-none absolute top-1/2 left-4 size-5 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
+          <input
+            type="search"
+            data-chip-filter
+            autocomplete="off"
+            placeholder={m.pantry_filter_placeholder()}
+            class="h-12 w-full rounded-2xl border-input bg-card pr-4 pl-12 text-lg focus:border-primary focus:ring-2 focus:ring-primary"
+          />
+        </label>
+
+        <div class="mt-4 flex flex-col gap-5">
+          {groups.map(({ aisle, chips: list }) => (
+            <section data-chip-group>
+              <h2 class="mb-2 text-sm font-bold tracking-wide text-muted-foreground uppercase">{aisleLabel(aisle, locale)}</h2>
+              <div class="flex flex-wrap gap-2">
+                {list.map((c) => (
+                  <button type="button" class={chip} data-ingredient={c.id} data-search={c.search} aria-pressed="false">
+                    <Check class="hidden size-4 group-aria-pressed:block" aria-hidden="true" />{c.name}
+                  </button>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </div>
+
+      <div id="pantry-results" class="scroll-mt-24">
+        <p data-pantry-summary role="status" class="sr-only"></p>
+        <p data-pantry-prompt class="rounded-2xl bg-muted p-6 text-center text-lg text-muted-foreground">{m.pantry_prompt()}</p>
+        <p data-pantry-none style="display: none" class="rounded-2xl bg-muted p-6 text-center text-lg text-muted-foreground">{m.pantry_none()}</p>
+        {[
+          { key: "0", label: m.pantry_can_make() },
+          { key: "1", label: m.pantry_missing_one() },
+          { key: "few", label: m.pantry_missing_few() },
+        ].map(({ key, label }) => (
+          <section data-result-group={key} style="display: none" class="mb-10">
+            <h2 class="font-heading text-2xl font-semibold">{label}</h2>
+            <div data-result-list class="mt-4 grid grid-cols-2 gap-4 xl:grid-cols-3"></div>
+          </section>
+        ))}
+
+        <div data-result-pool style="display: none">
+          {recipes.map((recipe) => (
+            <div data-pantry-recipe={recipe.id} class="flex flex-col gap-1.5">
+              <RecipeCard recipe={recipe} locale={locale} class="flex-1" />
+              <p data-pantry-variant class="px-1 text-sm font-semibold text-primary" style="display: none"></p>
+              <p data-pantry-missing class="px-1 text-sm text-muted-foreground" style="display: none"></p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    <!-- Below lg the results sit under a long chip list: keep a live summary in reach. -->
+    <a
+      href="#pantry-results"
+      data-pantry-jump
+      style="display: none"
+      class="sticky bottom-4 z-20 mx-auto mt-6 flex h-14 w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-primary px-5 text-lg font-semibold text-primary-foreground shadow-lg lg:hidden"
+    >
+      <ArrowDown class="size-5 shrink-0" aria-hidden="true" /><span data-pantry-jump-text>{m.pantry_jump()}</span>
+    </a>
+  </section>
+</Layout>
+
+<script>
+  import "@/scripts/pantry";
+</script>

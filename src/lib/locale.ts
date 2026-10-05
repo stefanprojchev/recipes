@@ -2,9 +2,9 @@
  * Locale configuration — keep in sync with astro.config.mjs and project.inlang/settings.json.
  */
 
-export const LOCALES = ["en"] as const;
+export const LOCALES = ["mk", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
-export const DEFAULT_LOCALE: Locale = "en";
+export const DEFAULT_LOCALE: Locale = "mk";
 
 /**
  * Map non-ISO locale codes to their ISO 639-1 hreflang equivalents.

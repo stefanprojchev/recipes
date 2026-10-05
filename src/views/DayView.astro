@@ -1,0 +1,174 @@
+---
+import ChevronLeft from "@tabler/icons/outline/chevron-left.svg";
+import ChevronRight from "@tabler/icons/outline/chevron-right.svg";
+import CalendarWeek from "@tabler/icons/outline/calendar-week.svg";
+import CalendarTime from "@tabler/icons/outline/calendar-time.svg";
+import InfoCircle from "@tabler/icons/outline/info-circle.svg";
+import Clock from "@tabler/icons/outline/clock.svg";
+import Check from "@tabler/icons/outline/check.svg";
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+import Layout from "@layouts/Layout.astro";
+import DayMenu from "@components/plan/DayMenu.astro";
+import HouseholdWarnings from "@components/plan/HouseholdWarnings.astro";
+import MergedIngredientList from "@components/plan/MergedIngredientList.astro";
+import { asLocale, t } from "@/lib/i18n-content";
+import { formatDuration, mealLabel } from "@/lib/labels";
+import {
+  addDays,
+  cookingOrder,
+  dishQuery,
+  formatDay,
+  workKey,
+  getPlanDays,
+  mergedIngredients,
+  prepAheadFor,
+  type PlanDay,
+} from "@/lib/mealplan";
+import { totalMinutes } from "@/lib/recipes";
+
+interface Props {
+  day: PlanDay;
+}
+
+const { day } = Astro.props;
+const locale = asLocale(Astro.currentLocale);
+const days = await getPlanDays();
+const index = days.findIndex((d) => d.date === day.date);
+const prev = days[index - 1];
+const next = days[index + 1];
+const tomorrow = days.find((d) => d.date === addDays(day.date, 1));
+
+const order = cookingOrder(day);
+const byAisle = await mergedIngredients(order);
+const reminders = prepAheadFor(tomorrow);
+const title = formatDay(day.date, locale);
+const dayHref = (date: string) => localizeHref(`/plan/day/${date}`);
+---
+
+<Layout title={`${title} · ${m.site_name()}`} description={m.plan_description()}>
+  <article class="mx-auto max-w-6xl px-4 pt-4 pb-24 sm:px-6" data-plan-date={day.date}>
+    <nav aria-label={m.nav_days()} class="flex items-center justify-between gap-2">
+      {prev ? (
+        <a href={dayHref(prev.date)} class="inline-flex h-11 items-center gap-1 rounded-full pr-3 text-base font-semibold text-muted-foreground hover:text-foreground">
+          <ChevronLeft class="size-5" aria-hidden="true" /><span class="sr-only">{m.day_prev()}: </span><span class="hidden sm:inline">{formatDay(prev.date, locale, "short")}</span>
+        </a>
+      ) : <span />}
+      <a href={localizeHref("/plan")} class="inline-flex h-11 items-center gap-2 rounded-full bg-secondary px-4 text-base font-semibold text-secondary-foreground hover:bg-accent">
+        <CalendarWeek class="size-5" aria-hidden="true" />{m.today_whole_week()}
+      </a>
+      {next ? (
+        <a href={dayHref(next.date)} class="inline-flex h-11 items-center gap-1 rounded-full pl-3 text-base font-semibold text-muted-foreground hover:text-foreground">
+          <span class="sr-only">{m.day_next()}: </span><span class="hidden sm:inline">{formatDay(next.date, locale, "short")}</span><ChevronRight class="size-5" aria-hidden="true" />
+        </a>
+      ) : <span />}
+    </nav>
+
+    <!-- Landscape tablet: the chef's work order on the left, today's ingredients on the right in
+         their own scrolling pane — both visible from the top, no hunting below the menu. -->
+    <div class="mt-4 grid gap-10 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
+      <div class="flex flex-col gap-8">
+        <header>
+          <p data-today-badge style="display: none" class="mb-2 inline-flex rounded-full bg-primary px-3 py-1 text-sm font-bold text-primary-foreground">
+            {m.plan_today_badge()}
+          </p>
+          <h1 class="font-heading text-4xl font-semibold first-letter:uppercase sm:text-5xl lg:text-4xl">{title}</h1>
+          {day.note && (
+            <p class="mt-3 flex items-start gap-2 text-lg text-muted-foreground">
+              <InfoCircle class="mt-1 size-5 shrink-0 text-primary" aria-hidden="true" />{t(day.note, locale)}
+            </p>
+          )}
+        </header>
+
+        <!-- Landscape: the work order comes first (it's what the chef acts on); the menu summary moves below. -->
+        <section class="rounded-3xl border border-border bg-card p-5 sm:p-6 lg:order-last">
+          <DayMenu day={day} locale={locale} size="lg" />
+        </section>
+        <section aria-labelledby="work-order">
+          <h2 id="work-order" class="font-heading text-3xl font-semibold">{m.day_work_order()}</h2>
+          <p class="mt-1 text-base text-muted-foreground">{m.day_work_order_hint()}</p>
+          <p
+            data-work-progress
+            data-template={m.day_progress({ done: "{done}", total: "{total}" })}
+            data-total={order.length}
+            role="status"
+            class="mt-3 text-base font-semibold text-primary-accent"
+          ></p>
+          <ol class="mt-3 flex flex-col gap-3" data-checklist={`work:${day.date}`} data-work-list>
+            {order.map((item, i) => (
+              <li class="group/item flex items-stretch gap-3">
+                <!-- Tick off when cooked — the number turns into ✓ and the card dims. -->
+                <label class="group/tick flex shrink-0 cursor-pointer items-center">
+                  <input
+                    type="checkbox"
+                    data-checklist-item={workKey(item)}
+                    class="peer sr-only"
+                    aria-label={m.day_mark_done({ title: t(item.recipe.data.title, locale) })}
+                  />
+                  <span class="flex size-16 items-center justify-center rounded-full border-2 border-primary bg-card text-2xl font-bold text-primary-accent transition-colors peer-checked:border-success peer-checked:bg-success peer-checked:text-success-foreground peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-outline">
+                    <span class="group-has-checked/tick:hidden">{i + 1}</span>
+                    <Check class="hidden size-8 group-has-checked/tick:block" aria-hidden="true" />
+                  </span>
+                </label>
+                <a
+                  href={`${localizeHref(`/recipes/${item.recipe.id}`)}${dishQuery(item)}`}
+                  class="flex min-w-0 flex-1 items-center gap-4 rounded-2xl border border-border bg-card p-4 transition hover:border-primary hover:shadow-sm group-has-checked/item:opacity-55"
+                >
+                  <span class="min-w-0 flex-1">
+                    <span class="block text-sm font-bold tracking-wide text-primary uppercase">
+                      {item.meal === "prep"
+                        ? m.day_cook_ahead({ day: formatDay(item.for, locale, "short") })
+                        : mealLabel(item.meal, locale)}
+                    </span>
+                    <span class="block text-xl leading-snug font-semibold">
+                      {t(item.recipe.data.title, locale)}
+                      {item.variant && <span class="font-normal text-muted-foreground">{` · ${t(item.variant.name, locale)}`}</span>}
+                    </span>
+                    <span class="mt-1 flex flex-wrap gap-x-4 text-sm text-muted-foreground">
+                      <span class="inline-flex items-center gap-1"><Clock class="size-4" aria-hidden="true" />{formatDuration(totalMinutes(item.recipe), locale)}</span>
+                      <span>{m.day_servings({ count: item.servings })}</span>
+                    </span>
+                    <HouseholdWarnings recipe={item.recipe} variant={item.variant} locale={locale} class="mt-2" />
+                  </span>
+                  <ChevronRight class="size-6 shrink-0 text-muted-foreground" aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {reminders.length > 0 && (
+          <section aria-labelledby="prep-tomorrow">
+            <h2 id="prep-tomorrow" class="font-heading text-3xl font-semibold">{m.day_prep_tomorrow()}</h2>
+            <ul class="mt-4 flex flex-col gap-3">
+              {reminders.map(({ recipe, text }) => (
+                <li class="flex gap-3 rounded-2xl border border-warning bg-warning/25 p-4 text-lg">
+                  <CalendarTime class="mt-0.5 size-6 shrink-0" aria-hidden="true" />
+                  <p>
+                    <strong class="font-semibold">{t(recipe.data.title, locale)}:</strong>{" "}{t(text, locale)}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </div>
+
+      <section aria-labelledby="day-ingredients" data-checklist={`day:${day.date}`} class="lg:sticky lg:top-[4.75rem] lg:max-h-[calc(100dvh-5.5rem)] lg:self-start lg:overflow-y-auto lg:overscroll-contain lg:rounded-3xl lg:border lg:border-border lg:bg-card lg:p-5 lg:[scrollbar-width:thin]">
+        <div class="flex items-start justify-between gap-3">
+          <h2 id="day-ingredients" class="font-heading text-3xl font-semibold lg:text-2xl">{m.day_ingredients()}</h2>
+          <button type="button" data-checklist-reset class="h-12 shrink-0 rounded-2xl bg-secondary px-4 text-base font-semibold text-secondary-foreground hover:bg-accent">
+            {m.shopping_reset()}
+          </button>
+        </div>
+        <p class="mt-1 mb-4 text-base text-muted-foreground">{m.day_ingredients_hint()}</p>
+        <MergedIngredientList byAisle={byAisle} locale={locale} idPrefix="day" />
+      </section>
+    </div>
+  </article>
+</Layout>
+
+<script>
+  import "@/scripts/checklist";
+  import "@/scripts/plan";
+</script>

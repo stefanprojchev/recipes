@@ -1,0 +1,12 @@
+---
+import DayView from "@/views/DayView.astro";
+import { dayStaticPaths, type PlanDay } from "@/lib/mealplan";
+
+export const getStaticPaths = dayStaticPaths;
+
+interface Props {
+  day: PlanDay;
+}
+---
+
+<DayView day={Astro.props.day} />

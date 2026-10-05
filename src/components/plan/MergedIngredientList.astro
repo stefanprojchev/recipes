@@ -1,0 +1,109 @@
+---
+import * as m from "@/paraglide/messages.js";
+import { t } from "@/lib/i18n-content";
+import { aisleLabel, storeLabel, unitLabel } from "@/lib/labels";
+import type { Locale } from "@/lib/locale";
+import type { MergedLine } from "@/lib/mealplan";
+import { formatRange, pluralForm } from "@/lib/quantity";
+import { AISLES, METRIC_UNITS, STORES, STORE_FOR_AISLE, type Aisle, type Unit } from "@/lib/recipe-taxonomy";
+import { ingredientName } from "@/lib/recipes";
+
+interface Props {
+  byAisle: Map<Aisle, MergedLine[]>;
+  locale: Locale;
+  /** Only staples / only non-staples / everything. */
+  filter?: "staples" | "groceries" | "all";
+  /** Prefix for checkbox ids — unique per list on the page. */
+  idPrefix: string;
+  /** Shopping: round countable units up — you can't buy 1½ bananas or ¾ of a pack. */
+  roundUpWhole?: boolean;
+  /** Group headings: store section (chef) or where it's bought (shopping). */
+  groupBy?: "aisle" | "store";
+  /** Heading level of the group titles — keeps the outline without skipped levels. */
+  headingLevel?: 2 | 3;
+  /** Landscape: flow the groups into two columns (shopping list). */
+  columns?: boolean;
+}
+
+const { byAisle, locale, filter = "all", idPrefix, roundUpWhole = false, groupBy = "aisle", headingLevel = 3, columns = false } = Astro.props;
+const Heading = headingLevel === 2 ? "h2" : "h3";
+
+const byName = (a: MergedLine, b: MergedLine) =>
+  ingredientName(a.ingredient, locale, "other").localeCompare(ingredientName(b.ingredient, locale, "other"), locale);
+const lines = AISLES.flatMap((aisle) => [...(byAisle.get(aisle) ?? [])].sort(byName)).filter((line) =>
+  filter === "all" ? true : filter === "staples" ? line.ingredient.data.staple : !line.ingredient.data.staple,
+);
+const storeOf = (line: MergedLine) => line.ingredient.data.store ?? STORE_FOR_AISLE[line.ingredient.data.aisle];
+
+// Lines stay in aisle order inside each store, so the market list still walks vegetables → cheese.
+const groups =
+  groupBy === "store"
+    ? STORES.map((store) => ({ label: storeLabel(store, locale), lines: lines.filter((line) => storeOf(line) === store) }))
+    : AISLES.map((aisle) => ({ label: aisleLabel(aisle, locale), lines: lines.filter((line) => line.ingredient.data.aisle === aisle) }));
+const visibleGroups = groups.filter((group) => group.lines.length > 0);
+
+const COUNTABLE: ReadonlySet<Unit> = new Set(["pc", "pack", "can", "head", "bunch"]);
+
+function describe(original: MergedLine): { amount: string; name: string } {
+  const line =
+    roundUpWhole && COUNTABLE.has(original.unit) && original.qty !== undefined
+      ? { ...original, qty: Math.ceil(original.qtyMax ?? original.qty), qtyMax: undefined }
+      : original;
+  const count = line.qtyMax ?? line.qty ?? 0;
+  const form = pluralForm(count, locale);
+  const nameForm = line.unit === "pc" ? form : "other";
+  const name = ingredientName(line.ingredient, locale, nameForm);
+  if (line.unit === "to-taste" || line.qty === undefined) {
+    return { amount: "", name: `${name}, ${unitLabel("to-taste", "one", locale)}` };
+  }
+  const qty = formatRange(line.qty, line.qtyMax, 1, METRIC_UNITS.has(line.unit), locale);
+  const unit = unitLabel(line.unit, form, locale);
+  return { amount: unit ? `${qty} ${unit}` : qty, name };
+}
+---
+
+<div
+  class:list={[
+    "flex flex-col gap-6",
+    columns && "lg:block lg:columns-2 lg:gap-x-12 lg:[&>section]:mb-6 lg:[&>section]:break-inside-avoid",
+  ]}
+>
+  {
+    visibleGroups.map(({ label, lines: groupLines }) => (
+      <section data-share-group={label}>
+        <Heading class="mb-1 px-2 text-sm font-bold tracking-wide text-muted-foreground uppercase">{label}</Heading>
+        <ul class="flex flex-col">
+          {groupLines.map((line) => {
+            const { amount, name } = describe(line);
+            const key = `${line.ingredient.id}|${line.unit}`;
+            const id = `${idPrefix}-${key.replace("|", "-")}`;
+            return (
+              <li data-ingredient-id={line.ingredient.id} data-share-line={amount ? `${amount} ${name}` : name} class="data-have:opacity-50">
+                <label for={id} class="flex cursor-pointer items-start gap-3 rounded-xl px-2 py-2 transition-colors hover:bg-muted has-checked:text-muted-foreground has-checked:line-through">
+                  <input
+                    id={id}
+                    type="checkbox"
+                    data-checklist-item={key}
+                    class="mt-0.5 size-6 shrink-0 rounded-md border-input bg-card text-primary focus:ring-2 focus:ring-primary"
+                  />
+                  <span class="leading-snug">
+                    <span class="text-lg">
+                      {amount && <span class="font-bold tabular-nums">{`${amount} `}</span>}
+                      {name}
+                      <span data-have-badge style="display: none" class="ml-2 rounded-full bg-secondary px-2 py-0.5 align-middle text-sm font-semibold text-secondary-foreground">
+                        {m.shopping_have()}
+                      </span>
+                    </span>
+                    <span class="block text-sm text-muted-foreground">
+                      {m.day_for_recipes({ recipes: line.recipes.map((r) => t(r.data.title, locale)).join(", ") })}
+                    </span>
+                  </span>
+                </label>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    ))
+  }
+</div>

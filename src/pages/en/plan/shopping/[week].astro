@@ -1,0 +1,12 @@
+---
+import ShoppingView from "@/views/ShoppingView.astro";
+import { weekStaticPaths } from "@/lib/mealplan";
+
+export const getStaticPaths = weekStaticPaths;
+
+interface Props {
+  week: string;
+}
+---
+
+<ShoppingView week={Astro.props.week} />

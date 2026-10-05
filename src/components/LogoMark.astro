@@ -1,0 +1,39 @@
+---
+/**
+ * The site mark: a clay tavče dish with steam. Drawn in `currentColor`; the
+ * slip-painted wave on the dish is cut out in the page background color.
+ * public/favicon.svg is the same drawing with fixed colors — keep in sync.
+ */
+interface Props {
+  class?: string;
+  title?: string;
+}
+
+const { class: className, title } = Astro.props;
+---
+
+<svg
+  viewBox="0 0 48 48"
+  class={className}
+  role={title ? "img" : undefined}
+  aria-hidden={title ? undefined : "true"}
+  aria-label={title}
+  fill="currentColor"
+>
+  <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+    <path d="M17 14c-2.2-2.6 2.2-4.6 0-8" />
+    <path d="M24 14c-2.2-2.6 2.2-4.6 0-8" />
+    <path d="M31 14c-2.2-2.6 2.2-4.6 0-8" />
+  </g>
+  <rect x="4" y="18" width="40" height="5" rx="2.5" />
+  <circle cx="4.5" cy="22.5" r="2.8" />
+  <circle cx="43.5" cy="22.5" r="2.8" />
+  <path d="M7.5 25h33c-1.1 8.8-7.7 14.5-16.5 14.5S8.6 33.8 7.5 25Z" />
+  <path
+    d="M13.5 30.5c1.75-1.4 3.5-1.4 5.25 0s3.5 1.4 5.25 0 3.5-1.4 5.25 0 3.5 1.4 5.25 0"
+    fill="none"
+    stroke="var(--background)"
+    stroke-width="1.8"
+    stroke-linecap="round"
+  />
+</svg>

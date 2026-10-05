@@ -1,0 +1,180 @@
+{
+  "week": "2026-W41",
+  "servings": 3,
+  "days": [
+    {
+      "date": "2026-10-05",
+      "breakfast": [
+        {
+          "recipe": "ovesna-kasa"
+        }
+      ],
+      "lunch": [
+        {
+          "recipe": "pileska-supa"
+        },
+        {
+          "recipe": "shopska-salata"
+        }
+      ],
+      "snack": [
+        {
+          "recipe": "pindzur",
+          "note": {
+            "mk": "со леб и сирење",
+            "en": "with bread and cheese"
+          }
+        }
+      ],
+      "prep": [
+        {
+          "recipe": "sutlijas",
+          "for": "2026-10-06",
+          "note": {
+            "mk": "да се олади преку ноќ",
+            "en": "to chill overnight"
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "breakfast": [
+        {
+          "recipe": "popara"
+        }
+      ],
+      "lunch": [
+        {
+          "recipe": "musaka"
+        },
+        {
+          "recipe": "shopska-salata"
+        }
+      ],
+      "snack": [
+        {
+          "recipe": "sutlijas"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "breakfast": [
+        {
+          "recipe": "mekici"
+        }
+      ],
+      "lunch": [
+        {
+          "recipe": "tavce-gravce"
+        }
+      ],
+      "snack": [
+        {
+          "recipe": "ovesna-kasa",
+          "variant": "apple"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "breakfast": [
+        {
+          "recipe": "zelnik",
+          "variant": "leek"
+        }
+      ],
+      "lunch": [
+        {
+          "recipe": "polneti-piperki"
+        },
+        {
+          "recipe": "shopska-salata"
+        }
+      ],
+      "snack": [
+        {
+          "leftovers": "breakfast"
+        }
+      ],
+      "dinner": [
+        {
+          "leftovers": "lunch"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "breakfast": [
+        {
+          "recipe": "ovesna-kasa"
+        }
+      ],
+      "lunch": [
+        {
+          "recipe": "polneti-piperki-posni"
+        },
+        {
+          "recipe": "shopska-salata",
+          "variant": "fasting"
+        }
+      ],
+      "snack": [
+        {
+          "recipe": "pindzur"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "breakfast": [
+        {
+          "recipe": "mekici"
+        }
+      ],
+      "lunch": [
+        {
+          "recipe": "zelnik",
+          "variant": "sauerkraut"
+        },
+        {
+          "recipe": "shopska-salata"
+        }
+      ],
+      "snack": [
+        {
+          "recipe": "sutlijas"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "note": {
+        "mk": "Недела — ручекот е семеен, сите на маса.",
+        "en": "Sunday — family lunch, everyone at the table."
+      },
+      "breakfast": [
+        {
+          "recipe": "popara",
+          "variant": "sweet"
+        }
+      ],
+      "lunch": [
+        {
+          "recipe": "polneti-piperki"
+        }
+      ],
+      "snack": [
+        {
+          "recipe": "mekici"
+        }
+      ],
+      "dinner": [
+        {
+          "leftovers": "snack"
+        }
+      ]
+    }
+  ]
+}

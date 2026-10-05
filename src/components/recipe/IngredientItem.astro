@@ -1,0 +1,95 @@
+---
+import Plus from "@tabler/icons/outline/plus.svg";
+import * as m from "@/paraglide/messages.js";
+import { t } from "@/lib/i18n-content";
+import { unitLabel } from "@/lib/labels";
+import type { Locale } from "@/lib/locale";
+import { formatRange, pluralForm } from "@/lib/quantity";
+import { METRIC_UNITS } from "@/lib/recipe-taxonomy";
+import {
+  ingredientNameForms,
+  nameFormFor,
+  type Ingredient,
+  type IngredientLine,
+} from "@/lib/recipes";
+
+interface Props {
+  line: IngredientLine;
+  ingredient: Ingredient;
+  locale: Locale;
+  /** Stable per-recipe key — keeps the main list and cook-mode list checkboxes in sync. */
+  lineKey: string;
+  /** Prefix for the checkbox id, unique per rendered copy of the list. */
+  idPrefix: string;
+  /** Variant ids that add this line (hidden until one is active). */
+  addedBy?: string;
+  /** Variant ids that remove this line (struck through while active). */
+  removedBy?: string;
+}
+
+const { line, ingredient, locale, lineKey, idPrefix, addedBy, removedBy } = Astro.props;
+
+const toTaste = line.unit === "to-taste";
+const metric = METRIC_UNITS.has(line.unit);
+const count = line.qtyMax ?? line.qty ?? 0;
+const unitForms = {
+  one: unitLabel(line.unit, "one", locale),
+  other: unitLabel(line.unit, "other", locale),
+};
+const names = ingredientNameForms(ingredient, locale);
+const nameForm = nameFormFor(line, 1, locale);
+const checkboxId = `${idPrefix}-${lineKey}`;
+---
+
+<li
+  data-ingredient-line
+  data-variant-add={addedBy}
+  data-variant-remove={removedBy}
+  style={addedBy ? "display: none" : undefined}
+  class="data-removed:opacity-45 data-removed:line-through"
+>
+  <label
+    for={checkboxId}
+    class="flex cursor-pointer items-start gap-3 rounded-xl px-2 py-2 transition-colors hover:bg-muted has-checked:text-muted-foreground has-checked:line-through"
+  >
+    <input
+      id={checkboxId}
+      type="checkbox"
+      data-line-key={lineKey}
+      class="mt-0.5 size-6 shrink-0 rounded-md border-input bg-card text-primary focus:ring-2 focus:ring-primary"
+    />
+    <span class="text-lg leading-snug">
+      {addedBy && <Plus class="mr-0.5 inline size-4 align-[-2px] text-primary" aria-hidden="true" />}
+      {
+        !toTaste && line.qty !== undefined && (
+          <span
+            class="font-bold tabular-nums"
+            data-qty
+            data-base={line.qty}
+            data-base-max={line.qtyMax}
+            data-metric={metric ? "" : undefined}
+          >
+            {formatRange(line.qty, line.qtyMax, 1, metric, locale)}
+          </span>
+        )
+      }{!toTaste && line.qty !== undefined && " "}
+      {
+        !toTaste && unitForms.one && (
+          <span data-unit data-one={unitForms.one} data-other={unitForms.other}>
+            {unitForms[pluralForm(count, locale)]}
+          </span>
+        )
+      }{!toTaste && unitForms.one && " "}
+      <span
+        data-name
+        data-one={names.one}
+        data-other={names.other}
+        data-counted={line.unit === "pc" ? "" : undefined}
+      >
+        {names[nameForm]}
+      </span>{toTaste && <span class="text-muted-foreground">, {unitForms.one}</span>}{
+        line.note && <span class="text-muted-foreground">, {t(line.note, locale)}</span>
+      }{line.optional && <span class="text-muted-foreground">{` (${m.recipe_optional()})`}</span>}
+    </span>
+  </label>
+</li>

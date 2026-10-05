@@ -1,0 +1,80 @@
+---
+/**
+ * Header button with kitchen timer presets and a custom-minutes timer —
+ * for the chef's everyday timing outside a recipe. Presets are plain
+ * `[data-timer-start]` buttons handled by src/scripts/timers.ts.
+ */
+import AlarmPlus from "@tabler/icons/outline/alarm-plus.svg";
+import * as m from "@/paraglide/messages.js";
+import { formatDuration } from "@/lib/labels";
+import { asLocale } from "@/lib/i18n-content";
+
+const locale = asLocale(Astro.currentLocale);
+const presets = [
+  { label: m.preset_soft_egg(), minutes: 5 },
+  { label: m.preset_hard_egg(), minutes: 10 },
+  { label: m.preset_pasta(), minutes: 10 },
+  { label: m.preset_rice(), minutes: 18 },
+  { label: m.preset_tea(), minutes: 4 },
+  { label: m.preset_oven(), minutes: 15 },
+];
+---
+
+<div class="relative" data-quick-timers>
+  <button
+    type="button"
+    data-quick-toggle
+    aria-expanded="false"
+    aria-controls="quick-timers-panel"
+    aria-label={m.quick_timers()}
+    class="inline-flex h-11 min-w-11 items-center justify-center gap-2 rounded-full px-2.5 text-base font-semibold whitespace-nowrap text-muted-foreground transition-colors hover:text-foreground aria-expanded:bg-secondary aria-expanded:text-foreground lg:px-3"
+  >
+    <AlarmPlus class="size-5" aria-hidden="true" />
+    <span class="hidden lg:inline">{m.quick_timers()}</span>
+  </button>
+  <div
+    id="quick-timers-panel"
+    data-quick-panel
+    style="display: none"
+    class="absolute top-full right-0 z-40 mt-2 w-72 rounded-2xl border border-border bg-popover p-3 text-popover-foreground shadow-lg"
+  >
+    <p class="px-1 pb-2 text-sm font-bold tracking-wide text-muted-foreground uppercase">{m.quick_timers()}</p>
+    <div class="flex flex-col gap-1">
+      {presets.map(({ label, minutes }) => (
+        <button
+          type="button"
+          data-timer-start
+          data-quick-preset
+          data-minutes={minutes}
+          data-label={label}
+          class="flex h-12 items-center justify-between rounded-xl px-3 text-left text-base font-semibold hover:bg-muted"
+        >
+          <span>{label}</span>
+          <span class="text-muted-foreground tabular-nums">{formatDuration(minutes, locale)}</span>
+        </button>
+      ))}
+    </div>
+    <form data-quick-custom data-label-template={m.quick_custom_label({ minutes: "{minutes}" })} class="mt-2 flex gap-2 border-t border-border pt-3">
+      <label class="flex-1">
+        <span class="sr-only">{m.quick_custom()}</span>
+        <input
+          type="number"
+          name="minutes"
+          min="1"
+          max="600"
+          required
+          inputmode="numeric"
+          placeholder={m.quick_custom()}
+          class="h-12 w-full rounded-xl border-input bg-card text-lg focus:border-primary focus:ring-2 focus:ring-primary"
+        />
+      </label>
+      <button type="submit" class="h-12 rounded-xl bg-primary px-4 text-base font-semibold text-primary-foreground hover:bg-primary-accent">
+        {m.quick_start()}
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+  import "@/scripts/quick-timers";
+</script>

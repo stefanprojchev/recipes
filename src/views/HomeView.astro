@@ -1,0 +1,228 @@
+---
+import Search from "@tabler/icons/outline/search.svg";
+import ArrowsShuffle from "@tabler/icons/outline/arrows-shuffle.svg";
+import ArrowRight from "@tabler/icons/outline/arrow-right.svg";
+import ChefHat from "@tabler/icons/outline/chef-hat.svg";
+import CalendarWeek from "@tabler/icons/outline/calendar-week.svg";
+import Leaf from "@tabler/icons/outline/leaf.svg";
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+import Layout from "@layouts/Layout.astro";
+import DayMenu from "@components/plan/DayMenu.astro";
+import CategoryIcon from "@components/recipe/CategoryIcon.astro";
+import RecipeCard from "@components/recipe/RecipeCard.astro";
+import { CATEGORY_HUE } from "@/lib/category-hue";
+import { asLocale, t } from "@/lib/i18n-content";
+import { categoryLabel, mealLabel } from "@/lib/labels";
+import { CATEGORIES, MEALS, type Meal } from "@/lib/recipe-taxonomy";
+import { dishText } from "@/lib/dish-text";
+import { addDays, formatDay, getPlanDays } from "@/lib/mealplan";
+import { getIngredients, getRecipes, ingredientName, sortByTitle } from "@/lib/recipes";
+
+const locale = asLocale(Astro.currentLocale);
+const recipes = sortByTitle(await getRecipes(), locale);
+const recipesHref = localizeHref("/recipes");
+
+const categories = CATEGORIES.map((category) => ({
+  category,
+  count: recipes.filter((r) => r.data.category === category).length,
+})).filter((entry) => entry.count > 0);
+
+/** Dinner is optional in this household's plan — the home page features the daily three. */
+const featuredMeals: Meal[] = ["breakfast", "lunch", "snack"];
+const rows = featuredMeals
+  .map((meal) => ({ meal, recipes: recipes.filter((r) => r.data.meals.includes(meal)) }))
+  .filter((row) => row.recipes.length > 0);
+
+const recipeUrls = recipes.map((r) => localizeHref(`/recipes/${r.id}`));
+
+// "In season": every month rendered at build, the tablet shows the current one (src/scripts/home.ts).
+const ingredients = await getIngredients();
+const monthName = new Intl.DateTimeFormat(locale, { month: "long", timeZone: "UTC" });
+const seasons = Array.from({ length: 12 }, (_, i) => i + 1)
+  .map((month) => {
+    const produce = [...ingredients.values()].filter((ing) => ing.data.months?.includes(month));
+    const ids = new Set(produce.map((ing) => ing.id));
+    const matching = recipes
+      .map((recipe) => ({
+        recipe,
+        hits: new Set(recipe.data.ingredients.flatMap((g) => g.items).map((l) => l.ingredient.id).filter((id) => ids.has(id))).size,
+      }))
+      .filter((entry) => entry.hits > 0)
+      .sort((a, b) => b.hits - a.hits)
+      .slice(0, 8)
+      .map((entry) => entry.recipe);
+    return {
+      month,
+      name: monthName.format(new Date(Date.UTC(2026, month - 1, 1))),
+      produce: produce.map((ing) => ingredientName(ing, locale, "other")).sort((a, b) => a.localeCompare(b, locale)),
+      recipes: matching,
+    };
+  })
+  .filter((season) => season.produce.length > 0);
+
+// "Today" is decided on the tablet (src/scripts/plan.ts); the site is rebuilt
+// weekly, so render every planned day from a week back to four weeks ahead.
+const buildDay = new Date().toISOString().slice(0, 10);
+const todayCandidates = (await getPlanDays()).filter(
+  (day) => day.date >= addDays(buildDay, -7) && day.date <= addDays(buildDay, 28),
+);
+---
+
+<Layout title={`${m.site_name()} · ${m.site_tagline()}`} description={m.site_description()}>
+  <div class="mx-auto max-w-6xl px-4 pb-24 sm:px-6">
+    <!-- Today first: it's what the chef needs at 7:00 and what the family checks at a glance.
+         Landscape tablet: today on the left; search and tomorrow's menu on the right. -->
+    <div class="grid gap-12 pt-6 sm:pt-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:items-start lg:gap-8">
+        <section aria-labelledby="today-heading">
+          <h1 id="today-heading" class="font-heading text-4xl font-semibold">{m.today_title()}</h1>
+          {todayCandidates.map((day) => (
+            <div data-today-panel={day.date} style="display: none" class="mt-4 rounded-3xl border border-border bg-card p-5 shadow-xs sm:p-6">
+              <p class="font-heading text-2xl font-semibold first-letter:uppercase">{formatDay(day.date, locale)}</p>
+              {day.note && <p class="mt-1 text-base text-muted-foreground">{t(day.note, locale)}</p>}
+              <DayMenu day={day} locale={locale} size="lg" class="mt-4" />
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a
+                  href={localizeHref(`/plan/day/${day.date}`)}
+                  class="inline-flex h-14 items-center gap-2 rounded-2xl bg-primary px-6 text-lg font-semibold text-primary-foreground hover:bg-primary-accent"
+                >
+                  <ChefHat class="size-6" aria-hidden="true" />{m.today_open_sheet()}
+                </a>
+                <a
+                  href={localizeHref("/plan")}
+                  class="inline-flex h-14 items-center gap-2 rounded-2xl bg-secondary px-6 text-lg font-semibold text-secondary-foreground hover:bg-accent"
+                >
+                  <CalendarWeek class="size-6" aria-hidden="true" />{m.today_whole_week()}
+                </a>
+              </div>
+            </div>
+          ))}
+          <div data-today-none class="mt-4 flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-dashed border-border p-6">
+            <p class="text-lg text-muted-foreground">{m.today_none()}</p>
+            <a href={localizeHref("/plan")} class="inline-flex h-12 items-center gap-2 rounded-2xl bg-secondary px-5 text-base font-semibold text-secondary-foreground hover:bg-accent">
+              <CalendarWeek class="size-5" aria-hidden="true" />{m.today_whole_week()}
+            </a>
+          </div>
+        </section>
+      <div class="flex flex-col gap-12 lg:gap-8">
+            <section aria-labelledby="search-heading">
+              <h2 id="search-heading" class="font-heading text-3xl font-semibold lg:text-2xl">{m.home_greeting()}</h2>
+              <form action={recipesHref} method="get" class="mt-4 flex w-full flex-col gap-3 sm:flex-row lg:flex-col">
+                <label class="relative flex-1">
+                  <span class="sr-only">{m.search_label()}</span>
+                  <Search class="pointer-events-none absolute top-1/2 left-4 size-6 -translate-y-1/2 text-muted-foreground" aria-hidden="true" />
+                  <input
+                    type="search"
+                    name="q"
+                    autocomplete="off"
+                    enterkeyhint="search"
+                    placeholder={m.search_placeholder()}
+                    class="h-14 w-full rounded-2xl border-input bg-card pr-4 pl-13 text-lg shadow-xs focus:border-primary focus:ring-2 focus:ring-primary"
+                  />
+                </label>
+                <button
+                  type="button"
+                  id="surprise-me"
+                  data-urls={JSON.stringify(recipeUrls)}
+                  class="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-secondary px-6 text-lg font-semibold text-secondary-foreground hover:bg-accent"
+                >
+                  <ArrowsShuffle class="size-6" aria-hidden="true" />{m.home_surprise()}
+                </button>
+              </form>
+            </section>
+            <section class="hidden lg:block" aria-labelledby="tomorrow-heading">
+              <h2 id="tomorrow-heading" class="font-heading text-2xl font-semibold">{m.idle_tomorrow()}</h2>
+              {todayCandidates.map((day) => (
+                <div data-tomorrow-panel={day.date} style="display: none" class="mt-4 rounded-3xl border border-border bg-card p-5">
+                  <p class="text-base font-semibold text-muted-foreground first-letter:uppercase">{formatDay(day.date, locale)}</p>
+                  <dl class="mt-3 flex flex-col gap-3">
+                    {MEALS.filter((meal) => day.meals[meal].length > 0).map((meal) => (
+                      <div>
+                        <dt class="text-sm font-bold tracking-wide text-primary uppercase">{mealLabel(meal, locale)}</dt>
+                        <dd class="text-lg leading-snug">{day.meals[meal].map((dish) => dishText(dish, locale)).join(", ")}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              ))}
+              <p data-tomorrow-none class="mt-4 rounded-3xl border border-dashed border-border p-5 text-base text-muted-foreground">{m.today_none()}</p>
+            </section>
+      </div>
+    </div>
+
+    <section class="mt-12" aria-labelledby="categories-heading">
+      <h2 id="categories-heading" class="font-heading text-3xl font-semibold">{m.home_categories()}</h2>
+      <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        {categories.map(({ category, count }) => (
+          <a
+            href={`${recipesHref}?c=${category}`}
+            style={`--hue: ${CATEGORY_HUE[category]}`}
+            class="flex flex-col items-center gap-2 rounded-2xl bg-[oklch(0.94_0.04_var(--hue))] p-4 text-center transition hover:-translate-y-0.5 hover:shadow-md dark:bg-[oklch(0.3_0.04_var(--hue))]"
+          >
+            <CategoryIcon category={category} class="size-10 text-[oklch(0.5_0.12_var(--hue))] dark:text-[oklch(0.8_0.1_var(--hue))]" />
+            <span class="text-base font-semibold">{categoryLabel(category, locale)}</span>
+            <span class="text-sm text-muted-foreground tabular-nums">{count}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="mt-12" data-seasonal style="display: none" aria-label={m.season_title()}>
+      {seasons.map((season) => (
+        <div data-season-month={season.month} style="display: none">
+          <h2 class="flex items-center gap-2 font-heading text-3xl font-semibold first-letter:uppercase">
+            <Leaf class="size-7 shrink-0 text-primary" aria-hidden="true" />{m.season_month({ month: season.name })}
+          </h2>
+          <div class="mt-4 rounded-3xl border border-border bg-card p-5 sm:p-6">
+            <div class="flex flex-wrap gap-2">
+              {season.produce.map((name) => (
+                <a
+                  href={`${recipesHref}?q=${encodeURIComponent(name)}`}
+                  class="inline-flex h-11 items-center rounded-full bg-success px-4 text-base font-semibold text-success-foreground hover:brightness-95"
+                >
+                  {name}
+                </a>
+              ))}
+            </div>
+            {season.recipes.length > 0 && (
+              <>
+                <p class="mt-5 text-sm font-bold tracking-wide text-muted-foreground uppercase">{m.season_recipes()}</p>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  {season.recipes.map((recipe) => (
+                    <a
+                      href={localizeHref(`/recipes/${recipe.id}`)}
+                      class="inline-flex h-11 items-center rounded-full border border-input bg-card px-4 text-base font-semibold hover:border-primary hover:text-primary"
+                    >
+                      {t(recipe.data.title, locale)}
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    {rows.map(({ meal, recipes: list }) => (
+      <section class="mt-12" aria-labelledby={`meal-${meal}`}>
+        <div class="flex items-end justify-between gap-4">
+          <h2 id={`meal-${meal}`} class="font-heading text-3xl font-semibold">{mealLabel(meal, locale)}</h2>
+          <a href={`${recipesHref}?m=${meal}`} class="inline-flex h-11 items-center gap-1 text-base font-semibold text-primary-accent hover:underline">
+            {m.home_all_recipes()}<ArrowRight class="size-5" aria-hidden="true" />
+          </a>
+        </div>
+        <div class="scrollbar-none -mx-4 mt-4 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-3 sm:mx-0 sm:scroll-px-0 sm:px-0">
+          {list.map((recipe) => (
+            <RecipeCard recipe={recipe} locale={locale} class="w-64 shrink-0 snap-start sm:w-72" />
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Layout>
+
+<script>
+  import "@/scripts/home";
+  import "@/scripts/plan";
+</script>

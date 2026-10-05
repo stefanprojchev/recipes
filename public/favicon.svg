@@ -1,4 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="4" fill="#18181b"/>
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" fill="#fafafa" font-size="18" font-family="system-ui">P</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="11" fill="#b4532a"/>
+  <g transform="translate(5.5 5) scale(0.77)">
+    <g fill="none" stroke="#fbf6ee" stroke-width="2.6" stroke-linecap="round">
+      <path d="M17 14c-2.2-2.6 2.2-4.6 0-8"/>
+      <path d="M24 14c-2.2-2.6 2.2-4.6 0-8"/>
+      <path d="M31 14c-2.2-2.6 2.2-4.6 0-8"/>
+    </g>
+    <g fill="#fbf6ee">
+      <rect x="4" y="18" width="40" height="5" rx="2.5"/>
+      <circle cx="4.5" cy="22.5" r="2.8"/>
+      <circle cx="43.5" cy="22.5" r="2.8"/>
+      <path d="M7.5 25h33c-1.1 8.8-7.7 14.5-16.5 14.5S8.6 33.8 7.5 25Z"/>
+    </g>
+    <path d="M13.5 30.5c1.75-1.4 3.5-1.4 5.25 0s3.5 1.4 5.25 0 3.5-1.4 5.25 0 3.5 1.4 5.25 0" fill="none" stroke="#b4532a" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
 </svg>

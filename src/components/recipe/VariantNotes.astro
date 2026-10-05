@@ -1,0 +1,33 @@
+---
+import InfoCircle from "@tabler/icons/outline/info-circle.svg";
+import { t } from "@/lib/i18n-content";
+import type { Locale } from "@/lib/locale";
+import type { Recipe } from "@/lib/recipes";
+
+interface Props {
+  recipe: Recipe;
+  locale: Locale;
+  class?: string;
+}
+
+const { recipe, locale, class: className } = Astro.props;
+const withNotes = recipe.data.variants.filter((variant) => variant.note);
+---
+
+{
+  withNotes.map((variant) => (
+    <div
+      data-variant-note={variant.id}
+      style="display: none"
+      class:list={[
+        "flex gap-3 rounded-2xl border border-primary/30 bg-primary/8 p-4 text-lg",
+        className,
+      ]}
+    >
+      <InfoCircle class="mt-0.5 size-6 shrink-0 text-primary" aria-hidden="true" />
+      <p>
+        <strong class="font-semibold">{t(variant.name, locale)}:</strong>{" "}{variant.note && t(variant.note, locale)}
+      </p>
+    </div>
+  ))
+}

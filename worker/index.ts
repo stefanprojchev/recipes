@@ -18,8 +18,29 @@ interface EmailSender {
   }): Promise<{ messageId: string }>;
 }
 
+/** The slice of the R2 binding API used by serveMedia. */
+interface R2Range {
+  offset?: number;
+  length?: number;
+  suffix?: number;
+}
+interface R2Object {
+  size: number;
+  httpEtag: string;
+  range?: R2Range;
+  writeHttpMetadata(headers: Headers): void;
+}
+interface R2ObjectBody extends R2Object {
+  body: ReadableStream;
+}
+interface R2Bucket {
+  get(key: string, options?: { range?: Headers; onlyIf?: Headers }): Promise<R2ObjectBody | R2Object | null>;
+}
+
 interface Env {
   ASSETS: { fetch(request: Request): Promise<Response> };
+  /** Private R2 bucket with recipe photos/videos (scripts/media.mjs uploads). */
+  MEDIA: R2Bucket;
   EMAIL: EmailSender;
   TURNSTILE_SECRET: string;
   /** Comma-separated hostnames allowed to produce tokens (localhost via .dev.vars). */
@@ -41,6 +62,10 @@ export default {
 
     if (url.pathname === "/api/contact" && request.method === "POST") {
       return handleContact(request, env);
+    }
+
+    if (url.pathname.startsWith("/media/") && (request.method === "GET" || request.method === "HEAD")) {
+      return serveMedia(request, env, url);
     }
 
     return env.ASSETS.fetch(request);
@@ -136,4 +161,52 @@ async function verifyTurnstile(
   }
 
   return { ok: true };
+}
+
+/**
+ * Streams a photo/video from the private R2 bucket. Same origin as the site,
+ * so Cloudflare Access protects it. Keys contain a content hash, so responses
+ * are immutable. Honors Range (video scrubbing on iPad/Android) and
+ * If-None-Match.
+ */
+async function serveMedia(request: Request, env: Env, url: URL): Promise<Response> {
+  let key: string;
+  try {
+    key = decodeURIComponent(url.pathname.slice("/media/".length));
+  } catch {
+    return new Response("Bad media path", { status: 400 });
+  }
+  if (!key || key.includes("..") || !/^(images|videos)\//.test(key)) {
+    return new Response("Not found", { status: 404 });
+  }
+
+  try {
+    const object = await env.MEDIA.get(key, { range: request.headers, onlyIf: request.headers });
+    if (!object) return new Response("Not found", { status: 404 });
+
+    const headers = new Headers();
+    object.writeHttpMetadata(headers);
+    headers.set("ETag", object.httpEtag);
+    headers.set("Accept-Ranges", "bytes");
+    // Private: behind Access, never in shared caches. Immutable: keys carry a content hash.
+    headers.set("Cache-Control", "private, max-age=31536000, immutable");
+
+    if (!("body" in object)) return new Response(null, { status: 304, headers });
+
+    const ranged = request.headers.has("Range") && object.range !== undefined;
+    if (ranged && object.range) {
+      const { offset, length, suffix } = object.range;
+      const start = suffix !== undefined ? object.size - suffix : (offset ?? 0);
+      const size = suffix ?? length ?? object.size - start;
+      headers.set("Content-Range", `bytes ${start}-${start + size - 1}/${object.size}`);
+      headers.set("Content-Length", String(size));
+    } else {
+      headers.set("Content-Length", String(object.size));
+    }
+
+    return new Response(request.method === "HEAD" ? null : object.body, { status: ranged ? 206 : 200, headers });
+  } catch (err) {
+    console.error(`Media error for "${key}":`, err);
+    return new Response("Media unavailable", { status: 500 });
+  }
 }
