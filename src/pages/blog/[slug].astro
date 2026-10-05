@@ -1,0 +1,67 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Prose } from "@components/starwind/prose";
+import { getCollection, getEntry, render } from "astro:content";
+import { DEFAULT_LOCALE } from "@/lib/locale";
+
+export async function getStaticPaths() {
+  // Paths come from the default locale only — mapping every locale's posts
+  // to bare slugs throws on duplicate slugs the moment a second locale has
+  // a post. Localized routes reuse these slugs; the entry is swapped below.
+  const posts = await getCollection(
+    "blog",
+    (entry) => entry.id.startsWith(`${DEFAULT_LOCALE}/`) && !entry.data.draft,
+  );
+
+  return posts.map((post) => ({
+    params: { slug: post.id.slice(DEFAULT_LOCALE.length + 1) },
+    props: { post },
+  }));
+}
+
+const locale = Astro.currentLocale ?? DEFAULT_LOCALE;
+
+let { post } = Astro.props;
+if (locale !== DEFAULT_LOCALE) {
+  const slug = post.id.slice(DEFAULT_LOCALE.length + 1);
+  const localized = await getEntry("blog", `${locale}/${slug}`);
+  if (localized && !localized.data.draft) post = localized;
+}
+
+const { Content } = await render(post);
+
+const ogImagePath = post.data.ogImage ?? `/og/${post.id}`;
+---
+
+<Layout
+  title={post.data.title}
+  description={post.data.description}
+  ogImage={ogImagePath}
+  type="article"
+  publishedDate={post.data.publishedDate.toISOString()}
+>
+  <article class="mx-auto max-w-3xl px-6 py-24">
+    <header class="mb-12">
+      <time
+        datetime={post.data.publishedDate.toISOString()}
+        class="text-sm text-muted-foreground"
+      >
+        {post.data.publishedDate.toLocaleDateString(locale, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </time>
+      <h1 class="mt-2 text-4xl font-bold font-heading tracking-tight">
+        {post.data.title}
+      </h1>
+      <p class="mt-4 text-lg text-muted-foreground">
+        {post.data.description}
+      </p>
+    </header>
+
+    <Prose class="max-w-none">
+      <Content />
+    </Prose>
+  </article>
+</Layout>

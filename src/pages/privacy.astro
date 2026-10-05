@@ -1,0 +1,19 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Prose } from "@components/starwind/prose";
+import * as m from "@/paraglide/messages.js";
+---
+
+<Layout title={m.privacy_title()} description={m.privacy_description()}>
+  <section class="mx-auto max-w-3xl px-6 py-24">
+    <h1 class="text-3xl font-bold font-heading tracking-tight">
+      {m.privacy_title()}
+    </h1>
+    <p class="mt-4 text-sm text-muted-foreground">
+      {m.legal_last_updated({ date: "YYYY-MM-DD" })}
+    </p>
+    <Prose class="mt-8 max-w-none">
+      <p>Replace this with your privacy policy.</p>
+    </Prose>
+  </section>
+</Layout>

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+
+  "site_name": "Project Name",
+  "site_description": "Project description goes here.",
+
+  "nav_home": "Home",
+  "nav_blog": "Blog",
+  "nav_contact": "Contact",
+
+  "contact_title": "Get in Touch",
+  "contact_description": "Contact us with any questions or inquiries.",
+  "contact_name": "Name",
+  "contact_email": "Email",
+  "contact_message": "Message",
+  "contact_submit": "Send Message",
+  "contact_sending": "Sending...",
+  "contact_success": "Message sent successfully!",
+  "contact_error": "Something went wrong. Please try again.",
+  "contact_network_error": "Network error. Please check your connection.",
+  "contact_send_another": "Send another message",
+
+  "blog_title": "Blog",
+  "blog_description": "Latest posts and updates.",
+  "blog_no_posts": "No posts yet.",
+
+  "footer_rights": "All rights reserved.",
+
+  "privacy_title": "Privacy Policy",
+  "privacy_description": "Our privacy policy explains how we handle your data.",
+  "terms_title": "Terms of Service",
+  "terms_description": "The terms and conditions for using our website.",
+  "legal_last_updated": "Last updated: {date}",
+
+  "not_found_title": "Page Not Found",
+  "not_found_description": "The page you're looking for doesn't exist.",
+  "not_found_back_home": "Go back home"
+}

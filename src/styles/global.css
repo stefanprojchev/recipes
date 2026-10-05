@@ -1,0 +1,13 @@
+/*
+ * Project-specific CSS overrides.
+ *
+ * Design tokens (colors, fonts, radii, dark mode) are in starwind.css.
+ * Use this file for custom styles that don't belong in Starwind's theme.
+ *
+ * IMPORTANT: every rule in this file MUST be wrapped in
+ * `@layer components { ... }`. Tailwind v4 utilities live in cascade
+ * layers, and ANY unlayered rule beats them regardless of specificity —
+ * symptoms: `.hidden` not hiding, `absolute`/`md:` variants silently
+ * ignored. If a JS toggle must win unconditionally over project CSS,
+ * set inline `style.display` instead of toggling `.hidden`.
+ */

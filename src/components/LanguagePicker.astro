@@ -1,0 +1,39 @@
+---
+/**
+ * Language picker — renders links to switch locale.
+ *
+ * When you add a new locale:
+ * 1. Add it to `locales` in astro.config.mjs and project.inlang/settings.json
+ * 2. Add the label to the `labels` map below
+ * 3. Create a messages/{locale}.json file
+ */
+
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { DEFAULT_LOCALE, stripLocalePrefix } from "@/lib/locale";
+
+const labels: Record<string, string> = {
+  en: "EN",
+};
+
+const currentLocale = Astro.currentLocale ?? DEFAULT_LOCALE;
+const basePath = stripLocalePrefix(Astro.url.pathname);
+---
+
+{Object.keys(labels).length > 1 && (
+  <div class="flex items-center gap-2 text-sm">
+    {Object.entries(labels).map(([locale, label]) => (
+      <a
+        href={getRelativeLocaleUrl(locale, basePath)}
+        class:list={[
+          "transition-colors",
+          locale === currentLocale
+            ? "text-foreground font-medium"
+            : "text-muted-foreground hover:text-foreground",
+        ]}
+        aria-current={locale === currentLocale ? "page" : undefined}
+      >
+        {label}
+      </a>
+    ))}
+  </div>
+)}

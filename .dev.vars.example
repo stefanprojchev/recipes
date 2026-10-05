@@ -1,0 +1,9 @@
+# Runtime Worker vars for local `wrangler dev` (pnpm preview:worker).
+# Copy to .dev.vars (gitignored) — these override wrangler.toml [vars] locally.
+#
+# The secret below is Cloudflare's always-passing test secret, pairing with
+# the test site key in .env.example. To test the real widget locally, put the
+# real secret here (Spin adds localhost to the widget's hostnames).
+
+TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+TURNSTILE_HOSTNAMES=localhost

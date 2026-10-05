@@ -1,0 +1,19 @@
+---
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+---
+
+<footer class="border-t border-border">
+  <div class="mx-auto max-w-5xl px-6 py-8 text-center text-sm text-muted-foreground">
+    <div class="flex items-center justify-center gap-4 mb-3">
+      <a href={localizeHref("/privacy")} class="transition-colors hover:text-foreground">
+        {m.privacy_title()}
+      </a>
+      <span aria-hidden="true">&middot;</span>
+      <a href={localizeHref("/terms")} class="transition-colors hover:text-foreground">
+        {m.terms_title()}
+      </a>
+    </div>
+    <p>&copy; {new Date().getFullYear()} {m.site_name()}. {m.footer_rights()}</p>
+  </div>
+</footer>

@@ -1,0 +1,20 @@
+---
+import Layout from "@layouts/Layout.astro";
+import * as m from "@/paraglide/messages.js";
+import { localizeHref } from "@/paraglide/runtime.js";
+---
+
+<Layout title={m.not_found_title()} description={m.not_found_description()}>
+  <section class="mx-auto max-w-5xl px-6 py-24 text-center">
+    <h1 class="text-6xl font-bold font-heading tracking-tight">404</h1>
+    <p class="mt-4 text-lg text-muted-foreground">
+      {m.not_found_description()}
+    </p>
+    <a
+      href={localizeHref("/")}
+      class="mt-8 inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+    >
+      {m.not_found_back_home()}
+    </a>
+  </section>
+</Layout>

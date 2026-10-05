@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+.env
+.env.local
+.dev.vars
+.DS_Store
+.vscode/*
+!.vscode/starwind.code-snippets
+
+# Paraglide generated output
+src/paraglide/
+
+# Build artifacts
+*.tsbuildinfo
+
+# Claude Code personal overrides
+.claude/settings.local.json
+CLAUDE.local.md

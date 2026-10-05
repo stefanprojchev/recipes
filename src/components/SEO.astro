@@ -1,0 +1,82 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import {
+  LOCALES,
+  DEFAULT_LOCALE,
+  HREFLANG_MAP,
+  stripLocalePrefix,
+} from "@/lib/locale";
+import * as m from "@/paraglide/messages.js";
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  canonicalUrl?: string;
+  type?: "website" | "article";
+  publishedDate?: string;
+}
+
+const {
+  title,
+  description,
+  ogImage,
+  canonicalUrl,
+  type = "website",
+  publishedDate,
+} = Astro.props;
+
+const siteUrl = import.meta.env.PUBLIC_SITE_URL ?? Astro.site?.toString() ?? "";
+const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).toString();
+const ogImageUrl = ogImage
+  ? new URL(ogImage, siteUrl).toString()
+  : new URL("/og/default", siteUrl).toString();
+
+const currentLocale = Astro.currentLocale ?? DEFAULT_LOCALE;
+const strippedPath = stripLocalePrefix(Astro.url.pathname);
+// x-default must go through getRelativeLocaleUrl like the alternates —
+// building it from the raw path drifts on trailing slashes.
+const xDefaultUrl = new URL(
+  getRelativeLocaleUrl(DEFAULT_LOCALE, strippedPath),
+  siteUrl,
+).toString();
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<!-- Open Graph -->
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content={currentLocale} />
+<meta property="og:site_name" content={m.site_name()} />
+
+{type === "article" && publishedDate && (
+  <meta property="article:published_time" content={publishedDate} />
+)}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+<!-- Hreflang -->
+{LOCALES.map((locale) => {
+  const hreflang = HREFLANG_MAP[locale] ?? locale;
+  const localizedPath = getRelativeLocaleUrl(locale, strippedPath);
+  return (
+    <link
+      rel="alternate"
+      hreflang={hreflang}
+      href={new URL(localizedPath, siteUrl).toString()}
+    />
+  );
+})}
+<link rel="alternate" hreflang="x-default" href={xDefaultUrl} />

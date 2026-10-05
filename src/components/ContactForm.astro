@@ -1,0 +1,68 @@
+---
+import * as m from "@/paraglide/messages.js";
+import { Input } from "@components/starwind/input";
+import { Textarea } from "@components/starwind/textarea";
+import { Button } from "@components/starwind/button";
+import { Label } from "@components/starwind/label";
+
+const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY;
+if (!turnstileSiteKey) {
+  throw new Error(
+    "PUBLIC_TURNSTILE_SITE_KEY is not set. A build without it ships a contact form that silently 403s forever. " +
+      "For local dev: `cp .env.example .env` (contains Cloudflare's always-passing test key). " +
+      "Production builds read the committed .env.production.",
+  );
+}
+---
+
+<div
+  id="contact-form-wrapper"
+  data-state="idle"
+  data-sitekey={turnstileSiteKey}
+  data-msg-success={m.contact_success()}
+  data-msg-error={m.contact_error()}
+  data-msg-network-error={m.contact_network_error()}
+  class="max-w-lg"
+>
+  <form class="flex flex-col gap-4">
+    <div class="flex flex-col gap-1.5">
+      <Label for="name" size="sm">{m.contact_name()}</Label>
+      <Input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+      <Label for="email" size="sm">{m.contact_email()}</Label>
+      <Input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+      <Label for="message" size="sm">{m.contact_message()}</Label>
+      <Textarea id="message" name="message" rows="5" required class="resize-y" />
+    </div>
+
+    <div data-turnstile-container></div>
+
+    <Button type="submit" variant="primary">
+      <span data-label="idle">{m.contact_submit()}</span>
+      <span data-label="sending" class="hidden">{m.contact_sending()}</span>
+    </Button>
+  </form>
+
+  <div data-contact-result class="hidden flex-col items-start gap-4">
+    <p data-contact-result-message class="text-sm"></p>
+    <Button type="button" data-contact-send-another variant="outline">
+      {m.contact_send_another()}
+    </Button>
+  </div>
+</div>
+
+{/* Explicit rendering only — implicit (`class="cf-turnstile"`) stacks a
+    duplicate widget on every ClientRouter navigation. */}
+<script
+  is:inline
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onloadTurnstileCallback"
+  defer></script>
+
+<script>
+  import "@/scripts/contact-form";
+</script>

@@ -1,0 +1,41 @@
+name = "my-astro-site"
+main = "worker/index.ts"
+compatibility_date = "2026-03-26"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+
+# Email Service send binding (contact form). The sending domain must be
+# onboarded to Email Service; the recipient must be a verified destination
+# address. Sending to your own verified addresses is free on all plans.
+[[send_email]]
+name = "EMAIL"
+
+# SINGLE SOURCE OF TRUTH for runtime Worker vars. Dashboard edits to these
+# are overwritten by every deploy (incl. Workers Builds) — change them here.
+[vars]
+CONTACT_EMAIL = "hello@example.com"
+EMAIL_FROM = "noreply@example.com"
+# Hostnames allowed to mint Turnstile tokens (comma-separated). Local dev
+# overrides this with "localhost" via .dev.vars.
+TURNSTILE_HOSTNAMES = "example.com"
+
+# Secrets (set via `wrangler secret put` — never in [vars]):
+# - TURNSTILE_SECRET
+#
+# Public build-time keys (PUBLIC_*-prefixed, inlined by `astro build`) live in
+# the committed .env.production so Workers Builds needs zero dashboard build
+# variables:
+# - PUBLIC_TURNSTILE_SITE_KEY
+# - PUBLIC_SITE_URL
+
+# Custom domains (added at go-live). Keep the canonical apex FIRST —
+# `wrangler dev` simulates the first entry of routes[]. The www→apex 301 is a
+# zone Redirect Rule, NOT Worker code (run_worker_first would bill every asset
+# request; scheme checks in the Worker loop under wrangler dev).
+# routes = [
+#   { pattern = "example.com", custom_domain = true },
+#   { pattern = "www.example.com", custom_domain = true },
+# ]
