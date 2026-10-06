@@ -1,0 +1,87 @@
+title:
+  mk: Овесна каша
+  en: Oatmeal
+summary:
+  mk: Топла кремаста каша од овесни снегулки со млеко — готова за пет минути, секој ден со друг додаток.
+  en: Warm, creamy oats cooked in milk — ready in five minutes, with a different topping every day.
+category: breakfast
+meals: [breakfast]
+servings: 3
+time: { prep: 2, cook: 6 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/how-to-make-oatmeal/
+
+ingredients:
+  - items:
+      - { ingredient: oats, qty: 135, unit: g }
+      - { ingredient: milk, qty: 500, unit: ml }
+      - { ingredient: water, qty: 250, unit: ml }
+      - { ingredient: salt, qty: 1, unit: pinch }
+      - { ingredient: cinnamon, qty: 1, unit: pinch }
+      - { ingredient: honey, qty: 1, unit: tbsp, note: { mk: за сервирање, en: to serve } }
+
+steps:
+  - text:
+      mk: Во тенџере стави ги овесот, млекото, водата, солта и циметот.
+      en: Put the oats, milk, water, salt and cinnamon in a pot.
+  - text:
+      mk: Донеси до вриење на среден оган, па намали и вари мешајќи додека не стане густо и кремасто.
+      en: Bring to the boil over medium heat, then lower the heat and simmer, stirring, until thick and creamy.
+    timer: 5
+  - text:
+      mk: Тргни од оган и остави една минута да отстои — ќе се згусне уште малку.
+      en: Take off the heat and let it stand for a minute — it thickens a little more.
+    timer: 1
+  - text:
+      mk: Распореди во чинии и додај мед и додатоците од избраната варијанта.
+      en: Spoon into bowls and add honey and the toppings of the chosen variant.
+
+variants:
+  - id: banana-walnut
+    name: { mk: Банана и ореви, en: Banana and walnuts }
+    note:
+      mk: Половина банана издроби ја во кашата додека се вари, а другата исечи ја на тркалца одозгора со сецкани ореви.
+      en: Mash half a banana into the oats while they cook and slice the rest on top with chopped walnuts.
+    add:
+      - { ingredient: banana, qty: 1, unit: pc }
+      - { ingredient: walnuts, qty: 30, unit: g }
+  - id: apple
+    name: { mk: Јаболко и цимет, en: Apple and cinnamon }
+    note:
+      mk: Изренди го јаболкото и вари го заедно со овесот; додај повеќе цимет.
+      en: Grate the apple and cook it with the oats; add more cinnamon.
+    add:
+      - { ingredient: apple, qty: 1, unit: pc }
+      - { ingredient: cinnamon, qty: 0.5, unit: tsp }
+  - id: cocoa
+    name: { mk: Какао и банана, en: Cocoa and banana }
+    note:
+      mk: Вмешај една лажица какао во млекото пред варење и служи со тркалца банана — „чоколадна“ каша без шеќер.
+      en: Whisk a spoon of cocoa into the milk before cooking and serve with banana slices — "chocolate" oats with no sugar.
+    add:
+      - { ingredient: cocoa, qty: 1, unit: tbsp }
+      - { ingredient: banana, qty: 1, unit: pc }
+  - id: berries
+    name: { mk: Боровинки и бадеми, en: Blueberries and almonds }
+    note:
+      mk: Одозгора стави боровинки (свежи или замрзнати) и сецкани бадеми.
+      en: Top with blueberries (fresh or frozen) and chopped almonds.
+    add:
+      - { ingredient: blueberries, qty: 100, unit: g }
+      - { ingredient: almonds, qty: 30, unit: g }
+  - id: peanut
+    name: { mk: Путер од кикирики, en: Peanut butter }
+    note:
+      mk: Во секоја чинија вмешај лажичка путер од кикирики и додај банана — заситно до ручек.
+      en: Swirl a spoon of peanut butter into each bowl and add banana — keeps you full until lunch.
+    add:
+      - { ingredient: peanut-butter, qty: 2, unit: tbsp }
+      - { ingredient: banana, qty: 1, unit: pc }
+
+tips:
+  mk: Сооднос — еден дел овес на два дела течност. Само со вода е полесна, само со млеко — покремаста.
+  en: Ratio — one part oats to two parts liquid. With water only it's lighter, with milk only — creamier.

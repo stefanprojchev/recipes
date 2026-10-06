@@ -1,0 +1,85 @@
+title:
+  mk: Домашна гранола
+  en: Homemade granola
+summary:
+  mk: Хрскава печена гранола од овес, ореви и семки, засладена со мед — со кисело млеко и овошје за појадок или ужина.
+  en: Crunchy baked granola with oats, nuts and seeds, sweetened with honey — with yogurt and fruit for breakfast or a snack.
+category: breakfast
+meals: [breakfast, snack]
+servings: 8
+time: { prep: 10, cook: 22, rest: 30 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: The Kitchn
+  url: https://www.thekitchn.com/granola-recipe-258376
+
+ingredients:
+  - items:
+      - { ingredient: oats, qty: 300, unit: g }
+      - { ingredient: walnuts, qty: 80, unit: g, note: { mk: грубо сецкани, en: roughly chopped } }
+      - { ingredient: almonds, qty: 80, unit: g, note: { mk: грубо сецкани, en: roughly chopped } }
+      - { ingredient: sunflower-seeds, qty: 50, unit: g }
+      - { ingredient: pumpkin-seeds, qty: 50, unit: g }
+      - { ingredient: cinnamon, qty: 1, unit: tsp }
+      - { ingredient: salt, qty: 0.5, unit: tsp }
+      - { ingredient: honey, qty: 6, unit: tbsp }
+      - { ingredient: olive-oil, qty: 80, unit: ml }
+      - { ingredient: vanilla-sugar, qty: 1, unit: pack }
+      - { ingredient: raisins, qty: 80, unit: g, note: { mk: по печењето, en: after baking } }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 160°C и обложи голем плех со хартија за печење.
+      en: Heat the oven to 160°C and line a large tray with baking paper.
+  - text:
+      mk: Во голем сад измешај ги овесот, оревите, бадемите, семките, циметот и солта.
+      en: In a large bowl, mix the oats, walnuts, almonds, seeds, cinnamon and salt.
+  - text:
+      mk: Во мало тенџере кратко загреј ги медот, маслиновото масло и ванилинот додека не се поврзат, па прелиј ги врз сувата смеса и добро измешај.
+      en: Warm the honey, olive oil and vanilla sugar briefly in a small pan until combined, pour over the dry mix and stir well.
+  - text:
+      mk: Распореди ја гранолата во рамномерен слој и цврсто притисни ја со лажица.
+      en: Spread the granola in an even layer and press it down firmly with a spoon.
+  - text:
+      mk: Печи, па промешај еднаш на половина и пак притисни. Готова е кога е златна — ќе стане хрскава додека се лади.
+      en: Bake, stirring once halfway and pressing down again. It's done when golden — it crisps as it cools.
+    timer: 22
+  - text:
+      mk: Остави ја да се олади целосно на плехот без мешање (така се фаќаат грутки), па искрши ја и вмешај го сувото грозје.
+      en: Let it cool completely on the tray without stirring (that's how clusters form), then break it up and stir in the raisins.
+    timer: 30
+
+variants:
+  - id: cocoa
+    name: { mk: Какао гранола, en: Cocoa granola }
+    note:
+      mk: Додај две лажици какао во сувата смеса — децата ја обожаваат со ладно млеко.
+      en: Add two spoons of cocoa to the dry mix — kids love it with cold milk.
+    add:
+      - { ingredient: cocoa, qty: 2, unit: tbsp }
+  - id: nut-free
+    name: { mk: Без јаткасти плодови, en: Nut-free }
+    note:
+      mk: Без ореви и бадеми — двојно повеќе семки. Безбедна за градинка и училиште.
+      en: No walnuts or almonds — double the seeds. Safe for kindergarten and school.
+    add:
+      - { ingredient: sunflower-seeds, qty: 80, unit: g }
+      - { ingredient: pumpkin-seeds, qty: 80, unit: g }
+    remove: [walnuts, almonds]
+  - id: apricot
+    name: { mk: Со суви кајсии, en: With dried apricots }
+    note:
+      mk: Наместо суво грозје, по печењето вмешај сецкани суви кајсии.
+      en: Instead of raisins, stir in chopped dried apricots after baking.
+    add:
+      - { ingredient: dried-apricots, qty: 80, unit: g, note: { mk: сецкани, en: chopped } }
+    remove: [raisins]
+
+tips:
+  mk: Еден плех е доволен за 8 појадоци — добро е да се прави еднаш неделно, во помирен ден. Служи со цедено кисело млеко и сезонско овошје.
+  en: One tray covers 8 breakfasts — make it once a week, on a quieter day. Serve with strained yogurt and seasonal fruit.
+storage:
+  mk: Во затворена тегла на собна температура до 3 недели.
+  en: Up to 3 weeks in a closed jar at room temperature.

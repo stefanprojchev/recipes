@@ -1,0 +1,81 @@
+title:
+  mk: Овес преку ноќ
+  en: Overnight oats
+summary:
+  mk: Овес натопен во млеко и јогурт со чиа семки — се подготвува вечерта, а наутро е готов, без готвење.
+  en: Oats soaked in milk and yogurt with chia seeds — made the evening before, ready in the morning, no cooking.
+category: breakfast
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 5, rest: 480 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Fit Foodie Finds
+  url: https://fitfoodiefinds.com/8-ways-to-eat-overnight-oats/
+prepAhead:
+  mk: Измешај го овесот со млекото и јогуртот вечерта (или барем 2 часа порано) и стави го во фрижидер.
+  en: Mix the oats with the milk and yogurt in the evening (or at least 2 hours ahead) and refrigerate.
+
+ingredients:
+  - items:
+      - { ingredient: oats, qty: 135, unit: g }
+      - { ingredient: milk, qty: 360, unit: ml }
+      - { ingredient: strained-yogurt, qty: 180, unit: g }
+      - { ingredient: chia-seeds, qty: 3, unit: tbsp }
+      - { ingredient: honey, qty: 2, unit: tbsp }
+      - { ingredient: salt, qty: 1, unit: pinch }
+
+steps:
+  - text:
+      mk: Во сад измешај ги овесот, чиа семките, млекото, јогуртот, медот и прстофат сол.
+      en: In a bowl, mix the oats, chia seeds, milk, yogurt, honey and a pinch of salt.
+  - text:
+      mk: Распореди во три тегли или чаши со капак и додај ги додатоците од избраната варијанта.
+      en: Divide between three jars or glasses with lids and add the chosen variant's extras.
+  - text:
+      mk: Затвори ги и стави ги во фрижидер преку ноќ (најмалку 2 часа).
+      en: Close and refrigerate overnight (at least 2 hours).
+  - text:
+      mk: Наутро измешај, по потреба разреди со малку млеко и додај свежо овошје одозгора.
+      en: In the morning stir, loosen with a little milk if needed and top with fresh fruit.
+
+variants:
+  - id: apple-pie
+    name: { mk: Јаболко и цимет, en: Apple pie }
+    note:
+      mk: Вмешај изрендано јаболко и цимет, а наутро поспи сецкани ореви.
+      en: Stir in grated apple and cinnamon; sprinkle chopped walnuts on top in the morning.
+    add:
+      - { ingredient: apple, qty: 1, unit: pc, note: { mk: изрендано, en: grated } }
+      - { ingredient: cinnamon, qty: 0.5, unit: tsp }
+      - { ingredient: walnuts, qty: 30, unit: g }
+  - id: cocoa-banana
+    name: { mk: Какао и банана, en: Cocoa and banana }
+    note:
+      mk: Вмешај лажица какао и издробена банана — вкус на чоколаден пудинг, без шеќер.
+      en: Stir in a spoon of cocoa and mashed banana — tastes like chocolate pudding, no sugar.
+    add:
+      - { ingredient: cocoa, qty: 1, unit: tbsp }
+      - { ingredient: banana, qty: 1, unit: pc }
+  - id: strawberry-banana
+    name: { mk: Јагоди и банана, en: Strawberry and banana }
+    note:
+      mk: Наутро одозгора стави сечени јагоди и банана. Надвор од сезона — замрзнати јагоди, ставени уште вечерта.
+      en: Top with sliced strawberries and banana in the morning. Out of season — frozen strawberries, added the evening before.
+    add:
+      - { ingredient: strawberries, qty: 150, unit: g }
+      - { ingredient: banana, qty: 1, unit: pc }
+  - id: lemon-blueberry
+    name: { mk: Лимон и боровинки, en: Lemon and blueberry }
+    note:
+      mk: Вмешај рендана кора од половина лимон и боровинки — свежо, летно.
+      en: Stir in the grated zest of half a lemon and blueberries — fresh and summery.
+    add:
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: рендана кора, en: grated zest } }
+      - { ingredient: blueberries, qty: 100, unit: g }
+
+tips:
+  mk: Сооднос — еден дел овес на еден дел млеко, плус јогурт и чиа за густина. Се чува 4 дена во фрижидер — може да се направат за неколку дена однапред.
+  en: Ratio — one part oats to one part milk, plus yogurt and chia for body. Keeps 4 days in the fridge — make several days at once.

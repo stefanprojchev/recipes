@@ -104,6 +104,10 @@ spring-onion:
 mushrooms:
   name: { mk: печурки, en: mushrooms }
   aisle: produce
+strawberries:
+  name: { mk: јагоди, en: strawberries }
+  aisle: produce
+  months: [5, 6]
 blueberries:
   name: { mk: боровинки, en: blueberries }
   aisle: produce
@@ -234,6 +238,27 @@ walnuts:
   store: market
 cocoa:
   name: { mk: какао (без шеќер), en: unsweetened cocoa }
+  aisle: dry
+chia-seeds:
+  name: { mk: чиа семки, en: chia seeds }
+  aisle: dry
+almonds:
+  name: { mk: бадеми, en: almonds }
+  aisle: dry
+sunflower-seeds:
+  name: { mk: лупени семки од сончоглед, en: sunflower seeds }
+  aisle: dry
+pumpkin-seeds:
+  name: { mk: лупени тиквени семки, en: pumpkin seeds }
+  aisle: dry
+raisins:
+  name: { mk: суво грозје, en: raisins }
+  aisle: dry
+dried-apricots:
+  name: { mk: суви кајсии, en: dried apricots }
+  aisle: dry
+peanut-butter:
+  name: { mk: путер од кикирики, en: peanut butter }
   aisle: dry
 dried-red-pepper:
   name:

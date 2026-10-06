@@ -1,0 +1,78 @@
+title:
+  mk: Чиа пудинг
+  en: Chia pudding
+summary:
+  mk: Кремаст пудинг од чиа семки натопени во млеко со мед и ванила — се прави вечерта, наутро само се додава овошје.
+  en: Creamy pudding of chia seeds soaked in milk with honey and vanilla — made the evening before, just add fruit in the morning.
+category: breakfast
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 5, rest: 360 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+source:
+  name: Minimalist Baker
+  url: https://minimalistbaker.com/how-to-make-chia-pudding/
+prepAhead:
+  mk: Измешај ги чиа семките со млекото вечерта — треба да стојат најмалку 6 часа во фрижидер.
+  en: Mix the chia seeds with the milk in the evening — they need at least 6 hours in the fridge.
+
+ingredients:
+  - items:
+      - { ingredient: milk, qty: 360, unit: ml }
+      - { ingredient: chia-seeds, qty: 60, unit: g }
+      - { ingredient: honey, qty: 1.5, unit: tbsp }
+      - { ingredient: vanilla-sugar, qty: 1, unit: pack }
+      - { ingredient: blueberries, qty: 100, unit: g, note: { mk: или друго сезонско овошје, en: or other seasonal fruit }, optional: true }
+
+steps:
+  - text:
+      mk: Во сад или тегла измешај го млекото со медот и ванилинот, па додај ги чиа семките и добро измешај.
+      en: Whisk the milk with the honey and vanilla sugar in a bowl or jar, then add the chia seeds and stir well.
+  - text:
+      mk: Остави 15 минути и пак измешај — така семките нема да се залепат во грутки.
+      en: Leave for 15 minutes and stir again — this stops the seeds clumping together.
+    timer: 15
+  - text:
+      mk: Покриј и стави во фрижидер најмалку 6 часа, најдобро преку ноќ.
+      en: Cover and refrigerate for at least 6 hours, ideally overnight.
+  - text:
+      mk: Наутро промешај, распореди во чаши и стави овошје одозгора.
+      en: In the morning stir, divide into glasses and top with fruit.
+
+variants:
+  - id: cocoa
+    name: { mk: Какао, en: Chocolate }
+    note:
+      mk: Измешај лажица какао во млекото пред чиа семките — чоколаден пудинг без шеќер.
+      en: Whisk a spoon of cocoa into the milk before the chia — a chocolate pudding with no sugar.
+    add:
+      - { ingredient: cocoa, qty: 1, unit: tbsp }
+  - id: yogurt-layers
+    name: { mk: Во слоеви со јогурт, en: Layered with yogurt }
+    note:
+      mk: Наутро во чаша наредувај слој пудинг, слој цедено кисело млеко и овошје — убаво изгледа и е позаситно.
+      en: In the morning layer pudding, strained yogurt and fruit in a glass — looks lovely and is more filling.
+    add:
+      - { ingredient: strained-yogurt, qty: 200, unit: g }
+  - id: banana
+    name: { mk: Банана, en: Banana }
+    note:
+      mk: Измиксај ја бананата со млекото пред чиа семките — природно сладок, без мед.
+      en: Blend the banana with the milk before the chia — naturally sweet, no honey needed.
+    add:
+      - { ingredient: banana, qty: 1, unit: pc, note: { mk: зрела, en: ripe } }
+    remove: [honey]
+  - id: granola
+    name: { mk: Со гранола, en: With granola }
+    note:
+      mk: Одозгора поспи домашна гранола за хрскавост — додај ја непосредно пред јадење.
+      en: Top with homemade granola for crunch — add it just before eating.
+
+tips:
+  mk: Сооднос — три дела млеко на еден дел чиа семки. За погуст пудинг — повеќе семки, за поретка — повеќе млеко.
+  en: Ratio — three parts milk to one part chia. For thicker pudding, more seeds; for looser, more milk.
+storage:
+  mk: Во затворени тегли во фрижидер до 5 дена.
+  en: Up to 5 days in closed jars in the fridge.
