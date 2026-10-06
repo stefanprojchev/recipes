@@ -1,0 +1,84 @@
+title:
+  mk: Чорба од леќа
+  en: Lentil soup
+summary:
+  mk: Густа домашна чорба од леќа со морков и компир, со запршка од алева пиперка — посна, заситна и евтина.
+  en: A thick homemade lentil soup with carrot and potato and a paprika roux — meat-free, filling and cheap.
+category: soup
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 40 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting]
+season: [autumn, winter, spring]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D0%B5%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B0-%D1%87%D0%BE%D1%80%D0%B1%D0%B0-%D1%81%D0%BE-%D0%BB%D0%B5%D1%9C%D0%B0
+sides: [salata-od-zelka, salata-pecheni-piperki, zelena-salata]
+
+ingredients:
+  - title: { mk: Чорба, en: Soup }
+    items:
+      - { ingredient: lentils, qty: 300, unit: g, note: { mk: измиена, en: rinsed } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: на тркалца, en: sliced } }
+      - { ingredient: potato, qty: 1, unit: pc, note: { mk: на коцки, en: diced } }
+      - { ingredient: garlic, qty: 2, unit: clove }
+      - { ingredient: bay-leaf, qty: 2, unit: pc }
+      - { ingredient: savory, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 1.5, unit: l }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: Запршка, en: Roux }
+    items:
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: vinegar, qty: 1, unit: tbsp, note: { mk: за сервирање, en: to serve }, optional: true }
+
+steps:
+  - text:
+      mk: Во тенџере на малку масло пропржи го кромидот, па додај ги морковот и лукот и мешај уште 2 минути.
+      en: In a pot, soften the onion in a little oil, then add the carrot and garlic and stir for 2 more minutes.
+    timer: 5
+  - text:
+      mk: Додај ги леќата, компирот, ловоровиот лист и водата. Кога ќе зоврие, намали и вари покриено додека леќата не омекне.
+      en: Add the lentils, potato, bay leaves and water. Once boiling, lower the heat and simmer covered until the lentils are soft.
+    timer: 30
+  - text:
+      mk: Во мала тава загреј го маслото, вмешај го брашното, тргни од оган и додај алева пиперка. Истури ја запршката во чорбата.
+      en: Heat the oil in a small pan, stir in the flour, take off the heat and add the paprika. Stir the roux into the soup.
+  - text:
+      mk: Зачини со чубрица, сол и пипер и вари уште 5 минути додека не се згусне. По желба, во чинијата додај капка оцет.
+      en: Season with savory, salt and pepper and simmer 5 more minutes until it thickens. A drop of vinegar in the bowl is optional.
+    timer: 5
+
+variants:
+  - id: smoked
+    name: { mk: Со чадено месо, en: With smoked pork }
+    note:
+      mk: Додај чадено свинско месо на коцки заедно со леќата — традиционална зимска верзија. Не е посна.
+      en: Add diced smoked pork together with the lentils — the traditional winter version. Not for fasting.
+    add:
+      - { ingredient: smoked-pork, qty: 200, unit: g, note: { mk: на коцки, en: diced } }
+  - id: meatballs
+    name: { mk: Со ќофтиња, en: With meatballs }
+    note:
+      mk: Од меленото месо, јајцето и малку сол направи мали ќофтиња и вари ги во чорбата последните 15 минути. Децата ги сакаат.
+      en: Make small meatballs from the minced meat, egg and a little salt and simmer them in the soup for the last 15 minutes. Kids love them.
+    add:
+      - { ingredient: minced-meat, qty: 300, unit: g }
+      - { ingredient: egg, qty: 1, unit: pc }
+  - id: cream
+    name: { mk: Крем-чорба, en: Creamy (blended) }
+    note:
+      mk: Без запршка — на крајот измиксај ја чорбата со штапен миксер и искапи лимон. Полесна верзија.
+      en: Skip the roux — blend the soup with a stick blender at the end and squeeze in lemon. A lighter version.
+    add:
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+    remove: [flour]
+
+tips:
+  mk: Леќата не треба да се потопува. Наутро се загрева со малку вода — следниот ден е уште повкусна.
+  en: Lentils don't need soaking. Reheat with a splash of water — it's even better the next day.

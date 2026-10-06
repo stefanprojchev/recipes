@@ -1,0 +1,82 @@
+title:
+  mk: Полнети пиперки
+  en: Stuffed peppers
+summary:
+  mk: Бабури полнети со мелено месо и ориз, затворени со тркалце компир и печени во сос.
+  en: Bell peppers stuffed with minced meat and rice, capped with a potato slice and baked in sauce.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 30, cook: 80 }
+difficulty: medium
+tags: [kid-friendly]
+season: [summer, autumn]
+source:
+  name: Сè за храна
+  url: https://sezahrana.mk/%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D1%82%D0%B8-%D0%BF%D0%B8%D0%BF%D0%B5%D1%80%D0%BA%D0%B8-%D1%81%D0%BE-%D0%BC%D0%B5%D0%BB%D0%B5%D0%BD%D0%BE-%D0%BC%D0%B5%D1%81%D0%BE/
+sides: [shopska-salata, taratur, zelena-salata]
+
+ingredients:
+  - title: { mk: Пиперки и фил, en: Peppers and filling }
+    items:
+      - { ingredient: bell-pepper, qty: 8, unit: pc }
+      - { ingredient: minced-meat, qty: 500, unit: g }
+      - { ingredient: rice, qty: 150, unit: g }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: parsley, qty: 0.5, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: potato, qty: 1, unit: pc, note: { mk: за капачиња, en: for the lids } }
+  - title: { mk: Сос, en: Sauce }
+    items:
+      - { ingredient: water, qty: 600, unit: ml }
+      - { ingredient: tomato-paste, qty: 2, unit: tbsp }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Измиј ги пиперките, исечи им ги капачињата и извади ги семките.
+      en: Wash the peppers, cut off the tops and remove the seeds.
+  - text:
+      mk: На масло задинстај го кромидот, додај го оризот и мешај 2 минути. Остави да се олади, па измешај со месото, алевата пиперка, магдоносот, сол и пипер.
+      en: Soften the onion in oil, add the rice and stir for 2 minutes. Let it cool, then mix with the meat, paprika, parsley, salt and pepper.
+  - text:
+      mk: Наполни ги пиперките до три четвртини — оризот ќе набабри. Затвори ги со тенко тркалце компир.
+      en: Fill the peppers three-quarters full — the rice will swell. Close each with a thin slice of potato.
+  - text:
+      mk: Нареди ги исправени во длабок сад. Измешај вода, доматен концентрат, брашно и алева пиперка и прелиј.
+      en: Stand them upright in a deep dish. Whisk the water, tomato paste, flour and paprika and pour around them.
+  - text:
+      mk: Покриј со капак или фолија и печи на 200°C.
+      en: Cover with a lid or foil and bake at 200°C.
+    timer: 60
+  - text:
+      mk: Откриј и печи додека одозгора не порумената.
+      en: Uncover and bake until browned on top.
+    timer: 20
+
+variants:
+  - id: fasting
+    name: { mk: Посни, en: Fasting (rice and vegetables) }
+    note:
+      mk: Наместо месо — повеќе ориз со кромид, рендан морков и сушено нане. Без месо и јајца, за посни денови.
+      en: Instead of meat — more rice with onion, grated carrot and dried mint. No meat or eggs, for fasting days.
+    add:
+      - { ingredient: rice, qty: 150, unit: g }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: рендан, en: grated } }
+      - { ingredient: dried-mint, qty: 1, unit: tsp }
+    remove: [minced-meat]
+  - id: yogurt
+    name: { mk: Со кисело млеко, en: With yogurt }
+    note:
+      mk: Служи ги со лажица густо кисело млеко или павлака одозгора — така ги сакаат децата.
+      en: Serve with a spoonful of thick yogurt or sour cream on top — the way kids like them.
+    add:
+      - { ingredient: strained-yogurt, qty: 200, unit: g }
+
+storage:
+  mk: Во фрижидер до 3 дена; уште подобри се следниот ден.
+  en: Keeps 3 days in the fridge; even better the next day.

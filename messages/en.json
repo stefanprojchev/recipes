@@ -273,5 +273,6 @@
   "day_mark_done": "Mark as cooked: {title}",
   "day_progress": "Cooked: {done} of {total}",
   "language_label": "Language",
-  "recipe_source": "Source"
+  "recipe_source": "Source",
+  "recipe_sides": "Serve with"
 }

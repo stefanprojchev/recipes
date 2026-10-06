@@ -1,0 +1,56 @@
+title:
+  mk: Зелена салата
+  en: Green salad
+summary:
+  mk: Свежа пролетна салата од зелена салата, млад кромид и ротквици со лимон и масло.
+  en: A fresh spring salad of lettuce, spring onion and radishes with lemon and oil.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+season: [spring]
+
+ingredients:
+  - items:
+      - { ingredient: lettuce, qty: 1, unit: pc }
+      - { ingredient: spring-onion, qty: 3, unit: pc }
+      - { ingredient: radish, qty: 6, unit: pc }
+      - { ingredient: dill, qty: 0.25, unit: bunch, optional: true }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: salt, unit: to-taste }
+
+steps:
+  - text:
+      mk: Измиј ја салатата лист по лист, исцеди ја добро и искини ја на парчиња.
+      en: Wash the lettuce leaf by leaf, dry it well and tear into pieces.
+  - text:
+      mk: Додај ситно сецкан млад кромид, ротквици на тенки тркалца и копар.
+      en: Add finely sliced spring onion, thinly sliced radishes and dill.
+  - text:
+      mk: Зачини со лимонов сок, масло и сол непосредно пред сервирање, за да не свене.
+      en: Dress with lemon juice, oil and salt just before serving so it doesn't wilt.
+
+variants:
+  - id: egg
+    name: { mk: Со варено јајце, en: With boiled egg }
+    note:
+      mk: Додај тврдо варени јајца на четвртини — станува позаситна.
+      en: Add quartered hard-boiled eggs — makes it more filling.
+    add:
+      - { ingredient: egg, qty: 2, unit: pc, note: { mk: тврдо варени, en: hard-boiled } }
+  - id: cucumber
+    name: { mk: Со краставица и сирење, en: With cucumber and cheese }
+    note:
+      mk: Додај тркалца краставица и изронето бело сирење.
+      en: Add cucumber slices and crumbled white cheese.
+    add:
+      - { ingredient: cucumber, qty: 1, unit: pc }
+      - { ingredient: feta-cheese, qty: 80, unit: g }
+
+tips:
+  mk: Најубава е во април и мај, со прва домашна салата. Наесен — со зелена салата од пазар и јаболко.
+  en: Best in April and May with the first local lettuce. In autumn — with market lettuce and apple.

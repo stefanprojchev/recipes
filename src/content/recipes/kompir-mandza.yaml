@@ -1,0 +1,78 @@
+title:
+  mk: Компир манџа
+  en: Potato stew
+summary:
+  mk: Чорбести компири со морков, пиперка и запршка од алева пиперка — едноставна домашна манџа, посна или со месо.
+  en: Brothy potatoes with carrot, pepper and a paprika roux — a simple homely stew, meat-free or with meat.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 40 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D0%B5%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B0-%D0%BF%D0%BE%D1%81%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D1%80-%D0%BC%D0%B0%D0%BD%D1%9F%D0%B0
+sides: [salata-od-zelka, shopska-salata, salata-pecheni-piperki]
+
+ingredients:
+  - items:
+      - { ingredient: potato, qty: 1, unit: kg, note: { mk: на коцки, en: diced } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: на тркалца, en: sliced } }
+      - { ingredient: red-pepper, qty: 1, unit: pc, note: { mk: на коцки, en: diced } }
+      - { ingredient: garlic, qty: 2, unit: clove }
+      - { ingredient: bay-leaf, qty: 2, unit: pc }
+      - { ingredient: water, qty: 1, unit: l }
+      - { ingredient: sunflower-oil, qty: 4, unit: tbsp }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: parsley, qty: 0.5, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во тенџере на масло пропржи ги кромидот, морковот и пиперката додека не омекнат, па додај го лукот.
+      en: In a pot, fry the onion, carrot and pepper in oil until soft, then add the garlic.
+    timer: 6
+  - text:
+      mk: Додај ги компирите и ловоровиот лист, налеј ја водата, посоли и вари додека компирите не омекнат.
+      en: Add the potatoes and bay leaves, pour in the water, season and simmer until the potatoes are tender.
+    timer: 25
+  - text:
+      mk: Во мала тава направи запршка — брашно во загреано масло, тргни од оган, додај алева пиперка — и истури ја во манџата.
+      en: Make a roux in a small pan — flour into hot oil, off the heat, add paprika — and stir it into the stew.
+  - text:
+      mk: Вари уште 5 минути да се згусне, пиперосај и поспи со магдонос.
+      en: Simmer 5 more minutes to thicken, add pepper and sprinkle with parsley.
+    timer: 5
+
+variants:
+  - id: meat
+    name: { mk: Со месо, en: With meat }
+    note:
+      mk: Прво пропржи свинско или телешко месо на коцки и вари го 30 минути пред компирите. Не е посна.
+      en: First brown diced pork or veal and simmer it 30 minutes before adding the potatoes. Not for fasting.
+    add:
+      - { ingredient: pork, qty: 400, unit: g, note: { mk: на коцки, en: diced } }
+  - id: meatballs
+    name: { mk: Со ќофтиња, en: With meatballs }
+    note:
+      mk: Од меленото месо и јајцето направи мали ќофтиња, кратко пропржи ги и додај ги во манџата заедно со компирите.
+      en: Make small meatballs from the minced meat and egg, brown them briefly and add them with the potatoes.
+    add:
+      - { ingredient: minced-meat, qty: 400, unit: g }
+      - { ingredient: egg, qty: 1, unit: pc }
+  - id: smoked
+    name: { mk: Со колбаси, en: With sausage }
+    note:
+      mk: Додај чадени колбаси на тркалца последните 10 минути. Не е посна.
+      en: Add sliced smoked sausage for the last 10 minutes. Not for fasting.
+    add:
+      - { ingredient: smoked-sausage, qty: 200, unit: g }
+
+tips:
+  mk: Манџата треба да е густа, но чорбеста — по потреба додај врела вода. Се јаде со леб и туршија или свежа салата.
+  en: The stew should be thick but brothy — add hot water if needed. Eat with bread and pickles or a fresh salad.

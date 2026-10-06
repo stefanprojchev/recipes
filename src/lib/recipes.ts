@@ -55,6 +55,10 @@ function load() {
       for (const ref of [...gallery, ...steps.flatMap((step) => (step.media ? [step.media] : []))]) {
         if (!mediaMap.has(ref.id)) problems.push(`${where}: unknown media "${ref.id}"`);
       }
+      for (const side of recipe.data.sides) {
+        if (!recipeIds.has(side.id)) problems.push(`${where}: sides lists unknown recipe "${side.id}"`);
+        if (side.id === recipe.id) problems.push(`${where}: a recipe can't be its own side`);
+      }
       const parent = recipe.data.variantOf;
       if (parent && !recipeIds.has(parent.id)) {
         problems.push(`${where}: variantOf points to unknown recipe "${parent.id}"`);

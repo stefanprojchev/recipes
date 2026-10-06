@@ -1,0 +1,55 @@
+title:
+  mk: Салата од зелка
+  en: Cabbage salad
+summary:
+  mk: Тенко сечена зелка со рендан морков, оцет и масло — зимската салата што оди со гравче и манџи.
+  en: Finely shredded cabbage with grated carrot, vinegar and oil — the winter salad for beans and stews.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, rest: 20 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+season: [autumn, winter]
+source:
+  name: Gotvi.mk
+  url: https://gotvi.mk/2018/11/02/posebna-zelka-salata/
+
+ingredients:
+  - items:
+      - { ingredient: white-cabbage, qty: 0.5, unit: pc, note: { mk: околу 600 г, en: about 600 g } }
+      - { ingredient: carrot, qty: 1, unit: pc }
+      - { ingredient: salt, qty: 1, unit: tsp }
+      - { ingredient: vinegar, qty: 2, unit: tbsp }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: pinch, optional: true }
+
+steps:
+  - text:
+      mk: Исечи ја зелката многу тенко и рендај го морковот на крупно ренде.
+      en: Shred the cabbage very finely and grate the carrot coarsely.
+  - text:
+      mk: Посоли ја зелката и стисни ја со раце неколку минути додека не омекне малку.
+      en: Salt the cabbage and squeeze it with your hands for a few minutes until it softens a little.
+  - text:
+      mk: Додај го морковот, оцетот и маслото, измешај и остави да отстои пред сервирање. Поспи со малку алева пиперка.
+      en: Add the carrot, vinegar and oil, mix and let it sit before serving. Dust with a little paprika.
+    timer: 20
+
+variants:
+  - id: sauerkraut
+    name: { mk: Од кисела зелка, en: Sauerkraut salad }
+    note:
+      mk: Зимска класика — кисела зелка исечена тенко, со масло и алева пиперка, без оцет и сол.
+      en: A winter classic — finely sliced sauerkraut with oil and paprika, no vinegar or salt.
+    add:
+      - { ingredient: sauerkraut, qty: 500, unit: g }
+    remove: [white-cabbage, carrot, vinegar, salt]
+  - id: apple
+    name: { mk: Со јаболко, en: With apple }
+    note:
+      mk: Додај едно изрендано кисело јаболко — послатка, децата ја сакаат.
+      en: Add a grated tart apple — sweeter, kids love it.
+    add:
+      - { ingredient: apple, qty: 1, unit: pc }

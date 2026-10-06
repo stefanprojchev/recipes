@@ -1,0 +1,56 @@
+title:
+  mk: Шопска салата
+  en: Shopska salad
+summary:
+  mk: Домати, краставици, пиперка и кромид под снег од рендано бело сирење — летната салата за секој ручек.
+  en: Tomatoes, cucumber, pepper and onion under a snowfall of grated white cheese — the summer salad for every lunch.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [summer]
+source:
+  name: НМД
+  url: https://nmd.mk/originalen-reczept-za-shopska-salata-makedonska-svezhina-vo-seko%D1%98-zalak/
+
+ingredients:
+  - items:
+      - { ingredient: tomato, qty: 3, unit: pc }
+      - { ingredient: cucumber, qty: 1, unit: pc }
+      - { ingredient: green-pepper, qty: 1, unit: pc, note: { mk: свежа или печена, en: fresh or roasted } }
+      - { ingredient: onion, qty: 0.5, unit: pc }
+      - { ingredient: feta-cheese, qty: 150, unit: g }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: vinegar, qty: 1, unit: tbsp }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+
+steps:
+  - text:
+      mk: Исечи ги доматите, краставицата и пиперката на коцки, а кромидот на тенки полумесечини.
+      en: Dice the tomatoes, cucumber and pepper; slice the onion into thin half-moons.
+  - text:
+      mk: Посоли, прелиј со масло и оцет и измешај.
+      en: Season with salt, dress with oil and vinegar and toss.
+  - text:
+      mk: Изренди го сирењето одозгора во дебел слој и поспи со сецкан магдонос. Служи веднаш.
+      en: Grate the cheese generously over the top, sprinkle with chopped parsley and serve straight away.
+
+variants:
+  - id: fasting
+    name: { mk: Посна, en: Fasting }
+    note:
+      mk: Без сирење — со неколку маслинки за посен ден.
+      en: No cheese — with a few olives for a fasting day.
+    remove: [feta-cheese]
+  - id: roasted-pepper
+    name: { mk: Со печена пиперка, en: With roasted pepper }
+    note:
+      mk: Наместо свежа, употреби една печена и излупена пиперка — помека и послатка.
+      en: Use a roasted, peeled pepper instead of a fresh one — softer and sweeter.
+    add:
+      - { ingredient: roasted-peppers, qty: 1, unit: pc }
+    remove: [green-pepper]

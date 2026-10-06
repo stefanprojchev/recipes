@@ -186,6 +186,11 @@ const recipes = defineCollection({
         .default([]),
       /** A bigger variation that lives in its own file links to its parent. */
       variantOf: reference("recipes").optional(),
+      /**
+       * What to serve with it — for a lunch, the salads that suit it (in season
+       * order). The weekly plan pairs every lunch with one of these.
+       */
+      sides: z.array(reference("recipes")).default([]),
       tips: text.optional(),
       story: text.optional(),
       storage: text.optional(),

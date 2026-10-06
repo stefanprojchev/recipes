@@ -1,0 +1,86 @@
+title:
+  mk: Мусака со компири
+  en: Potato moussaka
+summary:
+  mk: Слоеви компири и мелено месо, печени под златна кора од јајца и млеко.
+  en: Layers of potato and minced meat, baked under a golden egg-and-milk topping.
+category: main
+meals: [lunch, dinner]
+servings: 6
+time: { prep: 30, cook: 60, rest: 10 }
+difficulty: medium
+tags: [kid-friendly]
+source:
+  name: Сè за храна
+  url: https://sezahrana.mk/%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82-%D0%B7%D0%B0-%D0%BC%D1%83%D1%81%D0%B0%D0%BA%D0%B0-%D1%81%D0%BE-%D0%BA%D0%BE%D0%BC/
+sides: [shopska-salata, taratur, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: potato, qty: 1.5, unit: kg }
+      - { ingredient: minced-meat, qty: 500, unit: g }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: sunflower-oil, qty: 4, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: parsley, qty: 0.5, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: water, qty: 300, unit: ml, note: { mk: млака, en: lukewarm } }
+  - title: { mk: Прелив, en: Topping }
+    items:
+      - { ingredient: egg, qty: 4, unit: pc }
+      - { ingredient: milk, qty: 300, unit: ml }
+
+steps:
+  - text:
+      mk: Излупи ги компирите и исечи ги на тркалца дебели 3–4 мм. Посоли ги малку.
+      en: Peel the potatoes and slice them 3–4 mm thick. Salt lightly.
+  - text:
+      mk: На масло пропржи го кромидот до златно, па додај го месото и пржи додека не порумени и не се ронка. Зачини со алева пиперка, сол, пипер и магдонос.
+      en: Fry the onion in oil until golden, then add the meat and cook until browned and crumbly. Season with paprika, salt, pepper and parsley.
+    timer: 12
+  - text:
+      mk: Во подмачкан плех нареди слој компири, слој месо и заврши со компири. Налеј млака вода до висина на компирите.
+      en: In a greased tray layer potatoes, then meat, finishing with potatoes. Pour in lukewarm water to the level of the potatoes.
+  - text:
+      mk: Печи на 220°C додека компирите не омекнат.
+      en: Bake at 220°C until the potatoes are tender.
+    timer: 40
+  - text:
+      mk: Измати ги јајцата со млекото и прелиј ја мусаката. Намали на 180°C и печи додека преливот не порумени.
+      en: Whisk the eggs with the milk and pour over. Lower to 180°C and bake until the topping is golden.
+    timer: 15
+  - text:
+      mk: Остави да отстои пред сечење — така парчињата не се распаѓаат.
+      en: Let it rest before cutting so the pieces hold together.
+    timer: 10
+
+variants:
+  - id: eggplant
+    name: { mk: Со модар патлиџан, en: With eggplant }
+    note:
+      mk: Замени половина од компирите со тркалца модар патлиџан, претходно посолени 20 минути, исцедени и кратко пржени.
+      en: Replace half the potatoes with eggplant slices — salted for 20 minutes, squeezed and briefly fried.
+    add:
+      - { ingredient: eggplant, qty: 2, unit: pc }
+  - id: zucchini
+    name: { mk: Со тиквички, en: With zucchini }
+    note:
+      mk: Летна мусака — наместо компири, тиквички на тркалца (кратко пропржени). Се пече покусо, околу 25 минути пред преливот.
+      en: Summer moussaka — zucchini slices (briefly fried) instead of potatoes. Bakes faster, about 25 minutes before the topping.
+    add:
+      - { ingredient: zucchini, qty: 4, unit: pc }
+    remove: [potato]
+  - id: mushrooms
+    name: { mk: Посна со печурки, en: Meat-free with mushrooms }
+    note:
+      mk: Наместо месо, ситно сецкани печурки пропржени со кромидот и морков. Преливот останува со јајца и млеко.
+      en: Instead of meat, finely chopped mushrooms fried with the onion and a carrot. The egg-and-milk topping stays.
+    add:
+      - { ingredient: mushrooms, qty: 500, unit: g }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: рендан, en: grated } }
+    remove: [minced-meat]
+
+storage:
+  mk: Во фрижидер до 3 дена; се подгрева во рерна покриена со фолија.
+  en: Keeps 3 days in the fridge; reheat in the oven covered with foil.

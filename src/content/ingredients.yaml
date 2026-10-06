@@ -101,6 +101,28 @@ spring-onion:
     en: { one: spring onion, other: spring onions }
   aisle: produce
   months: [3, 4, 5, 6]
+lettuce:
+  name:
+    mk: { one: главица зелена салата, other: главици зелена салата }
+    en: { one: head of lettuce, other: heads of lettuce }
+  aisle: produce
+  months: [3, 4, 5, 10, 11]
+radish:
+  name:
+    mk: { one: ротквица, other: ротквици }
+    en: { one: radish, other: radishes }
+  aisle: produce
+  months: [3, 4, 5]
+white-cabbage:
+  name:
+    mk: { one: главица зелка, other: главици зелка }
+    en: { one: white cabbage, other: white cabbages }
+  aisle: produce
+  months: [9, 10, 11, 12, 1, 2, 3]
+peas:
+  name: { mk: грашок, en: green peas }
+  aisle: produce
+  months: [4, 5, 6]
 mushrooms:
   name: { mk: печурки, en: mushrooms }
   aisle: produce
@@ -142,6 +164,12 @@ chicken-legs:
   aisle: meat
 smoked-sausage:
   name: { mk: чадена колбасица, en: smoked sausage }
+  aisle: meat
+pork:
+  name: { mk: свинско месо, en: pork }
+  aisle: meat
+smoked-pork:
+  name: { mk: чадено свинско месо, en: smoked pork }
   aisle: meat
 ham:
   name: { mk: шунка, en: ham }
@@ -194,6 +222,9 @@ filo-pastry:
 # --- Dry goods -------------------------------------------------------------
 white-beans:
   name: { mk: бел грав, en: white beans }
+  aisle: dry
+lentils:
+  name: { mk: леќа, en: brown lentils }
   aisle: dry
 rice:
   name: { mk: ориз, en: rice }
@@ -298,6 +329,9 @@ bay-leaf:
     mk: { one: ловоров лист, other: ловорови листа }
     en: { one: bay leaf, other: bay leaves }
   aisle: spices
+savory:
+  name: { mk: чубрица, en: dried savory }
+  aisle: spices
 cumin:
   name: { mk: кимион, en: ground cumin }
   aisle: spices
@@ -319,6 +353,9 @@ canned-tomatoes:
   aisle: canned
 roasted-peppers:
   name: { mk: печени пиперки (тегла), en: roasted peppers (jar) }
+  aisle: canned
+tomato-paste:
+  name: { mk: доматен концентрат, en: tomato paste }
   aisle: canned
 
 # --- Other -----------------------------------------------------------------

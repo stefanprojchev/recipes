@@ -1,0 +1,62 @@
+title:
+  mk: Печени пиперки со лук
+  en: Roasted peppers with garlic
+summary:
+  mk: Печени и излупени црвени пиперки со лук, оцет, масло и магдонос — есенска салата што оди со сè.
+  en: Roasted, peeled red peppers with garlic, vinegar, oil and parsley — an autumn salad that goes with everything.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 25, rest: 10 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+season: [summer, autumn]
+source:
+  name: НМД
+  url: https://nmd.mk/ova-e-salatata-broj-1-vo-etno-restoranite-pecheni-piperki-so-luk-i-sirene-kremasta-i-neodoliva/
+
+ingredients:
+  - items:
+      - { ingredient: red-pepper, qty: 8, unit: pc, note: { mk: долги црвени (ајварки), en: long red peppers } }
+      - { ingredient: garlic, qty: 2, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: vinegar, qty: 1, unit: tbsp }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+
+steps:
+  - text:
+      mk: Испечи ги пиперките во рерна на 220°C (или на плотна), вртејќи ги, додека кората не поцрни.
+      en: Roast the peppers at 220°C (or on a hotplate), turning, until the skins blacken.
+    timer: 25
+  - text:
+      mk: Стави ги во сад, покриј ги и остави да се запарат — така лесно се лупат.
+      en: Put them in a bowl, cover and let them steam — they'll peel easily.
+    timer: 10
+  - text:
+      mk: Излупи ги, извади им ги семките и нареди ги во чинија.
+      en: Peel and seed them and lay them on a plate.
+  - text:
+      mk: Поспи со лук и магдонос, посоли и прелиј со масло и оцет.
+      en: Scatter with garlic and parsley, season and drizzle with oil and vinegar.
+
+variants:
+  - id: cheese
+    name: { mk: Со бело сирење, en: With white cheese }
+    note:
+      mk: Исечи ги пиперките на ленти и измешај ги со изронето бело сирење — кремаста салата од етно ресторан.
+      en: Cut the peppers into strips and mix with crumbled white cheese — the creamy salad from village restaurants.
+    add:
+      - { ingredient: feta-cheese, qty: 200, unit: g }
+  - id: jar
+    name: { mk: Од тегла (зима), en: From a jar (winter) }
+    note:
+      mk: Надвор од сезона — печени пиперки од тегла, само исцедени и зачинети.
+      en: Out of season — roasted peppers from a jar, just drained and dressed.
+    add:
+      - { ingredient: roasted-peppers, qty: 8, unit: pc }
+    remove: [red-pepper]
+
+tips:
+  mk: Есенски се пече поголема количина и се чува во тегли — истите пиперки се за салата, мусака и пиперки со јајца.
+  en: In autumn roast a big batch and keep it in jars — the same peppers go into salads, moussaka and peppers with eggs.

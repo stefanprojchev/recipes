@@ -26,6 +26,7 @@ import {
   difficultyLabel,
   formatDuration,
   mealLabel,
+  seasonLabel,
   tagLabel,
 } from "@/lib/labels";
 import { getIngredients, getRecipes, totalMinutes, type Recipe } from "@/lib/recipes";
@@ -46,6 +47,7 @@ const siblings = allRecipes.filter(
   (r) => r.id !== recipe.id && r.data.variantOf && r.data.variantOf.id === (data.variantOf?.id ?? recipe.id),
 );
 const related = [...(parent ? [parent] : []), ...siblings];
+const sides = data.sides.flatMap((ref) => allRecipes.filter((r) => r.id === ref.id));
 
 const times = [
   { label: m.recipe_time_prep(), minutes: data.time.prep },
@@ -271,6 +273,30 @@ const extras = [
               </li>
             ))}
           </ol>
+
+          {sides.length > 0 && (
+            <section class="mt-10" aria-labelledby="sides-heading">
+              <h3 id="sides-heading" class="font-heading text-2xl font-semibold">{m.recipe_sides()}</h3>
+              <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+                {sides.map((side) => (
+                  <li>
+                    <a
+                      href={localizeHref(`/recipes/${side.id}`)}
+                      class="flex min-h-14 items-center gap-3 rounded-2xl border border-border bg-card px-4 py-3 transition hover:border-primary"
+                    >
+                      <CategoryIcon category={side.data.category} class="size-6 shrink-0 text-primary" />
+                      <span class="min-w-0 flex-1">
+                        <span class="block text-lg leading-snug font-semibold">{t(side.data.title, locale)}</span>
+                        {side.data.season.length > 0 && (
+                          <span class="block text-sm text-muted-foreground">{side.data.season.map((s) => seasonLabel(s, locale)).join(" · ")}</span>
+                        )}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {data.gallery.length > 0 && (
             <section class="mt-10">

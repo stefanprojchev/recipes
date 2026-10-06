@@ -1,0 +1,59 @@
+title:
+  mk: Таратур
+  en: Taratur (cucumber yogurt salad)
+summary:
+  mk: Ладна салата од краставици во кисело млеко со лук и копар — освежува во летните денови.
+  en: Chilled cucumbers in yogurt with garlic and dill — refreshing on summer days.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, rest: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [summer]
+source:
+  name: Сè за храна
+  url: https://sezahrana.mk/%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8-%D1%82%D0%B0%D1%80%D0%B0%D1%82%D1%83%D1%80-%D0%BE%D0%B4-%D0%BA%D1%83%D1%98%D0%BD%D0%B0%D1%82%D0%B0-%D0%BD%D0%B0-%D0%BC%D0%B0%D1%80%D0%B8/
+
+ingredients:
+  - items:
+      - { ingredient: cucumber, qty: 2, unit: pc }
+      - { ingredient: yogurt, qty: 500, unit: ml }
+      - { ingredient: garlic, qty: 2, qtyMax: 3, unit: clove, note: { mk: згмечен, en: crushed } }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+      - { ingredient: sunflower-oil, qty: 1, unit: tbsp }
+      - { ingredient: salt, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Излупи ги краставиците и исечи ги ситно (или изренди ги на крупно ренде и исцеди ги малку).
+      en: Peel the cucumbers and chop them finely (or grate coarsely and squeeze lightly).
+  - text:
+      mk: Измешај ги со киселото млеко, згмечениот лук, сецканиот копар и солта.
+      en: Mix with the yogurt, crushed garlic, chopped dill and salt.
+  - text:
+      mk: Прелиј со малку масло и остави во фрижидер да се олади пред сервирање.
+      en: Drizzle with a little oil and chill before serving.
+    timer: 15
+
+variants:
+  - id: walnuts
+    name: { mk: Со ореви, en: With walnuts }
+    note:
+      mk: Одозгора поспи ситно сецкани ореви — традиционално, за празнична трпеза.
+      en: Sprinkle finely chopped walnuts on top — traditional, for a festive table.
+    add:
+      - { ingredient: walnuts, qty: 40, unit: g }
+  - id: thick
+    name: { mk: "Густ, како намаз", en: "Thick, as a dip" }
+    note:
+      mk: Со цедено кисело млеко и исцедени рендани краставици — густ намаз за леб и месо.
+      en: With strained yogurt and squeezed grated cucumber — a thick dip for bread and meat.
+    add:
+      - { ingredient: strained-yogurt, qty: 400, unit: g }
+    remove: [yogurt]
+
+tips:
+  mk: За децата — помалку лук. Таратурот се служи и како ладна супа во најжешките денови, разреден со малку ладна вода.
+  en: For the kids — less garlic. On the hottest days it's also served as a cold soup, thinned with a little cold water.

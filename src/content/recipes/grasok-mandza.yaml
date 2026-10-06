@@ -1,0 +1,81 @@
+title:
+  mk: Грашок манџа
+  en: Pea stew
+summary:
+  mk: Чорбест грашок со свинско месо, морков и копар — пролетна манџа што се јаде со леб.
+  en: A brothy pea stew with pork, carrot and dill — a spring dish eaten with bread.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 60 }
+difficulty: easy
+tags: [kid-friendly]
+season: [spring, summer]
+source:
+  name: Сè за храна
+  url: https://sezahrana.mk/%D0%B3%D1%80%D0%B0%D1%88%D0%BE%D0%BA-%D0%BC%D0%B0%D0%BD%D1%9F%D0%B0-%D1%81%D0%BE-%D1%81%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE-%D0%BC%D0%B5%D1%81%D0%BE/
+sides: [zelena-salata, taratur, shopska-salata]
+
+ingredients:
+  - items:
+      - { ingredient: pork, qty: 500, unit: g, note: { mk: на коцки, en: diced } }
+      - { ingredient: peas, qty: 600, unit: g, note: { mk: свеж или замрзнат, en: fresh or frozen } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: на коцки, en: diced } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: tomato-paste, qty: 1, unit: tbsp }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: dill, qty: 0.5, unit: bunch }
+      - { ingredient: water, qty: 800, unit: ml }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во тенџере на масло пропржи го кромидот и морковот, па додај го месото и пржи додека не порумени од сите страни.
+      en: In a pot, fry the onion and carrot in oil, then add the pork and brown it on all sides.
+    timer: 10
+  - text:
+      mk: Додај ги доматниот концентрат и алевата пиперка, налеј ја водата, посоли и вари покриено додека месото не омекне.
+      en: Add the tomato paste and paprika, pour in the water, season and simmer covered until the meat is tender.
+    timer: 35
+  - text:
+      mk: Додај го грашокот и вари уште 10 минути (замрзнатиот е готов побрзо).
+      en: Add the peas and simmer 10 more minutes (frozen peas cook faster).
+    timer: 10
+  - text:
+      mk: Брашното разбиј го во малку ладна вода, истури го во манџата и вари 3 минути да се згусне. На крај додај сецкан копар.
+      en: Whisk the flour into a little cold water, stir it into the stew and simmer 3 minutes to thicken. Finish with chopped dill.
+    timer: 3
+
+variants:
+  - id: chicken
+    name: { mk: Со пилешко, en: With chicken }
+    note:
+      mk: Наместо свинско, пилешки бутчиња — месото е готово за 25 минути.
+      en: Chicken legs instead of pork — the meat is done in 25 minutes.
+    add:
+      - { ingredient: chicken-legs, qty: 600, unit: g }
+    remove: [pork]
+  - id: minced
+    name: { mk: Со мелено месо, en: With minced meat }
+    note:
+      mk: Наместо месо на коцки, пропржи мелено месо со кромидот — побрза верзија, околу 30 минути вкупно.
+      en: Instead of diced meat, brown minced meat with the onion — a quicker version, about 30 minutes in all.
+    add:
+      - { ingredient: minced-meat, qty: 400, unit: g }
+    remove: [pork]
+  - id: fasting
+    name: { mk: Посна, en: Fasting }
+    note:
+      mk: Без месо — повеќе морков и еден компир на коцки; вари само додека зеленчукот не омекне (околу 20 минути).
+      en: No meat — more carrot and a diced potato; simmer just until the vegetables are tender (about 20 minutes).
+    add:
+      - { ingredient: potato, qty: 1, unit: pc, note: { mk: на коцки, en: diced } }
+      - { ingredient: carrot, qty: 1, unit: pc }
+    remove: [pork]
+
+tips:
+  mk: Копарот е тајната — не штеди. Најубава е со свеж грашок во мај, но и замрзнатиот е одличен цела година.
+  en: Dill is the secret — don't skimp. Best with fresh peas in May, but frozen peas are great all year.

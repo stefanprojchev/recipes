@@ -1,0 +1,80 @@
+title:
+  mk: Полнети тиквици
+  en: Stuffed zucchini
+summary:
+  mk: Тиквици полнети со мелено месо и ориз, печени под прелив од кисело млеко и јајца — летен ручек по рецепт на бабите.
+  en: Zucchini stuffed with minced meat and rice, baked under a yogurt-and-egg topping — a summer lunch the grandmothers' way.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 30, cook: 60 }
+difficulty: medium
+tags: [kid-friendly]
+season: [summer]
+source:
+  name: Gotvi.mk
+  url: https://gotvi.mk/2017/09/24/polneti-tikvicki-so-kiselo-mleko/
+sides: [shopska-salata, zelena-salata]
+
+ingredients:
+  - title: { mk: Тиквици и фил, en: Zucchini and filling }
+    items:
+      - { ingredient: zucchini, qty: 4, unit: pc, note: { mk: средно големи, en: medium } }
+      - { ingredient: minced-meat, qty: 400, unit: g }
+      - { ingredient: rice, qty: 120, unit: g }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: dried-mint, qty: 1, unit: tsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: water, qty: 300, unit: ml }
+  - title: { mk: Прелив, en: Topping }
+    items:
+      - { ingredient: yogurt, qty: 500, unit: ml }
+      - { ingredient: egg, qty: 2, unit: pc }
+
+steps:
+  - text:
+      mk: Исечи ги тиквиците на половина по должина (или на парчиња од по 6 см) и со лажичка издлаби ги, оставајќи ѕидови од 1 см. Средината исецкај ја ситно.
+      en: Halve the zucchini lengthwise (or cut into 6 cm barrels) and hollow them with a spoon, leaving 1 cm walls. Chop the scooped-out flesh.
+  - text:
+      mk: На масло пропржи го кромидот, додај го месото и пржи додека не порумени. Додај ја исецканата средина од тиквиците и оризот, зачини со нане, алева пиперка, сол и пипер.
+      en: Fry the onion in oil, add the meat and brown it. Add the chopped zucchini flesh and the rice and season with mint, paprika, salt and pepper.
+    timer: 10
+  - text:
+      mk: Наполни ги тиквиците, нареди ги во подмачкан плех и налеј ја водата околу нив.
+      en: Fill the zucchini, arrange them in a greased tray and pour the water around them.
+  - text:
+      mk: Покриј со фолија и печи на 200°C додека тиквиците и оризот не омекнат.
+      en: Cover with foil and bake at 200°C until the zucchini and rice are tender.
+    timer: 40
+  - text:
+      mk: Измати го киселото млеко со јајцата и прстофат сол, прелиј ги тиквиците и печи откриено додека преливот не се стегне и не порумени.
+      en: Whisk the yogurt with the eggs and a pinch of salt, pour over and bake uncovered until the topping sets and browns.
+    timer: 20
+
+variants:
+  - id: tomato
+    name: { mk: Во доматен сос, en: In tomato sauce }
+    note:
+      mk: Наместо преливот од кисело млеко, прелиј ги со пелати измешани со вода и малку шеќер и печи откриено последните 20 минути.
+      en: Instead of the yogurt topping, pour over canned tomatoes mixed with water and a little sugar and bake uncovered for the last 20 minutes.
+    add:
+      - { ingredient: canned-tomatoes, qty: 1, unit: can }
+    remove: [yogurt, egg]
+  - id: fasting
+    name: { mk: Посни, en: Fasting }
+    note:
+      mk: Фил од ориз, кромид, морков и копар, без месо; печи ги во доматен сос наместо со кисело млеко.
+      en: A filling of rice, onion, carrot and dill, no meat; bake in tomato sauce instead of the yogurt topping.
+    add:
+      - { ingredient: rice, qty: 100, unit: g }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: рендан, en: grated } }
+      - { ingredient: dill, qty: 0.5, unit: bunch }
+      - { ingredient: canned-tomatoes, qty: 1, unit: can }
+    remove: [minced-meat, yogurt, egg]
+
+tips:
+  mk: Најдобри се со млади тиквици во јуни и јули. Тркалезните тиквички се полнат цели — само им се сече капачето.
+  en: Best with young zucchini in June and July. Round zucchini are stuffed whole — just cut off a lid.
