@@ -239,6 +239,9 @@ sour-cream:
 parmesan:
   name: { mk: пармезан, en: parmesan }
   aisle: dairy
+mozzarella:
+  name: { mk: моцарела, en: mozzarella }
+  aisle: dairy
 butter:
   name: { mk: путер, en: butter }
   aisle: dairy

@@ -1,0 +1,123 @@
+title:
+  mk: Сендвич со леб од тиквички и пилешко
+  en: Zucchini crust chicken sandwich
+summary:
+  mk: Рендани тиквички, јајце и сирење печени во тенки квадрати наместо леб, со пилешко, зеленчук и лесен јогурт намаз — сендвич без брашно.
+  en: Grated zucchini, egg and cheese baked into thin squares instead of bread, filled with chicken, vegetables and a light yogurt spread — a flourless sandwich.
+category: main
+meals: [breakfast, lunch, snack]
+servings: 2
+time: { prep: 25, cook: 25, rest: 5 }
+difficulty: medium
+tags: [kid-friendly]
+diet: [gluten-free]
+source:
+  name: Shred Happens
+  url: https://shredhappens.substack.com/p/low-carb-zucchini-bun-sandwiches
+sides: [zelena-salata, shopska-salata]
+
+ingredients:
+  - title: { mk: Леб од тиквички, en: Zucchini bread }
+    items:
+      - { ingredient: zucchini, qty: 2, unit: pc, note: { mk: големи, en: large } }
+      - { ingredient: egg, qty: 1, unit: pc }
+      - { ingredient: mozzarella, qty: 100, unit: g, note: { mk: изрендана, en: grated } }
+      - { ingredient: parmesan, qty: 30, unit: g, note: { mk: изрендан, en: grated } }
+      - { ingredient: garlic-powder, qty: 1, unit: tsp }
+      - { ingredient: salt, qty: 1, unit: tsp }
+  - title: { mk: Фил, en: Filling }
+    items:
+      - { ingredient: chicken-breast, qty: 300, unit: g }
+      - { ingredient: ground-paprika, qty: 0.5, unit: tsp }
+      - { ingredient: olive-oil, qty: 1, unit: tbsp }
+      - { ingredient: lettuce, qty: 0.25, unit: pc, note: { mk: неколку листови, en: a few leaves } }
+      - { ingredient: tomato, qty: 1, unit: pc, note: { mk: на тркалца, en: sliced } }
+      - { ingredient: onion, qty: 0.25, unit: pc, note: { mk: "црвен, на тенки кругчиња", en: "red, thinly sliced" } }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: Јогурт намаз, en: Yogurt spread }
+    items:
+      - { ingredient: strained-yogurt, qty: 4, unit: tbsp }
+      - { ingredient: mayonnaise, qty: 1, unit: tbsp }
+      - { ingredient: garlic, qty: 1, unit: clove, note: { mk: изрендан, en: grated } }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Изрендај ги тиквичките на крупно ренде, измешај ги со солта и остави ги да пуштат вода.
+      en: Heat the oven to 200°C. Grate the zucchini coarsely, toss with the salt and leave them to release their water.
+    timer: 10
+  - text:
+      mk: Стави ги во чиста крпа и исцеди ги што подобро — треба да останат околу половина. Ова е најважниот чекор, инаку лебот нема да се стегне.
+      en: Put them in a clean towel and wring out as much water as you can — about half the volume should remain. This is the key step, or the bread won't set.
+  - text:
+      mk: Измешај ги тиквичките со јајцето, моцарелата, пармезанот, лукот во прав и малку пипер. На плех со хартија за печење оформи 4 тенки квадрати (околу 12 см, дебели половина сантиметар) и добро притисни ги.
+      en: Mix the zucchini with the egg, mozzarella, parmesan, garlic powder and a little pepper. On a lined tray shape 4 thin squares (about 12 cm, half a centimetre thick) and press them down firmly.
+  - text:
+      mk: Печи додека не се стегнат и не порумени рабовите. За похрскави, преврти ги и печи уште 5 минути. Остави ги малку да се оладат — тогаш се зацврстуваат.
+      en: Bake until set and golden at the edges. For crispier bread, flip and bake 5 more minutes. Let them cool a little — they firm up as they cool.
+    timer: 20
+  - text:
+      mk: Додека се печат, пилешките гради исечи ги на тенки шницли, зачини ги со сол, пипер и црвен пипер и пржи ги на маслиново масло по 4–5 минути од страна. Остави ги да одморат, па исечи ги на ленти.
+      en: While they bake, slice the chicken breast into thin cutlets, season with salt, pepper and paprika and fry in olive oil for 4–5 minutes a side. Let rest, then slice into strips.
+    timer: 10
+  - text:
+      mk: Измешај го јогуртот со мајонезот, лукот, сол и пипер.
+      en: Mix the yogurt with the mayonnaise, garlic, salt and pepper.
+  - text:
+      mk: Намачкај ги квадратите со намазот. На два нареди зелена салата, домат, кромид и пилешко, затвори ги со другите два и исечи ги дијагонално.
+      en: Spread the squares with the yogurt mix. Layer lettuce, tomato, onion and chicken on two of them, close with the other two and cut diagonally.
+
+variants:
+  - id: ham
+    name: { mk: Со шунка, en: With ham }
+    note:
+      mk: Наместо пилешко — шунка, како во оригиналниот рецепт. Најбрзо, без пржење.
+      en: Ham instead of chicken, as in the original recipe. Quickest — no frying.
+    add:
+      - { ingredient: ham, qty: 4, unit: slice }
+    remove: [chicken-breast, ground-paprika]
+  - id: grilled-cheese
+    name: { mk: Тост со кашкавал, en: Grilled cheese }
+    note:
+      mk: За децата — кашкавал меѓу два квадрати, па на сува тава по 2–3 минути од страна додека не се стопи. Без пилешко и кромид.
+      en: For the kids — kashkaval between two squares, then 2–3 minutes a side in a dry pan until melted. No chicken or onion.
+    add:
+      - { ingredient: kashkaval, qty: 4, unit: slice }
+    remove: [chicken-breast, ground-paprika, onion, lettuce]
+  - id: tuna
+    name: { mk: Со туна, en: With tuna }
+    note:
+      mk: Туна измешана со намазот и сецкани кисели краставички наместо пилешко.
+      en: Tuna mixed into the spread with chopped gherkins instead of chicken.
+    add:
+      - { ingredient: tuna, qty: 1, unit: pc }
+      - { ingredient: pickles, qty: 2, unit: pc }
+    remove: [chicken-breast, ground-paprika]
+  - id: egg-avocado
+    name: { mk: Јајце и авокадо, en: Egg and avocado }
+    note:
+      mk: За појадок — јајце на око и згмечено авокадо со лимон наместо пилешко и намаз.
+      en: For breakfast — a fried egg and mashed avocado with lemon instead of chicken and the spread.
+    add:
+      - { ingredient: egg, qty: 2, unit: pc }
+      - { ingredient: avocado, qty: 1, unit: pc }
+      - { ingredient: lemon, qty: 0.25, unit: pc }
+    remove: [chicken-breast, ground-paprika, mayonnaise]
+  - id: caprese
+    name: { mk: Капрезе, en: Caprese }
+    note:
+      mk: Вегетаријански — свежа моцарела, домат и босилек со малку маслиново масло.
+      en: Vegetarian — fresh mozzarella, tomato and basil with a drizzle of olive oil.
+    add:
+      - { ingredient: mozzarella, qty: 125, unit: g, note: { mk: свежа топка, en: fresh ball } }
+      - { ingredient: basil, qty: 0.25, unit: bunch }
+    remove: [chicken-breast, ground-paprika, lettuce, onion, mayonnaise]
+
+story:
+  mk: Идеја од Facebook видео (Healthylifestyle); количините се од Shred Happens и Kirbie's Cravings.
+  en: Idea from a Facebook reel (Healthylifestyle); quantities from Shred Happens and Kirbie's Cravings.
+storage:
+  mk: Печените квадрати стојат 2–3 дена во фрижидер — пред полнење затопли ги на тава. Сендвичот составувај го непосредно пред јадење.
+  en: The baked squares keep 2–3 days in the fridge — warm them in a pan before filling. Assemble the sandwich just before eating.
+tips:
+  mk: Тиквичките мора да се многу добро исцедени. Квадратите нека бидат тенки и подеднакви — дебелите остануваат меки во средината.
+  en: The zucchini must be very well squeezed. Keep the squares thin and even — thick ones stay soft in the middle.
