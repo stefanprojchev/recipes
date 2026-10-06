@@ -1,0 +1,71 @@
+title:
+  mk: Јуфки со сирење
+  en: Jufki with white cheese
+summary:
+  mk: Домашни јуфки сварени и измешани со путер и бело сирење — едноставен македонски појадок, а потпечени во рерна уште подобри.
+  en: Homemade jufki boiled and tossed with butter and white cheese — a simple Macedonian breakfast, even better baked in the oven.
+category: breakfast
+meals: [breakfast, lunch]
+servings: 3
+time: { prep: 5, cook: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Popara.mk
+  url: https://popara.mk/2017/brzo-i-vkusno-pecheni-jufki-gotovi-za-eden-chas/
+
+ingredients:
+  - items:
+      - { ingredient: jufki, qty: 300, unit: g, note: { mk: домашни или купени, en: homemade or store-bought } }
+      - { ingredient: water, qty: 2, unit: l }
+      - { ingredient: salt, qty: 1, unit: tsp }
+      - { ingredient: butter, qty: 3, unit: tbsp }
+      - { ingredient: feta-cheese, qty: 200, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: yogurt, qty: 3, unit: glass, note: { mk: за сервирање, en: to serve }, optional: true }
+
+steps:
+  - text:
+      mk: Зовриј ја водата со солта и малку путер.
+      en: Bring the water to the boil with the salt and a little butter.
+  - text:
+      mk: Додај ги јуфките и вари ги мешајќи повремено додека не омекнат (домашните се готови побрзо).
+      en: Add the jufki and boil, stirring now and then, until tender (homemade ones cook faster).
+    timer: 8
+  - text:
+      mk: Исцеди ги, врати ги во тенџерето и измешај ги со остатокот од путерот.
+      en: Drain, return them to the pot and toss with the rest of the butter.
+  - text:
+      mk: Вмешај го изроненото сирење додека јуфките се уште жешки и служи веднаш, со кисело млеко.
+      en: Fold in the crumbled cheese while the jufki are still hot and serve straight away with yogurt.
+
+variants:
+  - id: baked
+    name: { mk: Потпечени јуфки, en: Oven-baked jufki }
+    note:
+      mk: Традиционално — сувите јуфки истури ги во длабок плех, прелиј ги со 1 литар вода и путерот и печи на 200°C додека водата не се впие (околу 40 минути). Потоа прелиј ги со изматени јајца и сирење и печи уште 15 минути до румено.
+      en: The traditional way — put the dry jufki in a deep tray, pour over 1 litre of water and the butter and bake at 200°C until the water is absorbed (about 40 minutes). Then pour over beaten eggs and cheese and bake another 15 minutes until golden.
+    add:
+      - { ingredient: egg, qty: 2, unit: pc }
+  - id: egg-yogurt
+    name: { mk: Со јајца и кисело млеко, en: With eggs and yogurt }
+    note:
+      mk: Сварените јуфки со сирењето истури ги во подмачкан плех. Измати 2 јајца со чаша кисело млеко и прстофат сол, прелиј и печи на 200°C околу 25 минути.
+      en: Put the boiled jufki and cheese in a greased tray. Whisk 2 eggs with a glass of yogurt and a pinch of salt, pour over and bake at 200°C for about 25 minutes.
+    add:
+      - { ingredient: egg, qty: 2, unit: pc }
+      - { ingredient: yogurt, qty: 1, unit: glass, note: { mk: за преливот, en: for the topping } }
+  - id: sweet
+    name: { mk: "Слатки, со млеко", en: "Sweet, with milk" }
+    note:
+      mk: За децата — сварените јуфки прелиј ги со топло млеко, малку шеќер и цимет, без сирење.
+      en: For the kids — pour warm milk over the boiled jufki with a little sugar and cinnamon, no cheese.
+    add:
+      - { ingredient: milk, qty: 500, unit: ml }
+      - { ingredient: sugar, qty: 2, unit: tbsp }
+      - { ingredient: cinnamon, qty: 1, unit: pinch }
+    remove: [feta-cheese]
+
+tips:
+  mk: Домашните јуфки се прават лете (тесто од брашно, јајца и млеко, тенко развлечено, исечено и сушено) и се чуваат во платнени ќеси цела година.
+  en: Homemade jufki are made in summer (a flour, egg and milk dough, rolled thin, cut and dried) and keep in cloth bags all year.

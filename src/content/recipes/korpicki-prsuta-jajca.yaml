@@ -1,0 +1,69 @@
+title:
+  mk: Корпички од пршута со јајца
+  en: Prosciutto egg cups
+summary:
+  mk: Јајца печени во корпички од пршута со малку спанаќ и кашкавал — хрскави рабови, меки жолчки.
+  en: Eggs baked in prosciutto cups with a little spinach and cheese — crispy edges, soft yolks.
+category: breakfast
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 10, cook: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [gluten-free]
+source:
+  name: Mom's Kitchen Handbook
+  url: https://www.momskitchenhandbook.com/pretty-prosciutto-spinach-egg-cups/
+
+ingredients:
+  - items:
+      - { ingredient: prosciutto, qty: 12, unit: slice, note: { mk: тенко сечена, en: thinly sliced } }
+      - { ingredient: egg, qty: 6, unit: pc }
+      - { ingredient: spinach, qty: 40, unit: g, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: kashkaval, qty: 40, unit: g, note: { mk: изрендан, en: grated }, optional: true }
+      - { ingredient: black-pepper, qty: 1, unit: pinch }
+      - { ingredient: sunflower-oil, qty: 1, unit: tsp, note: { mk: за подмачкување, en: for greasing } }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 190°C и подмачкај 6 калапи за мафини.
+      en: Heat the oven to 190°C and grease 6 muffin cups.
+  - text:
+      mk: Во секој калап нареди по две парчиња пршута вкрстено, така што ќе го покријат дното и ѕидовите.
+      en: Line each cup with two slices of prosciutto, crossed, so they cover the bottom and sides.
+  - text:
+      mk: Стави малку спанаќ и кашкавал на дното, па скрши по едно јајце во секоја корпичка. Само пиперосај — пршутата е доволно солена.
+      en: Add a little spinach and cheese to the bottom, then crack an egg into each cup. Just add pepper — the prosciutto is salty enough.
+  - text:
+      mk: Печи 12 минути за течна жолчка или 15 минути за поцврста.
+      en: Bake 12 minutes for a runny yolk or 15 minutes for a firmer one.
+    timer: 12
+  - text:
+      mk: Остави ги 2 минути, па извади ги со нож покрај рабовите.
+      en: Rest for 2 minutes, then lift them out with a knife around the edges.
+    timer: 2
+
+variants:
+  - id: ham
+    name: { mk: Со шунка, en: With ham }
+    note:
+      mk: Наместо пршута, обложи го секој калап со по едно парче шунка — помеко и помалку солено, по вкусот на децата. Додај прстофат сол на јајцата.
+      en: Instead of prosciutto, line each cup with one slice of ham — softer and less salty, more to kids' taste. Add a pinch of salt to the eggs.
+    add:
+      - { ingredient: ham, qty: 6, unit: slice }
+    remove: [prosciutto]
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Наместо спанаќ, на дното стави ситно сецкани печурки кратко пропржени на путер.
+      en: Instead of spinach, put finely chopped mushrooms, briefly fried in butter, at the bottom.
+    add:
+      - { ingredient: mushrooms, qty: 60, unit: g, note: { mk: ситно сецкани, en: finely chopped } }
+    remove: [spinach]
+
+tips:
+  mk: Убаво се спакуваат за ужина ако се испечат 15 минути (со цврста жолчка). Со зелена салата стануваат лесен ручек.
+  en: Baked for 15 minutes (firm yolks) they pack well for a snack. With a green salad they make a light lunch.
+storage:
+  mk: Најдобри се свежи; со цврста жолчка се чуваат 2 дена во фрижидер.
+  en: Best fresh; with firm yolks they keep 2 days in the fridge.

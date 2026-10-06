@@ -1,0 +1,79 @@
+title:
+  mk: Кајгана со домати и пиперки (менемен)
+  en: Scrambled eggs with tomatoes and peppers (menemen)
+summary:
+  mk: Мека кајгана во сочни домати и пиперка, со малку бело сирење — готова за десет минути.
+  en: Soft scrambled eggs in juicy tomatoes and pepper with a little white cheese — ready in ten minutes.
+category: breakfast
+meals: [breakfast]
+servings: 3
+time: { prep: 8, cook: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [summer, autumn]
+source:
+  name: Ozlem's Turkish Table
+  url: https://ozlemsturkishtable.com/2010/07/tomato-pepper-feta-cheese-scrambled-egg-menemen/
+
+ingredients:
+  - items:
+      - { ingredient: egg, qty: 6, unit: pc }
+      - { ingredient: tomato, qty: 3, unit: pc, note: { mk: "зрели, ситно сецкани", en: "ripe, finely diced" } }
+      - { ingredient: green-pepper, qty: 1, unit: pc, note: { mk: на тенки ленти, en: thinly sliced } }
+      - { ingredient: spring-onion, qty: 2, unit: pc, note: { mk: сецкан, en: sliced } }
+      - { ingredient: olive-oil, qty: 1, unit: tbsp }
+      - { ingredient: butter, qty: 1, unit: tbsp }
+      - { ingredient: feta-cheese, qty: 90, unit: g, note: { mk: изронето, en: crumbled }, optional: true }
+      - { ingredient: chili-flakes, qty: 0.5, unit: tsp, optional: true }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: bread, qty: 3, unit: slice, optional: true }
+
+steps:
+  - text:
+      mk: Во тава загреј маслиново масло и путер на тивок до среден оган. Додај ја пиперката и динстај ја неколку минути.
+      en: Warm the olive oil and butter in a pan over low–medium heat. Add the pepper and soften it for a few minutes.
+    timer: 3
+  - text:
+      mk: Додај ги младиот кромид и доматите (и лут пипер по желба). Готви додека доматите не пуштат сок и малку не се згуснат.
+      en: Add the spring onions and tomatoes (and chili flakes if using). Cook until the tomatoes release their juice and thicken a little.
+    timer: 5
+  - text:
+      mk: Во сад измати ги јајцата со изронетото сирење и малку сол и пипер.
+      en: In a bowl, whisk the eggs with the crumbled cheese and a little salt and pepper.
+  - text:
+      mk: Истури ги јајцата во тавата и мешај полека со дрвена лажица. Тргни од оган додека кајганата е уште влажна — ќе се доготви сама.
+      en: Pour the eggs into the pan and stir slowly with a wooden spoon. Take it off the heat while still moist — it finishes cooking on its own.
+    timer: 2
+  - text:
+      mk: Служи топло од тавата, со свеж леб.
+      en: Serve warm straight from the pan with fresh bread.
+
+variants:
+  - id: sausage
+    name: { mk: Со колбасица, en: With sausage }
+    note:
+      mk: Турскиот „суџуклу менемен“ — прво пропржи ја колбасицата, па додај ја пиперката. Оваа варијанта не е вегетаријанска.
+      en: The Turkish "sucuklu menemen" — fry the sausage first, then add the pepper. This variant is not vegetarian.
+    add:
+      - { ingredient: smoked-sausage, qty: 100, unit: g, note: { mk: на ситни коцки, en: diced } }
+  - id: kashkaval
+    name: { mk: Со кашкавал, en: With kashkaval }
+    note:
+      mk: Наместо бело сирење, на крај поспи изрендан кашкавал и покриј за момент да се стопи — децата го сакаат.
+      en: Instead of white cheese, sprinkle grated kashkaval at the end and cover for a moment to melt — kids love it.
+    add:
+      - { ingredient: kashkaval, qty: 60, unit: g, note: { mk: изрендан, en: grated } }
+    remove: [feta-cheese]
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Пропржи ги печурките со пиперката додека не испари водата, па продолжи со доматите.
+      en: Fry the mushrooms with the pepper until their water evaporates, then add the tomatoes.
+    add:
+      - { ingredient: mushrooms, qty: 150, unit: g, note: { mk: на листови, en: sliced } }
+
+tips:
+  mk: Најубаво е лето со зрели домашни домати; надвор од сезона, користи половина конзерва пелати. Класичниот менемен е без сирење — тогаш посоли малку повеќе.
+  en: Best in summer with ripe local tomatoes; out of season, use half a can of chopped tomatoes. Classic menemen has no cheese — add a little more salt then.

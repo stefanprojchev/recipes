@@ -1,0 +1,71 @@
+title:
+  mk: Чилбир (поширани јајца на јогурт)
+  en: Çılbır (poached eggs on garlic yogurt)
+summary:
+  mk: Меки поширани јајца на кремаст јогурт со лук, прелиени со топол путер и алева пиперка.
+  en: Soft poached eggs on creamy garlic yogurt, drizzled with warm paprika butter.
+category: breakfast
+meals: [breakfast]
+servings: 3
+time: { prep: 10, cook: 10 }
+difficulty: medium
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Ozlem's Turkish Table
+  url: https://ozlemsturkishtable.com/2016/12/poached-eggs-with-garlic-yoghurt-turkish-style-cilbir/
+
+ingredients:
+  - title: { mk: Јогурт, en: Yogurt }
+    items:
+      - { ingredient: strained-yogurt, qty: 500, unit: g, note: { mk: на собна температура, en: at room temperature } }
+      - { ingredient: garlic, qty: 1, unit: clove, note: { mk: изрендан, en: grated } }
+      - { ingredient: salt, qty: 1, unit: pinch }
+  - title: { mk: Јајца, en: Eggs }
+    items:
+      - { ingredient: egg, qty: 6, unit: pc, note: { mk: многу свежи, en: very fresh } }
+      - { ingredient: vinegar, qty: 2, unit: tbsp, note: { mk: во водата, en: for the water } }
+  - title: { mk: Прелив и за сервирање, en: Drizzle and to serve }
+    items:
+      - { ingredient: butter, qty: 2, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: chili-flakes, qty: 0.5, unit: tsp, optional: true }
+      - { ingredient: dill, qty: 0.25, unit: bunch, optional: true }
+      - { ingredient: bread, qty: 3, unit: slice }
+
+steps:
+  - text:
+      mk: Измешај го јогуртот со рендан лук и прстофат сол и распореди го во дебел слој во три длабоки чинии. Нека отстои додека ги правиш јајцата.
+      en: Mix the yogurt with the grated garlic and a pinch of salt and spread it thickly in three shallow bowls. Let it sit while you make the eggs.
+  - text:
+      mk: Во широко тенџере зовриј вода, додај го оцетот и намали го огнот додека водата само тивко не трепери.
+      en: Bring a wide pot of water to the boil, add the vinegar and lower the heat until the water just trembles.
+  - text:
+      mk: Скрши го секое јајце во мала чашка, па лизни го во водата. Поширај 2–3 јајца одеднаш, околу 3 минути, додека белката не се стегне.
+      en: Crack each egg into a small cup, then slide it into the water. Poach 2–3 at a time for about 3 minutes, until the whites are set.
+    timer: 3
+  - text:
+      mk: Извади ги со решеткаста лажица, исцеди ги на хартија и стави по две на секоја чинија јогурт.
+      en: Lift them out with a slotted spoon, drain on paper and place two on each bowl of yogurt.
+  - text:
+      mk: Во мала тава растопи го путерот, тргни од оган и измешај ја алевата пиперка (и лут пипер за возрасните). Прелиј ги јајцата, поспи со копар и служи со топол леб.
+      en: Melt the butter in a small pan, take it off the heat and stir in the paprika (and chili for the grown-ups). Drizzle over the eggs, sprinkle with dill and serve with warm bread.
+
+variants:
+  - id: fried
+    name: { mk: Со јајца на око, en: With fried eggs }
+    note:
+      mk: Наместо поширање — пржи ги јајцата на око на тивок оган под капак (3 минути) и стави ги врз јогуртот. Побрзо и полесно.
+      en: Instead of poaching — fry the eggs sunny side up on low heat under a lid (3 minutes) and set them on the yogurt. Quicker and easier.
+    remove: [vinegar]
+  - id: spinach
+    name: { mk: Со спанаќ, en: With spinach }
+    note:
+      mk: Во малку путер пропржи го спанаќот 2 минути додека не свене, посоли го и стави го врз јогуртот под јајцата.
+      en: Wilt the spinach in a little butter for 2 minutes, season and lay it on the yogurt under the eggs.
+    add:
+      - { ingredient: spinach, qty: 150, unit: g }
+
+tips:
+  mk: Јогуртот треба да е на собна температура — студен ги лади јајцата. За детето, прелијте го со обичен путер без лут пипер.
+  en: The yogurt should be at room temperature — cold yogurt chills the eggs. For the child, drizzle plain butter without chili.

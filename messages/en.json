@@ -272,5 +272,6 @@
   "idle_all_done": "Everything on the list is cooked.",
   "day_mark_done": "Mark as cooked: {title}",
   "day_progress": "Cooked: {done} of {total}",
-  "language_label": "Language"
+  "language_label": "Language",
+  "recipe_source": "Source"
 }

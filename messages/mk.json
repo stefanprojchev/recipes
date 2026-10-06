@@ -272,5 +272,6 @@
   "idle_all_done": "Сè од листата е зготвено.",
   "day_mark_done": "Означи како зготвено: {title}",
   "day_progress": "Зготвено: {done} од {total}",
-  "language_label": "Јазик"
+  "language_label": "Јазик",
+  "recipe_source": "Извор"
 }

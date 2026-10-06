@@ -95,6 +95,40 @@ apple:
   aisle: produce
   months: [8, 9, 10, 11]
 
+spring-onion:
+  name:
+    mk: { one: стебло млад кромид, other: стебла млад кромид }
+    en: { one: spring onion, other: spring onions }
+  aisle: produce
+  months: [3, 4, 5, 6]
+mushrooms:
+  name: { mk: печурки, en: mushrooms }
+  aisle: produce
+blueberries:
+  name: { mk: боровинки, en: blueberries }
+  aisle: produce
+  months: [7, 8]
+avocado:
+  name:
+    mk: { one: авокадо, other: авокада }
+    en: { one: avocado, other: avocados }
+  aisle: produce
+zucchini:
+  name:
+    mk: { one: тиквичка, other: тиквички }
+    en: { one: zucchini, other: zucchini }
+  aisle: produce
+  months: [6, 7, 8, 9]
+cherry-tomato:
+  name:
+    mk: { one: чери домат, other: чери домати }
+    en: { one: cherry tomato, other: cherry tomatoes }
+  aisle: produce
+  months: [6, 7, 8, 9]
+dill:
+  name: { mk: копар, en: dill }
+  aisle: produce
+
 # --- Meat ------------------------------------------------------------------
 minced-meat:
   name: { mk: мелено месо, en: minced meat }
@@ -104,6 +138,12 @@ chicken-legs:
   aisle: meat
 smoked-sausage:
   name: { mk: чадена колбасица, en: smoked sausage }
+  aisle: meat
+ham:
+  name: { mk: шунка, en: ham }
+  aisle: meat
+prosciutto:
+  name: { mk: пршута, en: prosciutto }
   aisle: meat
 
 # --- Dairy & eggs ----------------------------------------------------------
@@ -123,11 +163,23 @@ feta-cheese:
   name: { mk: бело сирење, en: white cheese (feta) }
   aisle: dairy
   store: market
+strained-yogurt:
+  name: { mk: цедено кисело млеко (грчки јогурт), en: strained (Greek) yogurt }
+  aisle: dairy
+kashkaval:
+  name: { mk: кашкавал, en: kashkaval (yellow cheese) }
+  aisle: dairy
+sour-cream:
+  name: { mk: павлака, en: sour cream }
+  aisle: dairy
 butter:
   name: { mk: путер, en: butter }
   aisle: dairy
 
 # --- Bakery ----------------------------------------------------------------
+bread:
+  name: { mk: леб, en: bread }
+  aisle: bakery
 stale-bread:
   name: { mk: бајат леб, en: day-old bread }
   aisle: bakery
@@ -144,6 +196,15 @@ rice:
   aisle: dry
 vermicelli:
   name: { mk: фиде, en: vermicelli }
+  aisle: dry
+tarana:
+  name: { mk: тарана, en: tarana (dried grated egg pasta) }
+  aisle: dry
+jufki:
+  name: { mk: јуфки, en: jufki (dried egg noodles) }
+  aisle: dry
+cornmeal:
+  name: { mk: палента (пченкарно брашно), en: polenta (cornmeal) }
   aisle: dry
 oats:
   name: { mk: овесни снегулки, en: rolled oats }
@@ -171,6 +232,9 @@ walnuts:
   name: { mk: ореви, en: walnuts }
   aisle: dry
   store: market
+cocoa:
+  name: { mk: какао (без шеќер), en: unsweetened cocoa }
+  aisle: dry
 dried-red-pepper:
   name:
     mk: { one: сушена црвена пиперка, other: сушени црвени пиперки }
@@ -181,6 +245,9 @@ sunflower-oil:
   name: { mk: масло, en: sunflower oil }
   aisle: dry
   staple: true
+olive-oil:
+  name: { mk: маслиново масло, en: olive oil }
+  aisle: dry
 vinegar:
   name: { mk: оцет, en: vinegar }
   aisle: dry
@@ -206,6 +273,12 @@ bay-leaf:
     mk: { one: ловоров лист, other: ловорови листа }
     en: { one: bay leaf, other: bay leaves }
   aisle: spices
+cumin:
+  name: { mk: кимион, en: ground cumin }
+  aisle: spices
+chili-flakes:
+  name: { mk: лут пипер (снегулки), en: chili flakes }
+  aisle: spices
 cinnamon:
   name: { mk: цимет, en: cinnamon }
   aisle: spices
@@ -215,6 +288,13 @@ sauerkraut:
   name: { mk: кисела зелка, en: sauerkraut }
   aisle: canned
   months: [11, 12, 1, 2, 3]
+
+canned-tomatoes:
+  name: { mk: пелати (сечени домати во конзерва), en: canned chopped tomatoes }
+  aisle: canned
+roasted-peppers:
+  name: { mk: печени пиперки (тегла), en: roasted peppers (jar) }
+  aisle: canned
 
 # --- Other -----------------------------------------------------------------
 water:

@@ -146,6 +146,8 @@ const recipes = defineCollection({
       season: z.array(z.enum(SEASONS)).default([]),
       /** Who the recipe comes from, e.g. "Баба Вера". */
       from: z.string().optional(),
+      /** Where an adapted recipe comes from — shown as "Извор" with a link. */
+      source: z.object({ name: z.string().min(1), url: z.url() }).optional(),
       tags: z.array(z.enum(TAGS)).default([]),
       /** Main photo (a media id of type image). */
       cover: reference("media").optional(),

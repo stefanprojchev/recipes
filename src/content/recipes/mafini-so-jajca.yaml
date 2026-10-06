@@ -1,0 +1,87 @@
+title:
+  mk: Мафини со јајца и зеленчук
+  en: Egg and vegetable muffins
+summary:
+  mk: Мали печени фритати со спанаќ, пиперка и бело сирење — за појадок или ужина, се прават однапред.
+  en: Little baked frittatas with spinach, pepper and white cheese — for breakfast or a snack, made ahead.
+category: breakfast
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 15, cook: 20 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+source:
+  name: RecipeTin Eats
+  url: https://www.recipetineats.com/healthy-egg-muffins/
+prepAhead:
+  mk: Може да се испечат ден порано — утрото само се загреваат 1 минута.
+  en: Can be baked the day before — just warm them for a minute in the morning.
+
+ingredients:
+  - items:
+      - { ingredient: egg, qty: 6, unit: pc }
+      - { ingredient: spinach, qty: 50, unit: g, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: red-pepper, qty: 0.5, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: cherry-tomato, qty: 8, unit: pc, note: { mk: на четвртини, en: quartered } }
+      - { ingredient: spring-onion, qty: 2, unit: pc, note: { mk: сецкан, en: sliced } }
+      - { ingredient: feta-cheese, qty: 70, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: salt, qty: 0.5, unit: tsp }
+      - { ingredient: black-pepper, qty: 1, unit: pinch }
+      - { ingredient: sunflower-oil, qty: 1, unit: tsp, note: { mk: за подмачкување, en: for greasing } }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 180°C. Подмачкај 6 калапи за мафини (или стави хартиени корпички).
+      en: Heat the oven to 180°C. Grease 6 muffin cups (or use paper cases).
+  - text:
+      mk: Во сад измати ги јајцата со сол и пипер.
+      en: Whisk the eggs with the salt and pepper in a bowl.
+  - text:
+      mk: Додај ги спанаќот, пиперката, доматчињата, кромидот и сирењето и измешај.
+      en: Stir in the spinach, pepper, tomatoes, spring onion and cheese.
+  - text:
+      mk: Распореди ја смесата во калапите, речиси до горе.
+      en: Divide the mixture between the cups, almost to the top.
+  - text:
+      mk: Печи додека не надуваат, не порумената и средината не се стегне.
+      en: Bake until puffed, golden and set in the middle.
+    timer: 20
+  - text:
+      mk: Остави ги 5 минути во калапот, па извади ги. Ќе се спуштат малку — тоа е нормално.
+      en: Leave them in the tin for 5 minutes, then lift out. They sink a little — that's normal.
+    timer: 5
+
+variants:
+  - id: zucchini
+    name: { mk: Со тиквичка, en: With zucchini }
+    note:
+      mk: Наместо пиперка, изренди половина тиквичка и исцеди ја добро од вода.
+      en: Instead of the pepper, grate half a zucchini and squeeze out the water well.
+    add:
+      - { ingredient: zucchini, qty: 0.5, unit: pc, note: { mk: изрендана и исцедена, en: grated and squeezed } }
+    remove: [red-pepper]
+  - id: ham-cheese
+    name: { mk: Со шунка и кашкавал, en: With ham and kashkaval }
+    note:
+      mk: Наместо бело сирење — шунка на коцки и рендан кашкавал. Омилени кај децата. Оваа варијанта не е вегетаријанска.
+      en: Instead of white cheese — diced ham and grated kashkaval. A favourite with kids. This variant is not vegetarian.
+    add:
+      - { ingredient: ham, qty: 80, unit: g, note: { mk: на коцки, en: diced } }
+      - { ingredient: kashkaval, qty: 50, unit: g, note: { mk: изрендан, en: grated } }
+    remove: [feta-cheese]
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Наместо пиперка, кратко пропржи ги ситно сецканите печурки (да испари водата) пред да ги додадеш во јајцата.
+      en: Instead of the pepper, briefly fry the chopped mushrooms (to drive off their water) before adding them to the eggs.
+    add:
+      - { ingredient: mushrooms, qty: 100, unit: g, note: { mk: ситно сецкани, en: finely chopped } }
+    remove: [red-pepper]
+
+tips:
+  mk: Двојната количина (12 мафини) е доволна за два појадока и ужина. Децата ги сакаат ладни во кутијата за ужина.
+  en: A double batch (12 muffins) covers two breakfasts and a snack. Kids like them cold in a lunch box.
+storage:
+  mk: Во затворена кутија во фрижидер до 4 дена; во замрзнувач до 3 месеци (одмрзни преку ноќ).
+  en: Up to 4 days in a closed box in the fridge; up to 3 months frozen (thaw overnight).

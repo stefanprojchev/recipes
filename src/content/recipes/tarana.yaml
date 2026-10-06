@@ -1,0 +1,80 @@
+title:
+  mk: Тарана со сирење
+  en: Tarana with white cheese
+summary:
+  mk: Варена домашна тарана со путер и бело сирење, со чаша кисело млеко покрај — топол македонски појадок.
+  en: Boiled homemade tarana with butter and white cheese, with a glass of yogurt alongside — a warm Macedonian breakfast.
+category: breakfast
+meals: [breakfast]
+servings: 3
+time: { prep: 2, cook: 20 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+season: [autumn, winter, spring]
+source:
+  name: Рецепти за храна
+  url: https://receptizahrana.com/%D0%B5%D0%B2%D0%B5-%D0%BA%D0%B0%D0%BA%D0%BE-%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D1%82%D0%B2%D0%B8%D1%82%D0%B5-%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D0%B0-%D1%82%D0%B0%D1%80%D0%B0%D0%BD%D0%B0-%D1%81/
+
+ingredients:
+  - items:
+      - { ingredient: tarana, qty: 1.5, unit: cup, note: { mk: домашна или купена, en: homemade or store-bought } }
+      - { ingredient: water, qty: 1.1, unit: l, note: { mk: три пати повеќе од тараната, en: three times the tarana } }
+      - { ingredient: salt, qty: 1, unit: tsp }
+      - { ingredient: butter, qty: 2, unit: tbsp }
+      - { ingredient: feta-cheese, qty: 150, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: yogurt, qty: 3, unit: glass, note: { mk: за сервирање, en: to serve } }
+
+steps:
+  - text:
+      mk: Во тенџере зовриј ја водата со солта.
+      en: Bring the water to the boil with the salt.
+  - text:
+      mk: Истури ја тараната постепено, мешајќи, за да не се згрутчи. Намали на среден оган.
+      en: Pour in the tarana gradually, stirring so it doesn't clump. Lower to medium heat.
+  - text:
+      mk: Вари, мешајќи повремено, додека тараната не омекне и не се згусне. Ако стане премногу густа, додај малку врела вода.
+      en: Simmer, stirring now and then, until the tarana is soft and thick. If it gets too thick, add a little hot water.
+    timer: 15
+  - text:
+      mk: Тргни од оган, вмешај го путерот и половина од сирењето.
+      en: Take off the heat and stir in the butter and half the cheese.
+  - text:
+      mk: Распореди во чинии, поспи со остатокот од сирењето и служи топла со чаша кисело млеко.
+      en: Spoon into bowls, top with the rest of the cheese and serve hot with a glass of yogurt.
+
+variants:
+  - id: milk
+    name: { mk: Млечна тарана, en: Milky tarana }
+    note:
+      mk: Замени дел од водата со млеко (околу 300 мл) и на крај вмешај лажица-две павлака — покремаста, децата ја сакаат.
+      en: Replace part of the water with milk (about 300 ml) and stir in a spoon or two of sour cream at the end — creamier, kids love it.
+    add:
+      - { ingredient: milk, qty: 300, unit: ml }
+      - { ingredient: sour-cream, qty: 2, unit: tbsp }
+  - id: baked
+    name: { mk: Печена (тараненик), en: Baked (taranenik) }
+    note:
+      mk: Сварената тарана истури ја во земјено тавче или плех. Измати 2 јајца со малку млеко и сирењето, прелиј и печи на 200°C околу 20 минути додека не порумени одозгора.
+      en: Pour the cooked tarana into a clay dish or tray. Whisk 2 eggs with a little milk and the cheese, pour over and bake at 200°C for about 20 minutes until golden on top.
+    add:
+      - { ingredient: egg, qty: 2, unit: pc }
+      - { ingredient: milk, qty: 100, unit: ml }
+  - id: paprika-butter
+    name: { mk: Со путер и алева пиперка, en: With paprika butter }
+    note:
+      mk: Наместо да го вмешаш путерот, растопи го во мала тава, тргни од оган, додај алева пиперка и прелиј ја тараната во чиниите.
+      en: Instead of stirring in the butter, melt it in a small pan, take it off the heat, add paprika and drizzle over the bowls.
+    add:
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+  - id: egg
+    name: { mk: Со јајце, en: With an egg }
+    note:
+      mk: Во последните 2 минути вмешај 2 изматени јајца во тараната — станува позаситна.
+      en: Stir 2 beaten eggs into the tarana in the last 2 minutes — more filling.
+    add:
+      - { ingredient: egg, qty: 2, unit: pc }
+
+tips:
+  mk: Сооднос — една шолја тарана на три шолји вода. Домашна тарана се прави лете (јајца и брашно, рендани и сушени) и трае цела зима.
+  en: Ratio — one cup of tarana to three cups of water. Homemade tarana is made in summer (eggs and flour, grated and dried) and lasts all winter.

@@ -1,0 +1,75 @@
+title:
+  mk: Пиперки со јајца
+  en: Peppers and eggs
+summary:
+  mk: Пиперки пропржени во маслиново масло до меко и слатко, измешани со меки кајгана јајца — едноставно и домашно.
+  en: Peppers fried soft and sweet in olive oil, folded through soft scrambled eggs — simple and homely.
+category: breakfast
+meals: [breakfast, lunch]
+servings: 3
+time: { prep: 10, cook: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [summer, autumn]
+source:
+  name: Sicilian Girl
+  url: https://siciliangirl.com/2012/02/bell-peppers-and-eggs/
+
+ingredients:
+  - items:
+      - { ingredient: green-pepper, qty: 2, unit: pc, note: { mk: на ленти, en: in strips } }
+      - { ingredient: red-pepper, qty: 1, unit: pc, note: { mk: на ленти, en: in strips } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: egg, qty: 6, unit: pc }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: feta-cheese, qty: 80, unit: g, note: { mk: за сервирање, en: to serve }, optional: true }
+      - { ingredient: bread, qty: 3, unit: slice, optional: true }
+
+steps:
+  - text:
+      mk: Исчисти ги пиперките од семките и исечи ги на ленти.
+      en: Seed the peppers and cut them into strips.
+  - text:
+      mk: Во широка тава загреј го маслиновото масло на среден оган. Додај ги пиперките, малку посоли и пржи мешајќи повремено додека не омекнат и малку не порумената.
+      en: Heat the olive oil in a wide pan over medium heat. Add the peppers with a little salt and fry, stirring now and then, until soft and lightly browned.
+    timer: 10
+  - text:
+      mk: Во сад измати ги јајцата со прстофат сол.
+      en: Beat the eggs in a bowl with a pinch of salt.
+  - text:
+      mk: Истури ги јајцата врз пиперките, почекај неколку секунди, па мешај полека со дрвена лажица додека јајцата не се стегнат, но останат меки.
+      en: Pour the eggs over the peppers, wait a few seconds, then stir gently with a wooden spoon until the eggs are just set but still soft.
+    timer: 2
+  - text:
+      mk: Пиперосај и служи топло со леб и бело сирење.
+      en: Season with pepper and serve warm with bread and white cheese.
+
+variants:
+  - id: onion
+    name: { mk: Со кромид, en: With onion }
+    note:
+      mk: Додај еден кромид на тенки полумесечини заедно со пиперките — станува послатко.
+      en: Add an onion in thin half-moons together with the peppers — it gets sweeter.
+    add:
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: на тенки полумесечини, en: thinly sliced } }
+  - id: roasted
+    name: { mk: Со печени пиперки, en: With roasted peppers }
+    note:
+      mk: Наместо свежи пиперки, исечи на ленти печени пиперки од тегла и само загреј ги 2 минути во маслото пред јајцата. Брза зимска варијанта.
+      en: Instead of fresh peppers, slice roasted peppers from a jar and just warm them in the oil for 2 minutes before the eggs. A quick winter version.
+    add:
+      - { ingredient: roasted-peppers, qty: 5, unit: pc, note: { mk: "излупени, на ленти", en: "peeled, in strips" } }
+    remove: [green-pepper, red-pepper]
+  - id: sausage
+    name: { mk: Со колбасица, en: With sausage }
+    note:
+      mk: Пропржи ја колбасицата на тркалца пред пиперките. Оваа варијанта не е вегетаријанска.
+      en: Fry the sliced sausage before the peppers. This variant is not vegetarian.
+    add:
+      - { ingredient: smoked-sausage, qty: 100, unit: g, note: { mk: на тркалца, en: sliced } }
+
+tips:
+  mk: Пиперките треба да се пржат полека — колку подолго, толку послатки. Возрасните можат да додадат една лута пиперка.
+  en: Fry the peppers slowly — the longer, the sweeter. Grown-ups can add one hot pepper.

@@ -1,0 +1,82 @@
+title:
+  mk: Палента (качамак) со сирење
+  en: Polenta (kačamak) with white cheese
+summary:
+  mk: Кремаста палента со путер и бело сирење, со кисело млеко покрај — стар, заситен појадок што се прави за 15 минути.
+  en: Creamy polenta with butter and white cheese, with yogurt alongside — an old, filling breakfast made in 15 minutes.
+category: breakfast
+meals: [breakfast]
+servings: 3
+time: { prep: 2, cook: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [autumn, winter]
+source:
+  name: Сè за храна
+  url: https://sezahrana.mk/%D0%B1%D1%80%D0%B7%D0%B0-%D0%BA%D1%80%D0%B5%D0%BC%D0%B0%D1%81%D1%82%D0%B0-%D0%BF%D0%B0%D0%BB%D0%B5%D0%BD%D1%82%D0%B0-%D1%81%D0%BE-%D1%81%D0%B8%D1%80%D0%B5%D1%9A%D0%B5-%D0%BE%D0%B4-%D0%BA%D1%83%D1%98/
+
+ingredients:
+  - items:
+      - { ingredient: cornmeal, qty: 200, unit: g }
+      - { ingredient: water, qty: 800, unit: ml, note: { mk: четири пати повеќе од палентата, en: four times the polenta } }
+      - { ingredient: salt, qty: 1, unit: tsp }
+      - { ingredient: butter, qty: 2, unit: tbsp }
+      - { ingredient: feta-cheese, qty: 150, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: yogurt, qty: 3, unit: glass, note: { mk: за сервирање, en: to serve } }
+
+steps:
+  - text:
+      mk: Зовриј ја водата со солта и путерот.
+      en: Bring the water to the boil with the salt and butter.
+  - text:
+      mk: Сипувај ја палентата во тенок млаз, мешајќи постојано со метла за да нема грутки.
+      en: Pour in the polenta in a thin stream, whisking constantly so no lumps form.
+  - text:
+      mk: Намали на тивок оган и вари мешајќи често со дрвена лажица додека не се згусне и не почне да се одвојува од ѕидовите. Инстант палентата е готова за 3–5 минути.
+      en: Turn the heat to low and cook, stirring often with a wooden spoon, until thick and pulling away from the sides. Instant polenta is done in 3–5 minutes.
+    timer: 12
+  - text:
+      mk: Тргни од оган и вмешај половина од сирењето.
+      en: Take off the heat and stir in half the cheese.
+  - text:
+      mk: Распореди во чинии, поспи со остатокот од сирењето и служи топла со кисело млеко.
+      en: Spoon into bowls, top with the rest of the cheese and serve hot with yogurt.
+
+variants:
+  - id: milk
+    name: { mk: Млечна палента, en: Milky polenta }
+    note:
+      mk: Замени половина од водата со млеко — покремаста и помека, убава за децата.
+      en: Replace half the water with milk — creamier and softer, nice for the kids.
+    add:
+      - { ingredient: milk, qty: 400, unit: ml }
+  - id: fried-egg
+    name: { mk: Со јајце на око, en: With a fried egg }
+    note:
+      mk: Додека се вари палентата, испржи јајца на око на тивок оган под капак и стави по едно врз секоја чинија.
+      en: While the polenta cooks, fry eggs sunny side up on low heat under a lid and put one on each bowl.
+    add:
+      - { ingredient: egg, qty: 3, unit: pc }
+  - id: paprika-butter
+    name: { mk: Со путер и алева пиперка, en: With paprika butter }
+    note:
+      mk: Старински — направи вдлабнатина во палентата и прелиј ја со путер растопен со алева пиперка.
+      en: The old way — make a dip in the polenta and pour over butter melted with paprika.
+    add:
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: butter, qty: 1, unit: tbsp }
+  - id: sweet
+    name: { mk: "Слатка, со мед", en: "Sweet, with honey" }
+    note:
+      mk: Свари ја во млеко наместо вода, без сирење; служи со мед, цимет и ореви.
+      en: Cook it in milk instead of water, no cheese; serve with honey, cinnamon and walnuts.
+    add:
+      - { ingredient: milk, qty: 800, unit: ml }
+      - { ingredient: honey, qty: 2, unit: tbsp }
+      - { ingredient: walnuts, qty: 40, unit: g }
+    remove: [water, feta-cheese]
+
+tips:
+  mk: Сооднос — еден дел палента на четири дела течност; за поцврст качамак — на три. Остатокот се стега — следниот ден исечи го на парчиња и пропржи го.
+  en: Ratio — one part polenta to four parts liquid; for firmer kačamak, three. Leftovers set — next day, slice and fry them.

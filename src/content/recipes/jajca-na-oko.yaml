@@ -1,0 +1,80 @@
+title:
+  mk: Јајца на око
+  en: Sunny-side-up eggs
+summary:
+  mk: Совршени јајца на око — стегната белка, течна жолчка и без загорени рабови. Со авокадо или пршута по желба.
+  en: Perfect sunny-side-up eggs — set whites, runny yolks, no burnt edges. With avocado or prosciutto if you like.
+category: breakfast
+meals: [breakfast]
+servings: 3
+time: { prep: 2, cook: 6 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+source:
+  name: The Kitchn
+  url: https://www.thekitchn.com/sunny-side-up-eggs-recipe-23390918
+
+ingredients:
+  - items:
+      - { ingredient: egg, qty: 6, unit: pc, note: { mk: на собна температура, en: at room temperature } }
+      - { ingredient: butter, qty: 1, unit: tbsp, note: { mk: или маслиново масло, en: or olive oil } }
+      - { ingredient: salt, qty: 1, unit: pinch }
+      - { ingredient: black-pepper, qty: 1, unit: pinch }
+
+steps:
+  - text:
+      mk: Загреј тава против лепење на среден оган, па стави го путерот да се растопи.
+      en: Heat a non-stick pan over medium heat, then add the butter to melt.
+    timer: 2
+  - text:
+      mk: Скрши го секое јајце во мала чашка и лизни го во тавата — по 2–3 одеднаш, колку собира тавата. Ако зацврчи силно, тргни ја тавата од оган за момент.
+      en: Crack each egg into a small cup and slide it into the pan — 2–3 at a time, as many as fit. If it sizzles hard, lift the pan off the heat for a moment.
+  - text:
+      mk: Покриј со капак, намали на тивок оган и пржи додека белката не се стегне, а жолчката остане течна. За децата — уште 1–2 минути за поцврста жолчка.
+      en: Cover with a lid, turn the heat to low and cook until the whites are set and the yolks still runny. For the kids — 1–2 minutes more for a firmer yolk.
+    timer: 3
+  - text:
+      mk: Посоли, пиперосај и служи веднаш.
+      en: Season with salt and pepper and serve straight away.
+
+variants:
+  - id: avocado
+    name: { mk: Со авокадо на тост, en: On avocado toast }
+    note:
+      mk: Додека се пржат јајцата, тостирај го лебот. Изгмечи го авокадото со лимонов сок, сол и пипер, намачкај го на лебот и стави ги јајцата одозгора.
+      en: While the eggs cook, toast the bread. Mash the avocado with lemon juice, salt and pepper, spread it on the toast and top with the eggs.
+    add:
+      - { ingredient: avocado, qty: 2, unit: pc, note: { mk: зрели, en: ripe } }
+      - { ingredient: bread, qty: 3, unit: slice, note: { mk: интегрален или квасен, en: wholegrain or sourdough } }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: chili-flakes, qty: 1, unit: pinch, optional: true }
+  - id: prosciutto
+    name: { mk: Со пршута, en: With prosciutto }
+    note:
+      mk: Прво пропржи ја пршутата 1–2 минути додека не стане хрскава и извади ја. Во истата тава пржи ги јајцата и служи ги со пршутата одозгора. Оваа варијанта не е вегетаријанска.
+      en: First crisp the prosciutto in the pan for 1–2 minutes and lift it out. Fry the eggs in the same pan and serve with the prosciutto on top. This variant is not vegetarian.
+    add:
+      - { ingredient: prosciutto, qty: 6, unit: slice }
+  - id: avocado-prosciutto
+    name: { mk: Авокадо и пршута, en: Avocado and prosciutto }
+    note:
+      mk: Тост со изгмечено авокадо, хрскава пршута и јајце на око одозгора — прво пршутата, па јајцата во истата тава.
+      en: Toast with mashed avocado, crispy prosciutto and a fried egg on top — crisp the prosciutto first, then fry the eggs in the same pan.
+    add:
+      - { ingredient: avocado, qty: 2, unit: pc, note: { mk: зрели, en: ripe } }
+      - { ingredient: bread, qty: 3, unit: slice }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: prosciutto, qty: 6, unit: slice }
+  - id: cheese-toast
+    name: { mk: На тост со кашкавал, en: On cheese toast }
+    note:
+      mk: Тостирај леб со тенко парче кашкавал во рерна или тава додека не се стопи, па стави го јајцето на око одозгора.
+      en: Toast bread with a thin slice of kashkaval in the oven or pan until melted, then put the fried egg on top.
+    add:
+      - { ingredient: bread, qty: 3, unit: slice }
+      - { ingredient: kashkaval, qty: 60, unit: g, note: { mk: на тенки парчиња, en: thinly sliced } }
+
+tips:
+  mk: Тивок оган и капак се тајната — пареата ја стега белката одозгора пред жолчката да се исушува. Свежите јајца не се разлеваат низ тавата.
+  en: Low heat and a lid are the secret — the steam sets the top of the whites before the yolks overcook. Fresh eggs don't spread across the pan.

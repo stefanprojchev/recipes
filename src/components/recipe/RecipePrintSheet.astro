@@ -68,6 +68,7 @@ const noteTone: Record<string, string> = {
       <h1 class="mt-[4pt] font-heading text-[26pt] leading-tight font-semibold">{title}</h1>
       <p class="mt-[4pt] text-[11pt] text-[oklch(0.35_0.03_45)]">{t(data.summary, locale)}</p>
       {data.from && <p class="mt-[3pt] text-[9.5pt] text-[oklch(0.4_0.03_45)] italic">{m.recipe_from({ name: data.from })}</p>}
+      {data.source && <p class="mt-[3pt] text-[8.5pt] text-[oklch(0.4_0.03_45)]">{m.recipe_source()}: {data.source.name}</p>}
       <p data-current-variant-wrap style="display: none" class="mt-[6pt] inline-flex rounded-full bg-primary px-[8pt] py-[2pt] text-[10pt] font-semibold text-primary-foreground">
         {m.recipe_variants()}:&nbsp;<span data-current-variant></span>
       </p>

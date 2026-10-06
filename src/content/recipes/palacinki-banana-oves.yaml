@@ -1,0 +1,80 @@
+title:
+  mk: Палачинки од банана, овес и јајца
+  en: Banana, oat and egg pancakes
+summary:
+  mk: Мали меки палачинки од само три состојки — без брашно и без шеќер, идеални за децата.
+  en: Small soft pancakes from just three ingredients — no flour, no sugar, perfect for kids.
+category: breakfast
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 5, cook: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Easy Peasy Foodie
+  url: https://www.easypeasyfoodie.com/3-ingredient-banana-oat-egg-pancakes/
+
+ingredients:
+  - title: { mk: Тесто, en: Batter }
+    items:
+      - { ingredient: oats, qty: 100, unit: g }
+      - { ingredient: banana, qty: 2, unit: pc, note: { mk: зрели, en: ripe } }
+      - { ingredient: egg, qty: 3, unit: pc }
+      - { ingredient: cinnamon, qty: 1, unit: pinch, optional: true }
+      - { ingredient: sunflower-oil, qty: 2, unit: tsp, note: { mk: за тавата, en: for the pan } }
+  - title: { mk: За сервирање, en: To serve }
+    items:
+      - { ingredient: yogurt, qty: 150, unit: ml, optional: true }
+      - { ingredient: honey, qty: 1, unit: tbsp, optional: true }
+
+steps:
+  - text:
+      mk: Стави ги овесот, бананите (на парчиња), јајцата и циметот во блендер и миксај една минута додека не стане мазно тесто.
+      en: Put the oats, bananas (in pieces), eggs and cinnamon in a blender and blend for a minute until smooth.
+    timer: 1
+  - text:
+      mk: Загреј тава против лепење на среден оган и премачкај ја со малку масло.
+      en: Heat a non-stick pan over medium heat and brush it with a little oil.
+  - text:
+      mk: Стави по 2 лажици тесто за секоја палачинка, по 3 одеднаш. Пржи додека долната страна не порумени и на површината не се појават меурчиња.
+      en: Spoon 2 tablespoons of batter per pancake, 3 at a time. Cook until golden underneath and bubbles show on top.
+    timer: 2
+  - text:
+      mk: Преврти ги и пржи уште кратко од другата страна. Повтори со остатокот од тестото (околу 12 палачинки).
+      en: Flip and cook briefly on the other side. Repeat with the rest of the batter (about 12 pancakes).
+    timer: 1
+  - text:
+      mk: Служи топли со кисело млеко, мед или свежо овошје.
+      en: Serve warm with yogurt, honey or fresh fruit.
+
+variants:
+  - id: apple
+    name: { mk: Со јаболко и цимет, en: Apple and cinnamon }
+    note:
+      mk: Изренди едно јаболко, исцеди го малку и вмешај го во тестото по миксањето, со повеќе цимет. Користи само една банана.
+      en: Grate an apple, squeeze it lightly and stir it into the batter after blending, with more cinnamon. Use just one banana.
+    add:
+      - { ingredient: apple, qty: 1, unit: pc, note: { mk: изрендано, en: grated } }
+      - { ingredient: cinnamon, qty: 0.5, unit: tsp }
+  - id: cocoa
+    name: { mk: Со какао, en: Chocolate }
+    note:
+      mk: Додај една лажица какао во блендерот — „чоколадни“ палачинки без шеќер. Одлични со кисело млеко и банана.
+      en: Add a spoon of cocoa to the blender — "chocolate" pancakes with no sugar. Great with yogurt and banana.
+    add:
+      - { ingredient: cocoa, qty: 1, unit: tbsp }
+  - id: blueberries
+    name: { mk: Со боровинки, en: With blueberries }
+    note:
+      mk: Стави неколку боровинки во секоја палачинка веднаш штом ќе ја истуриш во тавата. Надвор од сезона — замрзнати, без одмрзнување.
+      en: Drop a few blueberries onto each pancake as soon as it's in the pan. Out of season — frozen, straight from the freezer.
+    add:
+      - { ingredient: blueberries, qty: 100, unit: g }
+
+tips:
+  mk: Колку позрели бананите (со кафени дамки), толку се послатки палачинките. Без блендер — издроби ги бананите со вилушка и користи ситни овесни снегулки.
+  en: The riper the bananas (with brown spots), the sweeter the pancakes. No blender? Mash the bananas with a fork and use quick oats.
+storage:
+  mk: Во фрижидер 2 дена; се замрзнуваат добро — загреј ги во тостер или тава.
+  en: 2 days in the fridge; they freeze well — reheat in a toaster or pan.

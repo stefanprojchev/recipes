@@ -1,0 +1,71 @@
+title:
+  mk: Авокадо со печени јајца
+  en: Eggs baked in avocado
+summary:
+  mk: Половинки авокадо со јајце печено во средината — кремасто, заситно и без многу работа.
+  en: Avocado halves with an egg baked in the middle — creamy, filling and hardly any work.
+category: breakfast
+meals: [breakfast]
+servings: 3
+time: { prep: 5, cook: 15 }
+difficulty: easy
+diet: [vegetarian, gluten-free]
+source:
+  name: Downshiftology
+  url: https://downshiftology.com/recipes/baked-eggs-in-avocado-two-ways/
+
+ingredients:
+  - items:
+      - { ingredient: avocado, qty: 3, unit: pc, note: { mk: "зрели, поголеми", en: "ripe, large" } }
+      - { ingredient: egg, qty: 6, unit: pc, note: { mk: помали, en: small to medium } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: feta-cheese, qty: 50, unit: g, optional: true }
+      - { ingredient: chili-flakes, qty: 1, unit: pinch, optional: true }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C.
+      en: Heat the oven to 200°C.
+  - text:
+      mk: Преполови ги авокадата и извади ги семките. Со лажица извади малку од месото за да се прошири дупката (остави го за тост или салата).
+      en: Halve the avocados and remove the stones. Scoop out a little flesh to widen the hole (keep it for toast or a salad).
+  - text:
+      mk: Нареди ги половинките во калап за мафини или на изгужвана фолија за да стојат исправено. Скрши по едно јајце во секоја, посоли и пиперосај.
+      en: Set the halves in a muffin tin or on scrunched-up foil so they sit level. Crack an egg into each and season.
+  - text:
+      mk: Печи додека белките не се стегнат, а жолчките останат меки.
+      en: Bake until the whites are set and the yolks still soft.
+    timer: 15
+  - text:
+      mk: Поспи со сирење, магдонос и (за возрасните) лут пипер. Јади со лажичка.
+      en: Top with cheese, parsley and (for the grown-ups) chili flakes. Eat with a spoon.
+
+variants:
+  - id: prosciutto
+    name: { mk: Со пршута, en: With prosciutto }
+    note:
+      mk: Додека се печат авокадата, стави ги парчињата пршута на истиот плех да станат хрскави, па искрши ги одозгора. Оваа варијанта не е вегетаријанска.
+      en: While the avocados bake, put the prosciutto on the same tray to crisp, then crumble it on top. This variant is not vegetarian.
+    add:
+      - { ingredient: prosciutto, qty: 3, unit: slice }
+  - id: kashkaval
+    name: { mk: Со кашкавал, en: With kashkaval }
+    note:
+      mk: Наместо бело сирење, во последните 3 минути поспи рендан кашкавал да се стопи врз јајцата.
+      en: Instead of white cheese, sprinkle grated kashkaval over the eggs for the last 3 minutes to melt.
+    add:
+      - { ingredient: kashkaval, qty: 50, unit: g, note: { mk: изрендан, en: grated } }
+    remove: [feta-cheese]
+  - id: tomato
+    name: { mk: Со чери домати, en: With cherry tomatoes }
+    note:
+      mk: Нареди преполовени чери домати околу авокадата на плехот — се печат заедно и се служат покрај нив.
+      en: Scatter halved cherry tomatoes around the avocados on the tray — they roast together and are served alongside.
+    add:
+      - { ingredient: cherry-tomato, qty: 12, unit: pc, note: { mk: преполовени, en: halved } }
+
+tips:
+  mk: Ако јајцата се големи, прво истури малку белка во сад — така жолчката ќе собере, а белката нема да се прелие.
+  en: If the eggs are large, pour off a little of the white first — the yolk fits and nothing spills over.

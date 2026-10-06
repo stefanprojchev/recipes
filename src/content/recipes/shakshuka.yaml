@@ -1,0 +1,93 @@
+title:
+  mk: Шакшука
+  en: Shakshuka
+summary:
+  mk: Јајца поширани во густ сос од домати и пиперки — топол, заситен појадок во една тава.
+  en: Eggs poached in a thick tomato and pepper sauce — a warm, filling one-pan breakfast.
+category: breakfast
+meals: [breakfast, lunch]
+servings: 3
+time: { prep: 10, cook: 20 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+source:
+  name: Downshiftology
+  url: https://downshiftology.com/recipes/shakshuka/
+
+ingredients:
+  - title: { mk: Сос, en: Sauce }
+    items:
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: diced } }
+      - { ingredient: red-pepper, qty: 1, unit: pc, note: { mk: на коцки, en: diced } }
+      - { ingredient: garlic, qty: 3, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: ground-paprika, qty: 2, unit: tsp }
+      - { ingredient: cumin, qty: 1, unit: tsp }
+      - { ingredient: chili-flakes, qty: 0.25, unit: tsp, optional: true }
+      - { ingredient: canned-tomatoes, qty: 2, unit: can, note: { mk: по 400 г, en: 400 g each } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: Јајца и за сервирање, en: Eggs and to serve }
+    items:
+      - { ingredient: egg, qty: 6, unit: pc }
+      - { ingredient: feta-cheese, qty: 80, unit: g, optional: true }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+      - { ingredient: bread, qty: 3, unit: slice, optional: true }
+
+steps:
+  - text:
+      mk: Во широка тава загреј го маслиновото масло на среден оган. Пропржи ги кромидот и пиперката додека не омекнат.
+      en: Heat the olive oil in a wide pan over medium heat. Cook the onion and pepper until soft.
+    timer: 5
+  - text:
+      mk: Додај лук, алева пиперка, кимион и (по желба) лут пипер и мешај една минута додека не замириса.
+      en: Add the garlic, paprika, cumin and (optional) chili flakes and stir for a minute until fragrant.
+    timer: 1
+  - text:
+      mk: Истури ги пелатите, посоли, пиперосај и остави да врие тивко додека сосот малку не се згусне.
+      en: Pour in the tomatoes, season with salt and pepper and simmer gently until the sauce thickens a little.
+    timer: 8
+  - text:
+      mk: Со лажица направи 6 вдлабнатини во сосот и во секоја скрши по едно јајце.
+      en: Make 6 wells in the sauce with a spoon and crack an egg into each.
+  - text:
+      mk: Покриј со капак и готви додека белките не се стегнат, а жолчките останат меки. За децата — 2 минути подолго за поцврсти жолчки.
+      en: Cover and cook until the whites are set and the yolks still soft. For the kids — 2 minutes longer for firmer yolks.
+    timer: 6
+  - text:
+      mk: Поспи со изронето сирење и сецкан магдонос. Служи веднаш од тавата, со леб.
+      en: Sprinkle with crumbled cheese and chopped parsley. Serve straight from the pan with bread.
+
+variants:
+  - id: green
+    name: { mk: Зелена шакшука, en: Green shakshuka }
+    note:
+      mk: Без домати — тиквичката и спанаќот се динстаат со кромидот, лукот и кимионот, па јајцата се готват врз нив. Пред сервирање искапи лимон.
+      en: No tomatoes — sauté the zucchini and spinach with the onion, garlic and cumin, then cook the eggs on top. Squeeze over lemon before serving.
+    add:
+      - { ingredient: zucchini, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: spinach, qty: 300, unit: g }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+    remove: [canned-tomatoes, red-pepper, ground-paprika]
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Исечи ги печурките на листови и пропржи ги заедно со кромидот и пиперката додека не порумената.
+      en: Slice the mushrooms and fry them with the onion and pepper until browned.
+    add:
+      - { ingredient: mushrooms, qty: 200, unit: g, note: { mk: на листови, en: sliced } }
+  - id: sausage
+    name: { mk: Со колбасица, en: With sausage }
+    note:
+      mk: Прво пропржи ја колбасицата на тркалца, па продолжи со кромидот во истата тава. Оваа варијанта не е вегетаријанска.
+      en: Fry the sausage slices first, then carry on with the onion in the same pan. This variant is not vegetarian.
+    add:
+      - { ingredient: smoked-sausage, qty: 150, unit: g, note: { mk: на тркалца, en: sliced } }
+
+tips:
+  mk: Сосот може да се зготви вечерта и утрото само да се загрее пред јајцата. Лето, наместо пелати, користи 6–7 зрели домати.
+  en: The sauce can be made the evening before and just reheated before adding the eggs. In summer use 6–7 ripe tomatoes instead of canned.
+storage:
+  mk: Најдобро свежо. Сосот без јајца се чува 3 дена во фрижидер.
+  en: Best eaten fresh. The sauce without eggs keeps 3 days in the fridge.

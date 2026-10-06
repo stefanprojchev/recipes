@@ -1,0 +1,74 @@
+title:
+  mk: Спанаќ со јајца
+  en: Spinach with eggs
+summary:
+  mk: Спанаќ пропржен со лук и кромид, со јајца зготвени одозгора под капак — лесен и хранлив појадок.
+  en: Spinach sautéed with garlic and onion, with eggs cooked on top under a lid — a light, nourishing breakfast.
+category: breakfast
+meals: [breakfast, lunch]
+servings: 3
+time: { prep: 10, cook: 12 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [spring, autumn]
+source:
+  name: Food52
+  url: https://food52.com/recipes/29073-eggs-garlic-spinach
+
+ingredients:
+  - items:
+      - { ingredient: spinach, qty: 400, unit: g, note: { mk: измиен и грубо сецкан, en: washed and roughly chopped } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: garlic, qty: 2, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: egg, qty: 6, unit: pc }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: feta-cheese, qty: 80, unit: g, optional: true }
+      - { ingredient: yogurt, qty: 1, unit: glass, note: { mk: за сервирање, en: to serve }, optional: true }
+
+steps:
+  - text:
+      mk: Во широка тава загреј го маслиновото масло и пропржи го кромидот додека не омекне.
+      en: Heat the olive oil in a wide pan and soften the onion.
+    timer: 3
+  - text:
+      mk: Додај го лукот и мешај една минута, па додавај го спанаќот во две-три раки додека не свене.
+      en: Add the garlic and stir for a minute, then add the spinach in two or three handfuls until it wilts.
+    timer: 1
+  - text:
+      mk: Готви додека не испари вишокот вода, па посоли и пиперосај.
+      en: Cook until the excess water evaporates, then season with salt and pepper.
+    timer: 4
+  - text:
+      mk: Со лажица направи 6 вдлабнатини во спанаќот и во секоја скрши по едно јајце.
+      en: Make 6 wells in the spinach with a spoon and crack an egg into each.
+  - text:
+      mk: Покриј и готви на тивок оган додека белките не се стегнат.
+      en: Cover and cook on low heat until the whites are set.
+    timer: 5
+  - text:
+      mk: Поспи со изронето сирење и служи со лажица кисело млеко одозгора.
+      en: Sprinkle with crumbled cheese and serve with a spoonful of yogurt on top.
+
+variants:
+  - id: potatoes
+    name: { mk: Со компири, en: With potatoes }
+    note:
+      mk: Прво пржи ги компирите на ситни коцки 10 минути додека не порумената и омекнат, па продолжи со кромидот и спанаќот. Позаситно — добро и за ручек.
+      en: First fry the diced potatoes for 10 minutes until golden and soft, then carry on with the onion and spinach. More filling — good for lunch too.
+    add:
+      - { ingredient: potato, qty: 2, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+  - id: leek
+    name: { mk: Со праз, en: With leek }
+    note:
+      mk: Наместо кромид, задинстај го празот на тенки колутчиња 5 минути — во зима, кога празот е во сезона.
+      en: Instead of onion, soften the leek in thin rings for 5 minutes — in winter, when leeks are in season.
+    add:
+      - { ingredient: leek, qty: 1, unit: pc, note: { mk: на тенки колутчиња, en: thinly sliced } }
+    remove: [onion]
+
+tips:
+  mk: Во сезона користи свеж спанаќ; надвор од сезона и замрзнат е одличен — само исцеди го добро.
+  en: Use fresh spinach in season; frozen works well too — just squeeze it out well.
