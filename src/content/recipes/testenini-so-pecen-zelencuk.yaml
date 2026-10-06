@@ -1,0 +1,76 @@
+title:
+  mk: Тестенини со печен зеленчук
+  en: Roasted vegetable pasta
+summary:
+  mk: Тиквичка, модар патлиџан, пиперки и чери домати печени до карамелизирано, измешани со тестенини и бело сирење.
+  en: Zucchini, eggplant, peppers and cherry tomatoes roasted until caramelised, tossed with pasta and white cheese.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 30 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+season: [summer, autumn]
+source:
+  name: Gimme Some Oven
+  url: https://www.gimmesomeoven.com/roasted-vegetable-pasta/
+sides: [zelena-salata, shopska-salata]
+
+ingredients:
+  - items:
+      - { ingredient: pasta, qty: 350, unit: g, note: { mk: пене или фусили, en: penne or fusilli } }
+      - { ingredient: zucchini, qty: 1, unit: pc }
+      - { ingredient: eggplant, qty: 1, unit: pc }
+      - { ingredient: red-pepper, qty: 2, unit: pc }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: на кришки, en: in wedges } }
+      - { ingredient: cherry-tomato, qty: 15, unit: pc }
+      - { ingredient: olive-oil, qty: 4, unit: tbsp }
+      - { ingredient: garlic, qty: 3, unit: clove }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+      - { ingredient: feta-cheese, qty: 120, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: basil, qty: 0.25, unit: bunch, optional: true }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 220°C. Исечи го зеленчукот (без чери доматите) на еднакви коцки.
+      en: Heat the oven to 220°C. Cut the vegetables (not the cherry tomatoes) into even chunks.
+  - text:
+      mk: Измешај го со маслиново масло, згмечен лук, оригано, сол и пипер и рашири го во еден слој на голем плех.
+      en: Toss with olive oil, crushed garlic, oregano, salt and pepper and spread in one layer on a large tray.
+  - text:
+      mk: Печи 15 минути, додај ги чери доматите и печи уште 15 минути, додека зеленчукот не порумени.
+      en: Roast 15 minutes, add the cherry tomatoes and roast 15 more, until the vegetables are browned.
+    timer: 30
+  - text:
+      mk: Во меѓувреме свари ги тестенините и зачувај малку од водата.
+      en: Meanwhile cook the pasta and keep a little of its water.
+    timer: 10
+  - text:
+      mk: Измешај ги тестенините со зеленчукот и соковите од плехот, додај малку вода по потреба, поспи со сирење и босилек.
+      en: Toss the pasta with the vegetables and pan juices, loosen with a little water if needed, and top with cheese and basil.
+
+variants:
+  - id: chicken
+    name: { mk: Со пилешко, en: With chicken }
+    note:
+      mk: Пилешки гради на коцки печи ги на истиот плех со зеленчукот — позаситно, со повеќе протеини.
+      en: Roast diced chicken breast on the same tray as the vegetables — more filling, more protein.
+    add:
+      - { ingredient: chicken-breast, qty: 400, unit: g }
+  - id: winter
+    name: { mk: "Зимска, со брокула", en: "Winter, with broccoli" }
+    note:
+      mk: Зиме — брокула, морков и кромид наместо тиквичка и патлиџан, со пармезан наместо сирење.
+      en: In winter — broccoli, carrot and onion instead of zucchini and eggplant, with parmesan instead of white cheese.
+    add:
+      - { ingredient: broccoli, qty: 1, unit: pc }
+      - { ingredient: carrot, qty: 2, unit: pc }
+      - { ingredient: parmesan, qty: 40, unit: g }
+    remove: [zucchini, eggplant, cherry-tomato, feta-cheese]
+
+tips:
+  mk: Зеленчукот да е во еден слој — ако е натрупан, се динста наместо да се пече. Остатоците се одлични ладни како салата.
+  en: Keep the vegetables in one layer — crowded, they steam instead of roasting. Leftovers are great cold as a salad.

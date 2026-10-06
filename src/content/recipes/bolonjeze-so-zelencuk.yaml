@@ -1,0 +1,79 @@
+title:
+  mk: Болоњезе со скриен зеленчук
+  en: Hidden-vegetable bolognese
+summary:
+  mk: Сос од посно мелено месо со рендан морков, тиквичка и печурки што се топат во сосот — здраво, а децата не забележуваат.
+  en: Lean mince sauce with grated carrot, zucchini and mushrooms that melt into it — healthy, and the kids won't notice.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 40 }
+difficulty: easy
+tags: [kid-friendly]
+source:
+  name: Hungry Healthy Happy
+  url: https://hungryhealthyhappy.com/hidden-vegetable-bolognese/
+sides: [zelena-salata, shopska-salata, salata-od-zelka]
+
+ingredients:
+  - title: { mk: Сос, en: Sauce }
+    items:
+      - { ingredient: minced-meat, qty: 400, unit: g, note: { mk: посно говедско, en: lean beef } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: ситно рендан, en: finely grated } }
+      - { ingredient: zucchini, qty: 1, unit: pc, note: { mk: ситно рендана, en: finely grated } }
+      - { ingredient: mushrooms, qty: 150, unit: g, note: { mk: многу ситно сецкани, en: very finely chopped } }
+      - { ingredient: garlic, qty: 2, unit: clove }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: canned-tomatoes, qty: 1, unit: can }
+      - { ingredient: tomato-paste, qty: 2, unit: tbsp }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 200, unit: ml }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: Тестенини, en: Pasta }
+    items:
+      - { ingredient: pasta, qty: 400, unit: g, note: { mk: шпагети (интегрални по желба), en: spaghetti (wholewheat if you like) } }
+      - { ingredient: parmesan, qty: 40, unit: g, optional: true }
+
+steps:
+  - text:
+      mk: На маслиново масло пропржи ги кромидот, морковот, тиквичката и печурките додека не омекнат и не испари водата.
+      en: Fry the onion, carrot, zucchini and mushrooms in olive oil until soft and their water has evaporated.
+    timer: 8
+  - text:
+      mk: Додај го лукот и меленото месо и пржи, ронејќи со лажица, додека месото не порумени.
+      en: Add the garlic and minced meat and cook, breaking it up with a spoon, until browned.
+    timer: 7
+  - text:
+      mk: Вмешај доматен концентрат, пелати, вода и оригано, посоли и пиперосај. Вари на тивок оган додека сосот не стане густ.
+      en: Stir in the tomato paste, canned tomatoes, water and oregano and season. Simmer gently until the sauce is thick.
+    timer: 25
+  - text:
+      mk: Додека сосот се вари, свари ги тестенините. Служи го сосот врз тестенините, со пармезан.
+      en: While the sauce simmers, cook the pasta. Serve the sauce over the pasta with parmesan.
+    timer: 10
+
+variants:
+  - id: lentils
+    name: { mk: Со леќа, en: With lentils }
+    note:
+      mk: Замени го месото со варена леќа (или половина-половина) — вегетаријанска болоњезе, полна со влакна.
+      en: Replace the meat with cooked lentils (or half and half) — a vegetarian bolognese full of fibre.
+    add:
+      - { ingredient: lentils, qty: 200, unit: g, note: { mk: претходно сварена, en: cooked beforehand } }
+    remove: [minced-meat]
+  - id: baked
+    name: { mk: Запечени со кашкавал, en: Baked with kashkaval }
+    note:
+      mk: Измешај ги тестенините со сосот, истури ги во плех, поспи рендан кашкавал и печи 15 минути на 200°C.
+      en: Mix the pasta with the sauce, tip into a tray, cover with grated kashkaval and bake 15 minutes at 200°C.
+    add:
+      - { ingredient: kashkaval, qty: 100, unit: g }
+
+tips:
+  mk: Ако децата се сомничави, измиксај го сосот пред месото — зеленчукот целосно исчезнува. Сосот се замрзнува одлично — двојна количина е добра идеја.
+  en: If the kids are suspicious, blend the vegetables before adding the meat — they vanish completely. The sauce freezes well — make a double batch.
+storage:
+  mk: Сосот во фрижидер 3 дена, во замрзнувач 3 месеци.
+  en: Sauce keeps 3 days in the fridge, 3 months frozen.

@@ -1,0 +1,66 @@
+title:
+  mk: Тестенини со спанаќ, сирење и лимон
+  en: Spinach, feta and lemon pasta
+summary:
+  mk: Лесни медитерански тестенини со свеж спанаќ, бело сирење, лук и лимон — готови за 15 минути.
+  en: Light Mediterranean pasta with fresh spinach, white cheese, garlic and lemon — ready in 15 minutes.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 5, cook: 12 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+season: [spring, autumn]
+source:
+  name: Running to the Kitchen
+  url: https://www.runningtothekitchen.com/lemon-spinach-and-feta-linguine/
+sides: [shopska-salata, salata-od-cveklo, zelena-salata]
+
+ingredients:
+  - items:
+      - { ingredient: pasta, qty: 350, unit: g, note: { mk: лингвини или пене, en: linguine or penne } }
+      - { ingredient: spinach, qty: 250, unit: g, note: { mk: свеж, en: fresh } }
+      - { ingredient: feta-cheese, qty: 150, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: garlic, qty: 3, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: lemon, qty: 1, unit: pc, note: { mk: кора и сок, en: zest and juice } }
+      - { ingredient: cherry-tomato, qty: 10, unit: pc, optional: true }
+      - { ingredient: dill, qty: 0.25, unit: bunch, optional: true }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Свари ги тестенините во посолена вода и зачувај една шолја од водата.
+      en: Boil the pasta in salted water and keep a cup of the water.
+    timer: 10
+  - text:
+      mk: Во широка тава на маслиново масло пропржи го лукот една минута, па додај го спанаќот и мешај додека не свене.
+      en: Fry the garlic in olive oil in a wide pan for a minute, then add the spinach and stir until wilted.
+    timer: 2
+  - text:
+      mk: Додај ги тестенините, малку од водата, лимоновата кора и сок и половина од сирењето и измешај додека сирењето не стане кремаст сос.
+      en: Add the pasta, a splash of its water, the lemon zest and juice and half the cheese and toss until the cheese turns creamy.
+  - text:
+      mk: Служи со остатокот од сирењето, преполовени чери домати, копар и свежо мелен пипер.
+      en: Serve topped with the rest of the cheese, halved cherry tomatoes, dill and freshly ground pepper.
+
+variants:
+  - id: salmon
+    name: { mk: Со лосос, en: With salmon }
+    note:
+      mk: Додај парчиња печен лосос (може и остаток од ручекот) — богато со омега-3.
+      en: Fold in flakes of baked salmon (leftovers work too) — rich in omega-3.
+    add:
+      - { ingredient: salmon, qty: 250, unit: g }
+  - id: chicken
+    name: { mk: Со пилешко, en: With chicken }
+    note:
+      mk: Пред лукот пропржи пилешки гради на ленти додека не се сварат.
+      en: Before the garlic, fry strips of chicken breast until cooked through.
+    add:
+      - { ingredient: chicken-breast, qty: 350, unit: g }
+
+tips:
+  mk: Сирењето е солено — не соли ја тавата пред да пробаш. Замрзнат спанаќ исто оди, само добро исцеден.
+  en: The cheese is salty — don't salt the pan before tasting. Frozen spinach works too, just squeeze it well.

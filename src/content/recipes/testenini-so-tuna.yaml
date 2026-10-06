@@ -1,0 +1,66 @@
+title:
+  mk: Тестенини со туна и чери домати
+  en: Tuna pasta with cherry tomatoes
+summary:
+  mk: Брзи тестенини со туна, пржени чери домати, лук, лимон и магдонос — ручек од оставата за 20 минути.
+  en: Quick pasta with tuna, blistered cherry tomatoes, garlic, lemon and parsley — a pantry lunch in 20 minutes.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 5, cook: 15 }
+difficulty: easy
+tags: [kid-friendly]
+source:
+  name: Feasting at Home
+  url: https://www.feastingathome.com/tuna-pasta/
+sides: [zelena-salata, shopska-salata, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: pasta, qty: 400, unit: g, note: { mk: шпагети или пене, en: spaghetti or penne } }
+      - { ingredient: tuna, qty: 2, unit: pc, note: { mk: во маслиново масло, en: in olive oil } }
+      - { ingredient: cherry-tomato, qty: 20, unit: pc }
+      - { ingredient: garlic, qty: 3, unit: clove, note: { mk: на листови, en: sliced } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: lemon, qty: 1, unit: pc, note: { mk: кора и сок, en: zest and juice } }
+      - { ingredient: parsley, qty: 0.5, unit: bunch }
+      - { ingredient: olives, qty: 60, unit: g, optional: true }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Свари ги тестенините во посолена вода и зачувај една шолја од водата.
+      en: Boil the pasta in salted water and keep a cup of the water.
+    timer: 10
+  - text:
+      mk: Во меѓувреме во широка тава на маслиново масло пржи ги чери доматите на силен оган додека не почнат да пукаат. Додај го лукот и пржи уште една минута.
+      en: Meanwhile fry the cherry tomatoes in olive oil in a wide pan over high heat until they start to burst. Add the garlic and fry a minute more.
+    timer: 6
+  - text:
+      mk: Намали го огнот, додај ја исцедената туна (и маслинките) и кратко загреј.
+      en: Lower the heat, add the drained tuna (and olives) and warm through briefly.
+  - text:
+      mk: Додај ги тестенините со малку од водата, рендана кора и сок од лимон и магдонос. Измешај, пиперосај и служи.
+      en: Toss in the pasta with a splash of its water, the lemon zest and juice and the parsley. Season with pepper and serve.
+
+variants:
+  - id: canned-tomatoes
+    name: { mk: Со пелати (зима), en: With canned tomatoes (winter) }
+    note:
+      mk: Надвор од сезона — наместо чери домати, една конзерва пелати варена 10 минути со лукот.
+      en: Out of season — instead of cherry tomatoes, a can of tomatoes simmered 10 minutes with the garlic.
+    add:
+      - { ingredient: canned-tomatoes, qty: 1, unit: can }
+    remove: [cherry-tomato]
+  - id: cold-salad
+    name: { mk: Ладна салата од тестенини, en: Cold pasta salad }
+    note:
+      mk: Измешај ги изладените тестенини со туната, свежите чери домати, краставица и лимонов прелив — за летен ручек или ужина за понесување.
+      en: Toss the cooled pasta with the tuna, fresh cherry tomatoes, cucumber and the lemon dressing — for a summer lunch or a packed snack.
+    add:
+      - { ingredient: cucumber, qty: 1, unit: pc, note: { mk: на коцки, en: diced } }
+
+tips:
+  mk: Туната во маслиново масло е посочна — употреби малку од нејзиното масло во сосот.
+  en: Tuna in olive oil is juicier — use a little of its oil in the sauce.

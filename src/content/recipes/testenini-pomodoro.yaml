@@ -1,0 +1,74 @@
+title:
+  mk: Тестенини со доматен сос
+  en: Pasta with tomato sauce (pomodoro)
+summary:
+  mk: Наједноставните тестенини — сос од домати, лук и маслиново масло со свеж босилек. Готови за 30 минути.
+  en: The simplest pasta — a sauce of tomatoes, garlic and olive oil with fresh basil. Ready in 30 minutes.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 5, cook: 25 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting]
+source:
+  name: Coley Cooks
+  url: https://coleycooks.com/pasta-pomodoro/
+sides: [zelena-salata, shopska-salata, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: pasta, qty: 400, unit: g, note: { mk: шпагети или пене (интегрални по желба), en: spaghetti or penne (wholewheat if you like) } }
+      - { ingredient: canned-tomatoes, qty: 2, unit: can, note: { mk: по 400 г, en: 400 g each } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: garlic, qty: 3, unit: clove, note: { mk: на тенки листови, en: thinly sliced } }
+      - { ingredient: basil, qty: 0.5, unit: bunch, note: { mk: или 1 лажичка сув, en: or 1 tsp dried } }
+      - { ingredient: sugar, qty: 1, unit: pinch }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: parmesan, qty: 40, unit: g, note: { mk: за сервирање, en: to serve }, optional: true }
+
+steps:
+  - text:
+      mk: Во широка тава на тивок оган загреј го маслиновото масло со лукот додека лукот не замириса, без да порумени.
+      en: Warm the olive oil with the garlic in a wide pan over low heat until fragrant, without browning.
+    timer: 2
+  - text:
+      mk: Додај ги пелатите, прстофат шеќер и сол. Вари на тивок оган, мешајќи и гмечејќи ги доматите, додека сосот не се згусне.
+      en: Add the tomatoes, a pinch of sugar and salt. Simmer gently, stirring and crushing the tomatoes, until the sauce thickens.
+    timer: 20
+  - text:
+      mk: Во меѓувреме свари ги тестенините во многу посолена вода, една минута помалку од упатството. Зачувај една шолја од водата.
+      en: Meanwhile boil the pasta in plenty of salted water, one minute less than the packet says. Keep a cup of the water.
+    timer: 10
+  - text:
+      mk: Исцеди ги тестенините, префрли ги во сосот, додај малку од водата и мешај една минута. Вмешај искинат босилек и служи со пармезан.
+      en: Drain the pasta, toss it into the sauce with a splash of the water and stir for a minute. Stir in torn basil and serve with parmesan.
+    timer: 1
+
+variants:
+  - id: zucchini
+    name: { mk: Со тиквички, en: With zucchini }
+    note:
+      mk: Пред пелатите пропржи тиквичка на ситни коцки 5 минути — повеќе зеленчук, децата не забележуваат.
+      en: Before the tomatoes, fry a diced zucchini for 5 minutes — more vegetables, the kids won't notice.
+    add:
+      - { ingredient: zucchini, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+  - id: arrabbiata
+    name: { mk: Лути (арабјата), en: Spicy (arrabbiata) }
+    note:
+      mk: За возрасните — со лукот додај лут пипер. Децата добиваат сос пред да се додаде лутото.
+      en: For the grown-ups — add chili flakes with the garlic. Serve the kids' portion before adding the heat.
+    add:
+      - { ingredient: chili-flakes, qty: 0.5, unit: tsp }
+  - id: feta
+    name: { mk: Со бело сирење, en: With white cheese }
+    note:
+      mk: Наместо пармезан, на крај поспи изронето бело сирење.
+      en: Instead of parmesan, scatter crumbled white cheese on top.
+    add:
+      - { ingredient: feta-cheese, qty: 100, unit: g }
+    remove: [parmesan]
+
+tips:
+  mk: Лето — 1 кг зрели домашни домати наместо пелати. Водата од тестенините го прави сосот свилен — секогаш зачувај малку.
+  en: In summer use 1 kg ripe local tomatoes instead of canned. The pasta water makes the sauce silky — always keep some.

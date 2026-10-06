@@ -125,6 +125,16 @@ beetroot:
     en: { one: beetroot, other: beetroots }
   aisle: produce
   months: [9, 10, 11, 12, 1, 2, 3]
+broccoli:
+  name:
+    mk: { one: главица брокула, other: главици брокула }
+    en: { one: head of broccoli, other: heads of broccoli }
+  aisle: produce
+  months: [10, 11, 12, 1, 2, 3, 4]
+basil:
+  name: { mk: свеж босилек, en: fresh basil }
+  aisle: produce
+  months: [6, 7, 8, 9]
 peas:
   name: { mk: грашок, en: green peas }
   aisle: produce
@@ -184,6 +194,9 @@ salmon:
   name: { mk: лосос (филе), en: salmon fillet }
   aisle: meat
   store: supermarket
+chicken-breast:
+  name: { mk: пилешки гради, en: chicken breast }
+  aisle: meat
 ham:
   name: { mk: шунка, en: ham }
   aisle: meat
@@ -217,6 +230,9 @@ kashkaval:
 sour-cream:
   name: { mk: павлака, en: sour cream }
   aisle: dairy
+parmesan:
+  name: { mk: пармезан, en: parmesan }
+  aisle: dairy
 butter:
   name: { mk: путер, en: butter }
   aisle: dairy
@@ -238,6 +254,9 @@ white-beans:
   aisle: dry
 lentils:
   name: { mk: леќа, en: brown lentils }
+  aisle: dry
+pasta:
+  name: { mk: тестенини, en: pasta }
   aisle: dry
 macaroni:
   name: { mk: макарони, en: macaroni }
@@ -384,6 +403,14 @@ sour-cabbage-head:
   store: market
 vine-leaves:
   name: { mk: лозови листови, en: vine leaves }
+  aisle: canned
+tuna:
+  name:
+    mk: { one: конзерва туна, other: конзерви туна }
+    en: { one: can of tuna, other: cans of tuna }
+  aisle: canned
+olives:
+  name: { mk: маслинки, en: olives }
   aisle: canned
 tomato-paste:
   name: { mk: доматен концентрат, en: tomato paste }

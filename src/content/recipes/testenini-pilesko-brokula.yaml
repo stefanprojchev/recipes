@@ -1,0 +1,67 @@
+title:
+  mk: Тестенини со пилешко и брокула
+  en: Chicken and broccoli pasta
+summary:
+  mk: Тестенини, пилешки гради и брокула сварени во едно тенџере во лесен кремаст сос со пармезан — полни со протеини.
+  en: Pasta, chicken breast and broccoli cooked in one pot in a light creamy parmesan sauce — packed with protein.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 25 }
+difficulty: easy
+tags: [kid-friendly]
+source:
+  name: Slender Kitchen
+  url: https://www.slenderkitchen.com/recipe/one-pot-creamy-parmesan-chicken-broccoli-pasta
+sides: [zelena-salata, shopska-salata, salata-od-cveklo]
+
+ingredients:
+  - items:
+      - { ingredient: chicken-breast, qty: 500, unit: g, note: { mk: на парчиња, en: bite-sized } }
+      - { ingredient: pasta, qty: 300, unit: g, note: { mk: пене или фусили, en: penne or fusilli } }
+      - { ingredient: broccoli, qty: 1, unit: pc, note: { mk: на цветчиња, en: in florets } }
+      - { ingredient: garlic, qty: 4, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: olive-oil, qty: 1, unit: tbsp }
+      - { ingredient: water, qty: 700, unit: ml }
+      - { ingredient: milk, qty: 250, unit: ml }
+      - { ingredient: parmesan, qty: 40, unit: g, note: { mk: изрендан, en: grated } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во широко тенџере на маслиново масло пропржи го посоленото пилешко додека не порумени. Додај го лукот и мешај една минута.
+      en: In a wide pot, brown the salted chicken in olive oil. Add the garlic and stir for a minute.
+    timer: 7
+  - text:
+      mk: Додај ги тестенините, водата и млекото, посоли. Кога ќе зоврие, намали и вари мешајќи често.
+      en: Add the pasta, water and milk and season. Once boiling, lower the heat and simmer, stirring often.
+    timer: 8
+  - text:
+      mk: Додај ја брокулата и вари уште додека тестенините не се сварат, а течноста не стане кремаст сос.
+      en: Add the broccoli and simmer until the pasta is cooked and the liquid has turned into a creamy sauce.
+    timer: 6
+  - text:
+      mk: Тргни од оган, вмешај го пармезанот, пиперосај и служи веднаш.
+      en: Take off the heat, stir in the parmesan, season with pepper and serve straight away.
+
+variants:
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Со пилешкото пропржи печурки на листови — посочен и помирисен сос.
+      en: Fry sliced mushrooms with the chicken — a juicier, more fragrant sauce.
+    add:
+      - { ingredient: mushrooms, qty: 200, unit: g }
+  - id: vegetarian
+    name: { mk: "Без месо, со грашок", en: Meat-free with peas }
+    note:
+      mk: Без пилешко — со брокулата додај грашок за протеини и боја.
+      en: No chicken — add peas with the broccoli for protein and colour.
+    add:
+      - { ingredient: peas, qty: 200, unit: g }
+    remove: [chicken-breast]
+
+tips:
+  mk: Сосот се згуснува додека стои — ако е премногу густ, разреди со малку врела вода пред сервирање.
+  en: The sauce thickens as it stands — loosen with a little hot water before serving if needed.
