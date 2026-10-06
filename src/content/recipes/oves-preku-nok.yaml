@@ -9,7 +9,6 @@ meals: [breakfast, snack]
 servings: 3
 time: { prep: 5, rest: 480 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian]
 source:
   name: Fit Foodie Finds

@@ -1,0 +1,83 @@
+title:
+  mk: Чорба од коприва
+  en: Nettle čorba
+summary:
+  mk: Пролетна чорба од млада коприва со ориз, засилена со јајце и кисело млеко — традиционална и полна со железо.
+  en: A spring soup of young nettles with rice, finished with egg and yogurt — traditional and rich in iron.
+category: soup
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 30 }
+difficulty: easy
+diet: [vegetarian]
+season: [spring]
+source:
+  name: Мој портал
+  url: https://mojportal.mk/corba-od-koprivi
+sides: [zelena-salata, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: nettle, qty: 250, unit: g, note: { mk: "само врвовите, со ракавици", en: "tops only, picked with gloves" } }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: изрендан, en: grated } }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: rice, qty: 3, unit: tbsp }
+      - { ingredient: water, qty: 1.5, unit: l }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: Застројка, en: To finish }
+    items:
+      - { ingredient: egg, qty: 1, unit: pc }
+      - { ingredient: yogurt, qty: 150, unit: g }
+
+steps:
+  - text:
+      mk: Копривата измиј ја со ракавици и бланширај ја во врела вода додека не омекне. Исцеди ја и ситно исецкај ја или измиксај ја.
+      en: Wash the nettles wearing gloves and blanch them in boiling water until soft. Drain and chop finely or blend.
+    timer: 5
+  - text:
+      mk: Во тенџере на маслиновото масло пропржи ги кромидот и морковот, па вмешај го брашното за една минута.
+      en: In a pot, soften the onion and carrot in the olive oil, then stir in the flour for a minute.
+    timer: 5
+  - text:
+      mk: Налевај ја водата мешајќи, додај ги копривата, оризот и сол и вари на тивок оган додека оризот не омекне.
+      en: Pour in the water while stirring, add the nettles, rice and salt and simmer until the rice is soft.
+    timer: 20
+  - text:
+      mk: Тргни од оган и остави 5 минути. Измати го јајцето со киселото млеко, додај неколку лажици топла чорба, па истури во тенџерето мешајќи постојано.
+      en: Take off the heat and leave 5 minutes. Whisk the egg with the yogurt, add a few spoons of hot soup, then pour into the pot stirring constantly.
+
+variants:
+  - id: spinach
+    name: { mk: Со спанаќ, en: With spinach }
+    note:
+      mk: Кога нема коприва (по средината на мај станува горчлива) — млад спанаќ, без бланширање.
+      en: When there are no nettles (after mid-May they turn bitter) — young spinach, no blanching needed.
+    add:
+      - { ingredient: spinach, qty: 300, unit: g }
+    remove: [nettle]
+  - id: cream
+    name: { mk: Крем-чорба, en: Blended }
+    note:
+      mk: Без ориз, а со еден компир на коцки — на крајот измиксај ја пред застројката.
+      en: No rice, add one diced potato instead — blend before adding the egg and yogurt.
+    add:
+      - { ingredient: potato, qty: 1, unit: pc }
+    remove: [rice]
+  - id: light
+    name: { mk: Без застројка, en: Without egg and yogurt }
+    note:
+      mk: Полесна, посна верзија — без јајце и кисело млеко, со капка лимон во чинијата.
+      en: A lighter version — no egg or yogurt, with a squeeze of lemon in the bowl.
+    add:
+      - { ingredient: lemon, qty: 0.5, unit: pc }
+    remove: [egg, yogurt]
+
+storage:
+  mk: Најдобра е свежа; во фрижидер 1 ден, загревај ја полека без да зоврие.
+  en: Best fresh; keeps 1 day in the fridge — reheat gently without boiling.
+tips:
+  mk: Собирај само млади врвови пред цветањето. По бланширањето копривата повеќе не пече.
+  en: Pick only young tops before flowering. Once blanched, the nettles no longer sting.

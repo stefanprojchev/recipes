@@ -9,7 +9,6 @@ meals: [lunch, dinner]
 servings: 6
 time: { prep: 20, cook: 130 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegan, fasting]
 season: [autumn, winter, spring]
 source:
@@ -18,7 +17,7 @@ source:
 prepAhead:
   mk: Потопи го гравот во ладна вода вечерта пред готвење.
   en: Soak the beans in cold water the night before.
-sides: [salata-od-zelka, salata-od-cveklo, salata-pecheni-piperki, shopska-salata]
+sides: [salata-od-zelka, salata-od-morkov, salata-od-cveklo, salata-pecheni-piperki, shopska-salata]
 
 ingredients:
   - title: { mk: Грав, en: Beans }

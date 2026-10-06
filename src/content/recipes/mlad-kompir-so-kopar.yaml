@@ -1,0 +1,82 @@
+title:
+  mk: Млад компир со копар
+  en: Young potatoes with dill
+summary:
+  mk: Варени млади компири со лушпата, измешани со путер, лук и свеж копар, со јогурт сос со лук — пролетен гарнир.
+  en: Boiled young potatoes in their skins, tossed with butter, garlic and fresh dill, with a garlicky yogurt sauce — a spring side.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 20 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [spring, summer]
+source:
+  name: Popara.mk
+  url: https://popara.mk/2024/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82-%D0%B7%D0%B0-%D0%BC%D0%BB%D0%B0%D0%B4-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D1%80-%D0%BA%D0%BE%D1%98-%D1%9C%D0%B5-%D0%BC%D1%83-%D0%B4%D0%B0%D0%B4%D0%B5-%D0%BA%D1%80%D1%86/
+
+ingredients:
+  - title: { mk: Компири, en: Potatoes }
+    items:
+      - { ingredient: potato, qty: 1, unit: kg, note: { mk: "млади, ситни", en: "young, small" } }
+      - { ingredient: butter, qty: 2, unit: tbsp }
+      - { ingredient: garlic, qty: 2, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: dill, qty: 0.5, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: Јогурт сос, en: Yogurt sauce }
+    items:
+      - { ingredient: strained-yogurt, qty: 200, unit: g }
+      - { ingredient: garlic, qty: 1, unit: clove, note: { mk: изрендан, en: grated } }
+
+steps:
+  - text:
+      mk: Компирите измиј ги добро со четка — не ги лупи, лушпата на младиот компир е тенка и вкусна. Поголемите преполови ги.
+      en: Scrub the potatoes well — don't peel them, young potato skin is thin and tasty. Halve any larger ones.
+  - text:
+      mk: Стави ги во ладна посолена вода и вари додека нож лесно не влегува.
+      en: Put them in cold salted water and boil until a knife slides in easily.
+    timer: 18
+  - text:
+      mk: Додека се варат, измешај го јогуртот со изрендан лук и малку сол.
+      en: While they cook, mix the yogurt with the grated garlic and a little salt.
+  - text:
+      mk: Исцеди ги компирите и врати ги во тенџерето со путерот и сецканиот лук. Протреси една минута на тивок оган, па додај многу сецкан копар и пипер.
+      en: Drain the potatoes and return them to the pot with the butter and chopped garlic. Shake for a minute over low heat, then add plenty of chopped dill and pepper.
+    timer: 1
+  - text:
+      mk: Служи топли, со јогурт сосот настрана.
+      en: Serve warm with the yogurt sauce on the side.
+
+variants:
+  - id: crispy
+    name: { mk: Хрскави од рерна, en: Crispy from the oven }
+    note:
+      mk: Свари ги само 10 минути, преполови ги, зачини со маслиново масло и алева пиперка и печи на 200°C 20 минути (преврти на половина). Путерот и копарот на крај.
+      en: Boil only 10 minutes, halve them, toss with olive oil and paprika and roast at 200°C for 20 minutes (turn halfway). Butter and dill at the end.
+    add:
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+  - id: sour-cream
+    name: { mk: Со павлака, en: With sour cream }
+    note:
+      mk: Павлака со лук наместо јогурт сосот — покремасто.
+      en: Garlicky sour cream instead of the yogurt sauce — creamier.
+    add:
+      - { ingredient: sour-cream, qty: 200, unit: g }
+    remove: [strained-yogurt]
+  - id: salad
+    name: { mk: Ладна салата, en: Cold potato salad }
+    note:
+      mk: Оладените компири измешај ги со млад кромид, копар, маслиново масло и малку оцет наместо путер — за летни ручеци.
+      en: Toss the cooled potatoes with spring onion, dill, olive oil and a little vinegar instead of butter — for summer lunches.
+    add:
+      - { ingredient: spring-onion, qty: 3, unit: pc }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: vinegar, qty: 1, unit: tbsp }
+    remove: [butter]
+
+tips:
+  mk: Сезоната на млад компир е мај–јули. Оди одлично со риба, пилешко и јагнешко.
+  en: Young potato season is May to July. Great with fish, chicken and lamb.

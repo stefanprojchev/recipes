@@ -1,0 +1,80 @@
+title:
+  mk: Булгур со зеленчук
+  en: Bulgur with vegetables
+summary:
+  mk: Булгур задушен со кромид, пиперки, тиквичка, морков и доматно пире — заситен гарнир со многу влакна наместо ориз.
+  en: Bulgur cooked with onion, peppers, zucchini, carrot and tomato paste — a filling, high-fibre side instead of rice.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 30, rest: 10 }
+difficulty: easy
+diet: [vegan, fasting]
+source:
+  name: Turkish Style Cooking
+  url: https://turkishstylecooking.com/vegetable-bulghur-pilaf-recipe.html
+
+ingredients:
+  - items:
+      - { ingredient: bulgur, qty: 180, unit: g, note: { mk: крупен, en: coarse } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: zucchini, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: red-pepper, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: green-pepper, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: tomato-paste, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 600, unit: ml, note: { mk: врела, en: hot } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во широко тенџере на маслото пропржи го кромидот додека не стане стаклест.
+      en: In a wide pot, fry the onion in the oil until translucent.
+    timer: 4
+  - text:
+      mk: Додај го останатиот зеленчук и динстај мешајќи додека не омекне.
+      en: Add the rest of the vegetables and cook, stirring, until softened.
+    timer: 10
+  - text:
+      mk: Вмешај го доматното пире и алевиот пипер и пржи 2 минути, па додај го булгурот и промешај да се обвитка.
+      en: Stir in the tomato paste and paprika and fry 2 minutes, then add the bulgur and stir to coat.
+  - text:
+      mk: Налеј ја врелата вода, посоли и пиперосај. Покриј и вари на тивок оган додека булгурот не ја впие водата.
+      en: Pour in the hot water and season. Cover and simmer on low until the bulgur has absorbed the water.
+    timer: 15
+  - text:
+      mk: Тргни го од оган, стави крпа под капакот и остави го да отстои, па растресувај го со вилушка.
+      en: Take off the heat, put a towel under the lid and let it rest, then fluff with a fork.
+    timer: 10
+
+variants:
+  - id: eggplant
+    name: { mk: Со модар патлиџан, en: With eggplant }
+    note:
+      mk: Летно — коцки модар патлиџан наместо тиквичката и морковот.
+      en: Summer style — diced eggplant instead of the zucchini and carrot.
+    add:
+      - { ingredient: eggplant, qty: 1, unit: pc }
+    remove: [zucchini, carrot]
+  - id: chickpeas
+    name: { mk: Со наут, en: With chickpeas }
+    note:
+      mk: Конзерва наут со водата — станува посно главно јадење.
+      en: A can of chickpeas with the water — it becomes a meat-free main.
+    add:
+      - { ingredient: chickpeas, qty: 1, unit: pc }
+  - id: yogurt-mint
+    name: { mk: Со јогурт и нана, en: With yogurt and mint }
+    note:
+      mk: Служи со лажица цедено кисело млеко и свежа нана одозгора.
+      en: Serve with a spoon of strained yogurt and fresh mint on top.
+    add:
+      - { ingredient: strained-yogurt, qty: 200, unit: g }
+      - { ingredient: mint, qty: 0.25, unit: bunch }
+
+storage:
+  mk: Во фрижидер до 4 дена; може и да се замрзне.
+  en: Keeps 4 days in the fridge; freezes well.

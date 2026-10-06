@@ -1,0 +1,75 @@
+title:
+  mk: Печен зеленчук во рерна
+  en: Oven-roasted vegetables
+summary:
+  mk: Морков, карфиол, брокула и кромид печени на силна рерна додека не се карамелизираат — топол зимски гарнир за секое месо.
+  en: Carrot, cauliflower, broccoli and onion roasted hot until caramelised — a warm winter side for any meat.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 30 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+season: [autumn, winter]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/roasted-vegetables/
+
+ingredients:
+  - items:
+      - { ingredient: carrot, qty: 3, unit: pc, note: { mk: на парчиња од 2 см, en: in 2 cm pieces } }
+      - { ingredient: cauliflower, qty: 0.5, unit: pc, note: { mk: на цветчиња, en: in florets } }
+      - { ingredient: broccoli, qty: 1, unit: pc, note: { mk: на цветчиња, en: in florets } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: "црвен, на кришки", en: "red, in wedges" } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: garlic-powder, qty: 0.5, unit: tsp }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 220°C и обложи два плеха со хартија за печење.
+      en: Heat the oven to 220°C and line two trays with baking paper.
+  - text:
+      mk: Зеленчукот измешај го со маслото, лукот во прав, оригано, сол и пипер и рашири го во еден ред — морковот на едниот плех, цветчињата на другиот.
+      en: Toss the vegetables with the oil, garlic powder, oregano, salt and pepper and spread in a single layer — carrots on one tray, florets on the other.
+  - text:
+      mk: Печи додека рабовите не порумени. Провери на 20 минути — брокулата е готова прва, извади ја порано ако треба.
+      en: Roast until the edges are browned. Check at 20 minutes — the broccoli is done first, take it out early if needed.
+    timer: 30
+  - text:
+      mk: Измешај го сè заедно и прелиј со лимонов сок пред служење.
+      en: Combine everything and squeeze over the lemon juice before serving.
+
+variants:
+  - id: pumpkin
+    name: { mk: Со тиква, en: With pumpkin }
+    note:
+      mk: Наесен — коцки тиква наместо брокулата. Послатко, децата повеќе го сакаат.
+      en: In autumn — cubes of pumpkin instead of broccoli. Sweeter, kids like it more.
+    add:
+      - { ingredient: pumpkin, qty: 400, unit: g }
+    remove: [broccoli]
+  - id: potatoes
+    name: { mk: Со компири, en: With potatoes }
+    note:
+      mk: Компири на коцки на плехот со морковот — гарнир и зеленчук во едно.
+      en: Diced potatoes on the tray with the carrots — side and vegetables in one.
+    add:
+      - { ingredient: potato, qty: 500, unit: g }
+  - id: parmesan
+    name: { mk: Со пармезан, en: With parmesan }
+    note:
+      mk: Последните 5 минути поспи рендан пармезан врз цветчињата.
+      en: Sprinkle grated parmesan over the florets for the last 5 minutes.
+    add:
+      - { ingredient: parmesan, qty: 30, unit: g }
+
+tips:
+  mk: Не натрупувај го плехот — збиен зеленчук се динста наместо да се пече.
+  en: Don't crowd the trays — packed vegetables steam instead of roasting.
+storage:
+  mk: Во фрижидер до 3 дена.
+  en: Keeps 3 days in the fridge.

@@ -1,0 +1,68 @@
+title:
+  mk: Салата со рукола и пармезан
+  en: Arugula salad with parmesan
+summary:
+  mk: Рукола, чери домати и тенки листови пармезан со лимонов прелив — салата за пет минути што оди со тестенини и риба.
+  en: Arugula, cherry tomatoes and shaved parmesan with a lemon dressing — a five-minute salad for pasta and fish.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 5 }
+difficulty: easy
+diet: [vegetarian, gluten-free]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/arugula-salad/
+
+ingredients:
+  - items:
+      - { ingredient: arugula, qty: 120, unit: g }
+      - { ingredient: cherry-tomato, qty: 12, unit: pc, note: { mk: преполовени, en: halved } }
+      - { ingredient: parmesan, qty: 30, unit: g, note: { mk: на тенки листови, en: shaved } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: honey, qty: 0.5, unit: tsp }
+      - { ingredient: mustard, qty: 0.5, unit: tsp }
+      - { ingredient: salt, qty: 1, unit: pinch }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во голем сад измати го маслиновото масло со лимоновиот сок, медот, сенфот, солта и пиперот.
+      en: In a large bowl, whisk the olive oil with the lemon juice, honey, mustard, salt and pepper.
+  - text:
+      mk: Додај ги руколата и доматите и нежно измешај непосредно пред служење.
+      en: Add the arugula and tomatoes and toss gently just before serving.
+  - text:
+      mk: Одозгора стави ги листовите пармезан со лушпарка за компир.
+      en: Shave the parmesan over the top with a vegetable peeler.
+
+variants:
+  - id: walnuts
+    name: { mk: Со ореви, en: With walnuts }
+    note:
+      mk: Запечени ореви наместо доматите — зимска верзија.
+      en: Toasted walnuts instead of the tomatoes — a winter version.
+    add:
+      - { ingredient: walnuts, qty: 30, unit: g }
+    remove: [cherry-tomato]
+  - id: strawberries
+    name: { mk: Со јагоди, en: With strawberries }
+    note:
+      mk: Во мај и јуни — исечени јагоди наместо доматите, а бело сирење наместо пармезан.
+      en: In May and June — sliced strawberries instead of tomatoes, and white cheese instead of parmesan.
+    add:
+      - { ingredient: strawberries, qty: 150, unit: g }
+      - { ingredient: feta-cheese, qty: 60, unit: g }
+    remove: [cherry-tomato, parmesan]
+  - id: mixed-greens
+    name: { mk: Со зелена салата, en: With lettuce }
+    note:
+      mk: Половина рукола, половина зелена салата — поблага за оние што не сакаат горчлив вкус.
+      en: Half arugula, half lettuce — milder for those who don't like the bitterness.
+    add:
+      - { ingredient: lettuce, qty: 0.5, unit: pc }
+
+tips:
+  mk: Прелиј ја дури пред служење — руколата брзо свенува.
+  en: Dress it only right before serving — arugula wilts fast.

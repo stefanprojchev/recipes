@@ -1,0 +1,87 @@
+title:
+  mk: Зеленчукова чорба
+  en: Vegetable soup
+summary:
+  mk: Брза чорба без запршка од морков, пиперка, тиквичка и компир — витаминска бомба за 30 минути.
+  en: A quick soup with no roux — carrot, pepper, zucchini and potato — a vitamin bomb in 30 minutes.
+category: soup
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 25 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+season: [summer, autumn]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%87%D1%83%D0%BA%D0%BE%D0%B2%D0%B0-%D1%87%D0%BE%D1%80%D0%B1%D0%B0-%D0%B1%D0%B5%D0%B7-%D0%B7%D0%B0%D0%BF%D1%80%D1%88%D0%BA%D0%B0
+sides: [shopska-salata, zelena-salata, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: red-pepper, qty: 1, unit: pc, note: { mk: ситно сецкана, en: finely chopped } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: изрендани, en: grated } }
+      - { ingredient: zucchini, qty: 1, unit: pc, note: { mk: изрендана, en: grated } }
+      - { ingredient: potato, qty: 2, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: peas, qty: 100, unit: g }
+      - { ingredient: bay-leaf, qty: 1, unit: pc }
+      - { ingredient: water, qty: 1.5, unit: l }
+      - { ingredient: parsley, qty: 0.5, unit: bunch, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во тенџере на маслиновото масло пропржи ги кромидот, пиперката и морковот додека не омекнат.
+      en: In a pot, soften the onion, pepper and carrot in the olive oil.
+    timer: 5
+  - text:
+      mk: Додај ги тиквичката и компирот и мешај уште 2–3 минути.
+      en: Add the zucchini and potato and stir for 2–3 more minutes.
+    timer: 3
+  - text:
+      mk: Налеј ја водата, додај ловоров лист, сол и пипер и вари на тивок оган додека компирот не омекне. Последните 5 минути додај го грашокот.
+      en: Pour in the water, add the bay leaf, salt and pepper and simmer until the potato is soft. Add the peas for the last 5 minutes.
+    timer: 20
+  - text:
+      mk: Тргни од оган и вмешај го магдоносот.
+      en: Take off the heat and stir in the parsley.
+
+variants:
+  - id: rice
+    name: { mk: Со ориз, en: With rice }
+    note:
+      mk: Три лажици ориз со компирот — позаситна чорба.
+      en: Three spoons of rice with the potato — a more filling soup.
+    add:
+      - { ingredient: rice, qty: 3, unit: tbsp }
+  - id: cream
+    name: { mk: Крем-чорба за децата, en: Blended for the kids }
+    note:
+      mk: Измиксај ја со штапен миксер и додај лажица павлака — децата не го бараат зеленчукот.
+      en: Blend with a stick blender and stir in a spoon of sour cream — the kids won't hunt for vegetables.
+    add:
+      - { ingredient: sour-cream, qty: 2, unit: tbsp }
+  - id: chicken
+    name: { mk: Со пилешко, en: With chicken }
+    note:
+      mk: Пилешки гради на коцки пропржи ги со кромидот — чорба со повеќе протеини.
+      en: Fry diced chicken breast with the onion — a soup with more protein.
+    add:
+      - { ingredient: chicken-breast, qty: 250, unit: g }
+  - id: egg-yogurt
+    name: { mk: Со јајце и кисело млеко, en: With egg and yogurt }
+    note:
+      mk: На крајот вмешај јајце изматено со кисело млеко, разредено со малку топла чорба.
+      en: At the end, stir in an egg whisked with yogurt, tempered with a little hot soup.
+    add:
+      - { ingredient: egg, qty: 1, unit: pc }
+      - { ingredient: yogurt, qty: 150, unit: g }
+
+storage:
+  mk: Во фрижидер до 2 дена.
+  en: Keeps 2 days in the fridge.
+tips:
+  mk: Зиме — со смрзнат зеленчук и без тиквичка, а со уште еден морков.
+  en: In winter — use frozen vegetables, skip the zucchini and add another carrot.

@@ -1,0 +1,63 @@
+title:
+  mk: Брокула и карфиол на пареа
+  en: Steamed broccoli and cauliflower
+summary:
+  mk: Брокула и карфиол сварени на пареа, прелиени со маслиново масло, лимон и сол — наједноставниот здрав гарнир.
+  en: Broccoli and cauliflower steamed and dressed with olive oil, lemon and salt — the simplest healthy side.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 5, cook: 8 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+season: [autumn, winter, spring]
+source:
+  name: Mia Kouppa
+  url: https://miakouppa.com/broccoli-with-olive-oil-and-lemon/
+
+ingredients:
+  - items:
+      - { ingredient: broccoli, qty: 1, unit: pc, note: { mk: "на цветчиња, стеблото излупено", en: "in florets, stalk peeled" } }
+      - { ingredient: cauliflower, qty: 0.5, unit: pc, note: { mk: на цветчиња, en: in florets } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: salt, qty: 0.5, unit: tsp }
+
+steps:
+  - text:
+      mk: Карфиолот стави го во цедалка над тенџере со малку врела вода, покриј и вари на пареа 3 минути.
+      en: Put the cauliflower in a steamer basket over a pot of simmering water, cover and steam for 3 minutes.
+    timer: 3
+  - text:
+      mk: Додај ја брокулата и вари на пареа уште додека не омекне, а остане светло зелена и малку цврста.
+      en: Add the broccoli and steam until tender but still bright green with a little bite.
+    timer: 6
+  - text:
+      mk: Остави ги да се оладат малку (не под ладна вода). Нареди ги во чинија, прелиј со маслиново масло, посоли и исцеди лимон непосредно пред служење.
+      en: Let them cool slightly (not under cold water). Arrange on a plate, drizzle with olive oil, salt, and squeeze over the lemon just before serving.
+
+variants:
+  - id: garlic
+    name: { mk: Со лук, en: With garlic }
+    note:
+      mk: Две чешниња лук тенко сечени, пропржени кратко во маслиновото масло, прелиени врз зеленчукот.
+      en: Two garlic cloves thinly sliced and briefly fried in the olive oil, poured over the vegetables.
+    add:
+      - { ingredient: garlic, qty: 2, unit: clove }
+  - id: parmesan
+    name: { mk: Со пармезан, en: With parmesan }
+    note:
+      mk: Поспи рендан пармезан врз топлиот зеленчук — децата полесно го јадат.
+      en: Grate parmesan over the warm vegetables — kids eat it more readily.
+    add:
+      - { ingredient: parmesan, qty: 20, unit: g }
+  - id: broccoli-only
+    name: { mk: Само брокула, en: Broccoli only }
+    note:
+      mk: Цела главица брокула без карфиол — вари само 6–7 минути.
+      en: A whole head of broccoli, no cauliflower — steam just 6–7 minutes.
+    remove: [cauliflower]
+
+tips:
+  mk: Лимонот додај го на крајот — инаку брокулата потемнува.
+  en: Add the lemon at the very end — otherwise the broccoli turns dull.

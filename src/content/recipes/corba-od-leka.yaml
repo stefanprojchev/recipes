@@ -9,7 +9,6 @@ meals: [lunch, dinner]
 servings: 4
 time: { prep: 15, cook: 40 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegan, fasting]
 season: [autumn, winter, spring]
 source:

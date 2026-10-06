@@ -9,7 +9,6 @@ meals: [breakfast, lunch]
 servings: 3
 time: { prep: 10, cook: 20 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian, gluten-free]
 source:
   name: Downshiftology

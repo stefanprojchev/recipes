@@ -1,0 +1,73 @@
+title:
+  mk: Грилуван зеленчук
+  en: Grilled vegetables
+summary:
+  mk: Тиквички, модар патлиџан, пиперки и кромид печени на скара или грил-тава, прелиени со маслиново масло, лук и магдонос.
+  en: Zucchini, eggplant, peppers and onion cooked on the grill or a grill pan, dressed with olive oil, garlic and parsley.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 20 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+season: [summer, autumn]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/grilled-vegetables/
+
+ingredients:
+  - items:
+      - { ingredient: zucchini, qty: 2, unit: pc, note: { mk: на тркалца од 1 см, en: in 1 cm rounds } }
+      - { ingredient: eggplant, qty: 1, unit: pc, note: { mk: на тркалца од 1 см, en: in 1 cm rounds } }
+      - { ingredient: red-pepper, qty: 2, unit: pc, note: { mk: на широки ленти, en: in wide strips } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: "црвен, на кришки", en: "red, in wedges" } }
+      - { ingredient: olive-oil, qty: 4, unit: tbsp }
+      - { ingredient: garlic, qty: 2, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Модриот патлиџан посоли го и остави го да пушти горчлива вода, па исуши го со хартија.
+      en: Salt the eggplant and let it release its bitter juices, then pat dry with paper.
+    timer: 15
+  - text:
+      mk: Загреј ја скарата или грил-тавата на силен оган. Зеленчукот премачкај го со половина од маслото, посоли и пиперосај.
+      en: Heat the grill or grill pan until hot. Brush the vegetables with half the oil and season with salt and pepper.
+  - text:
+      mk: Печи го во еден ред, по 4–5 минути од секоја страна, додека не омекне и не добие шари од скарата. Работи во повеќе тури.
+      en: Cook in a single layer, 4–5 minutes a side, until tender with grill marks. Work in batches.
+    timer: 10
+  - text:
+      mk: Нареди го во чинија и прелиј со остатокот од маслото измешано со лукот и сецканиот магдонос. Служи топол или на собна температура.
+      en: Arrange on a plate and drizzle with the rest of the oil mixed with the garlic and chopped parsley. Serve warm or at room temperature.
+
+variants:
+  - id: feta
+    name: { mk: Со бело сирење, en: With white cheese }
+    note:
+      mk: Изрони бело сирење врз топлиот зеленчук — може и како лесна вечера.
+      en: Crumble white cheese over the warm vegetables — works as a light dinner too.
+    add:
+      - { ingredient: feta-cheese, qty: 100, unit: g }
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Цели печурки на скара наместо модриот патлиџан — побрзо, без солење.
+      en: Whole grilled mushrooms instead of the eggplant — quicker, no salting.
+    add:
+      - { ingredient: mushrooms, qty: 250, unit: g }
+    remove: [eggplant]
+  - id: yogurt
+    name: { mk: Со јогурт сос, en: With yogurt sauce }
+    note:
+      mk: Служи со цедено кисело млеко измешано со лук и копар за мачкање.
+      en: Serve with strained yogurt mixed with garlic and dill for dipping.
+    add:
+      - { ingredient: strained-yogurt, qty: 200, unit: g }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+
+storage:
+  mk: Во фрижидер до 3 дена — остатоците се одлични во сендвич или со тестенини.
+  en: Keeps 3 days in the fridge — leftovers are great in a sandwich or with pasta.

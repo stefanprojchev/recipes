@@ -1,0 +1,94 @@
+title:
+  mk: Крем-супа од тиква
+  en: Pumpkin cream soup
+summary:
+  mk: Мазна есенска крем-супа од печена тиква со кромид, лук и ѓумбир — слатка, топла и без павлака.
+  en: A smooth autumn soup of roasted pumpkin with onion, garlic and ginger — sweet, warming and cream-free.
+category: soup
+meals: [lunch, dinner]
+servings: 5
+time: { prep: 15, cook: 75 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [autumn, winter]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/pumpkin-soup-recipe/
+sides: [zelena-salata, salata-od-cveklo, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: pumpkin, qty: 1.5, unit: kg, note: { mk: "исчистена, без семки", en: "peeled weight, seeds removed" } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: сецкан, en: chopped } }
+      - { ingredient: garlic, qty: 3, unit: clove }
+      - { ingredient: ginger, qty: 1, unit: tsp, note: { mk: изрендан, en: grated } }
+      - { ingredient: cumin, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 800, unit: ml }
+      - { ingredient: milk, qty: 250, unit: ml }
+      - { ingredient: lemon, qty: 0.25, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: pumpkin-seeds, qty: 2, unit: tbsp, note: { mk: запечени, en: toasted } }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Тиквата исечи ја на парчиња, измешај ја со една лажица масло, сол и пипер и рашири ја на плех со хартија за печење.
+      en: Heat the oven to 200°C. Cut the pumpkin into chunks, toss with a spoon of oil, salt and pepper and spread on a lined tray.
+  - text:
+      mk: Печи додека тиквата не омекне и не порумени на рабовите.
+      en: Roast until the pumpkin is soft and caramelised at the edges.
+    timer: 45
+  - text:
+      mk: Во тенџере на останатото масло пропржи го кромидот, па додај лукот, ѓумбирот и кимот за 30 секунди.
+      en: In a pot, soften the onion in the rest of the oil, then add the garlic, ginger and cumin for 30 seconds.
+    timer: 7
+  - text:
+      mk: Додај ги печената тиква, водата и млекото и вари на тивок оган.
+      en: Add the roasted pumpkin, water and milk and simmer gently.
+    timer: 15
+  - text:
+      mk: Измиксај со штапен миксер додека не стане сосема мазна, додај лимонов сок, сол и пипер. Ако е густа, разреди со малку вода.
+      en: Blend with a stick blender until completely smooth, then add the lemon juice, salt and pepper. Loosen with a little water if thick.
+  - text:
+      mk: Служи поспана со запечени тиквени семки.
+      en: Serve sprinkled with toasted pumpkin seeds.
+
+variants:
+  - id: quick
+    name: { mk: Брза без печење, en: Quick (no roasting) }
+    note:
+      mk: Тиквата, морков и компир на коцки вари ги директно во тенџерето 20 минути — без рерна, за 35 минути.
+      en: Simmer diced pumpkin, carrot and potato straight in the pot for 20 minutes — no oven, done in 35 minutes.
+    add:
+      - { ingredient: carrot, qty: 2, unit: pc }
+      - { ingredient: potato, qty: 1, unit: pc }
+  - id: lentils
+    name: { mk: Со леќа, en: With lentils }
+    note:
+      mk: Со тиквата додај 100 г леќа и уште 400 мл вода и вари додека леќата не омекне — супа со протеини.
+      en: Add 100 g lentils and another 400 ml water with the pumpkin and simmer until soft — a protein-rich soup.
+    add:
+      - { ingredient: lentils, qty: 100, unit: g }
+  - id: feta
+    name: { mk: Со сирење одозгора, en: Feta topping }
+    note:
+      mk: Изронето бело сирење и малку лути снегулки во чинијата — солено-слатко.
+      en: Crumbled white cheese and a pinch of chili flakes in the bowl — salty-sweet.
+    add:
+      - { ingredient: feta-cheese, qty: 80, unit: g }
+      - { ingredient: chili-flakes, qty: 1, unit: pinch, optional: true }
+  - id: vegan
+    name: { mk: Без млеко, en: Dairy-free }
+    note:
+      mk: Наместо млеко — уште малку вода и лажица маслиново масло при миксањето.
+      en: Instead of milk — a little more water and a spoon of olive oil when blending.
+    remove: [milk]
+
+storage:
+  mk: Во фрижидер до 4 дена; одлично се замрзнува.
+  en: Keeps 4 days in the fridge; freezes very well.
+tips:
+  mk: Најдобри се тикви со слатко портокалово месо (тиква за пита, батернат). Семките може сами да ги запечеш.
+  en: Sweet, orange-fleshed pumpkins (butternut, pie pumpkin) work best. You can toast the seeds yourself.

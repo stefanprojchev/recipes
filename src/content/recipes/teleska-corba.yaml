@@ -1,0 +1,98 @@
+title:
+  mk: Телешка чорба
+  en: Veal čorba
+summary:
+  mk: Домашна телешка чорба со компир, морков и малку ориз, со лесна запршка — топол зимски ручек.
+  en: Homemade veal soup with potato, carrot and a little rice, finished with a light roux — a warming winter lunch.
+category: soup
+meals: [lunch, dinner]
+servings: 6
+time: { prep: 20, cook: 120 }
+difficulty: medium
+season: [autumn, winter]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D1%82%D0%B5%D0%BB%D0%B5%D1%88%D0%BA%D0%B0-%D1%87%D0%BE%D1%80%D0%B1%D0%B0-2
+sides: [salata-od-zelka, salata-od-cveklo, zelena-salata]
+
+ingredients:
+  - title: { mk: Чорба, en: Soup }
+    items:
+      - { ingredient: veal, qty: 500, unit: g, note: { mk: "колено или плешка, со коска", en: "shank or shoulder, on the bone" } }
+      - { ingredient: water, qty: 2.5, unit: l }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: potato, qty: 2, unit: pc, note: { mk: изрендани, en: grated } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: изрендани, en: grated } }
+      - { ingredient: celery-root, qty: 100, unit: g, note: { mk: изрендан, en: grated } }
+      - { ingredient: rice, qty: 3, unit: tbsp }
+      - { ingredient: bay-leaf, qty: 3, unit: pc }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: parsley, qty: 0.5, unit: bunch, note: { mk: за сервирање, en: to serve } }
+  - title: { mk: Запршка, en: Roux }
+    items:
+      - { ingredient: sunflower-oil, qty: 2, unit: tbsp }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: изрендан, en: grated } }
+      - { ingredient: flour, qty: 2, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Месото стави го во ладна вода со малку сол. Кога ќе зоврие, собери ја пената, намали и вари покриено на тивок оган додека не омекне.
+      en: Put the meat in cold water with a little salt. When it boils, skim the foam, lower the heat and simmer covered until tender.
+    timer: 90
+  - text:
+      mk: Извади го месото, оддели го од коските и искини го на ситни парчиња. Процеди ја супата и врати го месото во неа.
+      en: Lift out the meat, take it off the bone and shred it into small pieces. Strain the broth and return the meat to it.
+  - text:
+      mk: Додај ги кромидот, ренданите компири, морковот, целерот, оризот и ловоровиот лист и вари додека зеленчукот и оризот не омекнат.
+      en: Add the onion, grated potatoes, carrot, celery root, rice and bay leaves and simmer until the vegetables and rice are soft.
+    timer: 20
+  - text:
+      mk: Во тава на маслото пропржи го морковот за запршката, додај брашно и мешај додека не стане златно. Тргни од оган, вмешај алева пиперка и истури во чорбата.
+      en: In a pan, fry the roux carrot in the oil, add the flour and stir until golden. Take off the heat, stir in the paprika and pour into the soup.
+    timer: 3
+  - text:
+      mk: Вари уште 5 минути, зачини со сол и пипер и служи поспано со магдонос.
+      en: Simmer 5 more minutes, season with salt and pepper and serve sprinkled with parsley.
+    timer: 5
+
+variants:
+  - id: egg-yogurt
+    name: { mk: Со јајце и кисело млеко, en: With egg and yogurt }
+    note:
+      mk: Наместо запршка — измати јајце со кисело млеко, разреди со малку топла чорба и вмешај на крајот, без да зоврие.
+      en: Instead of the roux — whisk an egg with yogurt, temper with some hot soup and stir in at the end, without boiling.
+    add:
+      - { ingredient: egg, qty: 1, unit: pc }
+      - { ingredient: yogurt, qty: 150, unit: g }
+    remove: [flour, sunflower-oil]
+  - id: light
+    name: { mk: Без запршка, en: No roux (lighter) }
+    note:
+      mk: Полесно — без брашно и масло; згусни ја со уште еден рендан компир.
+      en: Lighter — no flour or oil; thicken with one more grated potato instead.
+    remove: [flour, sunflower-oil]
+  - id: vegetables
+    name: { mk: Со грашок и тиквичка, en: With peas and zucchini }
+    note:
+      mk: Пролетно-летна верзија — грашок и тиквичка на коцки со компирите.
+      en: A spring and summer version — peas and diced zucchini with the potatoes.
+    add:
+      - { ingredient: peas, qty: 150, unit: g }
+      - { ingredient: zucchini, qty: 1, unit: pc }
+  - id: hot
+    name: { mk: Лута, en: Hot }
+    tags: [spicy]
+    note:
+      mk: За возрасните — во чинијата поспи малку лути снегулки.
+      en: For the grown-ups — sprinkle a few chili flakes into the bowl.
+    add:
+      - { ingredient: chili-flakes, qty: 0.5, unit: tsp }
+
+storage:
+  mk: Во фрижидер до 2 дена. Следниот ден е погуста — разреди со малку вода.
+  en: Keeps 2 days in the fridge. It thickens overnight — loosen with a little water.
+tips:
+  mk: Месото и супата може да се сварат претходниот ден — тогаш ручекот е готов за 30 минути.
+  en: The meat and broth can be cooked the day before — then lunch is ready in 30 minutes.

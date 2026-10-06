@@ -9,13 +9,12 @@ meals: [lunch, dinner]
 servings: 4
 time: { prep: 5, cook: 12 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian]
 season: [spring, autumn]
 source:
   name: Running to the Kitchen
   url: https://www.runningtothekitchen.com/lemon-spinach-and-feta-linguine/
-sides: [shopska-salata, salata-od-cveklo, zelena-salata]
+sides: [salata-domati-krastavici, salata-od-cveklo, salata-so-rukola, zelena-salata]
 
 ingredients:
   - items:

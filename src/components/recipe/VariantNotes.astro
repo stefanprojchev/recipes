@@ -1,5 +1,7 @@
 ---
+import AlertTriangle from "@tabler/icons/outline/alert-triangle.svg";
 import InfoCircle from "@tabler/icons/outline/info-circle.svg";
+import { householdWarnings } from "@/lib/household";
 import { t } from "@/lib/i18n-content";
 import type { Locale } from "@/lib/locale";
 import type { Recipe } from "@/lib/recipes";
@@ -11,23 +13,43 @@ interface Props {
 }
 
 const { recipe, locale, class: className } = Astro.props;
-const withNotes = recipe.data.variants.filter((variant) => variant.note);
+
+// The base recipe's warnings already show under the title — a variant only
+// adds the ones it introduces (a spicy version, an added ingredient).
+const baseWarnings = new Set(await householdWarnings(recipe, undefined, locale));
+const notes = (
+  await Promise.all(
+    recipe.data.variants.map(async (variant) => ({
+      variant,
+      warnings: (await householdWarnings(recipe, variant, locale)).filter((w) => !baseWarnings.has(w)),
+    })),
+  )
+).filter(({ variant, warnings }) => variant.note || warnings.length > 0);
 ---
 
 {
-  withNotes.map((variant) => (
+  notes.map(({ variant, warnings }) => (
     <div
       data-variant-note={variant.id}
       style="display: none"
-      class:list={[
-        "flex gap-3 rounded-2xl border border-primary/30 bg-primary/8 p-4 text-lg",
-        className,
-      ]}
+      class:list={["flex gap-3 rounded-2xl border border-primary/30 bg-primary/8 p-4 text-lg", className]}
     >
       <InfoCircle class="mt-0.5 size-6 shrink-0 text-primary" aria-hidden="true" />
-      <p>
-        <strong class="font-semibold">{t(variant.name, locale)}:</strong>{" "}{variant.note && t(variant.note, locale)}
-      </p>
+      <div>
+        <p>
+          <strong class="font-semibold">{t(variant.name, locale)}:</strong>{" "}{variant.note && t(variant.note, locale)}
+        </p>
+        {warnings.length > 0 && (
+          <p class="mt-2 flex flex-wrap gap-1.5">
+            {warnings.map((warning) => (
+              <span class="inline-flex items-center gap-1 rounded-full bg-warning px-3 py-1 text-base font-semibold text-warning-foreground">
+                <AlertTriangle class="size-4 shrink-0" aria-hidden="true" />
+                {warning}
+              </span>
+            ))}
+          </p>
+        )}
+      </div>
     </div>
   ))
 }

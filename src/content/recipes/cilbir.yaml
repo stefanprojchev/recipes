@@ -9,7 +9,6 @@ meals: [breakfast]
 servings: 3
 time: { prep: 10, cook: 10 }
 difficulty: medium
-tags: [kid-friendly]
 diet: [vegetarian]
 source:
   name: Ozlem's Turkish Table

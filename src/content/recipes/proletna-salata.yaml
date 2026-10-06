@@ -1,0 +1,69 @@
+title:
+  mk: Пролетна салата со ротквици и јогурт
+  en: Creamy radish and cucumber salad
+summary:
+  mk: Тенки ротквици, краставица и млад кромид во кремаст прелив од цедено кисело млеко со копар и нана — свежа и хрскава.
+  en: Thinly sliced radishes, cucumber and spring onion in a creamy strained-yogurt dressing with dill and mint — fresh and crunchy.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15 }
+difficulty: easy
+diet: [vegetarian, gluten-free]
+season: [spring]
+source:
+  name: Coley Cooks
+  url: https://coleycooks.com/cucumber-radish-salad/
+
+ingredients:
+  - items:
+      - { ingredient: radish, qty: 10, unit: pc, note: { mk: на многу тенки тркалца, en: very thinly sliced } }
+      - { ingredient: cucumber, qty: 2, unit: pc, note: { mk: на тенки тркалца, en: thinly sliced } }
+      - { ingredient: spring-onion, qty: 3, unit: pc, note: { mk: тенко сецкан, en: thinly sliced } }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+      - { ingredient: mint, qty: 0.25, unit: bunch, note: { mk: неколку гранчиња, en: a few sprigs } }
+      - { ingredient: strained-yogurt, qty: 250, unit: g, note: { mk: ладно, en: cold } }
+      - { ingredient: vinegar, qty: 1, unit: tbsp }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Измати го јогуртот со оцетот, сол и пипер — нека биде малку посолен, зеленчукот ќе го разреди.
+      en: Whisk the yogurt with the vinegar, salt and pepper — make it a little saltier than you'd think; the vegetables dilute it.
+  - text:
+      mk: Додај ги ротквиците, краставицата, младиот кромид и половина од сецканите билки и измешај.
+      en: Add the radishes, cucumber, spring onion and half the chopped herbs and toss.
+  - text:
+      mk: Префрли во чинија, прелиј со маслиново масло и поспи со останатите билки. Служи веднаш, додека е хрскаво.
+      en: Transfer to a bowl, drizzle with olive oil and scatter over the remaining herbs. Serve straight away while crunchy.
+
+variants:
+  - id: eggs-cheese
+    name: { mk: Со јајца и сирење, en: With eggs and cheese }
+    note:
+      mk: Тврдо варени јајца на четвртини и изронето бело сирење — станува лесна вечера.
+      en: Quartered hard-boiled eggs and crumbled white cheese — it becomes a light dinner.
+    add:
+      - { ingredient: egg, qty: 3, unit: pc, note: { mk: тврдо варени, en: hard-boiled } }
+      - { ingredient: feta-cheese, qty: 80, unit: g }
+  - id: no-yogurt
+    name: { mk: Без јогурт, en: Without yogurt }
+    note:
+      mk: Лесна верзија — само маслиново масло и лимонов сок наместо јогурт и оцет.
+      en: Light version — just olive oil and lemon juice instead of yogurt and vinegar.
+    add:
+      - { ingredient: lemon, qty: 0.5, unit: pc }
+    remove: [strained-yogurt, vinegar]
+  - id: chickpeas
+    name: { mk: Со печен наут, en: With roasted chickpeas }
+    note:
+      mk: Хрскав печен наут одозгора — позаситна, за ручек без месо.
+      en: Crispy roasted chickpeas on top — more filling, for a meat-free lunch.
+    add:
+      - { ingredient: chickpeas, qty: 1, unit: pc }
+
+tips:
+  mk: Преливот додај го непосредно пред јадење — краставицата и солта пуштаат вода. Ротквиците сечи ги што потенко.
+  en: Dress it just before eating — cucumber and salt release water. Slice the radishes as thinly as you can.

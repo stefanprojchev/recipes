@@ -1,0 +1,88 @@
+title:
+  mk: Спанаќ со ориз
+  en: Spinach with rice
+summary:
+  mk: Свеж спанаќ и ориз печени во тепсија со кромид и маслиново масло — лесен македонски ручек што се јаде со кисело млеко.
+  en: Fresh spinach and rice baked in a dish with onion and olive oil — a light Macedonian lunch served with yogurt.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 20, cook: 40, rest: 10 }
+difficulty: easy
+diet: [vegetarian, gluten-free]
+season: [spring, autumn]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D1%81%D0%BF%D0%B0%D0%BD%D0%B0%D1%9C-%D1%81%D0%BE-%D0%BE%D1%80%D0%B8%D0%B7
+sides: [proletna-salata, zelena-salata, salata-od-morkov, shopska-salata]
+
+ingredients:
+  - items:
+      - { ingredient: spinach, qty: 1, unit: kg, note: { mk: "свеж (или 600 г замрзнат)", en: "fresh (or 600 g frozen)" } }
+      - { ingredient: rice, qty: 200, unit: g, note: { mk: измиен, en: rinsed } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: spring-onion, qty: 4, unit: pc, note: { mk: тенко сецкан, en: thinly sliced }, optional: true }
+      - { ingredient: olive-oil, qty: 4, unit: tbsp }
+      - { ingredient: water, qty: 600, unit: ml, note: { mk: врела, en: hot } }
+      - { ingredient: dill, qty: 0.25, unit: bunch, optional: true }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: За служење, en: To serve }
+    items:
+      - { ingredient: yogurt, qty: 500, unit: ml }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Спанаќот измиј го добро во повеќе води и исечи го ситно.
+      en: Heat the oven to 200°C. Wash the spinach well in several changes of water and chop it finely.
+  - text:
+      mk: Во широка тава на маслиновото масло пропржи го кромидот (и младиот кромид) додека не омекне.
+      en: In a wide pan, fry the onion (and spring onion) in the olive oil until soft.
+    timer: 5
+  - text:
+      mk: Додај го спанаќот и мешај додека не свене и не се намали.
+      en: Add the spinach and stir until wilted and reduced.
+    timer: 5
+  - text:
+      mk: Додај го оризот и мешај една минута, па сè префрли во тепсија. Налеј ја врелата вода, посоли, пиперосај и додај копар.
+      en: Add the rice and stir for a minute, then tip everything into a baking dish. Pour over the hot water, season and add the dill.
+  - text:
+      mk: Печи непокриено додека оризот не ја впие водата и одозгора не се запече малку.
+      en: Bake uncovered until the rice has absorbed the water and the top is lightly browned.
+    timer: 30
+  - text:
+      mk: Остави го да одмори 10 минути и служи со ладно кисело млеко.
+      en: Let it rest 10 minutes and serve with cold yogurt.
+    timer: 10
+
+variants:
+  - id: eggs
+    name: { mk: Со јајца, en: With eggs }
+    note:
+      mk: Последните 10 минути направи вдлабнатини и скрши по едно јајце во секоја; печи додека белките не се стегнат.
+      en: For the last 10 minutes, make hollows and crack an egg into each; bake until the whites are set.
+    add:
+      - { ingredient: egg, qty: 4, unit: pc }
+  - id: cheese
+    name: { mk: Со бело сирење, en: With white cheese }
+    note:
+      mk: Изронето бело сирење поспи одозгора пред печење — посолено, па намали ја солта.
+      en: Scatter crumbled white cheese on top before baking — it's salty, so use less salt.
+    add:
+      - { ingredient: feta-cheese, qty: 150, unit: g }
+  - id: minced
+    name: { mk: Со мелено месо, en: With minced meat }
+    note:
+      mk: Пропржи мелено месо со кромидот додека не порумени, па продолжи по рецептот — позаситно.
+      en: Brown minced meat with the onion, then carry on with the recipe — more filling.
+    add:
+      - { ingredient: minced-meat, qty: 300, unit: g }
+  - id: stovetop
+    name: { mk: На шпорет, en: On the stovetop }
+    note:
+      mk: Без рерна — по додавањето вода вари покриено на тивок оган околу 20 минути, додека оризот не омекне.
+      en: No oven — after adding the water, simmer covered on low heat for about 20 minutes until the rice is tender.
+
+tips:
+  mk: Најубав е со млад спанаќ во пролет. Ако е преостанат, затопли го со малку вода — оризот ја впива течноста додека стои.
+  en: Best with young spring spinach. Reheat leftovers with a splash of water — the rice soaks up liquid as it stands.

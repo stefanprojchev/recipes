@@ -9,12 +9,11 @@ meals: [lunch, dinner]
 servings: 6
 time: { prep: 20, cook: 90, rest: 10 }
 difficulty: medium
-tags: [kid-friendly]
 diet: [gluten-free]
 source:
   name: Gotvi.mk
   url: http://gotvi.mk/2020/05/02/telesko-pecenje-so-kompiri/
-sides: [shopska-salata, salata-od-zelka, zelena-salata]
+sides: [pecen-zelencuk, grilan-zelencuk, shopska-salata, salata-od-zelka, salata-od-morkov]
 
 ingredients:
   - items:

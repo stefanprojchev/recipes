@@ -1,0 +1,65 @@
+title:
+  mk: АБЦ сок (јаболко, цвекло, морков)
+  en: ABC juice (apple, beetroot, carrot)
+summary:
+  mk: Темноцрвен сок од јаболко, цвекло и морков со лимон — природно сладок и полн со витамини.
+  en: Deep red juice of apple, beetroot and carrot with lemon — naturally sweet and full of vitamins.
+category: drink
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 10 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+source:
+  name: Delicious Meets Healthy
+  url: https://www.deliciousmeetshealthy.com/abc-juice-recipe-apple-beet-and-carrot-juice/
+
+ingredients:
+  - items:
+      - { ingredient: apple, qty: 2, unit: pc }
+      - { ingredient: beetroot, qty: 2, unit: pc, note: { mk: "мали, свежи", en: "small, raw" } }
+      - { ingredient: carrot, qty: 4, unit: pc }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: излупен, en: peeled } }
+      - { ingredient: ginger, qty: 5, unit: g, optional: true }
+
+steps:
+  - text:
+      mk: Измиј ги добро. Цвеклото и морковите излупи ги, а јаболката и цвеклото исечи ги на парчиња што влегуваат во отворот на соковникот.
+      en: Wash everything well. Peel the beetroot and carrots, and cut the apples and beetroot into pieces that fit the juicer chute.
+  - text:
+      mk: Цеди наизменично јаболко, цвекло, ѓумбир и моркови, за сокот рамномерно да се измеша. На крај исцеди го лимонот.
+      en: Juice apple, beetroot, ginger and carrots alternately so the juice mixes evenly. Finish with the lemon.
+  - text:
+      mk: Промешај и служи веднаш. Цвеклото бои — исплакни го соковникот веднаш по цедењето.
+      en: Stir and serve straight away. Beetroot stains — rinse the juicer right after juicing.
+
+variants:
+  - id: orange
+    name: { mk: Со портокал, en: With orange }
+    note:
+      mk: Еден излупен портокал наместо лимонот — помек вкус што детето полесно го пие.
+      en: One peeled orange instead of the lemon — a softer taste the kid drinks more easily.
+    add:
+      - { ingredient: orange, qty: 1, unit: pc }
+    remove: [lemon]
+  - id: cucumber
+    name: { mk: Со краставица, en: With cucumber }
+    note:
+      mk: Една краставица — поразреден и освежителен, добар за лето.
+      en: One cucumber — lighter and more refreshing, good for summer.
+    add:
+      - { ingredient: cucumber, qty: 1, unit: pc }
+  - id: celery
+    name: { mk: Со целер, en: With celery }
+    note:
+      mk: Две стебла целер — помалку сладок, за возрасните.
+      en: Two celery stalks — less sweet, for the grown-ups.
+    add:
+      - { ingredient: celery-stalk, qty: 2, unit: pc }
+
+storage:
+  mk: Најдобар е свеж. Ако остане, во затворена тегла во фрижидер до 24 часа — протреси пред пиење.
+  en: Best fresh. Leftovers keep up to 24 hours in a closed jar in the fridge — shake before drinking.
+tips:
+  mk: Цвеклото има силен земјен вкус — ако е прв пат, почни со едно цвекло. За детето разреди со малку вода.
+  en: Beetroot has a strong earthy taste — the first time, start with one beetroot. Dilute with a little water for the kid.

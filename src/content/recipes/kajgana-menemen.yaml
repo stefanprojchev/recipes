@@ -9,7 +9,6 @@ meals: [breakfast]
 servings: 3
 time: { prep: 8, cook: 10 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian, gluten-free]
 season: [summer, autumn]
 source:

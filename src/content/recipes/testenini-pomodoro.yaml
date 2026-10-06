@@ -14,7 +14,7 @@ diet: [vegan, fasting]
 source:
   name: Coley Cooks
   url: https://coleycooks.com/pasta-pomodoro/
-sides: [zelena-salata, shopska-salata, salata-od-zelka]
+sides: [salata-so-rukola, zelena-salata, grcka-salata, salata-od-morkov]
 
 ingredients:
   - items:
@@ -55,6 +55,7 @@ variants:
       - { ingredient: zucchini, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
   - id: arrabbiata
     name: { mk: Лути (арабјата), en: Spicy (arrabbiata) }
+    tags: [spicy]
     note:
       mk: За возрасните — со лукот додај лут пипер. Децата добиваат сос пред да се додаде лутото.
       en: For the grown-ups — add chili flakes with the garlic. Serve the kids' portion before adding the heat.

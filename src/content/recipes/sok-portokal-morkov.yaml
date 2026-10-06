@@ -1,0 +1,63 @@
+title:
+  mk: Сок од портокал и морков
+  en: Orange and carrot juice
+summary:
+  mk: Зимски сок од портокали, моркови и јаболко — сладок, светол и полн со витамин Ц.
+  en: A winter juice of oranges, carrots and apple — sweet, bright and full of vitamin C.
+category: drink
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+season: [winter]
+source:
+  name: Shivani Loves Food
+  url: https://shivanilovesfood.com/carrot-orange-ginger-juice/
+
+ingredients:
+  - items:
+      - { ingredient: orange, qty: 4, unit: pc, note: { mk: излупени, en: peeled } }
+      - { ingredient: carrot, qty: 4, unit: pc }
+      - { ingredient: apple, qty: 1, unit: pc }
+
+steps:
+  - text:
+      mk: Портокалите излупи ги (белиот дел може да остане) и подели ги на кришки. Морковите измиј ги и излупи ги, а јаболкото исечи го на парчиња што влегуваат во отворот на соковникот.
+      en: Peel the oranges (the white pith can stay) and split into segments. Wash and peel the carrots and cut the apple into pieces that fit the juicer chute.
+  - text:
+      mk: Цеди наизменично портокал, морков и јаболко — сочните портокали ги протуркуваат тврдите моркови.
+      en: Juice orange, carrot and apple alternately — the juicy oranges flush the hard carrots through.
+  - text:
+      mk: Промешај и служи веднаш, по желба со мраз.
+      en: Stir and serve straight away, over ice if you like.
+
+variants:
+  - id: ginger-lemon
+    name: { mk: Со ѓумбир и лимон, en: With ginger and lemon }
+    note:
+      mk: Парче ѓумбир и половина лимон — за возрасните кога има настинки. За детето издвој чаша пред да ги додадеш.
+      en: A piece of ginger and half a lemon — for the grown-ups in cold season. Pour the kid's glass before adding them.
+    add:
+      - { ingredient: ginger, qty: 10, unit: g }
+      - { ingredient: lemon, qty: 0.5, unit: pc }
+  - id: beetroot
+    name: { mk: Со цвекло, en: With beetroot }
+    note:
+      mk: Едно мало цвекло — убава темноцрвена боја и малку земјен вкус.
+      en: One small beetroot — a lovely deep red colour and a slightly earthy taste.
+    add:
+      - { ingredient: beetroot, qty: 1, unit: pc }
+  - id: pear
+    name: { mk: Со круша, en: With pear }
+    note:
+      mk: Една зрела круша наместо јаболкото — помек и погуст сок.
+      en: One ripe pear instead of the apple — a softer, thicker juice.
+    add:
+      - { ingredient: pear, qty: 1, unit: pc }
+    remove: [apple]
+
+storage:
+  mk: Најдобар е свеж. Ако остане, во затворена тегла во фрижидер до 24 часа — протреси пред пиење.
+  en: Best fresh. Leftovers keep up to 24 hours in a closed jar in the fridge — shake before drinking.

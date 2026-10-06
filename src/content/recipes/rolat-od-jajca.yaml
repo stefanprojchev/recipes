@@ -9,12 +9,11 @@ meals: [breakfast, lunch, snack]
 servings: 3
 time: { prep: 5, cook: 10 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian, gluten-free]
 source:
   name: Chelsea's Messy Apron
   url: https://www.chelseasmessyapron.com/spinach-and-feta-wraps/
-sides: [zelena-salata, shopska-salata]
+sides: [salata-so-rukola, zelena-salata, salata-domati-krastavici]
 
 ingredients:
   - title: { mk: Палачинки, en: Wraps }

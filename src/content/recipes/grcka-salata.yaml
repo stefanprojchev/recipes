@@ -1,0 +1,65 @@
+title:
+  mk: Грчка салата
+  en: Greek salad
+summary:
+  mk: Домати, краставица, пиперка, кромид и маслинки со парче бело сирење одозгора, маслиново масло и оригано — без зелена салата.
+  en: Tomatoes, cucumber, pepper, onion and olives with a slab of white cheese on top, olive oil and oregano — no lettuce.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15 }
+difficulty: easy
+diet: [vegetarian, gluten-free]
+season: [summer]
+source:
+  name: Foodie Crush
+  url: https://www.foodiecrush.com/horiatiki-greek-salad/
+
+ingredients:
+  - items:
+      - { ingredient: tomato, qty: 3, unit: pc, note: { mk: на парчиња, en: in wedges } }
+      - { ingredient: cucumber, qty: 1, unit: pc, note: { mk: на дебели полумесечини, en: in thick half-moons } }
+      - { ingredient: green-pepper, qty: 1, unit: pc, note: { mk: на ленти, en: in strips } }
+      - { ingredient: onion, qty: 0.5, unit: pc, note: { mk: "црвен, на тенки кругчиња", en: "red, thinly sliced" } }
+      - { ingredient: olives, qty: 80, unit: g }
+      - { ingredient: feta-cheese, qty: 200, unit: g, note: { mk: во едно парче, en: in one block } }
+      - { ingredient: olive-oil, qty: 4, unit: tbsp }
+      - { ingredient: vinegar, qty: 1, unit: tbsp, note: { mk: од црвено вино, en: red wine } }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во широка чинија измешај ги доматите со сокот, краставицата, пиперката, кромидот и маслинките.
+      en: In a wide bowl, toss the tomatoes with their juice, the cucumber, pepper, onion and olives.
+  - text:
+      mk: Посоли, пиперосај и прелиј со оцетот и поголемиот дел од маслиновото масло.
+      en: Season with salt and pepper and drizzle with the vinegar and most of the olive oil.
+  - text:
+      mk: Стави го сирењето одозгора во едно парче, поспи со оригано и прелиј со остатокот од маслото. Не мешај повеќе — служи веднаш.
+      en: Lay the cheese on top in one piece, sprinkle with oregano and drizzle with the rest of the oil. Don't toss again — serve straight away.
+
+variants:
+  - id: crumbled
+    name: { mk: Со изронето сирење, en: Crumbled cheese }
+    note:
+      mk: Сирењето изрони го и измешај го — полесно за делење и за децата.
+      en: Crumble the cheese and toss it through — easier to share and for kids.
+  - id: no-olives
+    name: { mk: Без маслинки, en: No olives }
+    note:
+      mk: За децата — без маслинки и кромид, со малку повеќе краставица.
+      en: For the kids — no olives or onion, with a little extra cucumber.
+    remove: [olives, onion]
+  - id: chickpeas
+    name: { mk: Со наут, en: With chickpeas }
+    note:
+      mk: Конзерва исцеден наут во салатата — станува лесен ручек сама за себе.
+      en: A drained can of chickpeas in the salad — it becomes a light lunch on its own.
+    add:
+      - { ingredient: chickpeas, qty: 1, unit: pc }
+
+tips:
+  mk: Сирењето да е во саламура и во блок, не изронето од пакување. Доматите да се зрели и на собна температура.
+  en: Use cheese in brine, in a block, not pre-crumbled. Tomatoes should be ripe and at room temperature.

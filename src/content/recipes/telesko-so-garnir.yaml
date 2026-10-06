@@ -9,12 +9,11 @@ meals: [lunch, dinner]
 servings: 4
 time: { prep: 20, cook: 100 }
 difficulty: medium
-tags: [kid-friendly]
 diet: [gluten-free]
 source:
   name: Мој портал
   url: https://mojportal.mk/dinstano-telesko-so-sos-i-pire
-sides: [pire-od-kompiri, oriz-so-puter, shopska-salata, salata-od-zelka]
+sides: [pire-od-kompiri, bulgur-so-zelencuk, oriz-so-zelencuk, brokula-karfiol-na-para, boranija-so-luk, salata-od-zelka, shopska-salata]
 
 ingredients:
   - items:

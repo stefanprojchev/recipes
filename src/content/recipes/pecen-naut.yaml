@@ -9,7 +9,6 @@ meals: [snack]
 servings: 4
 time: { prep: 10, cook: 25 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegan, fasting, gluten-free]
 source:
   name: Love and Lemons
@@ -62,6 +61,7 @@ variants:
     remove: [ground-paprika]
   - id: spicy
     name: { mk: Лут со ким, en: Spicy cumin }
+    tags: [spicy]
     note:
       mk: За возрасните — ким и лути снегулки наместо лукот во прав.
       en: For the grown-ups — cumin and chili flakes instead of the garlic powder.

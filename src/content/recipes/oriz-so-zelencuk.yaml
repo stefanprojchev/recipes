@@ -1,0 +1,76 @@
+title:
+  mk: Ориз со зеленчук
+  en: Rice with vegetables
+summary:
+  mk: Ориз задушен со кромид, морков и грашок — шарен, благ гарнир што го јадат сите, а оди со пилешко, риба и кофтиња.
+  en: Rice cooked with onion, carrot and peas — a colourful, mild side everyone eats, great with chicken, fish and meatballs.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 25 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+source:
+  name: I Wash You Dry
+  url: https://iwashyoudry.com/easy-vegetable-rice-pilaf/
+
+ingredients:
+  - items:
+      - { ingredient: rice, qty: 200, unit: g, note: { mk: долго зрно, en: long-grain } }
+      - { ingredient: onion, qty: 0.5, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: peas, qty: 150, unit: g, note: { mk: замрзнат, en: frozen } }
+      - { ingredient: olive-oil, qty: 1, unit: tbsp }
+      - { ingredient: garlic-powder, qty: 0.5, unit: tsp }
+      - { ingredient: water, qty: 450, unit: ml, note: { mk: или супа, en: or stock } }
+      - { ingredient: salt, qty: 0.5, unit: tsp }
+
+steps:
+  - text:
+      mk: Во тенџере на маслото пропржи ги кромидот и морковот додека кромидот не стане стаклест.
+      en: In a pot, fry the onion and carrot in the oil until the onion is translucent.
+    timer: 3
+  - text:
+      mk: Додај го измиениот ориз и лукот во прав и мешај една минута додека оризот малку не се запече.
+      en: Add the rinsed rice and the garlic powder and stir for a minute until the rice is lightly toasted.
+  - text:
+      mk: Налеј ја водата, посоли и кога ќе зоврие, намали на тивко, покриј и вари.
+      en: Pour in the water, season, and once boiling, turn to low, cover and simmer.
+    timer: 10
+  - text:
+      mk: Додај го грашокот врз оризот, покриј повторно и вари додека водата не се впие.
+      en: Scatter the peas over the rice, cover again and cook until the water is absorbed.
+    timer: 10
+  - text:
+      mk: Растресувај со вилушка и служи.
+      en: Fluff with a fork and serve.
+
+variants:
+  - id: cumin
+    name: { mk: Жолт ориз со ким, en: Golden rice with cumin }
+    note:
+      mk: Половина лажичка ким во маслото — мирисен ориз за пилешко.
+      en: Half a teaspoon of cumin in the oil — fragrant rice for chicken.
+    add:
+      - { ingredient: cumin, qty: 0.5, unit: tsp }
+  - id: zucchini-pepper
+    name: { mk: Со тиквичка и пиперка, en: Zucchini and pepper }
+    note:
+      mk: Летно — ситно сецкана тиквичка и црвена пиперка наместо грашокот.
+      en: Summer style — finely diced zucchini and red pepper instead of the peas.
+    add:
+      - { ingredient: zucchini, qty: 1, unit: pc }
+      - { ingredient: red-pepper, qty: 1, unit: pc }
+    remove: [peas]
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Сецкани печурки пропржени со кромидот.
+      en: Chopped mushrooms fried with the onion.
+    add:
+      - { ingredient: mushrooms, qty: 200, unit: g }
+
+tips:
+  mk: Измиј го оризот додека водата не биде бистра — така зрната остануваат одвоени.
+  en: Rinse the rice until the water runs clear — that keeps the grains separate.

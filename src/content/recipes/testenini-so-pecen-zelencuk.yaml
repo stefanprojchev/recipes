@@ -9,13 +9,12 @@ meals: [lunch, dinner]
 servings: 4
 time: { prep: 15, cook: 30 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian]
 season: [summer, autumn]
 source:
   name: Gimme Some Oven
   url: https://www.gimmesomeoven.com/roasted-vegetable-pasta/
-sides: [zelena-salata, shopska-salata]
+sides: [salata-so-rukola, zelena-salata, grcka-salata]
 
 ingredients:
   - items:

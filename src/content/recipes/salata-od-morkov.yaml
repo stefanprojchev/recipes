@@ -1,0 +1,67 @@
+title:
+  mk: Салата од рендан морков
+  en: Grated carrot salad
+summary:
+  mk: Свеж рендан морков со лимон, маслиново масло и малку сенф — слатка, хрскава салата што оди цела година, особено зиме.
+  en: Fresh grated carrot with lemon, olive oil and a little mustard — a sweet, crunchy salad for all year, especially winter.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, rest: 30 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+source:
+  name: Pardon Your French
+  url: https://www.pardonyourfrench.com/french-style-grated-carrot-salad/
+
+ingredients:
+  - items:
+      - { ingredient: carrot, qty: 450, unit: g, note: { mk: "излупен, рендан", en: "peeled, grated" } }
+      - { ingredient: parsley, qty: 0.25, unit: bunch, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: mustard, qty: 1, unit: tsp }
+      - { ingredient: salt, qty: 0.5, unit: tsp }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Морковот изрендај го на крупно ренде и измешај го со магдоносот.
+      en: Grate the carrots on the coarse side of the grater and mix with the parsley.
+  - text:
+      mk: Во чашка измати го маслиновото масло со лимоновиот сок, сенфот, солта и пиперот.
+      en: In a small bowl, whisk the olive oil with the lemon juice, mustard, salt and pepper.
+  - text:
+      mk: Прелиј го морковот, измешај и остави го во фрижидер да отстои. Пред служење измешај повторно.
+      en: Pour over the carrots, toss and leave in the fridge to rest. Toss again before serving.
+    timer: 30
+
+variants:
+  - id: apple-raisins
+    name: { mk: Со јаболко и суво грозје, en: Apple and raisins }
+    note:
+      mk: Едно рендано јаболко и малку суво грозје, без сенф — најслатката верзија, омилена кај децата.
+      en: One grated apple and some raisins, no mustard — the sweetest version, a kids' favourite.
+    add:
+      - { ingredient: apple, qty: 1, unit: pc }
+      - { ingredient: raisins, qty: 30, unit: g }
+    remove: [mustard]
+  - id: cabbage
+    name: { mk: Со зелка, en: With cabbage }
+    note:
+      mk: Половина морков, половина тенко сечена зелка — зимска салата за сарма и печено месо.
+      en: Half carrot, half thinly shredded cabbage — a winter salad for sarma and roast meat.
+    add:
+      - { ingredient: white-cabbage, qty: 0.25, unit: pc }
+  - id: walnuts
+    name: { mk: Со ореви, en: With walnuts }
+    note:
+      mk: Поспи грубо сецкани ореви или семки од тиква пред служење.
+      en: Scatter roughly chopped walnuts or pumpkin seeds over before serving.
+    add:
+      - { ingredient: walnuts, qty: 30, unit: g }
+
+storage:
+  mk: Стои до 3 дена во затворена кутија во фрижидер — следниот ден е уште повкусна.
+  en: Keeps up to 3 days in a closed container in the fridge — even tastier the next day.

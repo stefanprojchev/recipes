@@ -9,12 +9,11 @@ meals: [breakfast, lunch, snack]
 servings: 2
 time: { prep: 25, cook: 25, rest: 5 }
 difficulty: medium
-tags: [kid-friendly]
 diet: [gluten-free]
 source:
   name: Shred Happens
   url: https://shredhappens.substack.com/p/low-carb-zucchini-bun-sandwiches
-sides: [zelena-salata, shopska-salata]
+sides: [salata-so-rukola, zelena-salata, salata-od-morkov]
 
 ingredients:
   - title: { mk: Леб од тиквички, en: Zucchini bread }

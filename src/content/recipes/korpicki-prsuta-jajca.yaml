@@ -9,7 +9,6 @@ meals: [breakfast, snack]
 servings: 3
 time: { prep: 10, cook: 15 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [gluten-free]
 source:
   name: Mom's Kitchen Handbook

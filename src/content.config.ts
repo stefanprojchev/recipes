@@ -181,6 +181,8 @@ const recipes = defineCollection({
             note: text.optional(),
             add: z.array(ingredientLine).default([]),
             remove: z.array(reference("ingredients")).default([]),
+            /** Flags that apply only to this variant, e.g. a `spicy` version for the adults. */
+            tags: z.array(z.enum(TAGS)).default([]),
           }),
         )
         .default([]),

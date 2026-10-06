@@ -9,11 +9,10 @@ meals: [lunch, dinner]
 servings: 4
 time: { prep: 5, cook: 15 }
 difficulty: easy
-tags: [kid-friendly]
 source:
   name: Feasting at Home
   url: https://www.feastingathome.com/tuna-pasta/
-sides: [zelena-salata, shopska-salata, salata-od-zelka]
+sides: [salata-so-rukola, zelena-salata, salata-od-zelka]
 
 ingredients:
   - items:

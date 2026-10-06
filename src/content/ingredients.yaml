@@ -358,8 +358,8 @@ granola:
   aisle: dry
 dried-red-pepper:
   name:
-    mk: { one: сушена црвена пиперка, other: сушени црвени пиперки }
-    en: { one: dried red pepper, other: dried red peppers }
+    mk: { one: сушена слатка пиперка, other: сушени слатки пиперки }
+    en: { one: dried sweet red pepper, other: dried sweet red peppers }
   aisle: dry
   store: market
 sunflower-oil:
@@ -470,3 +470,56 @@ water:
   name: { mk: вода, en: water }
   aisle: other
   staple: true
+# — Added for soups, sides, spring dishes and juices —
+pumpkin:
+  name: { mk: тиква, en: pumpkin }
+  aisle: produce
+  months: [9, 10, 11, 12]
+celery-stalk:
+  name:
+    mk: { one: стебло целер, other: стебла целер }
+    en: { one: celery stalk, other: celery stalks }
+  aisle: produce
+ginger:
+  name: { mk: свеж ѓумбир, en: fresh ginger }
+  aisle: produce
+orange:
+  name:
+    mk: { one: портокал, other: портокали }
+    en: { one: orange, other: oranges }
+  aisle: produce
+  months: [11, 12, 1, 2, 3, 4]
+mint:
+  name: { mk: свежа нана, en: fresh mint }
+  aisle: produce
+nettle:
+  name: { mk: млада коприва, en: young nettles }
+  aisle: produce
+  store: market
+  months: [3, 4, 5]
+arugula:
+  name: { mk: рукола, en: arugula }
+  aisle: produce
+bulgur:
+  name: { mk: булгур, en: bulgur }
+  aisle: dry
+green-beans:
+  name: { mk: боранија, en: green beans }
+  aisle: produce
+  months: [6, 7, 8, 9]
+cauliflower:
+  name:
+    mk: { one: карфиол, other: карфиоли }
+    en: { one: cauliflower, other: cauliflowers }
+  aisle: produce
+  months: [10, 11, 12, 1, 2, 3]
+pear:
+  name:
+    mk: { one: круша, other: круши }
+    en: { one: pear, other: pears }
+  aisle: produce
+  months: [8, 9, 10, 11]
+watermelon:
+  name: { mk: лубеница, en: watermelon }
+  aisle: produce
+  months: [7, 8]

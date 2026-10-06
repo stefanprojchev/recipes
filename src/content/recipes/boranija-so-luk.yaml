@@ -1,0 +1,72 @@
+title:
+  mk: Боранија со лук и лимон
+  en: Green beans with garlic and lemon
+summary:
+  mk: Свежа боранија запржена во тава, задушена кратко и прелиена со путер, лук и лимонова кора — летен гарнир за 15 минути.
+  en: Fresh green beans blistered in a pan, briefly steamed and finished with butter, garlic and lemon zest — a 15-minute summer side.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 5, cook: 10 }
+difficulty: easy
+diet: [vegetarian, gluten-free]
+season: [summer]
+source:
+  name: Inspired Taste
+  url: https://www.inspiredtaste.net/51775/garlic-sauteed-green-beans/
+
+ingredients:
+  - items:
+      - { ingredient: green-beans, qty: 450, unit: g, note: { mk: исчистени, en: trimmed } }
+      - { ingredient: olive-oil, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 60, unit: ml }
+      - { ingredient: butter, qty: 1, unit: tbsp }
+      - { ingredient: garlic, qty: 3, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: кора и кришки, en: zest and wedges } }
+      - { ingredient: salt, qty: 0.25, unit: tsp }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во широка тава на силен оган загреј го маслото, додај ја боранијата и солта и пржи мешајќи повремено додека на места не добие кафени дамки.
+      en: Heat the oil in a wide pan over high heat, add the beans and salt and fry, tossing now and then, until blistered in spots.
+    timer: 5
+  - text:
+      mk: Налеј ја водата, веднаш покриј и задуши додека боранијата не омекне.
+      en: Pour in the water, cover straight away and steam until the beans are tender.
+    timer: 2
+  - text:
+      mk: Отпокриј, намали го огнот и остави водата да испари. Вмешај ги путерот, лукот, лимоновата кора и пиперот и мешај една минута — лукот да не порумени.
+      en: Uncover, lower the heat and let the water evaporate. Stir in the butter, garlic, lemon zest and pepper for a minute — don't let the garlic brown.
+  - text:
+      mk: Служи со кришки лимон.
+      en: Serve with lemon wedges.
+
+variants:
+  - id: olive-oil
+    name: { mk: Само со маслиново масло, en: Olive oil only }
+    note:
+      mk: Без путер — една лажица маслиново масло на крајот. Без млечни производи и полесно.
+      en: No butter — a spoon of olive oil at the end. Dairy-free and lighter.
+    add:
+      - { ingredient: olive-oil, qty: 1, unit: tbsp }
+    remove: [butter]
+  - id: tomato
+    name: { mk: Со домат, en: With tomato }
+    note:
+      mk: Наместо лимон — два рендани домати задушени со боранијата 10 минути, како стара домашна боранија.
+      en: Instead of lemon — two grated tomatoes simmered with the beans for 10 minutes, like old-style home cooking.
+    add:
+      - { ingredient: tomato, qty: 2, unit: pc }
+    remove: [lemon]
+  - id: almonds
+    name: { mk: Со бадеми, en: With almonds }
+    note:
+      mk: Поспи запечени лушпи бадеми пред служење — хрскаво.
+      en: Scatter toasted flaked almonds over before serving — crunchy.
+    add:
+      - { ingredient: almonds, qty: 30, unit: g }
+
+tips:
+  mk: Надвор од сезона оди и замрзната боранија — само продолжи го задушувањето неколку минути.
+  en: Out of season, frozen green beans work too — just steam a few minutes longer.

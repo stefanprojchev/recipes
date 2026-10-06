@@ -11,7 +11,7 @@ time: { prep: 15, cook: 60 }
 difficulty: easy
 tags: [kid-friendly]
 diet: [gluten-free]
-sides: [shopska-salata, salata-od-zelka, zelena-salata, taratur]
+sides: [pecen-zelencuk, grilan-zelencuk, shopska-salata, salata-od-zelka, salata-od-morkov]
 
 ingredients:
   - items:

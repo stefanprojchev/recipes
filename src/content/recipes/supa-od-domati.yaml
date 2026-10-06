@@ -1,0 +1,85 @@
+title:
+  mk: Супа од домати
+  en: Tomato soup
+summary:
+  mk: Кремаста супа од домати со морков и лук, измиксана, но со малку парчиња — без павлака, а сепак мазна.
+  en: Creamy tomato soup with carrot and garlic, blended but with a little texture left — no cream, still smooth.
+category: soup
+meals: [lunch, dinner]
+servings: 5
+time: { prep: 15, cook: 30 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/tomato-soup-recipe/
+sides: [zelena-salata, salata-od-zelka, shopska-salata]
+
+ingredients:
+  - items:
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: onion, qty: 2, unit: pc, note: { mk: сецкани, en: chopped } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: сецкани, en: chopped } }
+      - { ingredient: garlic, qty: 4, unit: clove }
+      - { ingredient: vinegar, qty: 1, unit: tbsp }
+      - { ingredient: canned-tomatoes, qty: 2, unit: can }
+      - { ingredient: water, qty: 750, unit: ml }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+      - { ingredient: salt, qty: 1, unit: tsp }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: basil, qty: 0.25, unit: bunch, note: { mk: за сервирање, en: to serve } }
+      - { ingredient: strained-yogurt, qty: 4, unit: tbsp, note: { mk: за сервирање, en: to serve }, optional: true }
+      - { ingredient: chili-flakes, qty: 1, unit: pinch, note: { mk: за возрасните, en: for the grown-ups }, optional: true }
+
+steps:
+  - text:
+      mk: Во тенџере на маслиновото масло пропржи ги кромидот, морковот и лукот со малку сол додека не омекнат.
+      en: In a pot, soften the onion, carrot and garlic in the olive oil with a little salt.
+    timer: 8
+  - text:
+      mk: Додај го оцетот, па пелатите, водата, ориганото и пиперот. Вари на тивок оган додека морковот не омекне.
+      en: Add the vinegar, then the tomatoes, water, oregano and pepper. Simmer until the carrot is tender.
+    timer: 25
+  - text:
+      mk: Одвој една шолја супа, а остатокот измиксај со штапен миксер. Врати ја одвоената супа и проби за сол.
+      en: Set aside a cup of soup and blend the rest with a stick blender. Stir the reserved soup back in and taste for salt.
+  - text:
+      mk: Служи со листови босилек, капка маслиново масло и по желба лажица јогурт.
+      en: Serve with basil leaves, a drizzle of olive oil and a spoon of yogurt if you like.
+
+variants:
+  - id: rice
+    name: { mk: Доматна чорба со ориз, en: With rice (Balkan style) }
+    note:
+      mk: По миксањето додај 4 лажици ориз и вари уште 15 минути — како кај баба.
+      en: After blending, add 4 tablespoons of rice and simmer 15 more minutes — like grandma's.
+    add:
+      - { ingredient: rice, qty: 4, unit: tbsp }
+  - id: fresh
+    name: { mk: Од свежи домати, en: With fresh tomatoes }
+    note:
+      mk: Во сезона — кило и пол зрели домати, излупени и исечени, наместо пелатите.
+      en: In season — 1.5 kg ripe tomatoes, peeled and chopped, instead of the canned ones.
+    add:
+      - { ingredient: tomato, qty: 1.5, unit: kg }
+    remove: [canned-tomatoes]
+  - id: croutons
+    name: { mk: Со крутони и пармезан, en: Croutons and parmesan }
+    note:
+      mk: Леб на коцки запечи го во рерна со малку масло и служи го со рендан пармезан одозгора.
+      en: Toast cubes of bread in the oven with a little oil and serve with grated parmesan on top.
+    add:
+      - { ingredient: bread, qty: 2, unit: slice }
+      - { ingredient: parmesan, qty: 30, unit: g }
+  - id: creamy
+    name: { mk: Кремаста, en: Creamy }
+    note:
+      mk: Пред миксањето вмешај неколку лажици павлака — помазна и поблага за децата.
+      en: Stir in a few spoons of sour cream before blending — smoother and milder for the kids.
+    add:
+      - { ingredient: sour-cream, qty: 100, unit: g }
+
+storage:
+  mk: Во фрижидер до 4 дена; може и замрзната до 3 месеци.
+  en: Keeps 4 days in the fridge; freezes for up to 3 months.

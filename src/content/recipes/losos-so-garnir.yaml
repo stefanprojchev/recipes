@@ -9,12 +9,11 @@ meals: [lunch, dinner]
 servings: 4
 time: { prep: 10, cook: 15 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [gluten-free]
 source:
   name: The Forked Spoon
   url: https://theforkedspoon.com/best-baked-salmon/
-sides: [kompiri-vo-rerna, oriz-so-puter, zelena-salata, shopska-salata]
+sides: [boranija-so-luk, brokula-karfiol-na-para, mlad-kompir-so-kopar, kompiri-vo-rerna, oriz-so-zelencuk, salata-so-rukola, zelena-salata]
 
 ingredients:
   - items:

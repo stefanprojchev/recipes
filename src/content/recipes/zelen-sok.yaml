@@ -1,0 +1,67 @@
+title:
+  mk: Зелен сок
+  en: Green juice
+summary:
+  mk: Свеж сок од јаболко, краставица, целер и спанаќ со лимон и ѓумбир — лесен и освежителен почеток на денот.
+  en: Fresh apple, cucumber, celery and spinach juice with lemon and ginger — a light, refreshing start to the day.
+category: drink
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 10 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+source:
+  name: Inspired Taste
+  url: https://www.inspiredtaste.net/34429/green-juice-recipe/
+
+ingredients:
+  - items:
+      - { ingredient: apple, qty: 2, unit: pc, note: { mk: зелени, en: green } }
+      - { ingredient: cucumber, qty: 2, unit: pc }
+      - { ingredient: celery-stalk, qty: 3, unit: pc }
+      - { ingredient: spinach, qty: 100, unit: g }
+      - { ingredient: lemon, qty: 1, unit: pc, note: { mk: излупен, en: peeled } }
+      - { ingredient: ginger, qty: 10, unit: g }
+
+steps:
+  - text:
+      mk: Измиј ги добро овошјето и зеленчукот. Исечи ги јаболката, краставиците и целерот на парчиња што влегуваат во отворот на соковникот, а лимонот излупи го и тргни ги семките.
+      en: Wash the fruit and vegetables well. Cut the apples, cucumbers and celery into pieces that fit the juicer chute; peel the lemon and remove the seeds.
+  - text:
+      mk: Цеди наизменично — шака спанаќ, па парче јаболко или краставица — за тврдите парчиња да ги протуркаат листовите. Ѓумбирот стави го меѓу две парчиња јаболко.
+      en: Juice alternately — a handful of spinach, then a piece of apple or cucumber — so the firm pieces push the leaves through. Feed the ginger between two apple pieces.
+  - text:
+      mk: Промешај, проби и служи веднаш, по желба со мраз. Ако е премногу кисел, исцеди уште едно јаболко.
+      en: Stir, taste and serve straight away, with ice if you like. Too tart? Juice one more apple.
+
+variants:
+  - id: mild
+    name: { mk: Благ за детето, en: Mild for the kid }
+    note:
+      mk: Без ѓумбир и целер, со едно јаболко повеќе — послатко и поблаго. Може да се разреди со малку вода.
+      en: No ginger or celery and one more apple — sweeter and milder. Dilute with a little water if needed.
+    add:
+      - { ingredient: apple, qty: 1, unit: pc }
+    remove: [ginger, celery-stalk]
+  - id: parsley
+    name: { mk: Со магдонос, en: With parsley }
+    note:
+      mk: Шака магдонос со спанаќот — посвеж и уште позелен вкус.
+      en: A handful of parsley with the spinach — fresher and even greener.
+    add:
+      - { ingredient: parsley, qty: 0.5, unit: bunch }
+  - id: pear
+    name: { mk: Со круша, en: With pear }
+    note:
+      mk: Зрели круши наместо јаболка — помек и послатко-цветен вкус. Најдобро наесен.
+      en: Ripe pears instead of apples — softer and more floral. Best in autumn.
+    add:
+      - { ingredient: pear, qty: 2, unit: pc }
+    remove: [apple]
+
+storage:
+  mk: Најдобар е свеж. Ако остане, во затворена тегла во фрижидер до 24 часа — промешај пред пиење.
+  en: Best fresh. Leftovers keep up to 24 hours in a closed jar in the fridge — stir before drinking.
+tips:
+  mk: Соковник со бавно цедење (cold-press) извлекува многу повеќе сок од лиснатиот зеленчук.
+  en: A slow (cold-press) juicer gets far more juice out of leafy greens.

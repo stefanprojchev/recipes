@@ -16,7 +16,7 @@ source:
 prepAhead:
   mk: Сармата може да се завитка ден порано и да се чува во фрижидер — утрото само се пече.
   en: The rolls can be made the day before and kept in the fridge — just bake them in the morning.
-sides: [salata-od-cveklo, salata-pecheni-piperki, salata-od-zelka]
+sides: [salata-od-cveklo, salata-od-morkov, salata-pecheni-piperki, salata-od-zelka]
 
 ingredients:
   - title: { mk: Фил, en: Filling }

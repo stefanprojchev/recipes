@@ -1,0 +1,84 @@
+title:
+  mk: Домашен ајвар
+  en: Homemade ajvar
+summary:
+  mk: Печени црвени пиперки и модар патлиџан, мелени и пржени со часови додека не станат густ и сладок намаз — есенска зимница за цела година.
+  en: Roasted red peppers and eggplant, ground and slow-fried for hours into a thick, sweet relish — the autumn preserve that lasts all year.
+category: preserves
+meals: [snack, dinner]
+servings: 5
+time: { prep: 90, cook: 150, rest: 30 }
+difficulty: hard
+diet: [vegan, fasting, gluten-free]
+season: [autumn]
+source:
+  name: МИА
+  url: https://mia.mk/story/%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD-%D0%BC%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8-%D0%B0%D1%98%D0%B2%D0%B0%D1%80
+prepAhead:
+  mk: Измиј и стерилизирај 5 тегли (по 370 мл) со капачињата. Пиперките најдобро е да се испечат претходниот ден.
+  en: Wash and sterilise 5 jars (370 ml each) with their lids. The peppers are best roasted the day before.
+
+ingredients:
+  - items:
+      - { ingredient: red-pepper, qty: 5, unit: kg, note: { mk: "месести, ајварки или капија", en: "fleshy, ajvarka or kapija" } }
+      - { ingredient: eggplant, qty: 750, unit: g }
+      - { ingredient: sunflower-oil, qty: 150, unit: ml }
+      - { ingredient: salt, qty: 1.5, unit: tsp }
+      - { ingredient: vinegar, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Пиперките и модриот патлиџан измиј ги и печи ги на плотна, скара или во рерна на 220°C, вртејќи ги, додека лушпата не поцрни и не се одвои.
+      en: Wash the peppers and eggplant and roast them on a hotplate, grill or in the oven at 220°C, turning, until the skins blacken and lift.
+    timer: 40
+  - text:
+      mk: Стави ги во голем сад, покриј со фолија и остави ги да се запарат — така лесно се лупат.
+      en: Put them in a large bowl, cover with cling film and let them steam — that makes them easy to peel.
+    timer: 25
+  - text:
+      mk: Излупи ги, извади ги дршките и семките и остави ги во цедалка да се оцедат добро — колку помалку течност, толку пократко пржење.
+      en: Peel them, remove stems and seeds and leave in a colander to drain well — the less liquid, the shorter the frying.
+  - text:
+      mk: Измели ги пиперките и патлиџанот на машина за мелење месо (или исецкај ги ситно).
+      en: Put the peppers and eggplant through a meat grinder (or chop them finely).
+  - text:
+      mk: Во широко тенџере со дебело дно загреј малку масло, додај ја смесата и пржи на среден оган, мешајќи постојано со дрвена лажица. Остатокот од маслото додавај го постепено.
+      en: In a wide heavy-bottomed pot, heat a little oil, add the mixture and fry over medium heat, stirring constantly with a wooden spoon. Add the rest of the oil gradually.
+    timer: 120
+  - text:
+      mk: Кога ајварот ќе се згусне и ќе почне лесно да се одвојува од ѕидовите, додај сол и оцет и пржи уште 10 минути.
+      en: When the ajvar is thick and comes away easily from the sides, add the salt and vinegar and fry 10 more minutes.
+    timer: 10
+  - text:
+      mk: Уште врел, наполни ги загреаните тегли до врв, затвори ги цврсто и преврти ги наопаку додека не се оладат.
+      en: While still hot, fill the warm jars to the top, seal tightly and turn them upside down until cool.
+
+variants:
+  - id: hot
+    name: { mk: Лут ајвар, en: Hot ajvar }
+    tags: [spicy]
+    note:
+      mk: За возрасните — 2–3 лути пиперки испечи ги и измели ги заедно со црвените. Означи ги теглите!
+      en: For the grown-ups — roast 2–3 hot peppers and grind them with the red ones. Label the jars!
+    add:
+      - { ingredient: hot-pepper, qty: 3, unit: pc }
+  - id: no-eggplant
+    name: { mk: Без модар патлиџан, en: Peppers only }
+    note:
+      mk: Само пиперки — посладок и поцрвен, како стариот прилепски ајвар. Земи уште 750 г пиперки.
+      en: Peppers only — sweeter and redder, like the old Prilep ajvar. Use another 750 g of peppers.
+    remove: [eggplant]
+  - id: garlic
+    name: { mk: Со лук, en: With garlic }
+    note:
+      mk: Неколку чешниња лук згмечи ги и вмешај ги со солта на крајот.
+      en: Crush a few garlic cloves and stir them in with the salt at the end.
+    add:
+      - { ingredient: garlic, qty: 3, unit: clove }
+
+storage:
+  mk: Затворените тегли стојат на ладно и темно место до една година. Отворена тегла — во фрижидер до 2 недели, со малку масло одозгора.
+  en: Sealed jars keep in a cool, dark place for up to a year. Once opened — in the fridge for up to 2 weeks, topped with a little oil.
+tips:
+  mk: Мешај постојано и до дното — ајварот лесно загорува. Служи со бело сирење, леб и печени компири.
+  en: Stir constantly, right to the bottom — ajvar catches easily. Serve with white cheese, bread and roast potatoes.

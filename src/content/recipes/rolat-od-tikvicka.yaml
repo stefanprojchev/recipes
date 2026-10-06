@@ -9,12 +9,11 @@ meals: [breakfast, lunch, dinner]
 servings: 2
 time: { prep: 20, cook: 20, rest: 5 }
 difficulty: medium
-tags: [kid-friendly]
 diet: [gluten-free]
 source:
   name: Shred Happens (Facebook)
   url: https://www.facebook.com/reel/1400664502279863
-sides: [zelena-salata, shopska-salata]
+sides: [salata-so-rukola, zelena-salata, salata-domati-krastavici]
 
 ingredients:
   - title: { mk: Ролат, en: Rollup }

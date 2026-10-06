@@ -9,7 +9,6 @@ meals: [snack, breakfast]
 servings: 6
 time: { prep: 20, cook: 35 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian]
 season: [summer, autumn]
 source:

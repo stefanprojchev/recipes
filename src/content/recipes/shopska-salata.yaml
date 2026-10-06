@@ -9,7 +9,6 @@ meals: [lunch, dinner]
 servings: 4
 time: { prep: 15 }
 difficulty: easy
-tags: [kid-friendly]
 diet: [vegetarian, gluten-free]
 season: [summer]
 source:

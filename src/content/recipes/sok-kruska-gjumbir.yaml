@@ -1,0 +1,64 @@
+title:
+  mk: Сок од круша, јаболко и ѓумбир
+  en: Pear, apple and ginger juice
+summary:
+  mk: Есенски сок од зрели круши и јаболка со малку ѓумбир и лимон — мек, сладок и топлечки.
+  en: An autumn juice of ripe pears and apples with a little ginger and lemon — mellow, sweet and warming.
+category: drink
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+season: [autumn]
+source:
+  name: The Australian Women's Weekly
+  url: https://www.womensweeklyfood.com.au/recipe/quick-and-easy/apple-pear-and-ginger-juice-13157/
+
+ingredients:
+  - items:
+      - { ingredient: pear, qty: 3, unit: pc, note: { mk: зрели, en: ripe } }
+      - { ingredient: apple, qty: 3, unit: pc }
+      - { ingredient: ginger, qty: 10, unit: g }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: излупен, en: peeled } }
+
+steps:
+  - text:
+      mk: Измиј ги крушите и јаболката и исечи ги на парчиња што влегуваат во отворот на соковникот — не мора да се лупат.
+      en: Wash the pears and apples and cut them into pieces that fit the juicer chute — no need to peel.
+  - text:
+      mk: Почни со ѓумбирот, па цеди наизменично круши и јаболка, а на крај лимонот — тој го чува сокот да не потемни.
+      en: Start with the ginger, then juice pears and apples alternately, and finish with the lemon — it keeps the juice from browning.
+  - text:
+      mk: Промешај и служи веднаш, по желба со мраз.
+      en: Stir and serve straight away, over ice if you like.
+
+variants:
+  - id: kid
+    name: { mk: За детето, en: For the kid }
+    note:
+      mk: Без ѓумбир — само круша, јаболко и капка лимон.
+      en: No ginger — just pear, apple and a drop of lemon.
+    remove: [ginger]
+  - id: carrot
+    name: { mk: Со морков, en: With carrot }
+    note:
+      mk: Три моркови — погуст сок со убава портокалова боја.
+      en: Three carrots — a fuller juice with a lovely orange colour.
+    add:
+      - { ingredient: carrot, qty: 3, unit: pc }
+  - id: celery
+    name: { mk: Со целер, en: With celery }
+    note:
+      mk: Две стебла целер — помалку сладок, освежителен сок за возрасните.
+      en: Two celery stalks — less sweet and refreshing, for the grown-ups.
+    add:
+      - { ingredient: celery-stalk, qty: 2, unit: pc }
+
+storage:
+  mk: Најдобар е свеж. Ако остане, во затворена тегла во фрижидер до 24 часа — протреси пред пиење.
+  en: Best fresh. Leftovers keep up to 24 hours in a closed jar in the fridge — shake before drinking.
+tips:
+  mk: Крушите нека се зрели но цврсти — премеките ќе дадат густо пире наместо сок.
+  en: Use ripe but firm pears — very soft ones turn into thick purée instead of juice.

@@ -1,0 +1,70 @@
+title:
+  mk: Салата од домати и краставици
+  en: Tomato and cucumber salad
+summary:
+  mk: Наједноставната летна салата — домати, краставица и кромид со лимон, маслиново масло и свежи билки.
+  en: The simplest summer salad — tomatoes, cucumber and onion with lemon, olive oil and fresh herbs.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, rest: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+season: [summer]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/cucumber-tomato-salad/
+
+ingredients:
+  - items:
+      - { ingredient: tomato, qty: 2, unit: pc, note: { mk: големи, en: large } }
+      - { ingredient: cucumber, qty: 1, unit: pc, note: { mk: на тенки тркалца, en: thinly sliced } }
+      - { ingredient: onion, qty: 0.5, unit: pc, note: { mk: "црвен, тенко сечен", en: "red, thinly sliced" } }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: vinegar, qty: 1, unit: tbsp }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: parsley, qty: 0.25, unit: bunch, note: { mk: или копар или нана, en: or dill or mint } }
+      - { ingredient: salt, qty: 1, unit: tsp }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Исечи ги доматите на коцки, а краставицата и кромидот на тенки тркалца. Измешај ги со лимоновиот сок, оцетот, солта и пиперот.
+      en: Dice the tomatoes and slice the cucumber and onion thinly. Toss with the lemon juice, vinegar, salt and pepper.
+  - text:
+      mk: Стави ја во фрижидер 10 минути за зеленчукот да пушти вода, па истури ја водата.
+      en: Chill for 10 minutes so the vegetables release their water, then pour the liquid off.
+    timer: 10
+  - text:
+      mk: Прелиј со маслиново масло, додај ги сецканите билки, измешај нежно и служи.
+      en: Drizzle with the olive oil, add the chopped herbs, toss gently and serve.
+
+variants:
+  - id: feta
+    name: { mk: Со бело сирење, en: With white cheese }
+    note:
+      mk: Изрони малку бело сирење одозгора.
+      en: Crumble a little white cheese over the top.
+    add:
+      - { ingredient: feta-cheese, qty: 80, unit: g }
+  - id: yogurt
+    name: { mk: Со јогурт и копар, en: With yogurt and dill }
+    note:
+      mk: Наместо масло и оцет — две лажици цедено кисело млеко со лук и копар. Кремаста, оди одлично со месо на скара.
+      en: Instead of oil and vinegar — two spoons of strained yogurt with garlic and dill. Creamy, great with grilled meat.
+    add:
+      - { ingredient: strained-yogurt, qty: 3, unit: tbsp }
+      - { ingredient: garlic, qty: 1, unit: clove }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+    remove: [vinegar, olive-oil, parsley]
+  - id: no-onion
+    name: { mk: Без кромид, en: No onion }
+    note:
+      mk: За децата — само домати и краставица со малку масло и сол.
+      en: For the kids — just tomatoes and cucumber with a little oil and salt.
+    remove: [onion]
+
+tips:
+  mk: Маслото и билките додај ги дури кога ќе ја истуриш водата — така салатата не е водена.
+  en: Add the oil and herbs only after draining the liquid — that way the salad isn't watery.

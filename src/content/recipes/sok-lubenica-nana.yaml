@@ -1,0 +1,62 @@
+title:
+  mk: Сок од лубеница и нана
+  en: Watermelon and mint juice
+summary:
+  mk: Летен сок од лубеница со свежа нана и лимон — природно сладок, без додаден шеќер.
+  en: A summer juice of watermelon with fresh mint and lemon — naturally sweet, no added sugar.
+category: drink
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+season: [summer]
+source:
+  name: The Dizzy Cook
+  url: https://thedizzycook.com/watermelon-juice/
+
+ingredients:
+  - items:
+      - { ingredient: watermelon, qty: 1500, unit: g, note: { mk: "без кора, на коцки", en: "rind removed, cubed" } }
+      - { ingredient: mint, qty: 0.25, unit: bunch }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: сок, en: juice } }
+
+steps:
+  - text:
+      mk: Лубеницата исечи ја на коцки без кора. Семките не пречат на повеќето соковници, но крупните отстрани ги.
+      en: Cut the watermelon into cubes without the rind. Most juicers handle the seeds, but remove the big ones.
+  - text:
+      mk: Цеди ја лубеницата заедно со листовите нана — наната стави ја меѓу парчињата лубеница.
+      en: Juice the watermelon together with the mint leaves — tuck the mint between the watermelon pieces.
+  - text:
+      mk: Додај го лимоновиот сок, промешај и служи веднаш со мраз и лист нана.
+      en: Add the lemon juice, stir and serve straight away over ice with a mint leaf.
+
+variants:
+  - id: cucumber
+    name: { mk: Со краставица, en: With cucumber }
+    note:
+      mk: Една краставица — уште поосвежителен, помалку сладок.
+      en: One cucumber — even more refreshing and less sweet.
+    add:
+      - { ingredient: cucumber, qty: 1, unit: pc }
+  - id: strawberry
+    name: { mk: Со јагоди, en: With strawberries }
+    note:
+      mk: Шака јагоди со лубеницата — розов и посладок. На почеток на летото, кога има и од двете.
+      en: A handful of strawberries with the watermelon — pinker and sweeter. In early summer, when both are around.
+    add:
+      - { ingredient: strawberries, qty: 150, unit: g }
+  - id: popsicles
+    name: { mk: Како сладолед на стапче, en: As ice pops }
+    note:
+      mk: Истиот сок истури го во калапи за сладолед и замрзни преку ноќ — ладна ужина за детето во жешките денови.
+      en: Pour the same juice into ice-pop moulds and freeze overnight — a cold snack for the kid on hot days.
+
+storage:
+  mk: Најдобар е свеж. Ако остане, во затворена тегла во фрижидер до 24 часа — промешај пред пиење.
+  en: Best fresh. Leftovers keep up to 24 hours in a closed jar in the fridge — stir before drinking.
+tips:
+  mk: Половина средна лубеница дава околу литар сок. Поладна лубеница — поубав сок, па чувај ја во фрижидер пред цедење.
+  en: Half a medium watermelon gives about a litre of juice. Colder melon makes nicer juice, so keep it in the fridge before juicing.

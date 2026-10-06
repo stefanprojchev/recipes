@@ -38,11 +38,13 @@ export async function householdWarnings(recipe: Recipe, variant: Variant | undef
       .filter((id) => !removed.has(id)),
   );
 
+  const tags = new Set([...recipe.data.tags, ...(variant?.tags ?? [])]);
+
   const warnings: string[] = [];
   for (const member of members) {
     const who = t(member.data.name, locale);
     for (const tag of member.data.avoidTags) {
-      if (recipe.data.tags.includes(tag)) {
+      if (tags.has(tag)) {
         warnings.push(m.household_warning({ who, reason: tagLabel(tag, locale).toLowerCase() }, { locale }));
       }
     }

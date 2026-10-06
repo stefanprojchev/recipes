@@ -1,0 +1,97 @@
+title:
+  mk: Домашна пилешка супа
+  en: Homemade chicken soup
+summary:
+  mk: Бистра домашна пилешка супа со морков, целер и фиде — лесна, топла и омилена кај децата.
+  en: Clear homemade chicken soup with carrot, celery root and vermicelli — light, warming and a kids' favourite.
+category: soup
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 75 }
+difficulty: easy
+tags: [kid-friendly]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B0-%D0%BF%D0%B8%D0%BB%D0%B5%D1%88%D0%BA%D0%B0-%D1%81%D1%83%D0%BF%D0%B0-2
+sides: [zelena-salata, shopska-salata, salata-od-zelka]
+
+ingredients:
+  - title: { mk: Супа, en: Broth }
+    items:
+      - { ingredient: chicken-legs, qty: 600, unit: g }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: на крупни парчиња, en: in large chunks } }
+      - { ingredient: celery-root, qty: 100, unit: g }
+      - { ingredient: leek, qty: 1, unit: pc }
+      - { ingredient: bay-leaf, qty: 2, unit: pc }
+      - { ingredient: black-pepper, qty: 1, unit: tsp, note: { mk: во зрна, en: whole peppercorns } }
+      - { ingredient: water, qty: 2, unit: l }
+  - title: { mk: Во супата, en: To finish }
+    items:
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: vermicelli, qty: 60, unit: g }
+      - { ingredient: parsley, qty: 0.5, unit: bunch, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: salt, unit: to-taste }
+
+steps:
+  - text:
+      mk: Пилешкото измиј го и стави го во тенџере со крупно исечениот морков, целерот, празот, ловоровиот лист, зрната пипер и водата.
+      en: Rinse the chicken and put it in a pot with the chunks of carrot, celery root, leek, bay leaves, peppercorns and water.
+  - text:
+      mk: Кога ќе зоврие, собери ја пената, намали на тивок оган и вари полупокриено додека месото не омекне.
+      en: Once boiling, skim off the foam, lower the heat and simmer half-covered until the meat is tender.
+    timer: 60
+  - text:
+      mk: Извади го месото и процеди ја супата. Тргни ги коските и кожата, а месото исечи го на парчиња.
+      en: Lift out the meat and strain the broth. Remove the bones and skin and cut the meat into pieces.
+  - text:
+      mk: Врати ја супата на оган, посоли по вкус и додај го ситно исечениот морков.
+      en: Return the broth to the heat, salt to taste and add the diced carrot.
+    timer: 8
+  - text:
+      mk: Додај го фидето и месото и вари на тивок оган додека фидето не се свари.
+      en: Add the vermicelli and the meat and simmer until the vermicelli is cooked.
+    timer: 7
+  - text:
+      mk: Поспи со магдонос и служи топла.
+      en: Sprinkle with parsley and serve hot.
+
+variants:
+  - id: egg-lemon
+    name: { mk: Со застројка, en: With egg and lemon }
+    note:
+      mk: Измати јајце со сокот од половина лимон, додај неколку лажици топла супа, па истури во супата мешајќи постојано — без да зоврие повторно.
+      en: Whisk an egg with the juice of half a lemon, add a few spoons of hot broth, then pour into the soup stirring constantly — don't let it boil again.
+    add:
+      - { ingredient: egg, qty: 1, unit: pc }
+      - { ingredient: lemon, qty: 0.5, unit: pc }
+  - id: rice
+    name: { mk: Со ориз, en: With rice }
+    note:
+      mk: Наместо фиде — 3 лажици ориз, варен околу 15 минути. Без глутен.
+      en: Instead of vermicelli — 3 tablespoons of rice, simmered about 15 minutes. Gluten-free.
+    add:
+      - { ingredient: rice, qty: 3, unit: tbsp }
+    remove: [vermicelli]
+  - id: vegetables
+    name: { mk: Со повеќе зеленчук, en: Extra vegetables }
+    note:
+      mk: Со морковот додај компир и тиквичка на ситни коцки — позаситна супа за ручек.
+      en: Add diced potato and zucchini with the carrot — a more filling soup for lunch.
+    add:
+      - { ingredient: potato, qty: 1, unit: pc }
+      - { ingredient: zucchini, qty: 1, unit: pc }
+  - id: breast
+    name: { mk: Со пилешки гради, en: With chicken breast }
+    note:
+      mk: Побрзо и посно — пилешки гради наместо бутчиња, варени само 25 минути.
+      en: Quicker and leaner — chicken breast instead of legs, simmered only 25 minutes.
+    add:
+      - { ingredient: chicken-breast, qty: 400, unit: g }
+    remove: [chicken-legs]
+
+storage:
+  mk: Во фрижидер до 2 дена. Ако се готви однапред, фидето вари го при загревање — инаку набабрува.
+  en: Keeps 2 days in the fridge. If cooking ahead, add the vermicelli when reheating — otherwise it goes mushy.
+tips:
+  mk: Тивкото вриење и собирањето на пената ја прават супата бистра.
+  en: A gentle simmer and skimming the foam keep the broth clear.

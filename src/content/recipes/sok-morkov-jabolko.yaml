@@ -1,0 +1,64 @@
+title:
+  mk: Сок од морков и јаболко со ѓумбир
+  en: Carrot, apple and ginger juice
+summary:
+  mk: Сладок портокалов сок од моркови и јаболка со малку ѓумбир — класика за секое утро.
+  en: Sweet orange juice of carrots and apples with a little ginger — an everyday morning classic.
+category: drink
+meals: [breakfast, snack]
+servings: 3
+time: { prep: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+source:
+  name: Masala Herb
+  url: https://www.masalaherb.com/carrot-apple-ginger-juice/
+
+ingredients:
+  - items:
+      - { ingredient: carrot, qty: 8, unit: pc, note: { mk: "крупни, излупени", en: "large, peeled" } }
+      - { ingredient: apple, qty: 3, unit: pc }
+      - { ingredient: ginger, qty: 10, unit: g, note: { mk: излупен, en: peeled } }
+      - { ingredient: lemon, qty: 0.5, unit: pc, note: { mk: излупен, en: peeled }, optional: true }
+
+steps:
+  - text:
+      mk: Измиј ги морковите, јаболката и ѓумбирот. Морковите излупи ги и отсечи им ги краевите, а јаболката исечи ги на парчиња што влегуваат во отворот на соковникот.
+      en: Wash the carrots, apples and ginger. Peel and trim the carrots and cut the apples into pieces that fit the juicer chute.
+  - text:
+      mk: Почни со ѓумбирот, па цеди наизменично моркови и јаболка — сочните јаболка го протуркуваат сокот од тврдите моркови. На крај исцеди го лимонот.
+      en: Start with the ginger, then alternate carrots and apples — the juicy apples flush the hard carrots through. Finish with the lemon.
+  - text:
+      mk: Промешај и служи веднаш, ладен или со мраз.
+      en: Stir and serve straight away, chilled or over ice.
+
+variants:
+  - id: kid
+    name: { mk: За детето, en: For the kid }
+    note:
+      mk: Без ѓумбир и лимон — само морков и јаболко, разредено со малку ладна вода.
+      en: No ginger or lemon — just carrot and apple, diluted with a little cold water.
+    remove: [ginger, lemon]
+  - id: orange
+    name: { mk: Со портокал, en: With orange }
+    note:
+      mk: Два излупени портокали наместо лимонот — посвеж и уште послатко. Зиме, кога има портокали.
+      en: Two peeled oranges instead of the lemon — fresher and even sweeter. In winter, when oranges are in season.
+    add:
+      - { ingredient: orange, qty: 2, unit: pc }
+    remove: [lemon]
+  - id: celery
+    name: { mk: Со целер, en: With celery }
+    note:
+      mk: Две стебла целер — помалку сладок и полесен сок за возрасните.
+      en: Two celery stalks — less sweet and lighter, for the grown-ups.
+    add:
+      - { ingredient: celery-stalk, qty: 2, unit: pc }
+
+storage:
+  mk: Најдобар е свеж. Ако остане, во затворена тегла во фрижидер до 24 часа — протреси пред пиење.
+  en: Best fresh. Leftovers keep up to 24 hours in a closed jar in the fridge — shake before drinking.
+tips:
+  mk: Ѓумбирот е лут — за детето стави помалку или издвој му чаша пред да го додадеш.
+  en: Ginger is hot — use less for the kid, or pour their glass before adding it.

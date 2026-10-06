@@ -1,0 +1,88 @@
+title:
+  mk: Чорба од грав и зеленчук
+  en: White bean and vegetable soup
+summary:
+  mk: Лесна чорба од бел грав, морков, целер и спанаќ — без запршка и без месо, полна со протеини и влакна. Посветла и поретка од тавче гравче.
+  en: A light soup of white beans, carrot, celery and spinach — no roux, no meat, full of protein and fibre. Lighter and brothier than tavče gravče.
+category: soup
+meals: [lunch, dinner]
+servings: 5
+time: { prep: 15, cook: 75 }
+difficulty: easy
+diet: [vegan, fasting, gluten-free]
+season: [autumn, winter, spring]
+source:
+  name: Heart & Stroke
+  url: https://www.heartandstroke.ca/healthy-living/recipes/soups-and-salads/chunky-white-bean-and-vegetable-soup
+sides: [salata-od-zelka, salata-od-cveklo, zelena-salata]
+prepAhead:
+  mk: Потопи го гравот во ладна вода вечерта пред готвење.
+  en: Soak the beans in cold water the night before.
+
+ingredients:
+  - items:
+      - { ingredient: white-beans, qty: 250, unit: g, note: { mk: потопен преку ноќ, en: soaked overnight } }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: на коцки, en: diced } }
+      - { ingredient: celery-stalk, qty: 2, unit: pc, note: { mk: на коцки, en: diced } }
+      - { ingredient: garlic, qty: 3, unit: clove }
+      - { ingredient: bay-leaf, qty: 2, unit: pc }
+      - { ingredient: savory, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 1.5, unit: l }
+      - { ingredient: spinach, qty: 150, unit: g, note: { mk: грубо сецкан, en: roughly chopped } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: chili-flakes, qty: 1, unit: pinch, note: { mk: за возрасните, en: for the grown-ups }, optional: true }
+
+steps:
+  - text:
+      mk: Исцеди го потопениот грав, прелиј го со свежа вода, вари го 10 минути и исцеди ја водата — така е полесен за варење.
+      en: Drain the soaked beans, cover with fresh water, boil 10 minutes and drain again — it makes them easier to digest.
+    timer: 10
+  - text:
+      mk: Во тенџере на маслиновото масло пропржи ги кромидот, морковот и целерот додека не омекнат, па додај го лукот за една минута.
+      en: In a pot, soften the onion, carrot and celery in the olive oil, then add the garlic for a minute.
+    timer: 6
+  - text:
+      mk: Додај ги гравот, ловоровиот лист и водата. Вари полупокриено на тивок оган додека гравот не омекне.
+      en: Add the beans, bay leaves and water. Simmer half-covered until the beans are tender.
+    timer: 60
+  - text:
+      mk: Згмечи неколку лажици грав на ѕидот од тенџерето за чорбата да се згусне. Додај чубрица, сол, пипер и спанаќот и вари уште 5 минути.
+      en: Mash a few spoons of beans against the side of the pot to thicken the soup. Add savory, salt, pepper and the spinach and simmer 5 more minutes.
+    timer: 5
+
+variants:
+  - id: tomato
+    name: { mk: Со домати, en: With tomatoes }
+    note:
+      mk: Конзерва пелати со гравот — поцрвена и покисела чорба.
+      en: A can of chopped tomatoes with the beans — a redder, tangier soup.
+    add:
+      - { ingredient: canned-tomatoes, qty: 1, unit: can }
+  - id: smoked
+    name: { mk: Со чадено месо, en: With smoked pork }
+    note:
+      mk: Зимска верзија — чадено месо на коцки се вари со гравот. Не е посна.
+      en: Winter version — diced smoked pork simmered with the beans. Not for fasting.
+    add:
+      - { ingredient: smoked-pork, qty: 150, unit: g }
+  - id: parmesan
+    name: { mk: Со пармезан, en: With parmesan }
+    note:
+      mk: Поспи ја секоја чинија со рендан пармезан и капка маслиново масло.
+      en: Top each bowl with grated parmesan and a drizzle of olive oil.
+    add:
+      - { ingredient: parmesan, qty: 30, unit: g }
+  - id: pasta
+    name: { mk: Со тестенини, en: With small pasta }
+    note:
+      mk: Последните 10 минути додај шака ситни тестенини — како италијанската „паста е фаџоли“.
+      en: Add a handful of small pasta for the last 10 minutes — like Italian pasta e fagioli.
+    add:
+      - { ingredient: pasta, qty: 80, unit: g }
+
+storage:
+  mk: Во фрижидер до 3 дена; се згуснува, па разреди со вода при загревање.
+  en: Keeps 3 days in the fridge; it thickens, so add water when reheating.
