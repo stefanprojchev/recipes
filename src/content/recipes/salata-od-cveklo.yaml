@@ -1,0 +1,57 @@
+title:
+  mk: Салата од цвекло
+  en: Beetroot salad
+summary:
+  mk: Варено цвекло со лук, оцет и масло — зимска салата што оди со сарма, гравче и печено месо.
+  en: Cooked beetroot with garlic, vinegar and oil — a winter salad for sarma, beans and roast meat.
+category: salad
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 45, rest: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+season: [autumn, winter]
+
+ingredients:
+  - items:
+      - { ingredient: beetroot, qty: 4, unit: pc, note: { mk: средно големи, en: medium } }
+      - { ingredient: garlic, qty: 2, unit: clove, note: { mk: згмечен, en: crushed } }
+      - { ingredient: vinegar, qty: 2, unit: tbsp }
+      - { ingredient: sunflower-oil, qty: 2, unit: tbsp }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+
+steps:
+  - text:
+      mk: Измиј го цвеклото и вари го цело, со лушпата, додека нож лесно не влегува.
+      en: Wash the beetroot and boil it whole, unpeeled, until a knife slides in easily.
+    timer: 45
+  - text:
+      mk: Излади го, излупи го (со ракавици — бои) и исечи го на тенки парчиња или ленти.
+      en: Cool, peel (wear gloves — it stains) and slice thinly or into strips.
+  - text:
+      mk: Зачини со лук, оцет, масло и сол и остави да отстои пред сервирање. Поспи магдонос.
+      en: Dress with garlic, vinegar, oil and salt and let it sit before serving. Sprinkle with parsley.
+    timer: 15
+
+variants:
+  - id: walnuts
+    name: { mk: Со ореви, en: With walnuts }
+    note:
+      mk: Поспи сецкани ореви — дава хрскавост и полн вкус.
+      en: Sprinkle with chopped walnuts — adds crunch and depth.
+    add:
+      - { ingredient: walnuts, qty: 40, unit: g }
+  - id: yogurt
+    name: { mk: Со кисело млеко, en: With yogurt }
+    note:
+      mk: Изренди го цвеклото и измешај го со цедено кисело млеко и лук — розова салата што децата ја сакаат.
+      en: Grate the beetroot and mix with strained yogurt and garlic — a pink salad kids love.
+    add:
+      - { ingredient: strained-yogurt, qty: 200, unit: g }
+    remove: [vinegar]
+
+tips:
+  mk: Може да се свари ден порано — зачинето е уште повкусно следниот ден. Се чува 4 дена во фрижидер.
+  en: Can be cooked a day ahead — dressed, it's even tastier the next day. Keeps 4 days in the fridge.

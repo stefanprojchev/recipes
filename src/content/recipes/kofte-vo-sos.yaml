@@ -1,0 +1,71 @@
+title:
+  mk: Ќофтиња во доматен сос
+  en: Meatballs in tomato sauce
+summary:
+  mk: Меки ќофтиња од мелено месо, пропржени и потоа варени во густ доматен сос — со пире или ориз.
+  en: Soft meatballs, browned and then simmered in a thick tomato sauce — with mashed potatoes or rice.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 25, cook: 45, rest: 20 }
+difficulty: easy
+tags: [kid-friendly]
+source:
+  name: Gotvi.mk
+  url: https://gotvi.mk/2016/04/08/koftinja-vo-domaten-sos/
+sides: [pire-od-kompiri, oriz-so-puter, shopska-salata, salata-od-zelka]
+
+ingredients:
+  - title: { mk: Ќофтиња, en: Meatballs }
+    items:
+      - { ingredient: minced-meat, qty: 500, unit: g }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: изрендан, en: grated } }
+      - { ingredient: stale-bread, qty: 1, unit: slice, note: { mk: натопено во вода и исцедено, en: soaked and squeezed } }
+      - { ingredient: egg, qty: 1, unit: pc }
+      - { ingredient: parsley, qty: 0.5, unit: bunch }
+      - { ingredient: salt, qty: 1, unit: tsp }
+      - { ingredient: black-pepper, qty: 0.5, unit: tsp }
+      - { ingredient: flour, qty: 2, unit: tbsp, note: { mk: за валкање, en: for dusting } }
+      - { ingredient: sunflower-oil, qty: 4, unit: tbsp }
+  - title: { mk: Сос, en: Sauce }
+    items:
+      - { ingredient: canned-tomatoes, qty: 1, unit: can }
+      - { ingredient: flour, qty: 1, unit: tbsp }
+      - { ingredient: water, qty: 300, unit: ml }
+      - { ingredient: sugar, qty: 1, unit: pinch }
+      - { ingredient: oregano, qty: 0.5, unit: tsp }
+
+steps:
+  - text:
+      mk: Измешај ги меленото месо, кромидот, лебот, јајцето, магдоносот, солта и пиперот и меси со рака додека не се поврзе. Остави 20 минути во фрижидер.
+      en: Mix the meat, onion, bread, egg, parsley, salt and pepper and knead by hand until it binds. Chill for 20 minutes.
+    timer: 20
+  - text:
+      mk: Со влажни раце направи топчиња колку орев, валкај ги во брашно и пропржи ги во маслото од сите страни. Извади ги.
+      en: With wet hands roll walnut-sized balls, dust in flour and brown them all over in the oil. Lift them out.
+    timer: 8
+  - text:
+      mk: Во истото масло пропржи го брашното една минута, додај ги пелатите, водата, шеќерот и оригано и измешај.
+      en: In the same oil fry the flour for a minute, add the tomatoes, water, sugar and oregano and stir.
+  - text:
+      mk: Кога сосот ќе зоврие, врати ги ќофтињата, намали на тивок оган и вари покриено.
+      en: When the sauce boils, return the meatballs, lower the heat and simmer covered.
+    timer: 30
+
+variants:
+  - id: baked
+    name: { mk: "Печени, без пржење", en: "Baked, no frying" }
+    note:
+      mk: Ќофтињата нареди ги во плех, печи ги 15 минути на 200°C, прелиј ги со сосот и печи уште 20 минути. Полесно и без прскање масло.
+      en: Lay the meatballs in a tray, bake 15 minutes at 200°C, pour over the sauce and bake 20 more. Lighter and no oil splatter.
+  - id: potatoes
+    name: { mk: Со компири во сосот, en: With potatoes in the sauce }
+    note:
+      mk: Додај компири на коцки во сосот заедно со ќофтињата и налеј уште малку вода — цел ручек во еден сад.
+      en: Add diced potatoes to the sauce with the meatballs and a little more water — a whole lunch in one pot.
+    add:
+      - { ingredient: potato, qty: 4, unit: pc, note: { mk: на коцки, en: diced } }
+
+storage:
+  mk: Во фрижидер до 3 дена; ќофтињата во сос се замрзнуваат добро.
+  en: Keeps 3 days in the fridge; the meatballs in sauce freeze well.

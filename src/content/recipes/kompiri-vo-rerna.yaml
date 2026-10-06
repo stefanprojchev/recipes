@@ -1,0 +1,56 @@
+title:
+  mk: Компири во рерна
+  en: Oven-roasted potatoes
+summary:
+  mk: Хрскави компири печени со маслиново масло, лук и оригано — гарнир за риба и месо.
+  en: Crispy potatoes roasted with olive oil, garlic and oregano — a side for fish and meat.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 40 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+
+ingredients:
+  - items:
+      - { ingredient: potato, qty: 1, unit: kg, note: { mk: на кришки, en: in wedges } }
+      - { ingredient: olive-oil, qty: 3, unit: tbsp }
+      - { ingredient: garlic, qty: 3, unit: clove, note: { mk: згмечен, en: crushed } }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: salt, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 220°C.
+      en: Heat the oven to 220°C.
+  - text:
+      mk: Исечи ги компирите на кришки, исуши ги со крпа и измешај ги со маслото, лукот, оригано, алева пиперка и сол.
+      en: Cut the potatoes into wedges, pat them dry and toss with the oil, garlic, oregano, paprika and salt.
+  - text:
+      mk: Нареди ги во еден слој на плех со хартија за печење и печи, вртејќи ги еднаш на половина, додека не станат златни и хрскави.
+      en: Spread them in one layer on a lined tray and roast, turning once halfway, until golden and crisp.
+    timer: 40
+
+variants:
+  - id: rosemary
+    name: { mk: Со рузмарин, en: With rosemary }
+    note:
+      mk: Наместо оригано, рузмарин — одлично со печено месо.
+      en: Rosemary instead of oregano — great with roast meat.
+    add:
+      - { ingredient: rosemary, qty: 1, unit: tsp }
+    remove: [oregano]
+  - id: new-potatoes
+    name: { mk: Млади компири со копар, en: New potatoes with dill }
+    note:
+      mk: Во пролет — млади компири цели со лушпата, печени 30 минути и посипани со копар и путер.
+      en: In spring — whole new potatoes in their skins, roasted 30 minutes and finished with dill and butter.
+    add:
+      - { ingredient: dill, qty: 0.5, unit: bunch }
+      - { ingredient: butter, qty: 1, unit: tbsp }
+
+tips:
+  mk: Компирите да се суви и во еден ред — така стануваат хрскави, а не динстани.
+  en: Keep the potatoes dry and in a single layer — that's how they crisp instead of steaming.

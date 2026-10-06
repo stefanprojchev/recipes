@@ -1,0 +1,76 @@
+title:
+  mk: Телешко во сос со гарнир
+  en: Braised veal in sauce with a side
+summary:
+  mk: Меко динстано телешко месо во густ сос од зеленчук, служено со пире, ориз или компири.
+  en: Tender braised veal in a thick vegetable sauce, served with mash, rice or potatoes.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 20, cook: 100 }
+difficulty: medium
+tags: [kid-friendly]
+diet: [gluten-free]
+source:
+  name: Мој портал
+  url: https://mojportal.mk/dinstano-telesko-so-sos-i-pire
+sides: [pire-od-kompiri, oriz-so-puter, shopska-salata, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: veal, qty: 800, unit: g, note: { mk: плешка на коцки, en: diced shoulder } }
+      - { ingredient: onion, qty: 2, unit: pc, note: { mk: сецкан, en: chopped } }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: на тркалца, en: sliced } }
+      - { ingredient: red-pepper, qty: 1, unit: pc, note: { mk: сецкана, en: chopped } }
+      - { ingredient: garlic, qty: 2, unit: clove }
+      - { ingredient: tomato-paste, qty: 1, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: bay-leaf, qty: 2, unit: pc }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: water, qty: 600, unit: ml }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Исуши го месото со хартија, посоли го и пропржи го во загреано масло на парчиња, додека не порумени од сите страни. Извади го.
+      en: Pat the veal dry, salt it and brown it in hot oil in batches on all sides. Lift it out.
+    timer: 10
+  - text:
+      mk: Во истото масло пропржи ги кромидот, морковот и пиперката, па додај лук, доматен концентрат и алева пиперка.
+      en: In the same oil fry the onion, carrot and pepper, then add the garlic, tomato paste and paprika.
+    timer: 6
+  - text:
+      mk: Врати го месото, налеј ја водата, додај ловоров лист и динстај покриено на тивок оган додека месото не стане меко.
+      en: Return the meat, pour in the water, add the bay leaves and braise covered on low heat until the meat is tender.
+    timer: 80
+  - text:
+      mk: Извади го месото и ловоровите листови. Сосот со зеленчукот измиксај го со штапен миксер до мазно, врати го месото и зачини.
+      en: Lift out the meat and bay leaves. Blend the sauce and vegetables smooth with a stick blender, return the meat and season.
+  - text:
+      mk: Служи со пире, ориз или компири во рерна и свежа салата.
+      en: Serve with mashed potatoes, rice or roast potatoes and a fresh salad.
+
+variants:
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Последните 20 минути додај печурки на листови — сосот станува погуст и помирисен.
+      en: Add sliced mushrooms for the last 20 minutes — a thicker, more fragrant sauce.
+    add:
+      - { ingredient: mushrooms, qty: 300, unit: g }
+  - id: chicken
+    name: { mk: Со пилешко, en: With chicken }
+    note:
+      mk: Наместо телешко, пилешки бутчиња — динстај само 35 минути.
+      en: Chicken legs instead of veal — braise for just 35 minutes.
+    add:
+      - { ingredient: chicken-legs, qty: 900, unit: g }
+    remove: [veal]
+
+tips:
+  mk: Плешката и вратот се најдобри за динстање — бавно и на тивок оган, никогаш да не врие силно.
+  en: Shoulder and neck are best for braising — slow and low, never at a hard boil.
+storage:
+  mk: Во фрижидер до 3 дена; уште повкусно следниот ден.
+  en: Keeps 3 days in the fridge; even better the next day.

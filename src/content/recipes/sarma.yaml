@@ -1,0 +1,92 @@
+title:
+  mk: Сарма
+  en: Sarma (sour cabbage rolls)
+summary:
+  mk: Листови кисела зелка завиткани со мелено месо и ориз, бавно печени — зимската неделна класика.
+  en: Sour cabbage leaves rolled around minced meat and rice and slowly baked — the winter Sunday classic.
+category: main
+meals: [lunch, dinner]
+servings: 6
+time: { prep: 45, cook: 100 }
+difficulty: medium
+season: [winter]
+source:
+  name: Сè за храна
+  url: https://sezahrana.mk/%D1%81%D0%B0%D1%80%D0%BC%D0%B0-%D1%81%D0%BE-%D0%BA%D0%B8%D1%81%D0%B5%D0%BB%D0%B0-%D0%B7%D0%B5%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-%D1%82%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5/
+prepAhead:
+  mk: Сармата може да се завитка ден порано и да се чува во фрижидер — утрото само се пече.
+  en: The rolls can be made the day before and kept in the fridge — just bake them in the morning.
+sides: [salata-od-cveklo, salata-pecheni-piperki, salata-od-zelka]
+
+ingredients:
+  - title: { mk: Фил, en: Filling }
+    items:
+      - { ingredient: minced-meat, qty: 700, unit: g, note: { mk: свинско и говедско, en: pork and beef } }
+      - { ingredient: rice, qty: 150, unit: g, note: { mk: измиен, en: rinsed } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 2, unit: tsp }
+      - { ingredient: black-pepper, qty: 0.5, unit: tsp }
+      - { ingredient: salt, unit: to-taste, note: { mk: внимателно — зелката е солена, en: carefully — the cabbage is salty } }
+  - title: { mk: За завиткување и печење, en: To roll and bake }
+    items:
+      - { ingredient: sour-cabbage-head, qty: 1, unit: pc }
+      - { ingredient: bay-leaf, qty: 2, unit: pc }
+      - { ingredient: water, qty: 700, unit: ml, note: { mk: врела, en: boiling } }
+
+steps:
+  - text:
+      mk: Одвој ги листовите од киселата зелка. Ако се многу солени, исплакни ги во ладна вода. Исечи го задебеленото ребро од секој лист.
+      en: Separate the sour cabbage leaves. If very salty, rinse them in cold water. Trim the thick rib from each leaf.
+  - text:
+      mk: На масло пропржи го кромидот, додај го месото и пржи додека не побели. Тргни од оган, додај го оризот, алевата пиперка, пиперот и малку сол и измешај.
+      en: Fry the onion in oil, add the meat and cook until it loses its pink colour. Off the heat, add the rice, paprika, pepper and a little salt and mix.
+    timer: 8
+  - text:
+      mk: Во секој лист стави лажица фил, преклопи ги страните и цврсто завиткај.
+      en: Put a spoon of filling on each leaf, fold in the sides and roll up tightly.
+  - text:
+      mk: Дното на длабок сад обложи го со ситните листови. Нареди ги сармите збиено, со ловоровите листови меѓу нив, и покриј ги со уште листови.
+      en: Line a deep dish with the small leaves. Pack the rolls in tightly with the bay leaves between them and cover with more leaves.
+  - text:
+      mk: Налеј врела вода да ги покрие, притисни ги со чинија, покриј со капак и печи на 200°C додека оризот не се свари.
+      en: Pour over boiling water to cover, weigh down with a plate, cover with a lid and bake at 200°C until the rice is cooked.
+    timer: 90
+  - text:
+      mk: Провери една сарма — ако оризот е мек, откриј и печи уште 10 минути. Служи со кисело млеко и леб.
+      en: Check one roll — if the rice is soft, uncover and bake 10 more minutes. Serve with yogurt and bread.
+    timer: 10
+
+variants:
+  - id: smoked
+    name: { mk: Со чадено месо, en: With smoked pork }
+    note:
+      mk: Помеѓу сармите нареди парчиња чадено свинско месо — дава традиционален зимски вкус.
+      en: Tuck pieces of smoked pork between the rolls — the traditional winter flavour.
+    add:
+      - { ingredient: smoked-pork, qty: 250, unit: g, note: { mk: на парчиња, en: in pieces } }
+  - id: fasting
+    name: { mk: Посна, en: Fasting }
+    note:
+      mk: Фил од двојно повеќе ориз со кромид, рендан морков и сушено нане, без месо — за посни денови.
+      en: A filling of double the rice with onion, grated carrot and dried mint, no meat — for fasting days.
+    add:
+      - { ingredient: rice, qty: 150, unit: g }
+      - { ingredient: carrot, qty: 2, unit: pc, note: { mk: рендан, en: grated } }
+      - { ingredient: dried-mint, qty: 1, unit: tsp }
+    remove: [minced-meat]
+  - id: vine-leaves
+    name: { mk: Од лозов лист, en: In vine leaves }
+    note:
+      mk: Летна сарма — наместо кисела зелка, бланширани лозови листови; се пече покусо (околу 50 минути) и се служи со кисело млеко.
+      en: Summer sarma — blanched vine leaves instead of sour cabbage; bakes faster (about 50 minutes) and is served with yogurt.
+    add:
+      - { ingredient: vine-leaves, qty: 40, unit: pc }
+    remove: [sour-cabbage-head]
+
+tips:
+  mk: Сармата е најдобра следниот ден. Киселата зелка цела главица се купува на пазар од ноември.
+  en: Sarma is best the next day. Whole heads of sour cabbage are sold at the market from November.
+storage:
+  mk: Во фрижидер до 4 дена; се замрзнува одлично.
+  en: Keeps 4 days in the fridge; freezes very well.

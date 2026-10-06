@@ -1,0 +1,56 @@
+title:
+  mk: Пире од компири
+  en: Mashed potatoes
+summary:
+  mk: Мазно путерно пире од компири со топло млеко — гарнир за месо, ќофтиња и манџи во сос.
+  en: Smooth buttery mash with warm milk — a side for meat, meatballs and saucy stews.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 25 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+
+ingredients:
+  - items:
+      - { ingredient: potato, qty: 1, unit: kg }
+      - { ingredient: milk, qty: 200, unit: ml, note: { mk: топло, en: warm } }
+      - { ingredient: butter, qty: 3, unit: tbsp }
+      - { ingredient: salt, unit: to-taste }
+
+steps:
+  - text:
+      mk: Излупи ги компирите, исечи ги на еднакви парчиња и стави ги во ладна посолена вода.
+      en: Peel the potatoes, cut them into even pieces and put them in cold salted water.
+  - text:
+      mk: Вари додека не омекнат — вилушката треба лесно да влегува.
+      en: Boil until tender — a fork should slide in easily.
+    timer: 20
+  - text:
+      mk: Исцеди ги и врати ги на тивок оган една минута за да испари водата.
+      en: Drain and return to low heat for a minute to steam off the water.
+    timer: 1
+  - text:
+      mk: Изгмечи ги со путерот, па постепено додавај топло млеко додека не стане мазно и кремасто. Посоли.
+      en: Mash with the butter, then add the warm milk gradually until smooth and creamy. Season.
+
+variants:
+  - id: sour-cream
+    name: { mk: Со павлака, en: With sour cream }
+    note:
+      mk: Замени дел од млекото со две лажици павлака — уште покремасто.
+      en: Replace some of the milk with two spoons of sour cream — even creamier.
+    add:
+      - { ingredient: sour-cream, qty: 2, unit: tbsp }
+  - id: carrot
+    name: { mk: Со морков, en: With carrot }
+    note:
+      mk: Свари два моркова заедно со компирите и изгмечи ги заедно — послатко и пошарено, за децата.
+      en: Boil two carrots with the potatoes and mash together — sweeter and more colourful, for the kids.
+    add:
+      - { ingredient: carrot, qty: 2, unit: pc }
+
+tips:
+  mk: Млекото секогаш топло — ладното го прави пирето лепливо. Не миксај со блендер, туку гмечи.
+  en: Always warm the milk — cold milk makes the mash gluey. Mash by hand, don't blend.

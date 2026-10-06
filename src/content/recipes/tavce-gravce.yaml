@@ -18,7 +18,7 @@ source:
 prepAhead:
   mk: Потопи го гравот во ладна вода вечерта пред готвење.
   en: Soak the beans in cold water the night before.
-sides: [salata-od-zelka, salata-pecheni-piperki, shopska-salata]
+sides: [salata-od-zelka, salata-od-cveklo, salata-pecheni-piperki, shopska-salata]
 
 ingredients:
   - title: { mk: Грав, en: Beans }

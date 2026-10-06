@@ -1,0 +1,58 @@
+title:
+  mk: Ориз со путер
+  en: Buttered rice
+summary:
+  mk: Растресит ориз со путер — едноставен гарнир за месо, риба и ќофтиња во сос.
+  en: Fluffy rice with butter — a simple side for meat, fish and meatballs in sauce.
+category: side
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 2, cook: 20, rest: 5 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+
+ingredients:
+  - items:
+      - { ingredient: rice, qty: 250, unit: g }
+      - { ingredient: water, qty: 500, unit: ml, note: { mk: врела, en: boiling } }
+      - { ingredient: butter, qty: 1, unit: tbsp }
+      - { ingredient: salt, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Измиј го оризот во цедалка додека водата не стане бистра.
+      en: Rinse the rice in a sieve until the water runs clear.
+  - text:
+      mk: Во тенџере растопи го путерот и пропржи го оризот 1–2 минути мешајќи.
+      en: Melt the butter in a pot and toast the rice for 1–2 minutes, stirring.
+    timer: 2
+  - text:
+      mk: Налеј ја врелата вода, посоли, покриј и вари на најтивок оган без мешање додека водата не се впие.
+      en: Pour in the boiling water, salt, cover and cook on the lowest heat without stirring until the water is absorbed.
+    timer: 15
+  - text:
+      mk: Тргни од оган и остави покриено 5 минути, па растреси го со вилушка.
+      en: Take off the heat and leave covered for 5 minutes, then fluff with a fork.
+    timer: 5
+
+variants:
+  - id: vermicelli
+    name: { mk: Со фиде (пилав), en: With vermicelli (pilaf) }
+    note:
+      mk: Пред оризот, пропржи шака фиде во путерот додека не порумени — класичниот балкански пилав.
+      en: Before the rice, fry a handful of vermicelli in the butter until golden — the classic Balkan pilaf.
+    add:
+      - { ingredient: vermicelli, qty: 50, unit: g }
+  - id: vegetables
+    name: { mk: Со зеленчук, en: With vegetables }
+    note:
+      mk: Со оризот пропржи морков на ситни коцки и додај грашок — шарен ориз што децата го сакаат.
+      en: Fry diced carrot with the rice and add peas — colourful rice kids love.
+    add:
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: peas, qty: 100, unit: g }
+
+tips:
+  mk: Сооднос — еден дел ориз на два дела вода. Не го отворај капакот додека се вари.
+  en: Ratio — one part rice to two parts water. Don't lift the lid while it cooks.

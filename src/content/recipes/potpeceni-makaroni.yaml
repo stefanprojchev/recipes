@@ -1,0 +1,78 @@
+title:
+  mk: Потпечени макарони со сирење
+  en: Baked macaroni with white cheese
+summary:
+  mk: Сварени макарони измешани со јајца, млеко и бело сирење, потпечени до златна кора — омилен македонски појадок.
+  en: Boiled macaroni mixed with eggs, milk and white cheese, baked to a golden crust — a Macedonian breakfast favourite.
+category: breakfast
+meals: [breakfast, lunch]
+servings: 4
+time: { prep: 10, cook: 40 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D0%BF%D0%BE%D1%82%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8-%D0%BC%D0%B0%D0%BA%D0%B0%D1%80%D0%BE%D0%BD%D0%B8-%D1%81%D0%BE-%D1%81%D0%B8%D1%80%D0%B5%D1%9A%D0%B5-2
+
+ingredients:
+  - items:
+      - { ingredient: macaroni, qty: 400, unit: g }
+      - { ingredient: egg, qty: 3, unit: pc }
+      - { ingredient: milk, qty: 250, unit: ml }
+      - { ingredient: feta-cheese, qty: 250, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: butter, qty: 2, unit: tbsp }
+      - { ingredient: salt, qty: 1, unit: pinch }
+      - { ingredient: yogurt, qty: 4, unit: glass, note: { mk: за сервирање, en: to serve }, optional: true }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C и подмачкај плех со путер.
+      en: Heat the oven to 200°C and butter a baking dish.
+  - text:
+      mk: Свари ги макароните во посолена вода, 2 минути помалку од упатството на пакувањето, и исцеди ги.
+      en: Boil the macaroni in salted water, 2 minutes less than the packet says, and drain.
+    timer: 8
+  - text:
+      mk: Во сад измати ги јајцата со млекото и прстофат сол, па вмешај го сирењето.
+      en: Whisk the eggs with the milk and a pinch of salt, then stir in the cheese.
+  - text:
+      mk: Измешај ги макароните со смесата, истури ги во плехот и одозгора стави парченца путер.
+      en: Mix the macaroni with the egg mixture, pour into the dish and dot the top with butter.
+  - text:
+      mk: Печи додека јајцата не се стегнат и одозгора не се фати златна, хрскава кора.
+      en: Bake until the eggs are set and the top is golden and crisp.
+    timer: 30
+  - text:
+      mk: Остави 5 минути, исечи на парчиња и служи со кисело млеко.
+      en: Rest for 5 minutes, cut into squares and serve with yogurt.
+    timer: 5
+
+variants:
+  - id: kashkaval
+    name: { mk: Со кашкавал, en: With kashkaval }
+    note:
+      mk: Одозгора поспи рендан кашкавал пред печење — се стопува во хрскава кора.
+      en: Sprinkle grated kashkaval over the top before baking — it melts into a crisp crust.
+    add:
+      - { ingredient: kashkaval, qty: 100, unit: g, note: { mk: изрендан, en: grated } }
+  - id: ham
+    name: { mk: Со шунка, en: With ham }
+    note:
+      mk: Вмешај шунка на ситни коцки во макароните — позаситно, за ручек. Не е вегетаријанско.
+      en: Stir diced ham into the macaroni — more filling, good for lunch. Not vegetarian.
+    add:
+      - { ingredient: ham, qty: 150, unit: g, note: { mk: на коцки, en: diced } }
+  - id: sour-cream
+    name: { mk: Со павлака и кисело млеко, en: With sour cream and yogurt }
+    note:
+      mk: Наместо млеко, чаша кисело млеко и две лажици павлака во смесата — покремаста и покисела.
+      en: Instead of milk, a glass of yogurt and two spoons of sour cream in the mixture — creamier and tangier.
+    add:
+      - { ingredient: yogurt, qty: 1, unit: glass, note: { mk: во смесата, en: in the mixture } }
+      - { ingredient: sour-cream, qty: 2, unit: tbsp }
+    remove: [milk]
+
+tips:
+  mk: Остатоците се одлични ладни за ужина. Може да се подготви вечерта и наутро само да се испече.
+  en: Leftovers are great cold as a snack. It can be assembled the night before and simply baked in the morning.

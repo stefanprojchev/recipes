@@ -1,0 +1,63 @@
+title:
+  mk: Печени пилешки бутчиња со компири
+  en: Roast chicken legs with potatoes
+summary:
+  mk: Хрскави пилешки бутчиња и компири печени заедно со лук, лимон и оригано — едноставен ручек на еден плех.
+  en: Crispy chicken legs and potatoes roasted together with garlic, lemon and oregano — a simple one-tray lunch.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 60 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [gluten-free]
+sides: [shopska-salata, salata-od-zelka, zelena-salata, taratur]
+
+ingredients:
+  - items:
+      - { ingredient: chicken-legs, qty: 1.2, unit: kg }
+      - { ingredient: potato, qty: 1, unit: kg, note: { mk: на кришки, en: in wedges } }
+      - { ingredient: garlic, qty: 4, unit: clove, note: { mk: згмечен, en: crushed } }
+      - { ingredient: lemon, qty: 1, unit: pc }
+      - { ingredient: olive-oil, qty: 4, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C.
+      en: Heat the oven to 200°C.
+  - text:
+      mk: Измешај маслиново масло, лук, сок од половина лимон, алева пиперка, оригано, сол и пипер и натри ги пилешкото и компирите.
+      en: Mix the olive oil, garlic, juice of half the lemon, paprika, oregano, salt and pepper and rub it over the chicken and potatoes.
+  - text:
+      mk: Нареди ги компирите во плех, а бутчињата со кожата нагоре меѓу нив. Додај кришки од другата половина лимон.
+      en: Spread the potatoes in a tray with the chicken legs skin-side up between them. Add the other half of the lemon in wedges.
+  - text:
+      mk: Печи, прелевајќи еднаш со сокот од плехот, додека кожата не стане хрскава, а компирите меки.
+      en: Roast, basting once with the pan juices, until the skin is crisp and the potatoes tender.
+    timer: 60
+
+variants:
+  - id: yogurt
+    name: { mk: Маринирани во кисело млеко, en: Yogurt-marinated }
+    note:
+      mk: Вечерта маринирај го пилешкото во кисело млеко со лук и алева пиперка — месото станува многу меко.
+      en: The evening before, marinate the chicken in yogurt with garlic and paprika — the meat turns very tender.
+    add:
+      - { ingredient: yogurt, qty: 1, unit: glass }
+  - id: vegetables
+    name: { mk: Со зеленчук, en: With vegetables }
+    note:
+      mk: Со компирите додај тиквичка, пиперка и кромид на крупни парчиња.
+      en: Add chunks of zucchini, pepper and onion with the potatoes.
+    add:
+      - { ingredient: zucchini, qty: 1, unit: pc }
+      - { ingredient: red-pepper, qty: 1, unit: pc }
+      - { ingredient: onion, qty: 1, unit: pc }
+
+tips:
+  mk: Кожата да е сува пред печење — така станува хрскава.
+  en: Pat the skin dry before roasting — that's what makes it crisp.

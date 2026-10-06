@@ -1,0 +1,69 @@
+title:
+  mk: Пилешко со ориз во рерна
+  en: Oven-baked chicken and rice
+summary:
+  mk: Пилешки бутчиња печени врз ориз со кромид и морков — ориз што ги впива соковите од месото, омилен кај децата.
+  en: Chicken legs baked over rice with onion and carrot — the rice soaks up the juices, a kids' favourite.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 15, cook: 60 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [gluten-free]
+source:
+  name: Бриф
+  url: https://www.brif.mk/pecheno-pileshko-so-oriz/
+sides: [shopska-salata, zelena-salata, taratur, salata-od-zelka]
+
+ingredients:
+  - items:
+      - { ingredient: chicken-legs, qty: 1, unit: kg }
+      - { ingredient: rice, qty: 300, unit: g, note: { mk: измиен, en: rinsed } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: carrot, qty: 1, unit: pc, note: { mk: на ситни коцки, en: finely diced } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 700, unit: ml, note: { mk: врела, en: boiling } }
+      - { ingredient: lemon, qty: 0.5, unit: pc }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Пилешкото натри го со сол, пипер, алева пиперка и малку масло.
+      en: Heat the oven to 200°C. Rub the chicken with salt, pepper, paprika and a little oil.
+  - text:
+      mk: Во длабок плех измешај ги оризот, кромидот, морковот, остатокот од маслото и малку сол.
+      en: In a deep tray mix the rice, onion, carrot, the rest of the oil and a little salt.
+  - text:
+      mk: Налеј ја врелата вода врз оризот и нареди ги бутчињата одозгора.
+      en: Pour the boiling water over the rice and arrange the chicken legs on top.
+  - text:
+      mk: Покриј со фолија и печи.
+      en: Cover with foil and bake.
+    timer: 35
+  - text:
+      mk: Откриј и печи додека пилешкото не порумени, а оризот не ја впие течноста. Искапи лимон пред сервирање.
+      en: Uncover and bake until the chicken is golden and the rice has absorbed the liquid. Squeeze over lemon before serving.
+    timer: 25
+
+variants:
+  - id: peas
+    name: { mk: Со грашок, en: With peas }
+    note:
+      mk: Вмешај грашок во оризот пред печење — шарено и пролетно.
+      en: Stir peas into the rice before baking — colourful and springlike.
+    add:
+      - { ingredient: peas, qty: 200, unit: g }
+  - id: mushrooms
+    name: { mk: Со печурки, en: With mushrooms }
+    note:
+      mk: Со кромидот додај печурки на листови — оризот станува ароматичен како рижото.
+      en: Add sliced mushrooms with the onion — the rice turns fragrant, almost like risotto.
+    add:
+      - { ingredient: mushrooms, qty: 250, unit: g }
+
+tips:
+  mk: Водата мора да е врела кога се налева — така оризот се вари рамномерно.
+  en: The water must be boiling when you pour it in — that way the rice cooks evenly.

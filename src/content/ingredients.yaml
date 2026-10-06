@@ -119,6 +119,12 @@ white-cabbage:
     en: { one: white cabbage, other: white cabbages }
   aisle: produce
   months: [9, 10, 11, 12, 1, 2, 3]
+beetroot:
+  name:
+    mk: { one: цвекло, other: цвекла }
+    en: { one: beetroot, other: beetroots }
+  aisle: produce
+  months: [9, 10, 11, 12, 1, 2, 3]
 peas:
   name: { mk: грашок, en: green peas }
   aisle: produce
@@ -171,6 +177,13 @@ pork:
 smoked-pork:
   name: { mk: чадено свинско месо, en: smoked pork }
   aisle: meat
+veal:
+  name: { mk: телешко месо, en: veal }
+  aisle: meat
+salmon:
+  name: { mk: лосос (филе), en: salmon fillet }
+  aisle: meat
+  store: supermarket
 ham:
   name: { mk: шунка, en: ham }
   aisle: meat
@@ -225,6 +238,9 @@ white-beans:
   aisle: dry
 lentils:
   name: { mk: леќа, en: brown lentils }
+  aisle: dry
+macaroni:
+  name: { mk: макарони, en: macaroni }
   aisle: dry
 rice:
   name: { mk: ориз, en: rice }
@@ -332,6 +348,12 @@ bay-leaf:
 savory:
   name: { mk: чубрица, en: dried savory }
   aisle: spices
+oregano:
+  name: { mk: оригано, en: dried oregano }
+  aisle: spices
+rosemary:
+  name: { mk: рузмарин, en: rosemary }
+  aisle: spices
 cumin:
   name: { mk: кимион, en: ground cumin }
   aisle: spices
@@ -353,6 +375,15 @@ canned-tomatoes:
   aisle: canned
 roasted-peppers:
   name: { mk: печени пиперки (тегла), en: roasted peppers (jar) }
+  aisle: canned
+sour-cabbage-head:
+  name:
+    mk: { one: главица кисела зелка, other: главици кисела зелка }
+    en: { one: head of sour cabbage, other: heads of sour cabbage }
+  aisle: canned
+  store: market
+vine-leaves:
+  name: { mk: лозови листови, en: vine leaves }
   aisle: canned
 tomato-paste:
   name: { mk: доматен концентрат, en: tomato paste }

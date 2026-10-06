@@ -1,0 +1,67 @@
+title:
+  mk: Свинско со праз
+  en: Pork with leeks
+summary:
+  mk: Пропржено свинско месо со многу праз и млад кромид, допечено во земјено тавче — старински зимски ручек.
+  en: Browned pork with plenty of leeks and spring onion, finished in a clay dish — an old-fashioned winter lunch.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 20, cook: 60 }
+difficulty: easy
+diet: [gluten-free]
+season: [autumn, winter]
+source:
+  name: Moirecepti
+  url: https://moirecepti.mk/post/%D1%81%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE-%D1%81%D0%BE-%D0%BF%D1%80%D0%B0%D0%B7
+sides: [salata-od-cveklo, salata-od-zelka, pire-od-kompiri]
+
+ingredients:
+  - items:
+      - { ingredient: pork, qty: 800, unit: g, note: { mk: вратина на коцки, en: diced neck } }
+      - { ingredient: leek, qty: 4, unit: pc, note: { mk: на колутчиња, en: sliced } }
+      - { ingredient: onion, qty: 1, unit: pc, note: { mk: сецкан, en: chopped } }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 300, unit: ml }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Во длабока тава на масло пропржи го месото на парчиња додека не порумени. Посоли и пиперосај.
+      en: Brown the pork in oil in a deep pan, in batches. Season with salt and pepper.
+    timer: 12
+  - text:
+      mk: Додај малку вода, покриј и динстај додека месото не омекне, дополнувајќи вода по потреба.
+      en: Add a little water, cover and braise until the meat is tender, topping up with water as needed.
+    timer: 30
+  - text:
+      mk: Додај ги празот и кромидот и пржи мешајќи додека празот не омекне и не се намали. Вмешај ја алевата пиперка.
+      en: Add the leeks and onion and cook, stirring, until the leeks soften and shrink. Stir in the paprika.
+    timer: 10
+  - text:
+      mk: Префрли во земјено тавче и допечи во рерна на 200°C додека одозгора не порумени.
+      en: Transfer to a clay dish and finish in the oven at 200°C until browned on top.
+    timer: 20
+
+variants:
+  - id: dried-peppers
+    name: { mk: Со суви пиперки, en: With dried peppers }
+    note:
+      mk: По старо — со празот додај неколку сушени црвени пиперки, кратко пропржени во маслото.
+      en: The old way — add a few dried red peppers with the leeks, briefly fried in the oil.
+    add:
+      - { ingredient: dried-red-pepper, qty: 4, unit: pc }
+  - id: chicken
+    name: { mk: Со пилешко, en: With chicken }
+    note:
+      mk: Пилешки бутчиња без коска наместо свинско — динстај само 15 минути пред празот.
+      en: Boneless chicken legs instead of pork — braise only 15 minutes before adding the leeks.
+    add:
+      - { ingredient: chicken-legs, qty: 800, unit: g }
+    remove: [pork]
+
+tips:
+  mk: Празот добро измиј го — меѓу листовите често има земја. Најдобар е по првиот мраз.
+  en: Wash the leeks well — soil often hides between the layers. They're best after the first frost.

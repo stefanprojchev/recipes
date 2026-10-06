@@ -1,0 +1,73 @@
+title:
+  mk: Печено телешко со компири
+  en: Roast veal with potatoes
+summary:
+  mk: Телешко месо печено бавно над компири и кромид, прво покриено, па до румено — неделен ручек за цело семејство.
+  en: Veal roasted slowly over potatoes and onion, first covered and then until golden — a Sunday lunch for the whole family.
+category: main
+meals: [lunch, dinner]
+servings: 6
+time: { prep: 20, cook: 90, rest: 10 }
+difficulty: medium
+tags: [kid-friendly]
+diet: [gluten-free]
+source:
+  name: Gotvi.mk
+  url: http://gotvi.mk/2020/05/02/telesko-pecenje-so-kompiri/
+sides: [shopska-salata, salata-od-zelka, zelena-salata]
+
+ingredients:
+  - items:
+      - { ingredient: veal, qty: 1.5, unit: kg, note: { mk: ребра или плешка, en: ribs or shoulder } }
+      - { ingredient: potato, qty: 1.5, unit: kg, note: { mk: на четвртини, en: quartered } }
+      - { ingredient: onion, qty: 2, unit: pc, note: { mk: на четвртини, en: quartered } }
+      - { ingredient: garlic, qty: 4, unit: clove }
+      - { ingredient: butter, qty: 3, unit: tbsp }
+      - { ingredient: sunflower-oil, qty: 3, unit: tbsp }
+      - { ingredient: rosemary, qty: 1, unit: tsp }
+      - { ingredient: water, qty: 300, unit: ml }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+      - { ingredient: parsley, qty: 0.5, unit: bunch }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Месото избриши го, натри го со сол, пипер, рузмарин и лук.
+      en: Heat the oven to 200°C. Pat the meat dry and rub it with salt, pepper, rosemary and garlic.
+  - text:
+      mk: Во подмачкан плех нареди ги компирите и кромидот, посоли ги и прелиј со маслото. Стави го месото одозгора, со парченца путер.
+      en: Put the potatoes and onion in an oiled tray, season and drizzle with the oil. Set the meat on top with dots of butter.
+  - text:
+      mk: Налеј ја водата во плехот, покриј со фолија и печи.
+      en: Pour the water into the tray, cover with foil and roast.
+    timer: 60
+  - text:
+      mk: Тргни ја фолијата, прелиј го месото со сокот од плехот и печи откриено додека месото и компирите не порумената.
+      en: Remove the foil, baste the meat with the pan juices and roast uncovered until the meat and potatoes are browned.
+    timer: 30
+  - text:
+      mk: Остави го месото 10 минути да одмори пред сечење, поспи со магдонос и служи со компирите.
+      en: Rest the meat for 10 minutes before carving, sprinkle with parsley and serve with the potatoes.
+    timer: 10
+
+variants:
+  - id: pork
+    name: { mk: Свинско печење, en: Roast pork }
+    note:
+      mk: Наместо телешко, свинска плешка или вратина — исто време на печење, уште по 15 минути откриено за хрскава кора.
+      en: Pork shoulder or neck instead of veal — same roasting time, plus 15 minutes uncovered for a crisp crust.
+    add:
+      - { ingredient: pork, qty: 1.5, unit: kg }
+    remove: [veal]
+  - id: vegetables
+    name: { mk: Со моркови и печурки, en: With carrots and mushrooms }
+    note:
+      mk: Со компирите нареди моркови на подолги парчиња и цели печурки — се печат во сокот од месото.
+      en: Add carrots in long pieces and whole mushrooms with the potatoes — they roast in the meat juices.
+    add:
+      - { ingredient: carrot, qty: 3, unit: pc }
+      - { ingredient: mushrooms, qty: 300, unit: g }
+
+tips:
+  mk: Месото извади го од фрижидер половина час пред печење — се пече порамномерно.
+  en: Take the meat out of the fridge half an hour before roasting — it cooks more evenly.

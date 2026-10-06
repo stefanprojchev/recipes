@@ -1,0 +1,63 @@
+title:
+  mk: Лосос во рерна со гарнир
+  en: Baked salmon with a side
+summary:
+  mk: Сочен лосос печен со лимон, лук и копар за 15 минути — служен со компири, ориз или зелена салата.
+  en: Juicy salmon baked with lemon, garlic and dill in 15 minutes — served with potatoes, rice or green salad.
+category: main
+meals: [lunch, dinner]
+servings: 4
+time: { prep: 10, cook: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [gluten-free]
+source:
+  name: The Forked Spoon
+  url: https://theforkedspoon.com/best-baked-salmon/
+sides: [kompiri-vo-rerna, oriz-so-puter, zelena-salata, shopska-salata]
+
+ingredients:
+  - items:
+      - { ingredient: salmon, qty: 600, unit: g, note: { mk: 4 филета, en: 4 fillets } }
+      - { ingredient: lemon, qty: 1, unit: pc }
+      - { ingredient: garlic, qty: 2, unit: clove, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp }
+      - { ingredient: butter, qty: 1, unit: tbsp, note: { mk: растопен, en: melted } }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Исуши ги филетата со хартија и нареди ги со кожата надолу на плех со хартија за печење.
+      en: Heat the oven to 200°C. Pat the fillets dry and lay them skin-side down on a lined tray.
+  - text:
+      mk: Измешај маслиново масло, путер, лук, сок од половина лимон, сол и пипер и премачкај ги филетата.
+      en: Mix the olive oil, butter, garlic, juice of half the lemon, salt and pepper and brush over the fillets.
+  - text:
+      mk: Нареди тенки тркалца лимон врз рибата и печи додека месото не почне лесно да се лупи со вилушка.
+      en: Lay thin lemon slices on the fish and bake until it flakes easily with a fork.
+    timer: 13
+  - text:
+      mk: Поспи со сецкан копар и служи веднаш со гарнир по избор.
+      en: Sprinkle with chopped dill and serve straight away with a side of choice.
+
+variants:
+  - id: tray-vegetables
+    name: { mk: Со зеленчук на плех, en: With tray vegetables }
+    note:
+      mk: Тиквичка, пиперка и чери домати на парчиња печи ги 15 минути, па додај го лососот на истиот плех за уште 13 минути — цел ручек на еден плех.
+      en: Roast chunks of zucchini, pepper and cherry tomatoes for 15 minutes, then add the salmon to the same tray for 13 more — a whole lunch on one tray.
+    add:
+      - { ingredient: zucchini, qty: 1, unit: pc }
+      - { ingredient: red-pepper, qty: 1, unit: pc }
+      - { ingredient: cherry-tomato, qty: 12, unit: pc }
+  - id: foil
+    name: { mk: Во фолија, en: In foil parcels }
+    note:
+      mk: Секое филе завиткај го во фолија со лимон и копар и печи 15 минути — останува многу сочно, децата го сакаат.
+      en: Wrap each fillet in foil with lemon and dill and bake 15 minutes — stays very juicy, kids love it.
+
+tips:
+  mk: Не го препекувај — најсочен е кога средината е едвај непроѕирна. Без коски за децата — провери со прсти.
+  en: Don't overbake — it's juiciest when the centre is barely opaque. For the kids, check for bones with your fingers.
