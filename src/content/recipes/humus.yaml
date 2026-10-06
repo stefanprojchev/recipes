@@ -1,0 +1,82 @@
+title:
+  mk: Хумус со зеленчук
+  en: Hummus with vegetable sticks
+summary:
+  mk: Кремаст домашен хумус од наут, тахини и лимон, со стапчиња морков, краставица и пиперка за мачкање.
+  en: Creamy homemade hummus with chickpeas, tahini and lemon, served with carrot, cucumber and pepper sticks for dipping.
+category: snack
+meals: [snack]
+servings: 4
+time: { prep: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+source:
+  name: Inspired Taste
+  url: https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/
+
+ingredients:
+  - title: { mk: Хумус, en: Hummus }
+    items:
+      - { ingredient: chickpeas, qty: 1, unit: pc, note: { mk: исцеден (зачувај ја течноста), en: drained (keep the liquid) } }
+      - { ingredient: tahini, qty: 4, unit: tbsp, note: { mk: добро измешано, en: well stirred } }
+      - { ingredient: lemon, qty: 1, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: garlic, qty: 1, unit: clove, note: { mk: мал, en: small } }
+      - { ingredient: olive-oil, qty: 2, unit: tbsp, note: { mk: и малку за прелив, en: plus a drizzle to serve } }
+      - { ingredient: cumin, qty: 0.5, unit: tsp }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: ground-paprika, qty: 1, unit: pinch, note: { mk: за одозгора, en: to sprinkle } }
+  - title: { mk: За мачкање, en: To dip }
+    items:
+      - { ingredient: carrot, qty: 2, unit: pc }
+      - { ingredient: cucumber, qty: 1, unit: pc }
+      - { ingredient: red-pepper, qty: 1, unit: pc }
+
+steps:
+  - text:
+      mk: Во блендер (сецкалка) мати го тахинито со лимоновиот сок 1–2 минути, додека не стане густо и светло. Тоа е тајната за мек хумус.
+      en: In a food processor, whip the tahini with the lemon juice for 1–2 minutes until thick and pale. That's the secret to fluffy hummus.
+    timer: 2
+  - text:
+      mk: Додај маслиново масло, лук, ким и сол и мати уште една минута.
+      en: Add the olive oil, garlic, cumin and salt and process for another minute.
+  - text:
+      mk: Додај половина наут и мати една минута, па остатокот и мати уште 1–2 минути, стружејќи ги ѕидовите.
+      en: Add half the chickpeas and process for a minute, then the rest and process 1–2 minutes more, scraping down the sides.
+  - text:
+      mk: Додека машината работи, налевај 2–3 лажици ладна вода (или течноста од наутот) додека не стане кремаст. Проби и дотерај со сол и лимон.
+      en: With the machine running, pour in 2–3 tablespoons of cold water (or the chickpea liquid) until creamy. Taste and adjust salt and lemon.
+  - text:
+      mk: Исечи го зеленчукот на стапчиња. Хумусот служи го со малку маслиново масло и алев пипер одозгора.
+      en: Cut the vegetables into sticks. Serve the hummus with a drizzle of olive oil and a pinch of paprika on top.
+
+variants:
+  - id: beetroot
+    name: { mk: Розов со цвекло, en: Pink beetroot }
+    note:
+      mk: Додај едно варено цвекло со наутот — децата го сакаат поради бојата.
+      en: Blend in one cooked beetroot with the chickpeas — kids love the colour.
+    add:
+      - { ingredient: beetroot, qty: 1, unit: pc, note: { mk: сварено, en: cooked } }
+  - id: roasted-pepper
+    name: { mk: Со печени пиперки, en: Roasted pepper }
+    note:
+      mk: Две печени пиперки од тегла (или домашни) измати со наутот — посладок и црвен хумус.
+      en: Blend two roasted peppers (from a jar or homemade) with the chickpeas — sweeter and red.
+    add:
+      - { ingredient: roasted-peppers, qty: 2, unit: pc }
+  - id: green
+    name: { mk: Зелен со спанаќ и копар, en: Green with spinach and dill }
+    note:
+      mk: Шака свеж спанаќ и малку копар измати на крајот.
+      en: Blend in a handful of fresh spinach and some dill at the end.
+    add:
+      - { ingredient: spinach, qty: 40, unit: g }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+
+storage:
+  mk: Во затворена кутија во фрижидер стои до 5 дена.
+  en: Keeps up to 5 days in a closed container in the fridge.
+tips:
+  mk: Ако нема тахини, стави лажица путер од кикирики или уште малку маслиново масло. Служи го и со интегрален леб или крекери.
+  en: No tahini? Use a spoon of peanut butter or a little more olive oil. Also good with wholegrain bread or crackers.

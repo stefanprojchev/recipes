@@ -1,0 +1,70 @@
+title:
+  mk: Енергетски топчиња
+  en: No-bake energy balls
+summary:
+  mk: Топчиња од овес, путер од кикирики и мед, без печење — 20 парчиња за цела недела ужини.
+  en: Oat, peanut butter and honey balls, no baking — 20 pieces for a week of snacks.
+category: snack
+meals: [snack, breakfast]
+servings: 10
+time: { prep: 15, rest: 60 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/energy-balls/
+
+ingredients:
+  - items:
+      - { ingredient: oats, qty: 135, unit: g }
+      - { ingredient: peanut-butter, qty: 250, unit: g, note: { mk: природен, en: natural } }
+      - { ingredient: honey, qty: 4, unit: tbsp }
+      - { ingredient: chia-seeds, qty: 2, unit: tbsp }
+      - { ingredient: vanilla-sugar, qty: 1, unit: pack }
+      - { ingredient: dark-chocolate, qty: 40, unit: g, note: { mk: ситно сецкана, en: finely chopped } }
+      - { ingredient: coconut-flakes, qty: 2, unit: tbsp }
+      - { ingredient: salt, qty: 1, unit: pinch }
+
+steps:
+  - text:
+      mk: Во голем сад измешај ги сите состојки додека не се поврзат. Смесата треба да е густа; ако е сува, додавај по половина лажичка вода.
+      en: In a large bowl, mix everything until combined. The mixture should be thick; if dry, add water half a teaspoon at a time.
+  - text:
+      mk: Со лажица земај по малку смеса и тркалај 20 топчиња со влажни раце.
+      en: Scoop spoonfuls of the mixture and roll into 20 balls with damp hands.
+  - text:
+      mk: Нареди ги на чинија и стави ги во фрижидер да се стегнат.
+      en: Arrange on a plate and chill in the fridge until firm.
+    timer: 60
+
+variants:
+  - id: cocoa-coconut
+    name: { mk: Какао и кокос, en: Cocoa and coconut }
+    note:
+      mk: Наместо чоколада — две лажици какао во смесата, а топчињата извалкај ги во кокос.
+      en: Instead of chocolate — two spoons of cocoa in the mix, then roll the balls in coconut.
+    add:
+      - { ingredient: cocoa, qty: 2, unit: tbsp }
+    remove: [dark-chocolate]
+  - id: raisin-cinnamon
+    name: { mk: Суво грозје и цимет, en: Raisin and cinnamon }
+    note:
+      mk: Вкус на овесни колачиња — суво грозје и цимет наместо чоколада и кокос.
+      en: Oatmeal-cookie flavour — raisins and cinnamon instead of chocolate and coconut.
+    add:
+      - { ingredient: raisins, qty: 50, unit: g }
+      - { ingredient: cinnamon, qty: 1, unit: tsp }
+    remove: [dark-chocolate, coconut-flakes]
+  - id: tahini
+    name: { mk: Без кикирики (тахини), en: Peanut-free (tahini) }
+    note:
+      mk: Тахини наместо путер од кикирики — за деца што не смеат кикирики или за промена. Ако е ретко, додај малку повеќе овес.
+      en: Tahini instead of peanut butter — for kids who can't have peanuts, or for a change. If runny, add a little more oats.
+    add:
+      - { ingredient: tahini, qty: 200, unit: g }
+    remove: [peanut-butter]
+
+storage:
+  mk: Во фрижидер до една недела, во замрзнувач до 3 месеци.
+  en: Up to a week in the fridge, up to 3 months in the freezer.

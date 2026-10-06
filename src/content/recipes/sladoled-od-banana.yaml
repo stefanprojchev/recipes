@@ -1,0 +1,70 @@
+title:
+  mk: Сладолед од банана
+  en: Banana "nice cream"
+summary:
+  mk: Само замрзнати банани измиксани во кремаст сладолед — без шеќер, без млеко, готов за 5 минути.
+  en: Just frozen bananas blended into creamy soft-serve — no sugar, no dairy, ready in 5 minutes.
+category: dessert
+meals: [snack]
+servings: 3
+time: { prep: 5 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+source:
+  name: Feel Good Foodie
+  url: https://feelgoodfoodie.net/recipe/nice-cream/
+prepAhead:
+  mk: Исечи ги бананите на тркалца и замрзни ги најмалку 4 часа (најдобро од претходниот ден).
+  en: Slice the bananas and freeze for at least 4 hours (ideally the day before).
+
+ingredients:
+  - items:
+      - { ingredient: banana, qty: 3, unit: pc, note: { mk: "зрели, замрзнати на тркалца", en: "ripe, sliced and frozen" } }
+
+steps:
+  - text:
+      mk: Замрзнатите банани остави ги 2–3 минути на собна температура.
+      en: Leave the frozen banana slices at room temperature for 2–3 minutes.
+  - text:
+      mk: Мати ги во сецкалка (или моќен блендер), стружејќи ги ѕидовите. Прво ќе се изронат, па ќе станат како крем — 3 до 5 минути.
+      en: Blend in a food processor (or a powerful blender), scraping down the sides. They'll crumble first, then turn creamy — 3 to 5 minutes.
+    timer: 4
+  - text:
+      mk: Служи веднаш како мек сладолед, или стави го во кутија во замрзнувач за да се стегне.
+      en: Serve straight away as soft-serve, or put it in a tub in the freezer to firm up.
+
+variants:
+  - id: chocolate
+    name: { mk: Чоколаден, en: Chocolate }
+    note:
+      mk: Две лажици какао со бананите; ако не е доволно сладок, лажичка мед.
+      en: Two spoons of cocoa with the bananas; a teaspoon of honey if it isn't sweet enough.
+    add:
+      - { ingredient: cocoa, qty: 2, unit: tbsp }
+  - id: peanut-butter
+    name: { mk: Со путер од кикирики, en: Peanut butter }
+    note:
+      mk: По една лажица путер од кикирики на банана.
+      en: One spoon of peanut butter per banana.
+    add:
+      - { ingredient: peanut-butter, qty: 3, unit: tbsp }
+  - id: berries
+    name: { mk: Со јагоди или шумско овошје, en: Strawberry or berry }
+    note:
+      mk: Замрзнати јагоди или шумско овошје со бананите — розов и освежителен.
+      en: Frozen strawberries or berries with the bananas — pink and refreshing.
+    add:
+      - { ingredient: frozen-berries, qty: 150, unit: g }
+  - id: choco-peanut
+    name: { mk: Чоколадо и кикирики, en: Chocolate peanut butter }
+    note:
+      mk: И какао и путер од кикирики — најомилениот кај децата.
+      en: Both cocoa and peanut butter — the kids' favourite.
+    add:
+      - { ingredient: cocoa, qty: 2, unit: tbsp }
+      - { ingredient: peanut-butter, qty: 3, unit: tbsp }
+
+tips:
+  mk: Најдобри се банани со темни точки — тие се најслатки. Ако машината се мачи, додај лажица млеко.
+  en: Bananas with dark spots are sweetest. If the machine struggles, add a spoon of milk.

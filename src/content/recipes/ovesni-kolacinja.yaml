@@ -1,0 +1,78 @@
+title:
+  mk: Овесни колачиња со банана
+  en: Banana oatmeal cookies
+summary:
+  mk: Колачиња од само три состојки — банана, овес и ореви. Без шеќер, без јајца, без брашно.
+  en: Three-ingredient cookies — banana, oats and walnuts. No sugar, no eggs, no flour.
+category: dessert
+meals: [snack, breakfast]
+servings: 8
+time: { prep: 10, cook: 15 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting]
+source:
+  name: Skinnytaste
+  url: https://www.skinnytaste.com/healthy-cookies/
+
+ingredients:
+  - items:
+      - { ingredient: banana, qty: 2, unit: pc, note: { mk: "многу зрели, згмечени", en: "very ripe, mashed" } }
+      - { ingredient: oats, qty: 90, unit: g, note: { mk: ситни, en: quick oats } }
+      - { ingredient: walnuts, qty: 30, unit: g, note: { mk: скршени, en: crushed } }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 180°C и обложи плех со хартија за печење.
+      en: Heat the oven to 180°C and line a tray with baking paper.
+  - text:
+      mk: Измешај ги згмечените банани со овесот, па вмешај ги оревите.
+      en: Mix the mashed bananas with the oats, then fold in the walnuts.
+  - text:
+      mk: Нареди 16 купчиња од по една лажица и малку израмни ги — колачињата не се шират.
+      en: Drop 16 tablespoon mounds and flatten them slightly — the cookies don't spread.
+  - text:
+      mk: Печи додека рабовите не порумени.
+      en: Bake until golden at the edges.
+    timer: 15
+
+variants:
+  - id: chocolate
+    name: { mk: Со чоколада, en: Chocolate chip }
+    note:
+      mk: Сецкана темна чоколада наместо ореви.
+      en: Chopped dark chocolate instead of walnuts.
+    add:
+      - { ingredient: dark-chocolate, qty: 30, unit: g }
+    remove: [walnuts]
+  - id: raisin-cinnamon
+    name: { mk: Суво грозје и цимет, en: Raisin and cinnamon }
+    note:
+      mk: Суво грозје и цимет наместо ореви.
+      en: Raisins and cinnamon instead of walnuts.
+    add:
+      - { ingredient: raisins, qty: 40, unit: g }
+      - { ingredient: cinnamon, qty: 0.5, unit: tsp }
+    remove: [walnuts]
+  - id: peanut-butter
+    name: { mk: Со путер од кикирики, en: Peanut butter }
+    note:
+      mk: Две лажици путер од кикирики во смесата — позаситни, повеќе протеини.
+      en: Two spoons of peanut butter in the mix — more filling, more protein.
+    add:
+      - { ingredient: peanut-butter, qty: 2, unit: tbsp }
+  - id: coconut
+    name: { mk: Со кокос, en: Coconut }
+    note:
+      mk: Кокосово брашно наместо ореви и малку одозгора.
+      en: Desiccated coconut instead of walnuts, plus a little on top.
+    add:
+      - { ingredient: coconut-flakes, qty: 3, unit: tbsp }
+    remove: [walnuts]
+
+storage:
+  mk: Во кутија во фрижидер 3–4 дена; може и замрзнати.
+  en: In a container in the fridge for 3–4 days; they freeze well.
+tips:
+  mk: Бананите мора да се многу зрели — тие се единствениот засладувач.
+  en: The bananas must be very ripe — they are the only sweetener.

@@ -1,0 +1,93 @@
+title:
+  mk: Мафини со тиквички и сирење
+  en: Zucchini and feta muffins
+summary:
+  mk: Солени мафини без брашно — тиквички, сирење и свежи билки поврзани со јајца. Одлична ужина топла или ладна.
+  en: Savoury flourless muffins — zucchini, white cheese and fresh herbs bound with eggs. Great warm or cold as a snack.
+category: snack
+meals: [snack, breakfast]
+servings: 6
+time: { prep: 20, cook: 35 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+season: [summer, autumn]
+source:
+  name: OliveTomato
+  url: https://www.olivetomato.com/savory-greek-style-zucchini-and-feta-muffins-with-greek-yogurt-dip/
+
+ingredients:
+  - items:
+      - { ingredient: zucchini, qty: 3, unit: pc, note: { mk: "средни, рендани со лушпата", en: "medium, grated with skin" } }
+      - { ingredient: onion, qty: 0.5, unit: pc, note: { mk: ситно сецкан, en: finely chopped } }
+      - { ingredient: egg, qty: 2, unit: pc }
+      - { ingredient: feta-cheese, qty: 100, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: parmesan, qty: 20, unit: g, note: { mk: изрендан, en: grated } }
+      - { ingredient: parsley, qty: 0.25, unit: bunch }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+      - { ingredient: dried-mint, qty: 1, unit: tsp }
+      - { ingredient: breadcrumbs, qty: 50, unit: g }
+      - { ingredient: olive-oil, qty: 1, unit: tbsp, note: { mk: и за калапот, en: plus some for the tin } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Калап за 12 мафини обложи со корпички и намачкај ги со малку масло.
+      en: Heat the oven to 200°C. Line a 12-hole muffin tin with cases and brush them with a little oil.
+  - text:
+      mk: Тиквичките малку посоли ги и остави ги да пуштат вода.
+      en: Lightly salt the grated zucchini and let it release its water.
+    timer: 10
+  - text:
+      mk: Исцеди ги многу добро со раце или во крпа.
+      en: Squeeze them very well by hand or in a towel.
+  - text:
+      mk: Во сад измати ги јајцата, додај сирење, кромид, ситно сецканите билки, нана, пипер и маслиново масло, па презлата. Вмешај ги тиквичките.
+      en: Beat the eggs in a bowl, add the cheese, onion, chopped herbs, mint, pepper and olive oil, then the breadcrumbs. Fold in the zucchini.
+  - text:
+      mk: Подели ја смесата во 12 корпички и поспи ги со пармезан.
+      en: Divide the mixture between the 12 cases and sprinkle with parmesan.
+  - text:
+      mk: Печи додека не порумени однадвор, а внатре останат меки.
+      en: Bake until golden outside and still soft inside.
+    timer: 32
+
+variants:
+  - id: carrot
+    name: { mk: Со морков, en: With carrot }
+    note:
+      mk: Еден рендан морков со тиквичките — побојни и послатки за децата.
+      en: One grated carrot with the zucchini — more colourful and sweeter for the kids.
+    add:
+      - { ingredient: carrot, qty: 1, unit: pc }
+  - id: spinach
+    name: { mk: Со спанаќ, en: With spinach }
+    note:
+      mk: Сецкан свеж спанаќ наместо копарот — во пролет кога нема тиквички, стави 300 г спанаќ наместо нив.
+      en: Chopped fresh spinach instead of the dill — in spring when zucchini isn't around, use 300 g spinach instead of it.
+    add:
+      - { ingredient: spinach, qty: 100, unit: g }
+    remove: [dill]
+  - id: oats
+    name: { mk: Со овес наместо презла, en: Oats instead of breadcrumbs }
+    note:
+      mk: Ситни овесни снегулки наместо презла — повеќе влакна, а без глутен ако овесот е безглутенски.
+      en: Fine oats instead of breadcrumbs — more fibre, and gluten-free if the oats are.
+    add:
+      - { ingredient: oats, qty: 50, unit: g }
+    remove: [breadcrumbs]
+  - id: ham
+    name: { mk: Со шунка, en: With ham }
+    note:
+      mk: Сецкана шунка во смесата — омилено кај децата.
+      en: Chopped ham in the mix — a kids' favourite.
+    add:
+      - { ingredient: ham, qty: 80, unit: g }
+
+storage:
+  mk: Во фрижидер до 3 дена; затопли ги кратко во рерна. Може и замрзнати.
+  en: Up to 3 days in the fridge; warm briefly in the oven. They freeze well too.
+tips:
+  mk: Служи ги со таратур или цедено кисело млеко со лук.
+  en: Serve with taratur or strained yogurt with garlic.

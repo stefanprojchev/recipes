@@ -1,0 +1,94 @@
+title:
+  mk: Банана леб со овес
+  en: Oatmeal banana bread
+summary:
+  mk: Мек банана леб со интегрално брашно, овес и јогурт, засладен само со зрели банани и мед — без бел шеќер.
+  en: Soft banana bread with wholemeal flour, oats and yogurt, sweetened only with ripe bananas and honey — no white sugar.
+category: dessert
+meals: [snack, breakfast]
+servings: 10
+time: { prep: 20, cook: 70, rest: 30 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+source:
+  name: Well Plated
+  url: https://www.wellplated.com/oatmeal-banana-bread/
+
+ingredients:
+  - title: { mk: Суви состојки, en: Dry }
+    items:
+      - { ingredient: oats, qty: 140, unit: g, note: { mk: и 1 лажица за одозгора, en: plus 1 tbsp for the top } }
+      - { ingredient: flour, qty: 120, unit: g, note: { mk: интегрално, en: wholemeal } }
+      - { ingredient: baking-soda, qty: 1, unit: tsp }
+      - { ingredient: baking-powder, qty: 0.25, unit: tsp }
+      - { ingredient: cinnamon, qty: 0.5, unit: tsp }
+      - { ingredient: salt, qty: 0.25, unit: tsp }
+  - title: { mk: Влажни состојки, en: Wet }
+    items:
+      - { ingredient: banana, qty: 4, unit: pc, note: { mk: "многу зрели, згмечени", en: "very ripe, mashed" } }
+      - { ingredient: honey, qty: 8, unit: tbsp }
+      - { ingredient: butter, qty: 55, unit: g, note: { mk: стопен, en: melted } }
+      - { ingredient: milk, qty: 60, unit: ml }
+      - { ingredient: strained-yogurt, qty: 3, unit: tbsp }
+      - { ingredient: egg, qty: 2, unit: pc }
+      - { ingredient: vanilla-sugar, qty: 1, unit: pack }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 175°C. Овесот рашири го на плех и запечи го додека не замириса и малку не порумени.
+      en: Heat the oven to 175°C. Spread the oats on a tray and toast until fragrant and lightly golden.
+    timer: 9
+  - text:
+      mk: Калап за леб (околу 23×13 см) намачкај со путер и обложи со хартија за печење.
+      en: Butter a loaf tin (about 23×13 cm) and line it with baking paper.
+  - text:
+      mk: Во сад измешај го брашното, содата, прашокот за печење, циметот, солта и запечениот овес (без лажицата за одозгора).
+      en: In a bowl, mix the flour, baking soda, baking powder, cinnamon, salt and toasted oats (minus the spoon for the top).
+  - text:
+      mk: Во друг сад измешај ги бананите, медот, путерот, млекото, јогуртот, јајцата и ванилинот.
+      en: In another bowl, mix the bananas, honey, butter, milk, yogurt, eggs and vanilla.
+  - text:
+      mk: Вмешај ги сувите состојки во влажните само додека не исчезне брашното — не мешај премногу. Истури во калапот и поспи со овес.
+      en: Fold the dry ingredients into the wet just until no flour shows — don't overmix. Pour into the tin and sprinkle with oats.
+  - text:
+      mk: Печи 30 минути, па покриј лабаво со фолија за да не изгори одозгора.
+      en: Bake 30 minutes, then cover loosely with foil so the top doesn't burn.
+    timer: 30
+  - text:
+      mk: Печи уште додека чепкалка забодена во средината не излезе сува.
+      en: Bake until a skewer in the middle comes out clean.
+    timer: 40
+  - text:
+      mk: Остави го 10 минути во калапот, па извади го и олади го целосно пред сечење.
+      en: Leave 10 minutes in the tin, then lift out and cool completely before slicing.
+
+variants:
+  - id: walnuts
+    name: { mk: Со ореви, en: With walnuts }
+    note:
+      mk: Грубо сецкани ореви вмешани на крајот.
+      en: Roughly chopped walnuts folded in at the end.
+    add:
+      - { ingredient: walnuts, qty: 60, unit: g }
+  - id: chocolate
+    name: { mk: Со темна чоколада, en: With dark chocolate }
+    note:
+      mk: Сецкана темна чоколада во тестото и малку одозгора.
+      en: Chopped dark chocolate in the batter and a little on top.
+    add:
+      - { ingredient: dark-chocolate, qty: 80, unit: g }
+  - id: blueberries
+    name: { mk: Со боровинки, en: With blueberries }
+    note:
+      mk: Свежи или замрзнати (незамрзнати) боровинки, претходно поспани со лажица брашно за да не потонат.
+      en: Fresh or frozen (unthawed) blueberries, tossed in a spoon of flour so they don't sink.
+    add:
+      - { ingredient: blueberries, qty: 120, unit: g }
+
+storage:
+  mk: Завиткан стои до 4 дена на собна температура, или замрзнат на парчиња до 3 месеци.
+  en: Wrapped, it keeps 4 days at room temperature, or frozen in slices for up to 3 months.
+tips:
+  mk: Колку се позрели (поцрни) бананите, толку е послатко — тогаш може и помалку мед.
+  en: The riper (blacker) the bananas, the sweeter it is — then you can use less honey.

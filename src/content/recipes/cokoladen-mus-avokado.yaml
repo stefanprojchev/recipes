@@ -1,0 +1,67 @@
+title:
+  mk: Чоколаден мус од авокадо
+  en: Chocolate avocado mousse
+summary:
+  mk: Густ кремаст чоколаден мус од зрело авокадо, какао и мед — без шлаг и без јајца.
+  en: Thick, creamy chocolate mousse made from ripe avocado, cocoa and honey — no cream, no eggs.
+category: dessert
+meals: [snack]
+servings: 4
+time: { prep: 5, rest: 120 }
+difficulty: easy
+diet: [vegetarian, gluten-free]
+source:
+  name: Cook with Renu
+  url: https://cookwithrenu.com/healthy-avocado-chocolate-mousse/
+
+ingredients:
+  - items:
+      - { ingredient: avocado, qty: 2, unit: pc, note: { mk: многу зрели, en: very ripe } }
+      - { ingredient: cocoa, qty: 4, unit: tbsp }
+      - { ingredient: honey, qty: 4, unit: tbsp }
+      - { ingredient: milk, qty: 60, unit: ml }
+      - { ingredient: vanilla-sugar, qty: 1, unit: pack }
+      - { ingredient: salt, qty: 1, unit: pinch }
+
+steps:
+  - text:
+      mk: Извади го месото од авокадата и стави го во сецкалка со сите други состојки.
+      en: Scoop the avocado flesh into a food processor with all the other ingredients.
+  - text:
+      mk: Мати додека не стане сосема мазно, стружејќи ги ѕидовите. Проби — ако е горчливо, додај уште малку мед.
+      en: Blend until completely smooth, scraping down the sides. Taste — if bitter, add a little more honey.
+  - text:
+      mk: Распредели во 4 чашки и олади во фрижидер барем 2 часа.
+      en: Divide between 4 small glasses and chill for at least 2 hours.
+    timer: 120
+
+variants:
+  - id: banana
+    name: { mk: Со банана, en: With banana }
+    note:
+      mk: Една зрела банана во смесата — послатко и поблаго, па стави половина мед.
+      en: One ripe banana in the mix — sweeter and milder, so use half the honey.
+    add:
+      - { ingredient: banana, qty: 1, unit: pc }
+  - id: berries
+    name: { mk: Со бобинки и бадеми, en: Berries and almonds }
+    note:
+      mk: Одозгора свежи јагоди (или одмрзнато шумско овошје) и сецкани бадеми.
+      en: Topped with fresh strawberries (or thawed berries) and chopped almonds.
+    add:
+      - { ingredient: strawberries, qty: 100, unit: g }
+      - { ingredient: almonds, qty: 20, unit: g }
+  - id: peanut-butter
+    name: { mk: Со путер од кикирики, en: Peanut butter }
+    note:
+      mk: Две лажици путер од кикирики измати со авокадото.
+      en: Blend two spoons of peanut butter with the avocado.
+    add:
+      - { ingredient: peanut-butter, qty: 2, unit: tbsp }
+
+storage:
+  mk: Покриено во фрижидер до 2 дена.
+  en: Covered in the fridge for up to 2 days.
+tips:
+  mk: Авокадото мора да е многу зрело и без кафени дамки — тогаш нема вкус на авокадо.
+  en: The avocado must be very ripe with no brown spots — then you can't taste it at all.

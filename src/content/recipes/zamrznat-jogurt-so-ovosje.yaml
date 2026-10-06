@@ -1,0 +1,70 @@
+title:
+  mk: Замрзнат јогурт со овошје
+  en: Frozen yogurt bark
+summary:
+  mk: Цедено кисело млеко со мед, посипано со јагоди и чоколада, замрзнато и скршено на парчиња — летна ужина за децата.
+  en: Strained yogurt with honey, topped with strawberries and chocolate, frozen and broken into pieces — a summer snack for the kids.
+category: dessert
+meals: [snack]
+servings: 8
+time: { prep: 10, rest: 180 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [summer]
+source:
+  name: My Fussy Eater
+  url: https://www.myfussyeater.com/frozen-yogurt-bark/
+
+ingredients:
+  - items:
+      - { ingredient: strained-yogurt, qty: 500, unit: g }
+      - { ingredient: honey, qty: 2, unit: tbsp }
+      - { ingredient: strawberries, qty: 150, unit: g, note: { mk: ситно исечени, en: chopped } }
+      - { ingredient: blueberries, qty: 50, unit: g, optional: true }
+      - { ingredient: dark-chocolate, qty: 20, unit: g, note: { mk: сецкана, en: chopped } }
+      - { ingredient: coconut-flakes, qty: 1, unit: tsp }
+
+steps:
+  - text:
+      mk: Плех обложи со хартија за печење (да собере во замрзнувач).
+      en: Line a tray that fits in the freezer with baking paper.
+  - text:
+      mk: Измешај го јогуртот со медот и рашири го на хартијата во слој дебел околу 1 см.
+      en: Mix the yogurt with the honey and spread it on the paper about 1 cm thick.
+  - text:
+      mk: Поспи го овошјето, чоколадата и кокосот и малку притисни ги во јогуртот.
+      en: Scatter over the fruit, chocolate and coconut and press them lightly into the yogurt.
+  - text:
+      mk: Замрзни додека не стане сосема цврсто, па скрши или исечи на парчиња.
+      en: Freeze until completely firm, then break or cut into pieces.
+    timer: 180
+
+variants:
+  - id: winter
+    name: { mk: Зимски со шумско овошје, en: Winter berries }
+    note:
+      mk: Надвор од сезона — замрзнато шумско овошје наместо јагоди и боровинки.
+      en: Out of season — frozen mixed berries instead of strawberries and blueberries.
+    add:
+      - { ingredient: frozen-berries, qty: 200, unit: g }
+    remove: [strawberries, blueberries]
+  - id: peanut-swirl
+    name: { mk: Со кикирики, en: Peanut butter swirl }
+    note:
+      mk: Капни лажици путер од кикирики врз јогуртот и развлечи ги со чепкалка во шари.
+      en: Dot spoons of peanut butter over the yogurt and swirl with a skewer.
+    add:
+      - { ingredient: peanut-butter, qty: 2, unit: tbsp }
+  - id: granola
+    name: { mk: Со гранола, en: With granola }
+    note:
+      mk: Гранола одозгора наместо чоколада — хрскаво.
+      en: Granola on top instead of chocolate — crunchy.
+    add:
+      - { ingredient: granola, qty: 4, unit: tbsp }
+    remove: [dark-chocolate]
+
+storage:
+  mk: Во кеса во замрзнувач до еден месец. Извади ги 2–3 минути пред јадење.
+  en: In a bag in the freezer for up to a month. Take out 2–3 minutes before eating.

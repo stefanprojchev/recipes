@@ -156,6 +156,9 @@ blueberries:
   name: { mk: боровинки, en: blueberries }
   aisle: produce
   months: [7, 8]
+frozen-berries:
+  name: { mk: замрзнато шумско овошје, en: frozen mixed berries }
+  aisle: frozen
 avocado:
   name:
     mk: { one: авокадо, other: авокада }
@@ -303,6 +306,12 @@ dry-yeast:
 baking-soda:
   name: { mk: сода бикарбона, en: baking soda }
   aisle: dry
+baking-powder:
+  name: { mk: прашок за печење, en: baking powder }
+  aisle: dry
+breadcrumbs:
+  name: { mk: презла, en: breadcrumbs }
+  aisle: dry
 honey:
   name: { mk: мед, en: honey }
   aisle: dry
@@ -334,6 +343,18 @@ dried-apricots:
   aisle: dry
 peanut-butter:
   name: { mk: путер од кикирики, en: peanut butter }
+  aisle: dry
+tahini:
+  name: { mk: тахини, en: tahini }
+  aisle: dry
+coconut-flakes:
+  name: { mk: кокосово брашно, en: desiccated coconut }
+  aisle: dry
+dark-chocolate:
+  name: { mk: темна чоколада (70%), en: dark chocolate (70%) }
+  aisle: dry
+granola:
+  name: { mk: гранола, en: granola }
   aisle: dry
 dried-red-pepper:
   name:
@@ -431,6 +452,11 @@ tuna:
   name:
     mk: { one: конзерва туна, other: конзерви туна }
     en: { one: can of tuna, other: cans of tuna }
+  aisle: canned
+chickpeas:
+  name:
+    mk: { one: конзерва наут, other: конзерви наут }
+    en: { one: can of chickpeas, other: cans of chickpeas }
   aisle: canned
 olives:
   name: { mk: маслинки, en: olives }

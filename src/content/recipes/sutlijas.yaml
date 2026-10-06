@@ -1,0 +1,72 @@
+title:
+  mk: Сутлијаш
+  en: Sutlijash (rice pudding)
+summary:
+  mk: Класичниот кремаст сутлијаш со ориз и млеко, со половина шеќер од вообичаеното, посипан со цимет и ореви.
+  en: Classic creamy rice pudding with milk, with half the usual sugar, topped with cinnamon and walnuts.
+category: dessert
+meals: [snack, breakfast]
+servings: 6
+time: { prep: 5, cook: 30, rest: 60 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+source:
+  name: НМД
+  url: https://nmd.mk/klasichen-retsept-za-sutlijash-so-1-litar-mleko-i-1-chasha-200g-oriz/
+
+ingredients:
+  - items:
+      - { ingredient: rice, qty: 200, unit: g, note: { mk: тркалезен, en: short-grain } }
+      - { ingredient: water, qty: 400, unit: ml }
+      - { ingredient: milk, qty: 1, unit: l }
+      - { ingredient: salt, qty: 1, unit: pinch }
+      - { ingredient: sugar, qty: 4, unit: tbsp }
+      - { ingredient: vanilla-sugar, qty: 1, unit: pack }
+      - { ingredient: cinnamon, unit: to-taste }
+      - { ingredient: walnuts, qty: 30, unit: g, note: { mk: мелени, en: ground }, optional: true }
+
+steps:
+  - text:
+      mk: Оризот измиј го добро и стави го во тенџере со вода колку да го покрие и прстофат сол. Кога ќе зоврие, додавај ја останатата вода малку по малку, мешајќи, додека не ја впие.
+      en: Rinse the rice well and put it in a pot with water just to cover and a pinch of salt. Once boiling, add the rest of the water little by little, stirring, until absorbed.
+    timer: 8
+  - text:
+      mk: Додавај го млекото во неколку наврати, мешајќи често на тивок оган за да не загори, додека оризот не омекне и не се згусне.
+      en: Add the milk in a few batches, stirring often over low heat so it doesn't catch, until the rice is soft and thick.
+    timer: 20
+  - text:
+      mk: Тргни од оган и вмешај го шеќерот и ванилинот.
+      en: Take off the heat and stir in the sugar and vanilla.
+  - text:
+      mk: Истури во чинијки, олади и поспи со цимет и мелени ореви.
+      en: Pour into small bowls, cool, and sprinkle with cinnamon and ground walnuts.
+    timer: 60
+
+variants:
+  - id: honey
+    name: { mk: Со мед наместо шеќер, en: Honey instead of sugar }
+    note:
+      mk: Без шеќер — мед вмешај кога сутлијашот малку ќе се олади (не во врело).
+      en: No sugar — stir in honey once the pudding has cooled a little (not boiling hot).
+    add:
+      - { ingredient: honey, qty: 3, unit: tbsp }
+    remove: [sugar]
+  - id: raisins
+    name: { mk: Со суво грозје, en: With raisins }
+    note:
+      mk: Суво грозје последните 5 минути од варењето — природно засладува, па може и помалку шеќер.
+      en: Raisins for the last 5 minutes of cooking — they sweeten naturally, so you can use less sugar.
+    add:
+      - { ingredient: raisins, qty: 50, unit: g }
+  - id: cocoa
+    name: { mk: Чоколаден, en: Chocolate }
+    note:
+      mk: Две лажици какао вмешани со шеќерот — за децата.
+      en: Two spoons of cocoa stirred in with the sugar — for the kids.
+    add:
+      - { ingredient: cocoa, qty: 2, unit: tbsp }
+
+tips:
+  mk: Оригиналниот рецепт има 8 лажици шеќер — овде е преполовено. Ако е премногу густ кога ќе се олади, разреди го со малку млеко.
+  en: The original recipe uses 8 spoons of sugar — halved here. If it's too thick once cold, loosen with a little milk.

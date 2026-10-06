@@ -1,0 +1,68 @@
+title:
+  mk: Чаша јогурт со овошје и гранола
+  en: Yogurt, fruit and granola cups
+summary:
+  mk: Слоеви цедено кисело млеко, сезонско овошје и гранола со капка мед — ужина за пет минути.
+  en: Layers of strained yogurt, seasonal fruit and granola with a drop of honey — a five-minute snack.
+category: snack
+meals: [snack, breakfast]
+servings: 3
+time: { prep: 5 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian]
+
+ingredients:
+  - items:
+      - { ingredient: strained-yogurt, qty: 450, unit: g }
+      - { ingredient: strawberries, qty: 200, unit: g, note: { mk: исечени, en: sliced } }
+      - { ingredient: granola, qty: 6, unit: tbsp, note: { mk: домашна или купена, en: homemade or bought } }
+      - { ingredient: honey, qty: 1, unit: tbsp }
+
+steps:
+  - text:
+      mk: Во три чаши стави по две лажици јогурт, па малку овошје и лажица гранола.
+      en: In three glasses, layer two spoons of yogurt, then some fruit and a spoon of granola.
+  - text:
+      mk: Повтори ги слоевите и заврши со овошје, гранола и малку мед. Служи веднаш за гранолата да остане хрскава.
+      en: Repeat the layers and finish with fruit, granola and a little honey. Serve straight away so the granola stays crunchy.
+
+variants:
+  - id: apple-cinnamon
+    name: { mk: "Јаболко, цимет и ореви", en: "Apple, cinnamon and walnuts" }
+    note:
+      mk: Наесен и зиме — ситно сецкано јаболко со цимет и ореви наместо јагоди.
+      en: In autumn and winter — finely diced apple with cinnamon and walnuts instead of strawberries.
+    add:
+      - { ingredient: apple, qty: 1, unit: pc }
+      - { ingredient: cinnamon, qty: 0.5, unit: tsp }
+      - { ingredient: walnuts, qty: 30, unit: g }
+    remove: [strawberries]
+  - id: frozen-berries
+    name: { mk: Со шумско овошје, en: Frozen berries }
+    note:
+      mk: Надвор од сезона — замрзнато шумско овошје, одмрзнато вечерта во фрижидер.
+      en: Out of season — frozen berries, thawed overnight in the fridge.
+    add:
+      - { ingredient: frozen-berries, qty: 200, unit: g }
+    remove: [strawberries]
+  - id: banana-peanut
+    name: { mk: Банана и кикирики, en: Banana and peanut butter }
+    note:
+      mk: Банана на тркалца и лажичка путер од кикирики во секоја чаша — без мед.
+      en: Sliced banana and a teaspoon of peanut butter in each cup — no honey.
+    add:
+      - { ingredient: banana, qty: 2, unit: pc }
+      - { ingredient: peanut-butter, qty: 3, unit: tsp }
+    remove: [strawberries, honey]
+  - id: chia
+    name: { mk: Со чиа, en: With chia }
+    note:
+      mk: Измешај го јогуртот со чиа семки и остави го 15 минути — погусто и позаситно.
+      en: Stir chia seeds into the yogurt and leave 15 minutes — thicker and more filling.
+    add:
+      - { ingredient: chia-seeds, qty: 2, unit: tbsp }
+
+tips:
+  mk: Ако се носи за подоцна, гранолата стави ја посебно.
+  en: If packing for later, keep the granola separate.

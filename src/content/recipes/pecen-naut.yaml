@@ -1,0 +1,75 @@
+title:
+  mk: Хрскав печен наут
+  en: Crispy roasted chickpeas
+summary:
+  mk: Наут печен во рерна додека не стане хрскав како чипс — ужина со многу протеини и влакна.
+  en: Chickpeas roasted until crunchy like crisps — a snack full of protein and fibre.
+category: snack
+meals: [snack]
+servings: 4
+time: { prep: 10, cook: 25 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegan, fasting, gluten-free]
+source:
+  name: Love and Lemons
+  url: https://www.loveandlemons.com/roasted-chickpeas/
+
+ingredients:
+  - items:
+      - { ingredient: chickpeas, qty: 2, unit: pc, note: { mk: "исцеден, измиен", en: "drained, rinsed" } }
+      - { ingredient: olive-oil, qty: 1, unit: tbsp }
+      - { ingredient: salt, qty: 0.5, unit: tsp }
+      - { ingredient: ground-paprika, qty: 1, unit: tsp }
+      - { ingredient: garlic-powder, qty: 0.5, unit: tsp }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 220°C и обложи плех со хартија за печење.
+      en: Heat the oven to 220°C and line a tray with baking paper.
+  - text:
+      mk: Наутот рашири го на крпа и исуши го многу добро, отстранувајќи ги лушпите што ќе се одвојат. Влажен наут не станува хрскав.
+      en: Spread the chickpeas on a towel and dry them very well, removing any loose skins. Damp chickpeas never crisp.
+  - text:
+      mk: На плехот измешај го со маслиновото масло и солта и рашири го во еден слој.
+      en: Toss on the tray with the olive oil and salt and spread in a single layer.
+  - text:
+      mk: Печи додека не порумени и не стане хрскав, протресувајќи го плехот на половина. Провери на 20 минути.
+      en: Roast until golden and crisp, shaking the tray halfway. Check at 20 minutes.
+    timer: 25
+  - text:
+      mk: Уште топол измешај го со алевиот пипер и лукот во прав. Оставен да се олади станува уште похрскав.
+      en: While still warm, toss with the paprika and garlic powder. It crisps up even more as it cools.
+
+variants:
+  - id: cinnamon-honey
+    name: { mk: Сладок со цимет и мед, en: Sweet cinnamon and honey }
+    note:
+      mk: Наместо пипер и лук — веднаш по печењето прелиј со лажица мед и поспи со цимет.
+      en: Instead of paprika and garlic — drizzle with a spoon of honey and dust with cinnamon straight after roasting.
+    add:
+      - { ingredient: honey, qty: 1, unit: tbsp }
+      - { ingredient: cinnamon, qty: 1, unit: tsp }
+    remove: [ground-paprika, garlic-powder]
+  - id: parmesan
+    name: { mk: Со пармезан и оригано, en: Parmesan and oregano }
+    note:
+      mk: Последните 5 минути поспи со рендан пармезан и оригано.
+      en: For the last 5 minutes, sprinkle with grated parmesan and oregano.
+    add:
+      - { ingredient: parmesan, qty: 20, unit: g }
+      - { ingredient: oregano, qty: 1, unit: tsp }
+    remove: [ground-paprika]
+  - id: spicy
+    name: { mk: Лут со ким, en: Spicy cumin }
+    note:
+      mk: За возрасните — ким и лути снегулки наместо лукот во прав.
+      en: For the grown-ups — cumin and chili flakes instead of the garlic powder.
+    add:
+      - { ingredient: cumin, qty: 0.5, unit: tsp }
+      - { ingredient: chili-flakes, qty: 0.5, unit: tsp }
+    remove: [garlic-powder]
+
+storage:
+  mk: Во полуотворена тегла на собна температура до 2 дена. Не во фрижидер — омекнува.
+  en: In a loosely covered jar at room temperature for up to 2 days. Not in the fridge — it goes chewy.

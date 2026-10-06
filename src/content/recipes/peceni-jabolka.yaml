@@ -1,0 +1,71 @@
+title:
+  mk: Печени јаболка со ореви и мед
+  en: Baked apples with walnuts and honey
+summary:
+  mk: Цели јаболка полнети со ореви, цимет и мед, печени додека не омекнат во сопствен сируп — топол есенски десерт.
+  en: Whole apples stuffed with walnuts, cinnamon and honey, baked until soft in their own syrup — a warm autumn dessert.
+category: dessert
+meals: [snack]
+servings: 4
+time: { prep: 15, cook: 30 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+season: [autumn, winter]
+source:
+  name: Masala Herb
+  url: https://www.masalaherb.com/stuffed-baked-apples/
+
+ingredients:
+  - items:
+      - { ingredient: apple, qty: 4, unit: pc, note: { mk: цврсти, en: firm } }
+      - { ingredient: walnuts, qty: 60, unit: g, note: { mk: скршени, en: crushed } }
+      - { ingredient: honey, qty: 2, unit: tbsp }
+      - { ingredient: cinnamon, qty: 1, unit: tsp }
+      - { ingredient: butter, qty: 20, unit: g }
+      - { ingredient: water, qty: 180, unit: ml }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 180°C. Јаболката измиј ги, исечи им капаче одозгора и извади ја семената куќичка, без да ги пробиеш до дното.
+      en: Heat the oven to 180°C. Wash the apples, cut off a lid and scoop out the core without going through the bottom.
+  - text:
+      mk: Измешај ги оревите со циметот и медот и наполни ги јаболката.
+      en: Mix the walnuts with the cinnamon and honey and stuff the apples.
+  - text:
+      mk: Нареди ги во тепсија, на секое стави парче путер и врати го капачето. Налеј ја водата на дното.
+      en: Set them in a baking dish, put a piece of butter on each and replace the lids. Pour the water into the dish.
+  - text:
+      mk: Печи додека јаболката не омекнат кога ќе се боцнат со нож.
+      en: Bake until the apples are tender when pierced with a knife.
+    timer: 30
+  - text:
+      mk: Служи топли, прелиени со сирупот од тепсијата.
+      en: Serve warm, spooned over with the syrup from the dish.
+
+variants:
+  - id: oats-raisins
+    name: { mk: Со овес и суво грозје, en: With oats and raisins }
+    note:
+      mk: Две лажици овес и малку суво грозје во филот — како мини крамбл.
+      en: Two spoons of oats and some raisins in the filling — like a mini crumble.
+    add:
+      - { ingredient: oats, qty: 2, unit: tbsp }
+      - { ingredient: raisins, qty: 30, unit: g }
+  - id: yogurt
+    name: { mk: Со јогурт, en: With yogurt }
+    note:
+      mk: Служи со лажица ладно цедено кисело млеко наместо сладолед.
+      en: Serve with a spoon of cold strained yogurt instead of ice cream.
+    add:
+      - { ingredient: strained-yogurt, qty: 4, unit: tbsp }
+  - id: fasting
+    name: { mk: Посни, en: Fasting }
+    note:
+      mk: Без путер — само ореви, мед и цимет. Посно и уште полесно.
+      en: No butter — just walnuts, honey and cinnamon. Suitable for fasting and even lighter.
+    remove: [butter]
+
+tips:
+  mk: Најдобри се кисели, цврсти сорти (Ајдаред, Грени Смит) — не се распаѓаат.
+  en: Tart, firm varieties (Idared, Granny Smith) work best — they hold their shape.
