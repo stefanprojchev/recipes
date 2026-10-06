@@ -125,6 +125,12 @@ beetroot:
     en: { one: beetroot, other: beetroots }
   aisle: produce
   months: [9, 10, 11, 12, 1, 2, 3]
+hot-pepper:
+  name:
+    mk: { one: лута пиперка, other: лути пиперки }
+    en: { one: hot chili pepper, other: hot chili peppers }
+  aisle: produce
+  months: [7, 8, 9, 10]
 broccoli:
   name:
     mk: { one: главица брокула, other: главици брокула }
@@ -373,6 +379,9 @@ oregano:
 rosemary:
   name: { mk: рузмарин, en: rosemary }
   aisle: spices
+garlic-powder:
+  name: { mk: лук во прав, en: garlic powder }
+  aisle: spices
 cumin:
   name: { mk: кимион, en: ground cumin }
   aisle: spices
@@ -403,6 +412,17 @@ sour-cabbage-head:
   store: market
 vine-leaves:
   name: { mk: лозови листови, en: vine leaves }
+  aisle: canned
+pickles:
+  name:
+    mk: { one: кисела краставичка, other: кисели краставички }
+    en: { one: pickled gherkin, other: pickled gherkins }
+  aisle: canned
+mayonnaise:
+  name: { mk: мајонез, en: mayonnaise }
+  aisle: canned
+mustard:
+  name: { mk: сенф, en: mustard }
   aisle: canned
 tuna:
   name:

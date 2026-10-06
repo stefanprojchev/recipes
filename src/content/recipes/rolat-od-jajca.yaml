@@ -1,0 +1,93 @@
+title:
+  mk: Ролат од јајца
+  en: Egg wrap rollup
+summary:
+  mk: Тенка палачинка само од јајца, наполнета со спанаќ, бело сирење и домати и завиткана — протеински појадок за 10 минути.
+  en: A thin crêpe made only of eggs, filled with spinach, white cheese and tomatoes and rolled up — a 10-minute protein breakfast.
+category: breakfast
+meals: [breakfast, lunch, snack]
+servings: 3
+time: { prep: 5, cook: 10 }
+difficulty: easy
+tags: [kid-friendly]
+diet: [vegetarian, gluten-free]
+source:
+  name: Chelsea's Messy Apron
+  url: https://www.chelseasmessyapron.com/spinach-and-feta-wraps/
+sides: [zelena-salata, shopska-salata]
+
+ingredients:
+  - title: { mk: Палачинки, en: Wraps }
+    items:
+      - { ingredient: egg, qty: 6, unit: pc, note: { mk: по 2 за ролат, en: 2 per wrap } }
+      - { ingredient: salt, qty: 1, unit: pinch }
+      - { ingredient: butter, qty: 1, unit: tsp, note: { mk: за тавата, en: for the pan } }
+  - title: { mk: Фил, en: Filling }
+    items:
+      - { ingredient: spinach, qty: 60, unit: g, note: { mk: свеж, en: fresh } }
+      - { ingredient: feta-cheese, qty: 90, unit: g, note: { mk: изронето, en: crumbled } }
+      - { ingredient: cherry-tomato, qty: 9, unit: pc, note: { mk: преполовени, en: halved } }
+      - { ingredient: black-pepper, qty: 1, unit: pinch }
+
+steps:
+  - text:
+      mk: Во чинија измати 2 јајца со прстофат сол додека не се изедначат.
+      en: Whisk 2 eggs with a pinch of salt until smooth.
+  - text:
+      mk: Загреј голема тава против лепење (28 см) на среден оган со малку путер. Истури ги јајцата и навалувај ја тавата за да се разлеат во тенок круг.
+      en: Heat a large non-stick pan (28 cm) over medium heat with a little butter. Pour in the eggs and tilt the pan to spread them into a thin round.
+  - text:
+      mk: Покриј и готви на тивок оган додека горниот дел не се стегне — без вртење.
+      en: Cover and cook on low until the top is set — no flipping.
+    timer: 2
+  - text:
+      mk: Додека е во тавата, распореди спанаќ на половината, па сирење и домати. Спанаќот ќе свене од топлината.
+      en: While it's still in the pan, scatter spinach over half, then the cheese and tomatoes. The spinach wilts in the heat.
+  - text:
+      mk: Лизни ја на чинија, завиткај ја цврсто и исечи на половина. Повтори уште двапати со останатите јајца.
+      en: Slide onto a plate, roll up tightly and cut in half. Repeat twice with the remaining eggs.
+
+variants:
+  - id: ham-cheese
+    name: { mk: Шунка и кашкавал, en: Ham and cheese }
+    note:
+      mk: Наместо спанаќ и сирење — парче шунка и рендан кашкавал, кои се стопуваат во тавата. Омилено кај децата.
+      en: Instead of spinach and feta — a slice of ham and grated kashkaval that melt in the pan. A kids' favourite.
+    add:
+      - { ingredient: ham, qty: 3, unit: slice }
+      - { ingredient: kashkaval, qty: 60, unit: g }
+    remove: [spinach, feta-cheese]
+  - id: avocado-prosciutto
+    name: { mk: Авокадо и пршута, en: Avocado and prosciutto }
+    note:
+      mk: Наполни со тенки парчиња авокадо, пршута и малку лимон.
+      en: Fill with thin slices of avocado, prosciutto and a squeeze of lemon.
+    add:
+      - { ingredient: avocado, qty: 1, unit: pc }
+      - { ingredient: prosciutto, qty: 3, unit: slice }
+    remove: [feta-cheese]
+  - id: tuna
+    name: { mk: Со туна салата, en: Tuna salad }
+    note:
+      mk: Наполни со туна измешана со цедено кисело млеко, сенф, копар и кисели краставички — како филот од ролатот со тиквичка.
+      en: Fill with tuna mixed with strained yogurt, mustard, dill and gherkins — like the zucchini rollup filling.
+    add:
+      - { ingredient: tuna, qty: 1, unit: pc }
+      - { ingredient: strained-yogurt, qty: 2, unit: tbsp }
+      - { ingredient: mustard, qty: 1, unit: tsp }
+      - { ingredient: pickles, qty: 2, unit: pc }
+    remove: [feta-cheese, cherry-tomato]
+  - id: chicken
+    name: { mk: Пилешко и јогурт сос, en: Chicken with yogurt sauce }
+    note:
+      mk: Остаток од печено пилешко на ленти, зелена салата и лажица јогурт со лук — брз ручек за понесување.
+      en: Leftover roast chicken in strips, lettuce and a spoon of garlicky yogurt — a quick packed lunch.
+    add:
+      - { ingredient: chicken-breast, qty: 200, unit: g, note: { mk: печено, en: cooked } }
+      - { ingredient: lettuce, qty: 0.25, unit: pc }
+      - { ingredient: strained-yogurt, qty: 3, unit: tbsp }
+    remove: [feta-cheese, spinach]
+
+tips:
+  mk: Тавата мора да е голема и против лепење — така палачинката е тенка и не се кине. Ладни се одлични за ужина — завиткај ги во фолија.
+  en: The pan must be large and non-stick — that keeps the wrap thin and whole. Cold, they make a great snack — wrap them in foil.

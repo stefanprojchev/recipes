@@ -1,0 +1,123 @@
+title:
+  mk: Ролат од тиквичка со туна
+  en: Zucchini tuna melt rollup
+summary:
+  mk: Тенки тиквички печени со кашкавал во хрскав „леб“, наполнети со туна салата со јајца и копар и завиткани во ролат — полн со протеини, без брашно.
+  en: Thin zucchini baked with kashkaval into a crispy "bread", filled with tuna salad with eggs and dill and rolled up — packed with protein, no flour.
+category: main
+meals: [breakfast, lunch, dinner]
+servings: 2
+time: { prep: 20, cook: 20, rest: 5 }
+difficulty: medium
+tags: [kid-friendly]
+diet: [gluten-free]
+source:
+  name: Shred Happens (Facebook)
+  url: https://www.facebook.com/reel/1400664502279863
+sides: [zelena-salata, shopska-salata]
+
+ingredients:
+  - title: { mk: Ролат, en: Rollup }
+    items:
+      - { ingredient: zucchini, qty: 1, unit: pc, note: { mk: голема, en: large } }
+      - { ingredient: kashkaval, qty: 120, unit: g, note: { mk: изрендан, en: grated } }
+      - { ingredient: garlic-powder, qty: 0.5, unit: tsp }
+  - title: { mk: Фил од туна, en: Tuna filling }
+    items:
+      - { ingredient: tuna, qty: 2, unit: pc, note: { mk: добро исцедена, en: well drained } }
+      - { ingredient: egg, qty: 2, unit: pc, note: { mk: тврдо варени и сецкани, en: hard-boiled and chopped } }
+      - { ingredient: spring-onion, qty: 2, unit: pc, note: { mk: тенко сецкан, en: thinly sliced } }
+      - { ingredient: onion, qty: 0.25, unit: pc, note: { mk: ситно сецкан, en: finely diced } }
+      - { ingredient: pickles, qty: 3, unit: pc, note: { mk: ситно сецкани, en: finely diced } }
+      - { ingredient: dill, qty: 0.25, unit: bunch }
+      - { ingredient: strained-yogurt, qty: 3, unit: tbsp }
+      - { ingredient: mustard, qty: 1, unit: tbsp }
+      - { ingredient: lemon, qty: 0.25, unit: pc, note: { mk: сок, en: juice } }
+      - { ingredient: salt, unit: to-taste }
+      - { ingredient: black-pepper, unit: to-taste }
+  - title: { mk: Одозгора, en: Topping }
+    items:
+      - { ingredient: tomato, qty: 1, unit: pc, note: { mk: на тенки тркалца, en: thinly sliced } }
+      - { ingredient: hot-pepper, qty: 1, unit: pc, note: { mk: за возрасните, en: for the grown-ups }, optional: true }
+
+steps:
+  - text:
+      mk: Загреј ја рерната на 200°C. Тиквичката исечи ја на многу тенки ленти по должина (со ренде-мандолина) и исуши ги добро со хартија — тоа е тајната.
+      en: Heat the oven to 200°C. Slice the zucchini lengthwise into very thin strips (with a mandoline) and pat them very dry — that's the secret.
+  - text:
+      mk: На плех со хартија за печење поспи тенок слој кашкавал (половина), нареди ги лентите тиквичка малку преклопени во правоаголник, поспи го остатокот од кашкавалот и малку лук во прав.
+      en: On a lined tray, scatter a thin layer of kashkaval (half), lay the zucchini strips slightly overlapping in a rectangle, then top with the rest of the cheese and a little garlic powder.
+  - text:
+      mk: Печи додека рабовите не поруменат и кашкавалот не стане хрскав. Следи го — рерните се разликуваат.
+      en: Bake until the edges are golden and the cheese crisp. Keep an eye on it — ovens vary.
+    timer: 18
+  - text:
+      mk: Додека се пече, измешај ја туната со јајцата, двата вида кромид, краставичките, копарот, јогуртот, сенфот, лимоновиот сок, сол и пипер. Проби и дотерај.
+      en: While it bakes, mix the tuna with the eggs, both onions, gherkins, dill, yogurt, mustard, lemon juice, salt and pepper. Taste and adjust.
+  - text:
+      mk: Остави ја плочата да се олади малку, распореди го филот, тркалцата домат (и лутата пиперка), па цврсто завиткај од долниот раб, притискајќи нежно.
+      en: Let the sheet cool slightly, spread the filling, add the tomato slices (and chili), then roll up tightly from the bottom edge, pressing gently.
+    timer: 5
+  - text:
+      mk: Исечи го на половина со остар нож и служи.
+      en: Cut in half with a sharp knife and serve.
+
+variants:
+  - id: mayo
+    name: { mk: Со мајонез (оригинал), en: With mayo (original) }
+    note:
+      mk: Како во видеото — наместо јогурт, две лажици мајонез во филот.
+      en: As in the video — two spoons of mayonnaise in the filling instead of yogurt.
+    add:
+      - { ingredient: mayonnaise, qty: 2, unit: tbsp }
+    remove: [strained-yogurt]
+  - id: chicken
+    name: { mk: Со пилешка салата, en: Chicken salad }
+    note:
+      mk: Наместо туна — варени или печени пилешки гради, ситно исечени, со истиот јогурт-сенф прелив.
+      en: Instead of tuna — cooked chicken breast, finely chopped, with the same yogurt-mustard dressing.
+    add:
+      - { ingredient: chicken-breast, qty: 300, unit: g, note: { mk: сварени, en: cooked } }
+    remove: [tuna]
+  - id: egg-spinach
+    name: { mk: Јајца и спанаќ, en: Egg and spinach }
+    note:
+      mk: Вегетаријански — кајгана од 4 јајца со спанаќ и бело сирење наместо туна салата.
+      en: Vegetarian — scrambled eggs with spinach and white cheese instead of the tuna salad.
+    add:
+      - { ingredient: egg, qty: 2, unit: pc }
+      - { ingredient: spinach, qty: 100, unit: g }
+      - { ingredient: feta-cheese, qty: 60, unit: g }
+    remove: [tuna, pickles, mustard]
+  - id: salmon
+    name: { mk: Со лосос, en: With salmon }
+    note:
+      mk: Печен лосос (може и остаток) изронет со јогурт, копар и лимон наместо туна.
+      en: Flaked baked salmon (leftovers are fine) with yogurt, dill and lemon instead of tuna.
+    add:
+      - { ingredient: salmon, qty: 250, unit: g, note: { mk: печен, en: cooked } }
+    remove: [tuna, pickles]
+  - id: ham-cheese
+    name: { mk: Шунка и кашкавал, en: Ham and cheese }
+    note:
+      mk: За децата — наместо туна салата, парчиња шунка, лист зелена салата и домат.
+      en: For the kids — slices of ham, a lettuce leaf and tomato instead of the tuna salad.
+    add:
+      - { ingredient: ham, qty: 6, unit: slice }
+      - { ingredient: lettuce, qty: 0.25, unit: pc }
+    remove: [tuna, egg, pickles, onion, spring-onion, mustard]
+  - id: greek
+    name: { mk: Грчка, en: Greek }
+    note:
+      mk: Бело сирење, краставица, маслинки и домат со оригано — освежителен летен фил.
+      en: White cheese, cucumber, olives and tomato with oregano — a fresh summer filling.
+    add:
+      - { ingredient: feta-cheese, qty: 120, unit: g }
+      - { ingredient: cucumber, qty: 1, unit: pc }
+      - { ingredient: olives, qty: 50, unit: g }
+      - { ingredient: oregano, qty: 0.5, unit: tsp }
+    remove: [tuna, egg, pickles, mustard]
+
+tips:
+  mk: Тиквичката мора да е многу тенка и сува, инаку плочата ќе се кине. Филот да е погуст — течен фил го расквасува ролатот. Најдобар е топол, но е одличен и ладен за понесување.
+  en: The zucchini must be very thin and dry or the sheet will tear. Keep the filling fairly thick — a wet filling makes the roll soggy. Best warm, but great cold to take along.
