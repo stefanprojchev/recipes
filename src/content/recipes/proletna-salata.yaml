@@ -15,6 +15,12 @@ source:
   name: Coley Cooks
   url: https://coleycooks.com/cucumber-radish-salad/
 
+art:
+  vessel: bowl
+  fill: yogurt
+  items: [radish-slice*9, cucumber-slice*6, spring-onion*12, dill*4, mint]
+  scale: 1.25
+
 ingredients:
   - items:
       - { ingredient: radish, qty: 10, unit: pc, note: { mk: на многу тенки тркалца, en: very thinly sliced } }

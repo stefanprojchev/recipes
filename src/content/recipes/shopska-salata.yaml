@@ -15,6 +15,11 @@ source:
   name: НМД
   url: https://nmd.mk/originalen-reczept-za-shopska-salata-makedonska-svezhina-vo-seko%D1%98-zalak/
 
+art:
+  vessel: plate
+  items: [tomato-slice*5, cucumber-slice*6, pepper-strip-green*3, onion-ring*2, cheese-snow, herb*5]
+  scale: 1.3
+
 ingredients:
   - items:
       - { ingredient: tomato, qty: 3, unit: pc }

@@ -14,6 +14,11 @@ source:
   name: Downshiftology
   url: https://downshiftology.com/recipes/baked-eggs-in-avocado-two-ways/
 
+art:
+  vessel: plate
+  items: [avocado-egg*2, cherry-half*4, chili-flakes*10, herb*8]
+  scale: 1.25
+
 ingredients:
   - items:
       - { ingredient: avocado, qty: 3, unit: pc, note: { mk: "зрели, поголеми", en: "ripe, large" } }

@@ -15,6 +15,12 @@ source:
   name: Masala Herb
   url: https://www.masalaherb.com/carrot-apple-ginger-juice/
 
+art:
+  vessel: glass
+  fill: carrot-juice
+  items: [ice]
+  side: [carrot-whole, apple-whole]
+
 ingredients:
   - items:
       - { ingredient: carrot, qty: 8, unit: pc, note: { mk: "крупни, излупени", en: "large, peeled" } }

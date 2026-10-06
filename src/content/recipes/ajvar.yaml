@@ -18,6 +18,11 @@ prepAhead:
   mk: Измиј и стерилизирај 5 тегли (по 370 мл) со капачињата. Пиперките најдобро е да се испечат претходниот ден.
   en: Wash and sterilise 5 jars (370 ml each) with their lids. The peppers are best roasted the day before.
 
+art:
+  vessel: jar
+  fill: ajvar
+  side: [pepper-roasted, bread-slice]
+
 ingredients:
   - items:
       - { ingredient: red-pepper, qty: 5, unit: kg, note: { mk: "месести, ајварки или капија", en: "fleshy, ajvarka or kapija" } }

@@ -15,6 +15,11 @@ source:
   name: Foodie Crush
   url: https://www.foodiecrush.com/horiatiki-greek-salad/
 
+art:
+  vessel: plate
+  items: [cucumber-slice*6, tomato-slice*4, pepper-strip-green*3, onion-ring*3, olive*7, feta-slab, herb*8]
+  scale: 1.3
+
 ingredients:
   - items:
       - { ingredient: tomato, qty: 3, unit: pc, note: { mk: на парчиња, en: in wedges } }

@@ -16,6 +16,11 @@ source:
   url: https://www.loveandlemons.com/tomato-soup-recipe/
 sides: [zelena-salata, salata-od-zelka, shopska-salata]
 
+art:
+  vessel: bowl
+  fill: tomato-soup
+  items: [swirl, basil*3, crouton*5]
+
 ingredients:
   - items:
       - { ingredient: olive-oil, qty: 3, unit: tbsp }

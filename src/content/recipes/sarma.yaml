@@ -18,6 +18,11 @@ prepAhead:
   en: The rolls can be made the day before and kept in the fridge — just bake them in the morning.
 sides: [salata-od-cveklo, salata-od-morkov, salata-pecheni-piperki, salata-od-zelka]
 
+art:
+  vessel: clay
+  fill: beef-broth
+  items: [sarma*6, herb*4]
+
 ingredients:
   - title: { mk: Фил, en: Filling }
     items:

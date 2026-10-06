@@ -16,6 +16,11 @@ source:
   name: Love and Lemons
   url: https://www.loveandlemons.com/cucumber-tomato-salad/
 
+art:
+  vessel: plate
+  items: [tomato-slice*6, cucumber-slice*7, onion-ring*2, herb*10]
+  scale: 1.35
+
 ingredients:
   - items:
       - { ingredient: tomato, qty: 2, unit: pc, note: { mk: големи, en: large } }

@@ -15,6 +15,11 @@ source:
   name: Ozlem's Turkish Table
   url: https://ozlemsturkishtable.com/2010/07/tomato-pepper-feta-cheese-scrambled-egg-menemen/
 
+art:
+  vessel: pan
+  fill: egg
+  items: [scrambled*8, cherry-half*5, pepper-strip-green*4, herb*6]
+
 ingredients:
   - items:
       - { ingredient: egg, qty: 6, unit: pc }

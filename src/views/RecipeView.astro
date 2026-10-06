@@ -87,7 +87,7 @@ const extras = [
         </a>
 
         <header class="mt-2">
-          {data.cover && <RecipeImage recipe={recipe} locale={locale} size="hero" class="mb-5 rounded-3xl lg:aspect-[16/10]" />}
+          {(data.cover || data.art) && <RecipeImage recipe={recipe} locale={locale} size="hero" class="mb-5 rounded-3xl lg:aspect-[16/10]" />}
           <a
             href={`${localizeHref("/recipes")}?c=${data.category}`}
             class="inline-flex h-11 items-center gap-2 rounded-full bg-secondary px-4 text-base font-semibold text-secondary-foreground hover:bg-accent"

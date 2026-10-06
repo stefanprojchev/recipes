@@ -16,6 +16,11 @@ source:
   name: My Fussy Eater
   url: https://www.myfussyeater.com/frozen-yogurt-bark/
 
+art:
+  vessel: board
+  items: [bark*6]
+  scale: 1.35
+
 ingredients:
   - items:
       - { ingredient: strained-yogurt, qty: 500, unit: g }

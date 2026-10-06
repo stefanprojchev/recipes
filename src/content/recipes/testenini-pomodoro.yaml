@@ -16,6 +16,11 @@ source:
   url: https://coleycooks.com/pasta-pomodoro/
 sides: [salata-so-rukola, zelena-salata, grcka-salata, salata-od-morkov]
 
+art:
+  vessel: plate
+  fill: tomato
+  items: [pasta*16, basil*3, parmesan*8]
+
 ingredients:
   - items:
       - { ingredient: pasta, qty: 400, unit: g, note: { mk: шпагети или пене (интегрални по желба), en: spaghetti or penne (wholewheat if you like) } }

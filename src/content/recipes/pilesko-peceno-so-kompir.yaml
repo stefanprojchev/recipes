@@ -13,6 +13,11 @@ tags: [kid-friendly]
 diet: [gluten-free]
 sides: [pecen-zelencuk, grilan-zelencuk, shopska-salata, salata-od-zelka, salata-od-morkov]
 
+art:
+  vessel: dish
+  fill: roast
+  items: [potato-chunk*8, chicken-leg*3, herb*8]
+
 ingredients:
   - items:
       - { ingredient: chicken-legs, qty: 1.2, unit: kg }

@@ -12,6 +12,11 @@ difficulty: easy
 tags: [kid-friendly]
 diet: [vegetarian]
 
+art:
+  vessel: cup
+  layers: [yogurt, berry, granola, yogurt]
+  items: [strawberry-half*3, granola*3]
+
 ingredients:
   - items:
       - { ingredient: strained-yogurt, qty: 450, unit: g }

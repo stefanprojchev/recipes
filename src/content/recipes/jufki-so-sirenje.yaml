@@ -15,6 +15,11 @@ source:
   name: Popara.mk
   url: https://popara.mk/2017/brzo-i-vkusno-pecheni-jufki-gotovi-za-eden-chas/
 
+art:
+  vessel: plate
+  items: [noodle*18, feta*10, herb*3]
+  scale: 1.2
+
 ingredients:
   - items:
       - { ingredient: jufki, qty: 300, unit: g, note: { mk: домашни или купени, en: homemade or store-bought } }

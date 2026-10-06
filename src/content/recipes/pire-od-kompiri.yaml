@@ -12,6 +12,11 @@ difficulty: easy
 tags: [kid-friendly]
 diet: [vegetarian, gluten-free]
 
+art:
+  vessel: bowl
+  fill: mash
+  items: [swirl, butter, herb*6]
+
 ingredients:
   - items:
       - { ingredient: potato, qty: 1, unit: kg }

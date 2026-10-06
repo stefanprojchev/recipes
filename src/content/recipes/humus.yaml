@@ -14,6 +14,12 @@ source:
   name: Inspired Taste
   url: https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/
 
+art:
+  vessel: bowl
+  fill: hummus
+  items: [swirl, oil-drizzle, chickpea*6, paprika*14]
+  side: [carrot-whole, celery]
+
 ingredients:
   - title: { mk: Хумус, en: Hummus }
     items:

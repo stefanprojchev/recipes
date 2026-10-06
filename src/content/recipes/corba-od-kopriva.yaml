@@ -16,6 +16,12 @@ source:
   url: https://mojportal.mk/corba-od-koprivi
 sides: [zelena-salata, salata-od-zelka]
 
+art:
+  vessel: bowl
+  fill: green
+  items: [nettle*4, yogurt-dollop, herb*8]
+  side: [bread-slice]
+
 ingredients:
   - items:
       - { ingredient: nettle, qty: 250, unit: g, note: { mk: "само врвовите, со ракавици", en: "tops only, picked with gloves" } }

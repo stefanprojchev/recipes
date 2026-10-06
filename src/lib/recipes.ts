@@ -5,6 +5,7 @@ import { pluralForm } from "@/lib/quantity";
 import { normalizeForSearch } from "@/lib/search-normalize";
 import { categoryLabel, dietLabel } from "@/lib/labels";
 import { getMediaMap } from "@/lib/media";
+import { artProblems } from "@/lib/dish-art";
 
 export type Recipe = CollectionEntry<"recipes">;
 export type Ingredient = CollectionEntry<"ingredients">;
@@ -58,6 +59,9 @@ function load() {
       for (const side of recipe.data.sides) {
         if (!recipeIds.has(side.id)) problems.push(`${where}: sides lists unknown recipe "${side.id}"`);
         if (side.id === recipe.id) problems.push(`${where}: a recipe can't be its own side`);
+      }
+      if (recipe.data.art) {
+        for (const problem of artProblems(recipe.data.art)) problems.push(`${where}: ${problem}`);
       }
       const parent = recipe.data.variantOf;
       if (parent && !recipeIds.has(parent.id)) {

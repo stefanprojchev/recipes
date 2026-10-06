@@ -15,6 +15,11 @@ source:
   name: The Kitchn
   url: https://www.thekitchn.com/granola-recipe-258376
 
+art:
+  vessel: bowl
+  fill: yogurt
+  items: [granola*14, blueberry*6, strawberry-half*3, honey]
+
 ingredients:
   - items:
       - { ingredient: oats, qty: 300, unit: g }

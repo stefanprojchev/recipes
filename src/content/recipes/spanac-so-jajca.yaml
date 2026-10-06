@@ -15,6 +15,11 @@ source:
   name: Food52
   url: https://food52.com/recipes/29073-eggs-garlic-spinach
 
+art:
+  vessel: pan
+  fill: green
+  items: [spinach*8, egg-fried*3]
+
 ingredients:
   - items:
       - { ingredient: spinach, qty: 400, unit: g, note: { mk: измиен и грубо сецкан, en: washed and roughly chopped } }

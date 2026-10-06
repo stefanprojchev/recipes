@@ -16,6 +16,12 @@ source:
   name: Shivani Loves Food
   url: https://shivanilovesfood.com/carrot-orange-ginger-juice/
 
+art:
+  vessel: glass
+  fill: orange-juice
+  items: [orange-rim, ice]
+  side: [orange-half, carrot-whole]
+
 ingredients:
   - items:
       - { ingredient: orange, qty: 4, unit: pc, note: { mk: излупени, en: peeled } }

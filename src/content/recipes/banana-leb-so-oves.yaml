@@ -15,6 +15,11 @@ source:
   name: Well Plated
   url: https://www.wellplated.com/oatmeal-banana-bread/
 
+art:
+  vessel: board
+  items: [loaf-slice*3, banana-slice*3, walnut*3]
+  scale: 1.45
+
 ingredients:
   - title: { mk: Суви состојки, en: Dry }
     items:

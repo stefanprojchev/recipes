@@ -1,6 +1,8 @@
 name = "my-astro-site"
 main = "worker/index.ts"
 compatibility_date = "2026-03-26"
+# Cloudflare account "Sydcup" — pinned because the login can reach several accounts.
+account_id = "88cf4f9a2aa5ad6cc9cd54675b5b93ae"
 
 [assets]
 directory = "./dist"
@@ -17,7 +19,7 @@ name = "EMAIL"
 # Worker (behind Cloudflare Access). Upload with `node scripts/media.mjs add`.
 [[r2_buckets]]
 binding = "MEDIA"
-bucket_name = "tavce-media"
+bucket_name = "recipes"
 
 # SINGLE SOURCE OF TRUTH for runtime Worker vars. Dashboard edits to these
 # are overwritten by every deploy (incl. Workers Builds) — change them here.

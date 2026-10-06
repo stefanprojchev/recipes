@@ -15,6 +15,12 @@ source:
   name: The Kitchn
   url: https://www.thekitchn.com/sunny-side-up-eggs-recipe-23390918
 
+art:
+  vessel: pan
+  items: [egg-fried*2, paprika*6, herb*6]
+  side: [bread-slice]
+  scale: 1.15
+
 ingredients:
   - items:
       - { ingredient: egg, qty: 6, unit: pc, note: { mk: на собна температура, en: at room temperature } }

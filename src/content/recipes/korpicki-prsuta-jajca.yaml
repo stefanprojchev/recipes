@@ -14,6 +14,11 @@ source:
   name: Mom's Kitchen Handbook
   url: https://www.momskitchenhandbook.com/pretty-prosciutto-spinach-egg-cups/
 
+art:
+  vessel: tray
+  items: [egg-cup*6, herb*8]
+  scale: 1.2
+
 ingredients:
   - items:
       - { ingredient: prosciutto, qty: 12, unit: slice, note: { mk: тенко сечена, en: thinly sliced } }

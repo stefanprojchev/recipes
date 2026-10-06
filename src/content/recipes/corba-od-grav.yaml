@@ -19,6 +19,12 @@ prepAhead:
   mk: Потопи го гравот во ладна вода вечерта пред готвење.
   en: Soak the beans in cold water the night before.
 
+art:
+  vessel: bowl
+  fill: potato-stew
+  items: [bean*16, carrot-coin*5, spinach*3, herb*8]
+  side: [bread-slice]
+
 ingredients:
   - items:
       - { ingredient: white-beans, qty: 250, unit: g, note: { mk: потопен преку ноќ, en: soaked overnight } }

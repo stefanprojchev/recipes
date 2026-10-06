@@ -13,6 +13,7 @@ import {
   TAGS,
   UNITS,
 } from "@/lib/recipe-taxonomy";
+import { FILLS, VESSELS } from "@/lib/dish-art";
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
@@ -198,6 +199,20 @@ const recipes = defineCollection({
       storage: text.optional(),
       /** Make-ahead reminder for the planner, e.g. "soak beans overnight". */
       prepAhead: text.optional(),
+      /**
+       * Vector illustration used until a photo (`cover`) exists — see
+       * src/lib/dish-art.ts for vessels, fills and item kinds.
+       */
+      art: z
+        .object({
+          vessel: z.enum(VESSELS),
+          fill: z.enum(Object.keys(FILLS) as [keyof typeof FILLS, ...(keyof typeof FILLS)[]]).optional(),
+          layers: z.array(z.enum(Object.keys(FILLS) as [keyof typeof FILLS, ...(keyof typeof FILLS)[]])).optional(),
+          items: z.array(z.string().regex(/^[a-z-]+(\*\d+)?$/)).default([]),
+          side: z.array(z.string().regex(/^[a-z-]+(\*\d+)?$/)).default([]),
+          scale: z.number().min(0.5).max(2.5).optional(),
+        })
+        .optional(),
       draft: z.boolean().default(false),
     }),
 });

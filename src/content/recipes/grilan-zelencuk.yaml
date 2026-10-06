@@ -15,6 +15,11 @@ source:
   name: Love and Lemons
   url: https://www.loveandlemons.com/grilled-vegetables/
 
+art:
+  vessel: plate
+  items: [eggplant-slice*4, zucchini-slice*5, pepper-roasted*2, oil-drizzle, herb*8]
+  scale: 1.15
+
 ingredients:
   - items:
       - { ingredient: zucchini, qty: 2, unit: pc, note: { mk: на тркалца од 1 см, en: in 1 cm rounds } }

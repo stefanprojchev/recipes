@@ -18,6 +18,11 @@ prepAhead:
   mk: Може да се испечат ден порано — утрото само се загреваат 1 минута.
   en: Can be baked the day before — just warm them for a minute in the morning.
 
+art:
+  vessel: board
+  items: [muffin-egg*6]
+  scale: 1.2
+
 ingredients:
   - items:
       - { ingredient: egg, qty: 6, unit: pc }

@@ -15,6 +15,11 @@ source:
   name: OliveTomato
   url: https://www.olivetomato.com/savory-greek-style-zucchini-and-feta-muffins-with-greek-yogurt-dip/
 
+art:
+  vessel: board
+  items: [muffin*6, zucchini-slice*2]
+  scale: 1.2
+
 ingredients:
   - items:
       - { ingredient: zucchini, qty: 3, unit: pc, note: { mk: "средни, рендани со лушпата", en: "medium, grated with skin" } }

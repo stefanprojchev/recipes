@@ -16,6 +16,10 @@ source:
   url: https://www.runningtothekitchen.com/lemon-spinach-and-feta-linguine/
 sides: [salata-domati-krastavici, salata-od-cveklo, salata-so-rukola, zelena-salata]
 
+art:
+  vessel: plate
+  items: [pasta*14, spinach*5, feta*7, cherry-half*3]
+
 ingredients:
   - items:
       - { ingredient: pasta, qty: 350, unit: g, note: { mk: лингвини или пене, en: linguine or penne } }

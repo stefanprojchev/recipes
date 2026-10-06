@@ -17,6 +17,12 @@ source:
   url: https://www.loveandlemons.com/pumpkin-soup-recipe/
 sides: [zelena-salata, salata-od-cveklo, salata-od-zelka]
 
+art:
+  vessel: bowl
+  fill: pumpkin
+  items: [swirl, pumpkin-seed*10, herb*4]
+  side: [bread-slice]
+
 ingredients:
   - items:
       - { ingredient: pumpkin, qty: 1.5, unit: kg, note: { mk: "исчистена, без семки", en: "peeled weight, seeds removed" } }

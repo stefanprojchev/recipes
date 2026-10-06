@@ -15,6 +15,11 @@ source:
   url: https://gotvi.mk/2017/09/24/polneti-tikvicki-so-kiselo-mleko/
 sides: [salata-domati-krastavici, shopska-salata, grcka-salata]
 
+art:
+  vessel: dish
+  fill: tomato
+  items: [zucchini-boat*4, herb*6]
+
 ingredients:
   - title: { mk: Тиквици и фил, en: Zucchini and filling }
     items:

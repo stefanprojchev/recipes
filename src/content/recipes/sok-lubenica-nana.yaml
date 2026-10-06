@@ -16,6 +16,12 @@ source:
   name: The Dizzy Cook
   url: https://thedizzycook.com/watermelon-juice/
 
+art:
+  vessel: glass
+  fill: watermelon-juice
+  items: [mint, ice, straw]
+  side: [watermelon-wedge]
+
 ingredients:
   - items:
       - { ingredient: watermelon, qty: 1500, unit: g, note: { mk: "без кора, на коцки", en: "rind removed, cubed" } }

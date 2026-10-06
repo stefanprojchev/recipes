@@ -15,6 +15,11 @@ source:
   name: Love and Lemons
   url: https://www.loveandlemons.com/how-to-make-oatmeal/
 
+art:
+  vessel: bowl
+  fill: oats
+  items: [banana-slice*5, blueberry*6, walnut*3, cinnamon*10, honey]
+
 ingredients:
   - items:
       - { ingredient: oats, qty: 135, unit: g }

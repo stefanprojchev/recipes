@@ -15,6 +15,11 @@ source:
   url: https://mojportal.mk/dinstano-telesko-so-sos-i-pire
 sides: [pire-od-kompiri, bulgur-so-zelencuk, oriz-so-zelencuk, brokula-karfiol-na-para, boranija-so-luk, salata-od-zelka, shopska-salata]
 
+art:
+  vessel: plate
+  fill: gravy
+  items: [meat-chunk*8, carrot-coin*4, pea*8, herb*6]
+
 ingredients:
   - items:
       - { ingredient: veal, qty: 800, unit: g, note: { mk: плешка на коцки, en: diced shoulder } }

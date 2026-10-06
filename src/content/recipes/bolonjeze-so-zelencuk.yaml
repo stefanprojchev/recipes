@@ -15,6 +15,11 @@ source:
   url: https://hungryhealthyhappy.com/hidden-vegetable-bolognese/
 sides: [zelena-salata, salata-so-rukola, salata-domati-krastavici, salata-od-zelka]
 
+art:
+  vessel: plate
+  fill: meat-sauce
+  items: [pasta*16, minced*24, parmesan*10, basil*3]
+
 ingredients:
   - title: { mk: Сос, en: Sauce }
     items:

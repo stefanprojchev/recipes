@@ -14,6 +14,12 @@ source:
   name: Ozlem's Turkish Table
   url: https://ozlemsturkishtable.com/2016/12/poached-eggs-with-garlic-yoghurt-turkish-style-cilbir/
 
+art:
+  vessel: plate
+  fill: yogurt
+  items: [egg-poached*2, oil-drizzle, paprika*16, dill*3]
+  side: [bread-slice]
+
 ingredients:
   - title: { mk: Јогурт, en: Yogurt }
     items:

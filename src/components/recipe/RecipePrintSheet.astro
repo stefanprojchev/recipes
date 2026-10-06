@@ -76,6 +76,10 @@ const noteTone: Record<string, string> = {
     {
       data.cover ? (
         <MediaItem id={data.cover.id} locale={locale} alt={title} layout="grid" class="h-[110pt] w-[150pt] shrink-0 rounded-[10pt]" />
+      ) : data.art ? (
+        <div class="h-[110pt] w-[147pt] shrink-0 overflow-hidden rounded-[10pt] bg-[oklch(0.97_0.025_var(--hue))]">
+          <img src={`/art/${recipe.id}.svg`} alt="" width="400" height="300" class="size-full" />
+        </div>
       ) : (
         <div class="flex w-[90pt] shrink-0 items-center justify-center rounded-[10pt] bg-[oklch(0.97_0.025_var(--hue))] text-[oklch(0.5_0.12_var(--hue))]">
           <CategoryIcon category={data.category} class="size-[48pt] stroke-1" />

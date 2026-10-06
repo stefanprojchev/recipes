@@ -63,10 +63,15 @@
 - Idle screen: `src/components/IdleScreen.astro` + `src/scripts/idle.ts`, data from `/idle.json` (`src/lib/idle-data.ts`). 3 min idle; morning/day = today's menu, from 17:00 tomorrow's, 22:00–06:30 dim clock; never over cook mode; reloads ~03:00 for a new plan. Preview with `?idle` on any URL.
 
 ### Photos & videos (private R2)
-- Bucket `tavce-media` (binding `MEDIA` in `wrangler.toml`), served by `worker/index.ts` at `/media/<key>` — same origin, so Cloudflare Access protects it; Range + ETag supported. This replaces `astro:assets <Image>` for recipe media (the stack rule) because files live in R2, not `src/assets/`.
+- Bucket `recipes` in the Sydcup Cloudflare account (binding `MEDIA` in `wrangler.toml`, which also pins `account_id`), served by `worker/index.ts` at `/media/<key>` — same origin, so Cloudflare Access protects it; Range + ETag supported. This replaces `astro:assets <Image>` for recipe media (the stack rule) because files live in R2, not `src/assets/`.
 - Add media only with `node scripts/media.mjs add <file> --id <id> [--alt-mk … --alt-en …] [--poster img] [--local|--no-upload]` → WebP 480/960/1600 (images) or H.264 MP4 (videos; needs `brew install ffmpeg` for non-MP4 input and auto poster). It writes `src/content/media.yaml` and the local `.media/` mirror (served by `astro dev` via `integrations/dev-media.mjs`).
 - Recipes reference media ids: `cover`, `gallery`, `steps[].media`; unknown ids fail the build. Keys include a content hash, so replacing a file never serves a stale copy.
-- The bucket must be created in the Cloudflare account before the first deploy (`wrangler r2 bucket create tavce-media`).
+- The bucket already exists (created 2026-10-06, location EEUR).
+
+### Dish illustrations (until real photos exist)
+- Every recipe has an `art:` spec (vessel, fill, `items: [kind*count]`, `side` props, `scale`) drawn by `src/lib/dish-art.ts` into a static `/art/<id>.svg` (`src/pages/art/[id].svg.ts`); `RecipeImage` and the print sheet use it whenever there's no `cover` photo. Unknown item kinds fail the build.
+- Vessels: plate, bowl, clay (тавче), pan, dish (baking dish), tray, board, glass, jar, cup. Fills and ~140 item kinds are listed in `dish-art.ts` (`FILLS`, `ITEMS`). New recipes must get an `art:` block too.
+- Transparent SVG over the category-tinted tile, so light/dark both work. Layout is seeded by the recipe id (stable between builds).
 
 ### Household
 - `src/content/household.yaml` — members with `avoid` (ingredient ids) and `avoidTags` (`spicy`…); warnings appear on menus, the chef sheet and recipe pages. Recipe flags in `tags` (`kid-friendly`, `spicy`).

@@ -15,6 +15,11 @@ source:
   url: http://gotvi.mk/2020/05/02/telesko-pecenje-so-kompiri/
 sides: [pecen-zelencuk, grilan-zelencuk, shopska-salata, salata-od-zelka, salata-od-morkov]
 
+art:
+  vessel: dish
+  fill: roast
+  items: [meat-slice*3, potato-chunk*7, herb*6]
+
 ingredients:
   - items:
       - { ingredient: veal, qty: 1.5, unit: kg, note: { mk: ребра или плешка, en: ribs or shoulder } }

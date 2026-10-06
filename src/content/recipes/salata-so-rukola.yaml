@@ -14,6 +14,12 @@ source:
   name: Love and Lemons
   url: https://www.loveandlemons.com/arugula-salad/
 
+art:
+  vessel: bowl
+  fill: salad
+  items: [arugula*14, cherry-half*7, parmesan*12]
+  scale: 1.3
+
 ingredients:
   - items:
       - { ingredient: arugula, qty: 120, unit: g }

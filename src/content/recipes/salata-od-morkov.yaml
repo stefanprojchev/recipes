@@ -15,6 +15,12 @@ source:
   name: Pardon Your French
   url: https://www.pardonyourfrench.com/french-style-grated-carrot-salad/
 
+art:
+  vessel: plate
+  items: [carrot-shred*70, herb*8]
+  side: [lemon-half]
+  scale: 1.4
+
 ingredients:
   - items:
       - { ingredient: carrot, qty: 450, unit: g, note: { mk: "излупен, рендан", en: "peeled, grated" } }

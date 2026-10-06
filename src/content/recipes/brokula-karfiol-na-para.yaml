@@ -15,6 +15,11 @@ source:
   name: Mia Kouppa
   url: https://miakouppa.com/broccoli-with-olive-oil-and-lemon/
 
+art:
+  vessel: plate
+  items: [broccoli*6, cauliflower*5, lemon-slice*2, oil-drizzle]
+  scale: 1.2
+
 ingredients:
   - items:
       - { ingredient: broccoli, qty: 1, unit: pc, note: { mk: "на цветчиња, стеблото излупено", en: "in florets, stalk peeled" } }

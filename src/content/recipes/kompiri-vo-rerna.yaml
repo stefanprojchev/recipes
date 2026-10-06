@@ -12,6 +12,11 @@ difficulty: easy
 tags: [kid-friendly]
 diet: [vegan, fasting, gluten-free]
 
+art:
+  vessel: tray
+  items: [potato-wedge*14, garlic*3, herb*10]
+  scale: 1.5
+
 ingredients:
   - items:
       - { ingredient: potato, qty: 1, unit: kg, note: { mk: на кришки, en: in wedges } }

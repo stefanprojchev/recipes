@@ -16,6 +16,11 @@ source:
   url: https://www.brif.mk/pecheno-pileshko-so-oriz/
 sides: [brokula-karfiol-na-para, boranija-so-luk, shopska-salata, salata-od-morkov, taratur]
 
+art:
+  vessel: dish
+  fill: rice
+  items: [rice*50, chicken*3, carrot-coin*5, pea*8, herb*6]
+
 ingredients:
   - items:
       - { ingredient: chicken-legs, qty: 1, unit: kg }

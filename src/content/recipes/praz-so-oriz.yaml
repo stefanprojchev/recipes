@@ -16,6 +16,11 @@ source:
   url: https://recepti.gotvach.bg/r-3765-%D0%9F%D1%80%D0%B0%D0%B7_%D1%81_%D0%BE%D1%80%D0%B8%D0%B7
 sides: [salata-od-zelka, salata-od-morkov, salata-od-cveklo, salata-pecheni-piperki]
 
+art:
+  vessel: clay
+  fill: leek
+  items: [leek-ring*10, rice*30, carrot-coin*4, herb*4]
+
 ingredients:
   - items:
       - { ingredient: leek, qty: 4, unit: pc, note: { mk: "околу 1 кг, на тркалца", en: "about 1 kg, sliced" } }

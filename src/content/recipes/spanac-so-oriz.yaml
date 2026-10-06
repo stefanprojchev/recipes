@@ -16,6 +16,11 @@ source:
   url: https://moirecepti.mk/post/%D1%81%D0%BF%D0%B0%D0%BD%D0%B0%D1%9C-%D1%81%D0%BE-%D0%BE%D1%80%D0%B8%D0%B7
 sides: [proletna-salata, zelena-salata, salata-od-morkov, shopska-salata]
 
+art:
+  vessel: dish
+  fill: spinach-rice
+  items: [rice*40, spinach*8, yogurt-dollop]
+
 ingredients:
   - items:
       - { ingredient: spinach, qty: 1, unit: kg, note: { mk: "свеж (или 600 г замрзнат)", en: "fresh (or 600 g frozen)" } }

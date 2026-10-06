@@ -15,6 +15,11 @@ source:
   name: Inspired Taste
   url: https://www.inspiredtaste.net/51775/garlic-sauteed-green-beans/
 
+art:
+  vessel: plate
+  items: [green-bean*18, garlic*4, herb*6]
+  side: [lemon-half]
+
 ingredients:
   - items:
       - { ingredient: green-beans, qty: 450, unit: g, note: { mk: исчистени, en: trimmed } }

@@ -18,6 +18,12 @@ prepAhead:
   mk: Исечи ги бананите на тркалца и замрзни ги најмалку 4 часа (најдобро од претходниот ден).
   en: Slice the bananas and freeze for at least 4 hours (ideally the day before).
 
+art:
+  vessel: bowl
+  fill: berry
+  items: [scoop-banana*2, scoop-choc, banana-slice*2]
+  scale: 1.15
+
 ingredients:
   - items:
       - { ingredient: banana, qty: 3, unit: pc, note: { mk: "зрели, замрзнати на тркалца", en: "ripe, sliced and frozen" } }

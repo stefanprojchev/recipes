@@ -14,6 +14,11 @@ source:
   name: Cook with Renu
   url: https://cookwithrenu.com/healthy-avocado-chocolate-mousse/
 
+art:
+  vessel: cup
+  layers: [chocolate]
+  items: [strawberry-half*2, almond*3, choc-chip*4]
+
 ingredients:
   - items:
       - { ingredient: avocado, qty: 2, unit: pc, note: { mk: многу зрели, en: very ripe } }

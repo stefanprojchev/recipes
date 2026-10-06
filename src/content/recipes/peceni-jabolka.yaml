@@ -15,6 +15,11 @@ source:
   name: Masala Herb
   url: https://www.masalaherb.com/stuffed-baked-apples/
 
+art:
+  vessel: dish
+  fill: syrup
+  items: [apple-baked*4, walnut*3]
+
 ingredients:
   - items:
       - { ingredient: apple, qty: 4, unit: pc, note: { mk: цврсти, en: firm } }

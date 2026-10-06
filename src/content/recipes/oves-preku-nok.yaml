@@ -17,6 +17,11 @@ prepAhead:
   mk: Измешај го овесот со млекото и јогуртот вечерта (или барем 2 часа порано) и стави го во фрижидер.
   en: Mix the oats with the milk and yogurt in the evening (or at least 2 hours ahead) and refrigerate.
 
+art:
+  vessel: jar
+  layers: [oats, oats]
+  items: [banana-slice*3, blueberry*4, chia*10]
+
 ingredients:
   - items:
       - { ingredient: oats, qty: 135, unit: g }

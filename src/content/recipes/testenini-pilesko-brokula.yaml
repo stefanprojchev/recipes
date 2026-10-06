@@ -15,6 +15,11 @@ source:
   url: https://www.slenderkitchen.com/recipe/one-pot-creamy-parmesan-chicken-broccoli-pasta
 sides: [salata-so-rukola, zelena-salata, salata-domati-krastavici, salata-od-cveklo]
 
+art:
+  vessel: plate
+  fill: pasta-cream
+  items: [pasta*14, chicken-strip*4, broccoli*4, parmesan*8]
+
 ingredients:
   - items:
       - { ingredient: chicken-breast, qty: 500, unit: g, note: { mk: на парчиња, en: bite-sized } }

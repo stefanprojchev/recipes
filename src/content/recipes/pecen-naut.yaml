@@ -14,6 +14,11 @@ source:
   name: Love and Lemons
   url: https://www.loveandlemons.com/roasted-chickpeas/
 
+art:
+  vessel: tray
+  items: [chickpea*55, paprika*20]
+  scale: 1.1
+
 ingredients:
   - items:
       - { ingredient: chickpeas, qty: 2, unit: pc, note: { mk: "исцеден, измиен", en: "drained, rinsed" } }

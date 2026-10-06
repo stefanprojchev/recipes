@@ -17,6 +17,11 @@ prepAhead:
   mk: Измешај ги чиа семките со млекото вечерта — треба да стојат најмалку 6 часа во фрижидер.
   en: Mix the chia seeds with the milk in the evening — they need at least 6 hours in the fridge.
 
+art:
+  vessel: cup
+  layers: [chia, chia]
+  items: [strawberry-half*3, blueberry*4, banana-slice*2]
+
 ingredients:
   - items:
       - { ingredient: milk, qty: 360, unit: ml }

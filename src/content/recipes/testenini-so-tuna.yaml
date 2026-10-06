@@ -14,6 +14,10 @@ source:
   url: https://www.feastingathome.com/tuna-pasta/
 sides: [salata-so-rukola, zelena-salata, salata-od-zelka]
 
+art:
+  vessel: plate
+  items: [pasta*14, tuna*8, cherry-half*6, herb*6]
+
 ingredients:
   - items:
       - { ingredient: pasta, qty: 400, unit: g, note: { mk: шпагети или пене, en: spaghetti or penne } }

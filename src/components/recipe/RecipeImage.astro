@@ -15,7 +15,7 @@ interface Props {
 }
 
 const { recipe, locale, size, class: className } = Astro.props;
-const { cover, title, category } = recipe.data;
+const { cover, art, title, category } = recipe.data;
 ---
 
 {
@@ -38,10 +38,22 @@ const { cover, title, category } = recipe.data;
       ]}
       style={`--hue: ${CATEGORY_HUE[category]}`}
     >
-      <CategoryIcon
-        category={category}
-        class={size === "card" ? "size-14 stroke-[1.25]" : "size-28 stroke-1"}
-      />
+      {art ? (
+        <img
+          src={`/art/${recipe.id}.svg`}
+          alt={size === "card" ? "" : t(title, locale)}
+          width="400"
+          height="300"
+          loading={size === "hero" ? "eager" : "lazy"}
+          decoding="async"
+          class="size-full"
+        />
+      ) : (
+        <CategoryIcon
+          category={category}
+          class={size === "card" ? "size-14 stroke-[1.25]" : "size-28 stroke-1"}
+        />
+      )}
     </div>
   )
 }

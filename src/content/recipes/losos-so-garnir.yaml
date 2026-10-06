@@ -15,6 +15,10 @@ source:
   url: https://theforkedspoon.com/best-baked-salmon/
 sides: [boranija-so-luk, brokula-karfiol-na-para, mlad-kompir-so-kopar, kompiri-vo-rerna, oriz-so-zelencuk, salata-so-rukola, zelena-salata]
 
+art:
+  vessel: plate
+  items: [salmon, green-bean*5, lemon-slice*2, dill*3]
+
 ingredients:
   - items:
       - { ingredient: salmon, qty: 600, unit: g, note: { mk: 4 филета, en: 4 fillets } }

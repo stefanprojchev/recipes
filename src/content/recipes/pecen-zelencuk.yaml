@@ -15,6 +15,11 @@ source:
   name: Love and Lemons
   url: https://www.loveandlemons.com/roasted-vegetables/
 
+art:
+  vessel: tray
+  items: [carrot-stick*5, cauliflower*4, broccoli*4, onion-ring*3, herb*8]
+  scale: 1.2
+
 ingredients:
   - items:
       - { ingredient: carrot, qty: 3, unit: pc, note: { mk: на парчиња од 2 см, en: in 2 cm pieces } }

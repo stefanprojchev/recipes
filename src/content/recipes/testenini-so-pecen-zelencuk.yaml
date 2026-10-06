@@ -16,6 +16,10 @@ source:
   url: https://www.gimmesomeoven.com/roasted-vegetable-pasta/
 sides: [salata-so-rukola, zelena-salata, grcka-salata]
 
+art:
+  vessel: plate
+  items: [pasta*12, zucchini-slice*4, pepper-strip-red*3, cherry-half*4, feta*5]
+
 ingredients:
   - items:
       - { ingredient: pasta, qty: 350, unit: g, note: { mk: пене или фусили, en: penne or fusilli } }

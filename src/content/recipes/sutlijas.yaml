@@ -15,6 +15,11 @@ source:
   name: НМД
   url: https://nmd.mk/klasichen-retsept-za-sutlijash-so-1-litar-mleko-i-1-chasha-200g-oriz/
 
+art:
+  vessel: bowl
+  fill: rice-pudding
+  items: [cinnamon*30, walnut*3]
+
 ingredients:
   - items:
       - { ingredient: rice, qty: 200, unit: g, note: { mk: тркалезен, en: short-grain } }

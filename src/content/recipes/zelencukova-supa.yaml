@@ -16,6 +16,12 @@ source:
   url: https://moirecepti.mk/post/%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%87%D1%83%D0%BA%D0%BE%D0%B2%D0%B0-%D1%87%D0%BE%D1%80%D0%B1%D0%B0-%D0%B1%D0%B5%D0%B7-%D0%B7%D0%B0%D0%BF%D1%80%D1%88%D0%BA%D0%B0
 sides: [shopska-salata, zelena-salata, salata-od-zelka]
 
+art:
+  vessel: bowl
+  fill: broth
+  items: [carrot-coin*6, potato-chunk*4, pea*10, green-bean*3, herb*8]
+  side: [bread-slice]
+
 ingredients:
   - items:
       - { ingredient: olive-oil, qty: 2, unit: tbsp }

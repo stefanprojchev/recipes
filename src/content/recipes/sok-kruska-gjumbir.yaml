@@ -16,6 +16,12 @@ source:
   name: The Australian Women's Weekly
   url: https://www.womensweeklyfood.com.au/recipe/quick-and-easy/apple-pear-and-ginger-juice-13157/
 
+art:
+  vessel: glass
+  fill: pear-juice
+  items: [ice]
+  side: [pear-whole, ginger]
+
 ingredients:
   - items:
       - { ingredient: pear, qty: 3, unit: pc, note: { mk: зрели, en: ripe } }

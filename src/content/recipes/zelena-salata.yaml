@@ -12,6 +12,12 @@ difficulty: easy
 diet: [vegan, fasting, gluten-free]
 season: [spring]
 
+art:
+  vessel: bowl
+  fill: salad
+  items: [lettuce*7, spring-onion*10, radish-slice*6]
+  scale: 1.15
+
 ingredients:
   - items:
       - { ingredient: lettuce, qty: 1, unit: pc }

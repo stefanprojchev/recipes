@@ -15,6 +15,11 @@ source:
   name: I Wash You Dry
   url: https://iwashyoudry.com/easy-vegetable-rice-pilaf/
 
+art:
+  vessel: plate
+  fill: rice
+  items: [rice*50, pea*12, carrot-coin*8, pepper-strip-red*3, herb*5]
+
 ingredients:
   - items:
       - { ingredient: rice, qty: 200, unit: g, note: { mk: долго зрно, en: long-grain } }

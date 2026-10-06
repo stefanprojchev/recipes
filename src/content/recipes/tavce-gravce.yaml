@@ -19,6 +19,12 @@ prepAhead:
   en: Soak the beans in cold water the night before.
 sides: [salata-od-zelka, salata-od-morkov, salata-od-cveklo, salata-pecheni-piperki, shopska-salata]
 
+art:
+  vessel: clay
+  fill: beans
+  items: [bean*24, pepper-strip-red*2, herb*8]
+  side: [bread]
+
 ingredients:
   - title: { mk: Грав, en: Beans }
     items:

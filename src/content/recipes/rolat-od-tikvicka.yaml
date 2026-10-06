@@ -15,6 +15,11 @@ source:
   url: https://www.facebook.com/reel/1400664502279863
 sides: [salata-so-rukola, zelena-salata, salata-domati-krastavici]
 
+art:
+  vessel: board
+  items: [roll-zucchini*5, cherry-tomato*2]
+  scale: 1.3
+
 ingredients:
   - title: { mk: Ролат, en: Rollup }
     items:

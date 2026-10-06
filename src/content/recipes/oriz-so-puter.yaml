@@ -12,6 +12,12 @@ difficulty: easy
 tags: [kid-friendly]
 diet: [vegetarian, gluten-free]
 
+art:
+  vessel: bowl
+  fill: rice
+  items: [rice*80, butter, herb*5]
+  scale: 1.2
+
 ingredients:
   - items:
       - { ingredient: rice, qty: 250, unit: g }

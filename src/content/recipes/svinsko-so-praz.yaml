@@ -16,6 +16,11 @@ source:
   url: https://moirecepti.mk/post/%D1%81%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE-%D1%81%D0%BE-%D0%BF%D1%80%D0%B0%D0%B7
 sides: [pecen-zelencuk, pire-od-kompiri, salata-od-cveklo, salata-od-zelka, salata-od-morkov]
 
+art:
+  vessel: clay
+  fill: gravy
+  items: [meat-chunk*9, leek-ring*8, herb*4]
+
 ingredients:
   - items:
       - { ingredient: pork, qty: 800, unit: g, note: { mk: вратина на коцки, en: diced neck } }

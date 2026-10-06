@@ -15,6 +15,11 @@ source:
   url: https://shredhappens.substack.com/p/low-carb-zucchini-bun-sandwiches
 sides: [salata-so-rukola, zelena-salata, salata-od-morkov]
 
+art:
+  vessel: board
+  items: [sandwich-half*2, cherry-tomato*3]
+  scale: 1.25
+
 ingredients:
   - title: { mk: Леб од тиквички, en: Zucchini bread }
     items:

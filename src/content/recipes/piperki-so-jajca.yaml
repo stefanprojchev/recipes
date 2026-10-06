@@ -15,6 +15,10 @@ source:
   name: Sicilian Girl
   url: https://siciliangirl.com/2012/02/bell-peppers-and-eggs/
 
+art:
+  vessel: pan
+  items: [pepper-strip-red*7, pepper-strip-green*4, egg-fried*2]
+
 ingredients:
   - items:
       - { ingredient: green-pepper, qty: 2, unit: pc, note: { mk: на ленти, en: in strips } }

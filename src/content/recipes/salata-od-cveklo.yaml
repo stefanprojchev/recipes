@@ -12,6 +12,11 @@ difficulty: easy
 diet: [vegan, fasting, gluten-free]
 season: [autumn, winter]
 
+art:
+  vessel: plate
+  items: [beet-cube*24, walnut*4, herb*10]
+  scale: 1.4
+
 ingredients:
   - items:
       - { ingredient: beetroot, qty: 4, unit: pc, note: { mk: средно големи, en: medium } }

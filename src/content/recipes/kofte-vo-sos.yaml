@@ -15,6 +15,13 @@ source:
   url: https://gotvi.mk/2016/04/08/koftinja-vo-domaten-sos/
 sides: [pire-od-kompiri, bulgur-so-zelencuk, oriz-so-zelencuk, grilan-zelencuk, salata-domati-krastavici, salata-od-zelka]
 
+art:
+  vessel: pan
+  fill: tomato
+  items: [meatball*7, herb*10]
+  side: [bread-slice]
+  scale: 1.2
+
 ingredients:
   - title: { mk: Ќофтиња, en: Meatballs }
     items:

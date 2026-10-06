@@ -15,6 +15,12 @@ source:
   name: Gotvi.mk
   url: https://gotvi.mk/2018/11/02/posebna-zelka-salata/
 
+art:
+  vessel: bowl
+  fill: salad
+  items: [cabbage-shred*40, carrot-shred*14, herb*5]
+  scale: 1.3
+
 ingredients:
   - items:
       - { ingredient: white-cabbage, qty: 0.5, unit: pc, note: { mk: околу 600 г, en: about 600 g } }
